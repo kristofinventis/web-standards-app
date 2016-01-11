@@ -1,0 +1,46 @@
+/* Styleguide Code */
+.styleguide__code {
+    box-sizing: border-box;
+    word-wrap: initial;
+
+    display: block;
+    width: 100%;
+
+    font: 12px Consolas,"Liberation Mono",Menlo,Courier,monospace;
+
+    position: relative;
+    float: none;
+    clear: both;
+    overflow: initial;
+
+    background: #f8f8f8;
+    border-radius: 0 0 4px 4px;
+    border: 1px solid get-color("gray");
+
+    margin: 0;
+    padding: 0;
+
+
+    code {
+        box-sizing: border-box;
+        font-size: 14px;
+        line-height: 20px;
+        border-radius: 3px;
+        margin: 0;
+        display: block;
+        overflow-x: auto;
+        padding: 15px;
+        color: #333;
+        background: #f8f8f8;
+        -webkit-text-size-adjust: none;
+   }
+}
+
+.styleguide__code--simple {
+    display: inline-block;
+    border-radius: 6px;
+    padding: 4px;
+    margin: 0;
+    border: none;
+    width: auto;
+}

@@ -1,0 +1,141 @@
+/* Titles */
+.title-1,
+.title-2,
+.title-3,
+.title-4,
+.title-5,
+.title-6 {
+    @include text-color($default-font-color);
+    @include default-typography(margin);
+
+    display: block;
+    font-family: $titles-font-family;
+    text-transform: none;
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
+.title-1 {
+    font-weight: 700;
+    color: get-color("secondary");
+    text-transform: uppercase;
+
+    @include screen-size(small, mini) {
+        font-size: px-2-rem(26px);
+        line-height: px-2-rem(24px);
+    }
+    @include screen-size(medium) {
+        font-size: px-2-rem(26px);
+        line-height: px-2-rem(24px);
+    }
+    @include screen-size(large) {
+        font-size: px-2-rem(26px);
+        line-height: px-2-rem(24px);
+    }
+}
+
+.title-2 {
+    color: get-color("secondary");
+    font-weight: 400;
+    text-transform: none;
+
+    @include screen-size(small, mini) {
+        font-size: px-2-rem(24px);
+        line-height: px-2-rem(30px);
+    }
+    @include screen-size(medium) {
+        font-size: px-2-rem(26px);
+        line-height: px-2-rem(32px);
+    }
+    @include screen-size(large) {
+        font-size: px-2-rem(28px);
+        line-height: px-2-rem(35px);
+    }
+}
+
+.title-3 {
+    color: get-color("secondary");
+    font-weight: 400;
+    text-transform: none;
+
+    @include screen-size(small, mini) {
+        font-size: px-2-rem(20px);
+        line-height: px-2-rem(25px);
+    }
+    @include screen-size(medium) {
+        font-size: px-2-rem(22px);
+        line-height: px-2-rem(30px);
+    }
+    @include screen-size(large) {
+        font-size: px-2-rem(22px);
+        line-height: px-2-rem(35px);
+    }
+}
+
+.title-4 {
+    color: get-color("secondary");
+    font-weight: 400;
+    text-transform: uppercase;
+    @include screen-size(small, mini) {
+        font-size: px-2-rem(18px);
+        line-height: px-2-rem(25px);
+    }
+    @include screen-size(medium) {
+        font-size: px-2-rem(18px);
+        line-height: px-2-rem(25px);
+    }
+    @include screen-size(large) {
+        font-size: px-2-rem(20px);
+        line-height: px-2-rem(25px);
+    }
+}
+
+.title-5 {
+    color: get-color("secondary");
+    font-weight: normal;
+    text-transform: none;
+
+    @include screen-size(small, mini) {
+        font-size: px-2-rem(16px);
+        line-height: px-2-rem(25px);
+    }
+    @include screen-size(medium) {
+        font-size: px-2-rem(18px);
+        line-height: px-2-rem(25px);
+    }
+    @include screen-size(large) {
+        font-size: px-2-rem(20px);
+        line-height: px-2-rem(25px);
+    }
+}
+
+.title-6 {
+
+    color: get-color("secondary");
+    font-weight: 700;
+    text-transform: none;
+    margin-bottom: 0;
+
+    @include screen-size(small, mini) {
+        font-size: px-2-rem(16px);
+        line-height: px-2-rem(25px);
+    }
+    @include screen-size(medium) {
+        font-size: px-2-rem(18px);
+        line-height: px-2-rem(25px);
+    }
+    @include screen-size(large) {
+        font-size: px-2-rem(18px);
+        line-height: px-2-rem(25px);
+    }
+}
+
+// h1 { @extend .title-1; }
+// h2 { @extend .title-2; }
+// h3 { @extend .title-3; }
+// h4 { @extend .title-4; }
+// h5 { @extend .title-5; }
+// h6 { @extend .title-6; }

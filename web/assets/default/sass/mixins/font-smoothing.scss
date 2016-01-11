@@ -1,0 +1,30 @@
+/**
+ * You can use font-smoothing best when using light text on a dark background
+ * This only works on Mac OS X
+ *
+ * More info:
+ * - http://www.intridea.com/blog/2014/5/8/better-font-smoothing-in-chrome-on-mac-os-x
+ * - http://maximilianhoffmann.com/posts/better-font-rendering-on-osx
+ */
+@mixin font-smoothing($value: on) {
+    @if $value == on {
+        // Light on dark
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+
+        // Reset on higher pixel density screens
+        @media
+        only screen and (-webkit-min-device-pixel-ratio: 1.25),
+        only screen and ( min-device-pixel-ratio: 1.25),
+        only screen and ( min-resolution: 200dpi),
+        only screen and ( min-resolution: 1.25dppx) {
+            -webkit-font-smoothing: subpixel-antialiased;
+            -moz-osx-font-smoothing: auto;
+        }
+    }
+    @else {
+        // Dark on light
+        -webkit-font-smoothing: subpixel-antialiased;
+        -moz-osx-font-smoothing: auto;
+    }
+}

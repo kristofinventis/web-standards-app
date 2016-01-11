@@ -1,0 +1,58 @@
+/* Variables */
+$list-custom-color-dots:    false;
+$list-dot-color:            get-color(primary);
+
+$list-item-margin-bottom:   0px;
+$list-padding-left:         20px;
+
+/* List */
+ul, ol {
+    @include default-typography((margin));
+    overflow: hidden;
+    padding-left: $list-padding-left;
+
+    li {
+        display: list-item;
+        margin-bottom: $list-item-margin-bottom;
+    }
+}
+
+ol {
+    padding-left: $list-padding-left + 14px;
+}
+
+ul {
+    list-style-type: disc;
+
+    @if $list-custom-color-dots {
+        list-style: none;
+
+        li {
+            position: relative;
+
+            &:before {
+                @include border-radius(5px);
+                content: '';
+                position: absolute;
+                display: block;
+                left: px-2-em(-16px);
+                top: px-2-em(12px);
+                width: 5px;
+                height: 5px;
+                background-color: $list-dot-color;
+            }
+        }
+
+        .no-borderradius &{
+            list-style-type: disc;
+
+            li:before {
+                display: none;
+            }
+        }
+    }
+}
+
+ol {
+    list-style-type: decimal;
+}

@@ -1,0 +1,80 @@
+/* STYLEGUIDE TITLES */
+
+/* Titles */
+.styleguide__title-1,
+.styleguide__title-2,
+.styleguide__title-3,
+.styleguide__title-4,
+.styleguide__title-5,
+.styleguide__title-6 {
+    color: get-color("black");
+    margin: 0 0 .5em 0;
+
+    line-height: 1.25;
+
+    display: block;
+    font-family: $font-secondary;
+    text-transform: none;
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
+.styleguide__title-display {
+    font-family: $font-secondary;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 68px;
+    margin-bottom: 0.67em;
+}
+
+.styleguide__title-1 {
+    font-family: $font-secondary;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    margin-bottom: 0.67em;
+}
+
+.styleguide__title-2 {
+    font-family: $font-secondary;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 39px;
+}
+
+.styleguide__title-3 {
+    font-family: $font-secondary;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.styleguide__title-4 {
+    font-family: $font-secondary;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 22px;
+}
+
+.styleguide__title-5 {
+    font-family: $font-secondary;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.styleguide__title-6 {
+    font-family: $font-primary;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+    text-transform: uppercase;
+}
+
+.styleguide__title--bordered {
+    border-bottom: 1px solid #5b616b;
+    padding-bottom: .8rem;
+}

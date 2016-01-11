@@ -1,0 +1,15 @@
+/* ==========================================================================
+   Lightbox
+   ========================================================================== */
+
+@import 'magnific-popup/*';
+
+// Custom lightbox config
+img.mfp-img {
+    border: 0;
+    background: transparent;
+}
+
+.mfp-figure figure {
+    margin: 0;
+}

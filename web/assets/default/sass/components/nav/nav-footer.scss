@@ -1,0 +1,38 @@
+/* VARIABLES */
+$nav-footer-link-color:                      get-color(primary);
+$nav-footer-link-color-hover:                get-color(primary);
+$nav-footer-link-text-decoration:            none; // none, underline, overline, underline overline, line-through
+$nav-footer-link-text-decoration-hover:      underline; // none, underline, overline, underline overline, line-through
+
+/* NAV-FOOTER */
+.nav-footer {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-footer__link {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    padding-bottom: 4px;
+    padding-left: 12px;
+
+    color: $nav-footer-link-color;
+    text-decoration: $nav-footer-link-text-decoration;
+
+    &:hover, &:focus {
+        color: $nav-footer-link-color-hover;
+        text-decoration: $nav-footer-link-text-decoration-hover;
+    }
+
+    &:before, .before {
+        display: inline-block;
+        content: '\203A'; // = '›' // http://www.evotech.net/articles/testjsentities.html
+
+        position: absolute;
+        left: 0;
+
+        color: $nav-footer-link-color;
+    }
+}

@@ -1,0 +1,35 @@
+/* Variables */
+// TODO
+$forms-max-width:                           px-2-rem(480px);
+
+$form-input-height:                         auto;
+$form-input-margin-bottom:                  0;
+$form-input-padding:                        12px;
+$form-input-border-radius:                  0;
+$form-input-background-color:               get-color("white");
+$form-input-background-color-focus:         get-color("white");
+$form-input-border-color:                   get-color("gray");
+$form-input-border-color-focus:             darken(get-color("gray"), 10%);
+
+$form-input-background-color-error:         get-color("red");
+$form-input-background-color-error-focus:   lighten(get-color("red"), 30%);
+$form-input-border-color-error:             get-color("red");
+$form-input-border-color-error-focus:       get-color("red");
+
+$form-border-width:                         1px;
+$form-border-width-focus:                   1px;
+
+$form-input-placholder-color:               get-color("gray");
+
+
+/* Form */
+form {
+
+}
+
+.form--margin {
+    margin-bottom: $default-block-margin;
+}
+
+/* Form Imports */
+@import 'form/*';

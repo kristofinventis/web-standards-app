@@ -1,0 +1,13 @@
+/* Form Field File */
+.form__field--file {
+    color: $default-font-color;
+    padding: 0;
+
+    @include input-placeholder {
+        color: $form-input-placholder-color;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}

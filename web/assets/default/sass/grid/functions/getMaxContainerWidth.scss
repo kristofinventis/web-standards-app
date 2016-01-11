@@ -1,0 +1,6 @@
+@function getMaxContainerWidth($screen-size) {
+    $nrOfCols: getNrOfCols($screen-size);
+    $colWidth: getColWidth($screen-size);
+    $gutterWidth: getGutterWidth($screen-size);
+    @return ($nrOfCols * $colWidth) + (($nrOfCols - 1) * $gutterWidth );
+}

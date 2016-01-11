@@ -1,0 +1,4 @@
+@function getSidePadding($screen-size) {
+    $grid-config: getGridConfig($screen-size);
+    @return map-get($grid-config, side-padding);
+}

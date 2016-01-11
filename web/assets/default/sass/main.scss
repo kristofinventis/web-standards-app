@@ -1,0 +1,35 @@
+/*! Inventis styleguide v2.0.0 */
+
+// Helper functions & mixins
+@import 'functions/*';
+@import 'mixins/*';
+
+// Variables
+@import 'variables.scss';
+
+// Crossbrowser normalisations
+@import 'base/normalize/*';
+
+// Helper classes
+@import 'base/helpers';
+
+// Fonts
+@import 'base/font';
+
+// Icons
+@import 'base/icon';
+
+// Typography: Markup styles
+@import 'base/typography';
+
+// Global layout (header & footer)
+@import 'base/layout';
+
+// All website components
+@import 'components/*';
+
+// All website helpers
+@import 'helpers/*';
+
+// Print
+@import 'base/print';

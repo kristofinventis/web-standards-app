@@ -1,0 +1,94 @@
+/* VARIABLES */
+$breadcrumb-background-color:               transparent;
+$breadcrumb-border-radius:                  0;
+$breadcrumb-padding:                        0 15px 10px 15px;
+
+$breadcrumb-font-color:                     get-color(primary);
+$breadcrumb-font-weight:                    400;
+$breadcrumb-text-transform:                 none; // none, Capitalize, UPPERCASE, lowercase
+$breadcrumb-margin-bottom:                  px-2-rem(13px);
+
+$breadcrumb-link-color:                     get-color(primary);
+$breadcrumb-link-color-hover:               get-color(primary);
+$breadcrumb-link-text-decoration:           underline; // none, underline, overline, underline overline, line-through
+$breadcrumb-link-text-decoration-hover:     none; // none, underline, overline, underline overline, line-through
+
+$breadcrumb-large-font-size:                14px;
+$breadcrumb-large-line-height:              1.5;
+$breadcrumb-medium-font-size:               14px;
+$breadcrumb-medium-line-height:             1.5;
+
+
+
+/* BREADCRUMBS */
+.breadcrumbs {
+    border-radius: $breadcrumb-border-radius;
+    box-sizing: border-box;
+
+    width: auto;
+    margin: 0 0 $breadcrumb-margin-bottom 0;
+    padding: $breadcrumb-padding;
+    background: $breadcrumb-background-color;
+
+    border-bottom: 1px solid get-color(gray);
+
+    @media screen and (max-width:700px) {
+        display: none;
+    }
+}
+
+.breadcrumbs__content {
+    @include screen-size(large) {
+        font-size: $breadcrumb-large-font-size;
+        line-height: $breadcrumb-large-line-height;
+    }
+    @include screen-size(medium) {
+        font-size: $breadcrumb-medium-font-size;
+        line-height: $breadcrumb-medium-line-height;
+    }
+
+    width: auto;
+    display: block;
+
+    margin: 0;
+    padding: 0;
+    // padding-top: $breadcrumb-margin-bottom + px-2-rem(5px);
+
+    position: relative;
+    list-style: none;
+
+    text-transform: $breadcrumb-text-transform;
+    font-weight: $breadcrumb-font-weight;
+    color: $breadcrumb-font-color;
+
+    li {
+        display: inline-block;
+        font-family: $font-primary;
+        color: $breadcrumb-link-color;
+    }
+
+    span {
+        padding: 0 px-2-rem(10);
+        font-size: 9px;
+        color: #cccccc;
+    }
+
+
+    @include screen-size(mini, small) {
+        display: none;
+    }
+
+}
+
+.breadcrumb__link {
+    font-family: $font-primary;
+    font-weight: $breadcrumb-font-weight;
+
+    color: $breadcrumb-link-color;
+    text-decoration: $breadcrumb-link-text-decoration;
+
+    &:hover, &:focus {
+        color: $breadcrumb-link-color-hover;
+        text-decoration: $breadcrumb-link-text-decoration-hover;
+    }
+}

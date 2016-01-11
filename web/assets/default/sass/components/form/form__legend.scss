@@ -1,0 +1,5 @@
+/* Form Legend */
+.form__legend {
+    @extend .title-6 !optional;
+    margin-bottom: 1rem;
+}

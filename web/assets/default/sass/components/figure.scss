@@ -1,0 +1,77 @@
+/* Figure */
+.figure {
+    max-width: 892px;
+    width: 100%;
+    float: none;
+    margin: 0;
+    margin-bottom: 20px;
+
+    a,
+    img {
+        border-radius: 5px;
+    }
+}
+
+/* Is used by developer */
+@each $screen-size, $screen-size-config in $screen-sizes {
+    @include screen-size($screen-size) {
+        .figure--v-#{$screen-size}__left {
+            img {
+                float: left;
+                margin-right: 20px;
+                margin-bottom: 20px;
+            }
+        }
+
+        .figure--v-#{$screen-size}__right {
+            img {
+                float: right;
+                margin-left: 20px;
+                margin-bottom: 20px;
+
+            }
+        }
+
+    }
+}
+
+/* Is used by the webadmin */
+.figure--left {
+    a.img,
+    a.img--alt,
+    img {
+        @include screen-size(medium, large) {
+            float: left;
+            margin-right: 20px;
+            margin-bottom: 20px;
+
+        }
+    }
+}
+
+.figure--right {
+    a.img,
+    a.img--alt,
+    img {
+        @include screen-size(medium, large) {
+            float: right;
+            margin-left: 20px;
+            margin-bottom: 20px;
+
+        }
+    }
+}
+
+.figure--center {
+    @include default-typography(margin);
+    clear: both;
+    a.img,
+    a.img--alt,
+    img {
+        box-sizing: border-box;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 20px;
+
+    }
+}

@@ -1,0 +1,9 @@
+/* FLASH CONTAINER CLOSE EFFECT */
+.flash-container {
+    opacity: 1;
+    transition: opacity 0.8s;
+
+    &--hide {
+        opacity: 0;
+    }
+}

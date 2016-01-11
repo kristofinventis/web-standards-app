@@ -1,0 +1,4 @@
+@mixin text-color($color) {
+    color: $color;
+    a { color: $color; }
+}

@@ -1,0 +1,19 @@
+/* LOGO */
+.logo {
+    display: block;
+    border: 0;
+    padding: 0;
+    @include screen-size(mini,small,medium) {
+        width: 100%;
+        text-align: center;
+        clear: both;
+    }
+    @include screen-size( large ) {
+        float: left;
+    }
+    img {
+        border: 0;
+        padding: 0;
+        background: none;
+    }
+}

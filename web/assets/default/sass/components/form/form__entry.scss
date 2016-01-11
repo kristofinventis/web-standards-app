@@ -1,0 +1,39 @@
+/* Form Entry */
+.form__entry {
+    @extend .clearfix;
+    box-sizing: border-box;
+    display: block;
+    border: 0;
+    padding: 0;
+    position: relative;
+
+    @include screen-size(mini, small) {
+        margin: 0 0 20px 0;
+    }
+
+    @include screen-size(medium) {
+        margin: 0 0 30px 0;
+    }
+
+    @include screen-size(large) {
+        margin: 0 0 30px 0;
+    }
+
+    &:last-child, &.slvzr-last-child {
+        margin-bottom: 0;
+    }
+}
+
+.form__entry--invalid {
+    display: block;
+
+    // TODO
+    .form__field {
+        border-color: get-color("red");
+        background-color: lighten(get-color("red"), 45%);
+
+        &:focus {
+            background-color: lighten(get-color("red"), 47%);
+        }
+    }
+}

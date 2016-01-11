@@ -1,0 +1,39 @@
+/* Fast-Contact */
+.fast-contact {
+    width: px-2-rem(250);
+    line-height: px-2-rem(24px);
+    font-size: px-2-rem(16px);
+    font-weight: 400;
+    color: #7f7f7f;
+
+    @include screen-size(mini, small, medium) {
+        float: left;
+        text-align: left;
+    }
+
+    @include screen-size(large) {
+        position: absolute;
+        top: 0;
+        right: px-2-rem(10px);
+
+        text-align: right;
+    }
+
+    span {
+        color: #7f7f7f;
+        font-weight: 400;
+    }
+
+    a {
+        color: $default-font-color;
+        text-decoration: none;
+        cursor: text;
+    }
+
+    a[href*="mailto:"] {
+        color: $default-link-color;
+        &:hover, &:focus {
+            color: $default-link-color-hover;
+        }
+    }
+}

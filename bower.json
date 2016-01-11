@@ -1,0 +1,36 @@
+{
+  "name": "default",
+  "version": "6.0.1",
+  "authors": [
+    "Inventis <info@inventis.be>"
+  ],
+  "private": true,
+  "dependencies": {
+    "requirejs": "~2.1.9",
+    "modernizr": "~2.7.0",
+    "jquery": "~1.10.2",
+    "jquery-placeholder": "~2.0.7",
+    "magnific-popup": "~0.9.9",
+    "normalize.css": "git://github.com/necolas/normalize.css.git",
+    "sizzle": "~1.10.13",
+    "ckeditor": "#full/4.3.x",
+    "when": "~3.1.0",
+    "chartjs": "1.0.1-beta.4",
+    "susy": "~2.2.6",
+    "highlight": "https://github.com/isagalaev/highlight.js.git",
+    "clipboard": "~1.5.3"
+  },
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/assets/lib/vendor",
+    "test",
+    "tests"
+  ]
+}

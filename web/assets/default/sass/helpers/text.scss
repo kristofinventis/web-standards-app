@@ -1,0 +1,34 @@
+/* Text helpers */
+.text--underline {
+    text-decoration: underline;
+}
+
+.text--uppercase {
+    text-transform: uppercase;
+}
+
+.text--centered {
+    text-align: center;
+}
+
+.text--alt-font {
+    font-family: $font-secondary
+}
+
+.text--no-margin {
+    margin-bottom: 0;
+}
+
+.text--left {
+    text-align: left;
+}
+
+.text--right {
+    text-align: right;
+}
+
+@each $color, $hex in $colors {
+    .text--#{"" + $color} {
+        color: $hex;
+    }
+}

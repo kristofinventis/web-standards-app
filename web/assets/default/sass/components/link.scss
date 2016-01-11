@@ -1,0 +1,32 @@
+/* Link */
+.link {
+    @extend a;
+}
+
+.link--more {
+    position: relative;
+    // color: $link--more-color;
+    &:after, .after {
+        @extend .icon !optional;
+        @extend .icon-content--arrow-right !optional;
+        display: inline-block;
+        // content: $more-link-content;
+        color: get-color(secondary);
+        position: relative;
+        top: 0px;
+        font-size: 12px;
+        margin-left: 7px;
+    }
+}
+
+.link--mailto {
+
+}
+
+.link--tel {
+
+}
+
+.link--external {
+
+}

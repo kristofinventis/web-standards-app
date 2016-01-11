@@ -1,0 +1,22 @@
+// Helper functions & mixins
+@import 'functions/*';
+@import 'mixins/*';
+
+// Variables
+@import 'variables.scss';
+$directory-vendor: '../../lib/vendor/';
+
+// Crossbrowser normalisations
+@import 'base/normalize/*';
+
+// Helper classes
+@import 'base/helpers';
+
+@import "base/typography";
+@import "components/summary";
+@import "components/figure";
+@import "components/images";
+
+body {
+    padding: 7px;
+}

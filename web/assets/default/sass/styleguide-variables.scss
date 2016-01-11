@@ -1,0 +1,114 @@
+/* ==========================================================================
+   Styleguide Variables
+   ========================================================================== */
+
+/* Browser support */
+$legacy-support-for-ie:                 false; // Used by compass, normalize & susy
+
+/* Responsive true/false */
+$layout-responsive:                     true;
+
+
+/* Default sizes */
+$default-rem-size:                      16px; // Browser default
+$default-block-margin:                  px-2-rem(30px);
+$default-block-padding:                 px-2-rem(30px);
+
+/* Colors */
+$colors: (
+    "white":                   #ffffff,
+    "black":                   #000000,
+    "gray":                    #ececec,
+    "dark-gray":               #aeb0b5,
+    "blue":                    #205493,
+    "yellow":                  #ffffc8,
+    "green":                   #008000,
+);
+
+
+/* Screen adaptive config */
+$styleguide-breakpoint-medium: 979px;
+$styleguide-breakpoint-small:  480px;
+$styleguide-breakpoint-mini:   379px;
+
+$screen-sizes: (
+    large: (
+        typography: (
+            font-size:                      16px, // If you change this, also change it in the grunt config for rem_to_px
+            line-height:                    28px,
+            margin:                         0 0 px-2-rem(30px) 0
+        ),
+        grid: (
+            screen-min-width:               $styleguide-breakpoint-medium + 1,
+            total-columns:                  12,
+            column-width:                   70px, // When you set this container-max-width will be calculated for you
+            gutter-width:                   30px,
+            side-padding:                   30px
+        )
+    ),
+    medium: (
+        typography: (
+            font-size:                      16px, // If you change this, also change it in the grunt config for rem_to_px
+            line-height:                    28px,
+            margin:                         0 0 px-2-rem(20px) 0
+        ),
+        grid: (
+            screen-min-width:               $styleguide-breakpoint-small + 1,
+            screen-max-width:               $styleguide-breakpoint-medium,
+            total-columns:                  12,
+            gutter-width:                   20px,
+            side-padding:                   20px
+        )
+    ),
+    small: (
+        typography: (
+            font-size:                      16px, // If you change this, also change it in the grunt config for rem_to_px
+            line-height:                    28px,
+            margin:                         0 0 px-2-rem(10px) 0
+        ),
+        grid: (
+            screen-min-width:               $styleguide-breakpoint-mini + 1,
+            screen-max-width:               $styleguide-breakpoint-small,
+            total-columns:                  3,
+            gutter-width:                   20px,
+            side-padding:                   10px,
+            subgrids: (
+                2: (1)
+            )
+        )
+    ),
+    mini: (
+        typography: (
+            font-size:                      16px, // If you change this, also change it in the grunt config for rem_to_px
+            line-height:                    28px,
+            margin:                         0 0 px-2-rem(10px) 0
+        ),
+        grid: (
+            screen-max-width:               $styleguide-breakpoint-mini,
+            total-columns:                  2,
+            gutter-width:                   15px,
+            side-padding:                   15px
+        )
+    )
+);
+
+/* Typography */
+$default-font-family:                   'Source Sans Pro', Helvetica, Arial, sans-serif;
+
+$font-primary:                          $default-font-family;
+$font-secondary:                        'Merriweather', 'Georgia', 'Times New Roman', serif;
+
+$paragraph-max-width:                   635px;
+
+$default-font-color:                    get-color("primary");
+$default-link-color:                    get-color("secondary");
+$default-link-text-decoration:          underline; // none, underline, overline, underline overline, line-through;
+$default-link-text-decoration-hover:    none; // none, underline, overline, underline overline, line-through
+$default-link-color-hover:              inherit; // Hover color is commented out by default
+
+$default-selection-color:               $default-font-color;
+$default-selection-bgcolor:             #B3D4FD; // Browser default (chrome)
+
+$img-margin-top:                        0.4rem; // Align with possible surrounding text
+
+$hr-color:                              $default-font-color;

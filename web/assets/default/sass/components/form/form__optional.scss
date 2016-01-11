@@ -1,0 +1,9 @@
+/* Variables */
+$form__optional-text-color:                        #888888;
+$form__optional-font-style:                        italic;
+
+/* Form Optional */
+.form__optional {
+    color: $form__optional-text-color;
+    font-style: $form__optional-font-style;
+}

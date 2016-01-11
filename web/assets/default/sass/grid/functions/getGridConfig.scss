@@ -1,0 +1,4 @@
+@function getGridConfig($screen-size) {
+    $screen-size-config: map-get($screen-sizes, $screen-size);
+    @return map-get($screen-size-config, grid);
+}

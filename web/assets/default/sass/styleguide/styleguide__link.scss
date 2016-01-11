@@ -1,0 +1,14 @@
+/* STYLEGUIDE__LINK */
+.styleguide__link {
+    color: #0071bc;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+p .styleguide__link {
+    text-decoration: underline;
+}
+
+.styleguide__link--dark {
+    color: get-color("white");
+}

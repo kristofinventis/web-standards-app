@@ -1,0 +1,31 @@
+/* Download List */
+.download-list {
+    margin-bottom: $default-block-margin;
+}
+
+.download-list__title {
+    margin-bottom: 20px;
+    font-family: $font-primary;
+    color: get-color(primary);
+}
+
+.download-list__content {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+        position: relative;
+        margin: 0;
+        padding: 0 0 0 28px;
+        color: get-color(primary);
+        &:before, .before {
+            @extend .icon !optional;
+            @extend .icon--download !optional;
+            position: absolute;
+            left: 0;
+            top: 4px;
+            font-size: 20px;
+        }
+    }
+}

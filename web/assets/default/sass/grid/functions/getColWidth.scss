@@ -1,0 +1,4 @@
+@function getColWidth($screen-size) {
+    $grid-config: getGridConfig($screen-size);
+    @return if(map-has-key($grid-config, column-width), map-get($grid-config, column-width), map-get(map-get(map-get($screen-sizes, large), grid), column-width));
+}

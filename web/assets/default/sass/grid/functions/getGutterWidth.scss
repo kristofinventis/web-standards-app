@@ -1,0 +1,4 @@
+@function getGutterWidth($screen-size) {
+    $grid-config: getGridConfig($screen-size);
+    @return map-get($grid-config, gutter-width);
+}

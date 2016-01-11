@@ -1,0 +1,46 @@
+/* Grid Col */
+@import '../../grid.scss';
+
+[class*="__col--"],
+[class*="__cols--"]{
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+// generateCols($start, $end, $screen-size, $subgrid: false, $modifier: '')
+
+/* Generate col & cols */
+@each $screen-size, $screen-size-config in $screen-sizes {
+    @include screen-size($screen-size) {
+        $nrOfCols: getNrOfCols($screen-size);
+        @include generateCols(1, $nrOfCols, $screen-size);
+    }
+}
+
+/* Subgrids */
+@each $screen-size, $screen-size-config in $screen-sizes {
+    @include screen-size($screen-size) {
+        @if map-has-key(getGridConfig($screen-size), subgrids) {
+            $grid-config: getGridConfig($screen-size);
+            $total-columns: map-get($grid-config, total-columns);
+
+            @each $total-columns, $columnsList in map-get($grid-config, subgrids) {
+                @each $columns in $columnsList {
+                    @include generateCols($columns,$total-columns,$screen-size,true);
+                }
+            }
+        }
+    }
+}
+
+/* Generate omega class */
+@each $screen-size, $screen-size-config in $screen-sizes {
+    @include screen-size($screen-size) {
+        .grid--v-#{$screen-size}__col--omega {
+            margin-right: 0 !important;
+        }
+    }
+}

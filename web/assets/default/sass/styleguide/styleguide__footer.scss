@@ -1,0 +1,20 @@
+/* STYLEGUIDE__FOOTER */
+.styleguide__footer {
+    background: get-color("blue");
+    box-sizing: border-box;
+    position: relative;
+    z-index: 0;
+
+    display: block;
+    padding: 20px;
+
+    padding-left: 3em;
+    padding-right: 3em;
+
+    color: get-color("white");
+
+    @include screen-size(large) {
+        width: calc(100% - 250px);
+        margin-left: 250px;
+    }
+}

@@ -1,0 +1,5 @@
+@function getGutterPercentage($screen-size) {
+    $gutterWidth: getGutterWidth($screen-size);
+    $maxContainerWidth: getMaxContainerWidth($screen-size);
+    @return ($gutterWidth / $maxContainerWidth) * 100; // turn pixels into percentile
+}

@@ -1,0 +1,40 @@
+/* STYLEGUIDE__HEADER */
+.styleguide__header {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+
+    background-color: #ffffff;
+    border-bottom: 1px solid get-color("dark-gray");
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+
+    @include screen-size(mini, small, medium) {
+        padding: 0 0 0 95px;
+        display: table;
+    }
+
+    @include screen-size(large) {
+        padding: 1.9rem;
+    }
+}
+
+.styleguide__header--title {
+    font-family: $font-secondary;
+    font-size: 2rem;
+    display: inline-block;
+    text-decoration: none;
+    color: #5b616b;
+    font-weight: 700;
+
+    @include screen-size(mini, small, medium) {
+        font-size: 1.5rem;
+        padding: 1.9rem;
+        display: block;
+        text-align: right;
+    }
+}

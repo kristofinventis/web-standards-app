@@ -1,0 +1,50 @@
+/* STYLEGUIDE__MENU-BUTTON */
+.styleguide__menu-button {
+    display: none;
+    position: relative;
+    top: -4px;
+
+    background: get-color("blue");
+    color: get-color("white");
+    text-decoration: none;
+
+    width: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 0 1.9rem;
+    vertical-align: middle;
+
+    @include screen-size(mini, small, medium) {
+        display: block;
+        white-space: nowrap;
+    }
+
+    &:before {
+        content: '';
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+        margin-right: -0.25em; /* Adjusts for spacing */
+    }
+
+    span {
+        position: relative;
+        top: -2px;
+        display: inline-block;
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    .icon {
+        position: relative;
+        top: -2px;
+        font-size: 8px;
+        margin-right: 5px;
+    }
+}
+
+.styleguide__menu-button--alt {
+    display: inline-block;
+}

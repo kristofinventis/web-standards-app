@@ -1,0 +1,17 @@
+/* Variables */
+$form__message-text-color:                          get-color(red);
+$form__message-font-size:                           16px;
+
+/* Form Message */
+.form__message {
+    display: block;
+    margin-top: px-2-rem(10px);
+    margin-bottom: px-2-rem(10px);
+    color: $form__message-text-color;
+    font-size: $form__message-font-size;
+    font-weight: 700;
+}
+
+.form__message--icon:before {
+    padding-right: 8px;
+}

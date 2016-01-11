@@ -1,0 +1,30 @@
+/* STYLEGUIDE__MAIN */
+.styleguide__main {
+    box-sizing: border-box;
+    position: relative;
+    z-index: 0;
+
+    display: block;
+    padding: 20px;
+    margin-top: 85px;
+
+    padding-left: 3em;
+    padding-right: 3em;
+
+    @include screen-size(large) {
+        width: calc(100% - 250px);
+        margin-left: 250px;
+    }
+
+}
+
+.styleguide__main--alt {
+    position: relative;
+    margin: 65px 0 0 0;
+    padding: 0;
+    clear: both;
+    float: none;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}

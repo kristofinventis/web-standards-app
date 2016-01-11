@@ -1,0 +1,17 @@
+/* Filter-Result imports*/
+@import 'filter-result/*';
+
+
+/* Filter-Result */
+// Todo
+.filter-results {
+    position: relative;
+    left: 0;
+}
+
+// Todo
+.filter-results--active {
+    @include screen-size(mini, small, medium) {
+        left: 270px;
+    }
+}

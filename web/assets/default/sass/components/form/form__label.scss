@@ -1,0 +1,65 @@
+/* Variables */
+$label-text-color:                            $default-font-color;
+$label-font-size--large:                      16px;
+$label-font-style--large:                     none;
+$label-font-weight--large:                    normal;
+$label-line-height--large:                    1;
+$label-margin-bottom--large:                  10px;
+
+$label-font-size--medium:                     16px;
+$label-font-style--medium:                    none;
+$label-font-weight--medium:                   normal;
+$label-line-height--medium:                   1;
+$label-margin-bottom--medium:                 10px;
+
+$label-font-size--small:                      16px;
+$label-font-style--small:                     none;
+$label-font-weight--small:                    normal;
+$label-line-height--small:                    1;
+$label-margin-bottom--small:                  10px;
+
+/* Form Label */
+.form__label {
+    display: inline-block;
+    cursor: pointer;
+    color: $label-text-color;
+
+    @include screen-size(mini, small) {
+        display: block;
+        font-size: $label-font-size--small;
+        font-weight: $label-font-weight--small;
+        line-height: $label-line-height--small;
+        margin-bottom: $label-margin-bottom--small;
+    }
+
+    @include screen-size(medium) {
+        font-size: $label-font-size--medium;
+        font-weight: $label-font-weight--medium;
+        line-height: $label-line-height--medium;
+        margin-bottom: $label-margin-bottom--medium;
+    }
+
+    @include screen-size(large) {
+        font-size: $label-font-size--large;
+        font-weight: $label-font-weight--large;
+        line-height: $label-line-height--large;
+        margin-bottom: $label-margin-bottom--large;
+    }
+}
+
+.form__label--file-box {
+    color: get-color(secondary);
+    line-height: 1.5rem;
+}
+
+.form__label--checkbox {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+}
+
+.form__label--radiogroup,
+.form__label--checkboxgroup {
+    margin-top: 1rem;
+    font-weight: bold;
+}

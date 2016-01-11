@@ -1,0 +1,5 @@
+/* Grid Row */
+.grid__row {
+    @extend .clearfix;
+    width: 100%;
+}

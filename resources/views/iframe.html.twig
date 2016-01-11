@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="nl" class="styleguide">
+<head>
+    <meta charset="utf-8">
+
+    <meta name="robots" content="noindex">
+    <meta name="googlebot" content="noindex">
+
+    <title>Web Standards</title>
+
+    <!-- Remove the next line for non responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS Styles -->
+    <link href="assets/default/styles/main.css" rel="stylesheet" type="text/css" media="all">
+
+    <!-- Url's -->
+    <script type="text/javascript">
+        var Config = {
+            baseUrl: "",
+            siteUrl: ""
+        }
+    </script>
+
+    <!-- Modernizr -->
+    <script src="assets/default/scripts/Components/modernizr-custom.js"></script>
+</head>
+<body>
+
+{{ content|raw }}
+
+<script>
+    var vendorDirectory = '../../lib/vendor/',
+            requireModule = false; // e.g. '/assets/default/scripts/Modules/Home/module.js'
+
+    var require = {
+        baseUrl: "assets/lib/vendor",
+        paths: {
+            Application: "../../../assets/default/scripts",
+            jquery: [
+                '//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min',
+                vendorDirectory + 'jquery/jquery' // fallback
+            ],
+            magnificPopup: vendorDirectory + 'magnific-popup/dist/jquery.magnific-popup.min',
+            highlight: '../../../assets/default/scripts/Components/Highlight.pack',
+            placeholder: vendorDirectory + 'jquery-placeholder/jquery.placeholder',
+            html5validator: '../../../assets/default/scripts/jquery.html5validator',
+        },
+        urlArgs: "t=" +  (new Date()).getTime()
+    };
+
+    var lightbox_translations = {
+        tClose:         "Sluiten (Esc)", // Alt text on close button
+        tLoading:       "Laden...", // Text that is displayed during loading. Can contain %curr% and %total% keys
+        gallery: {
+            tPrev:      "Vorige (linkse pijltoets)", // Alt text on left arrow
+            tNext:      "Volgende (rechtse pijltoets)", // Alt text on right arrow
+            tCounter:   "%curr% / %total%" // Markup for "1 of 7" counter
+        }
+    };
+
+    var formvalidator_translations = {
+        required:           "Dit veld is verplicht in te vullen",
+        requiredCheckbox:   "Dit veld is verplicht in te vullen",
+        minlength:          "Dit veld moet minimaal %1$s karakters bevatten",
+        maxlength:          "Dit veld mag maximaal %1$s karakters bevatten",
+        email:              "Dit is geen geldig e-mailadres",
+        tel:                "Dit is geen geldig telefoonnummer (bv.: +3232987651)",
+        min:                "Het getal moet %1 of groter zijn",
+        max:                "Het getal moet %1 of kleiner zijn"
+    };
+
+</script>
+
+<!-- Our own Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
+<script data-main="Application/Main" src="assets/lib/vendor/requirejs/require.js"></script>
+
+</body>
+</html>

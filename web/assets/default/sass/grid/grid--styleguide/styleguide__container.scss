@@ -1,0 +1,24 @@
+/* Grid Container */
+@import '../../grid.scss';
+
+.styleguide__container {
+    box-sizing: border-box;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+
+    // max-width: getMaxContainerWidth('large') + (getSidePadding('large') * 2);
+    max-width: 980px;
+
+    @each $screen-size, $screen-size-config in $screen-sizes {
+        @include screen-size($screen-size) {
+            padding-left: getSidePadding($screen-size);
+            padding-right: getSidePadding($screen-size);
+        }
+    }
+}
+
+.styleguide__container--alt {
+    margin-left: 0;
+    margin-right: 0;
+}

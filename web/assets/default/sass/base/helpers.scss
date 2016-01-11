@@ -1,0 +1,215 @@
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+
+    &:before {
+        content: "";
+        display: block;
+        width: 0;
+        height: 150%;
+    }
+
+    .ie7 &{
+        text-indent: -9999px;
+    }
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/* MEDIUM & LARGE SCREEN - Hide element */
+@include screen-size(medium, large) {
+    .small-only {
+        display: none !important;
+        visibility: hidden;
+    }
+}
+
+@include screen-size(mini, small, large) {
+    .medium-only {
+        display: none !important;
+        visibility: hidden;
+    }
+}
+
+@include screen-size(mini, small, medium) {
+    .large-only {
+        display: none !important;
+        visibility: hidden;
+    }
+}
+
+/* SMALL SCREEN -  */
+@include screen-size(mini) {
+    .mini__hidden {
+        display: none !important;
+        visibility: hidden;
+    }
+}
+@include screen-size(small) {
+    .small__hidden {
+        display: none !important;
+        visibility: hidden;
+    }
+}
+@include screen-size(medium) {
+    .medium__hidden {
+        display: none !important;
+        visibility: hidden;
+    }
+}
+@include screen-size(large) {
+    .large__hidden {
+        display: none !important;
+        visibility: hidden;
+    }
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ * Allow the element to be focusable when navigated to via the keyboard: h5bp.com/p
+ */
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+
+    &.focusable {
+        &:active, &:focus {
+            clip: auto;
+            height: auto;
+            margin: 0;
+            overflow: visible;
+            position: static;
+            width: auto;
+        }
+    }
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.clearfix {
+    &:before,
+    &:after {
+        content: " "; /* 1 */
+        display: table; /* 2 */
+    }
+    &:after {
+        clear: both;
+    }
+
+    /*
+     * For IE 6/7 only
+     * Include this rule to trigger hasLayout and contain floats.
+     */
+    .ie7 & {
+        zoom: 1;
+    }
+
+    @include screen-size(medium, large) {
+        .left {
+            float: left;
+        }
+
+        .right {
+            float: right;
+        }
+    }
+}
+
+@mixin clearfix {
+    &:before,
+    &:after {
+        content: " "; /* 1 */
+        display: table; /* 2 */
+    }
+    &:after {
+        clear: both;
+    }
+
+    /*
+     * For IE 6/7 only
+     * Include this rule to trigger hasLayout and contain floats.
+     */
+    .ie7 & {
+        zoom: 1;
+    }
+
+    @include screen-size(medium, large) {
+        .left {
+            float: left;
+        }
+
+        .right {
+            float: right;
+        }
+    }
+}
+
+.clear {
+    clear: both;
+}
+
+/* SMALL SCREEN - Change order of elements */
+@include screen-size(mini, small) {
+    .small-ordering {
+        display: table;
+        width: 100%;
+
+        .small-first,
+        .small-second,
+        .small-third {
+            float: none !important;
+        }
+
+        .small-first {
+            display: table-header-group !important;
+        }
+
+        .second {
+            display: table-row-group !important;
+        }
+
+        .third {
+            display: table-footer-group !important;
+        }
+    }
+}
+
+.clear-list-style {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+        display: inline-block;
+        margin: 0;
+    }
+}

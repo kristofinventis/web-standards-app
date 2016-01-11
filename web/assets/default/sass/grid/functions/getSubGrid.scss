@@ -1,0 +1,9 @@
+@function getSubGrid($screen-size) {
+    $grid-config: getGridConfig($screen-size);
+    @if(map-has-key($grid-config, subgrids) == false) {
+        @warn "there is no subgrid on " + $screen-size + ' viewport.';
+        @return false;
+    } @else {
+        @return map-get($grid-config, subgrids);
+    }
+}

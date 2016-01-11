@@ -1,0 +1,9 @@
+.media-grid {
+    margin: 0 0 $default-block-margin 0;
+    padding: 0;
+    list-style: none;
+}
+
+.media-grid__item {
+    @extend .grid__gallery--media-grid !optional;
+}

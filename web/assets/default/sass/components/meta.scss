@@ -1,0 +1,25 @@
+/* VARIABLES */
+$meta__margin-top:                      -25px;
+$meta__margin-top-small:                -10px;
+$meta__margin-bottom:                    10px;
+$meta__margin-bottom-small:              10px;
+
+/* STYLE */
+.meta {
+    margin-top: $meta__margin-top;
+    margin-bottom: $meta__margin-bottom;
+    @include screen-size(mini, small) {
+        margin-top: $meta__margin-top-small;
+        margin-bottom: $meta__margin-bottom-small;
+    }
+}
+
+.meta__icon {
+    padding-right: 10px;
+}
+
+.meta__replies,
+.meta__author,
+.meta__category {
+    padding-left: 10px;
+}

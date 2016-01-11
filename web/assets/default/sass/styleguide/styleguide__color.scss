@@ -1,0 +1,45 @@
+/* STYLEGUIDE__COLOR */
+.styleguide__color {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 100%;
+    min-height: 150px;
+    margin: 0;
+    border: 1px solid get-color("gray");
+    border-bottom: 0;
+}
+
+.styleguide__color__description {
+    padding: 15px;
+    border: 1px solid get-color("gray");
+    margin-bottom: 20px;
+}
+
+.styleguide__color__item {
+    margin: 0;
+    display: block;
+    font-size: 16px;
+    line-height: 1;
+    color: black;
+    background: white;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.styleguide__color__item--class {
+    text-transform: none;
+}
+
+.styleguide__color__item--hex {
+    text-transform: uppercase;
+}
+
+@each $color, $hex in $colors {
+    .styleguide__background--#{$color},
+    .styleguide__color--#{$color} {
+        background: $hex !important;
+    }
+    .styleguide__text--#{"" + $color} {
+        color: $hex !important;
+    }
+}
