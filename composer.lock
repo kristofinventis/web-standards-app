@@ -1,10 +1,11 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "de63b6f84c10e127f6a5c68e5fd7c57a",
+    "hash": "4efb7d3f5ea6d77c70651ed69e31eee3",
+    "content-hash": "3ae5d83bd5546a5501b5f7858fbb4f16",
     "packages": [
         {
             "name": "erusev/parsedown",
@@ -47,11 +48,11 @@
         },
         {
             "name": "inventis/web-standards",
-            "version": "1.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/inventis/web-standards.git",
-                "reference": "b75abe87d1fcdd0c65df42ee7e75fe181974d484"
+                "reference": "c6ad733600836bdcdad176fb9af77c7903397bb6"
             },
             "require": {
                 "erusev/parsedown": "~1.6",
@@ -59,7 +60,12 @@
                 "twig/twig": "~1.11"
             },
             "type": "library",
-            "time": "2016-01-11 07:43:51"
+            "autoload": {
+                "psr-4": {
+                    "Inventis\\WebStandards\\": "src/"
+                }
+            },
+            "time": "2016-01-22 12:38:28"
         },
         {
             "name": "pimple/pimple",
