@@ -62,7 +62,7 @@ gulp.task('sass:watch', function () {
 gulp.task('browserSync', ['sass:front'], function() {
     browserSync.init({
         // proxy: '127.0.0.1:8080'
-        proxy: 'www.styleguide.ish'
+        proxy: 'www.wsa.ish'
     });
 
     gulp.watch('web/assets/default/sass/**/*.scss', ['sass:front']);
