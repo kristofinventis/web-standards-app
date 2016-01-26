@@ -19,17 +19,17 @@ Requirements
 Terminal commands
 ---
 
-    $ npm install
+    npm install
 
-    $ composer install
+    composer install
 
-    $ bower install
+    bower install
 
-    $ bundle install
+    bundle install
 
-    $ gulp build
+    gulp build
 
-    $ gulp build--styleguide
+    gulp build--styleguide
 
 ---
 

@@ -11,28 +11,35 @@
 
 ## Terminal commands
 ```sh
-$ npm install
+npm install
 ```
 
 ```sh
-$ composer install
+composer install
 ```
 
 ```sh
-$ bower install
+bower install
 ```
 
 ```sh
-$ bundle install
+bundle install
 ```
 
 ```sh
-$ gulp build
+gulp build
 ```
 
 ```sh
-$ gulp build--styleguide
+gulp build--styleguide
 ```
+
+---
+
+### Markdown reference
+[markdown]
+<br />
+
 
 
 [node.js]: <http://nodejs.org>
@@ -40,3 +47,4 @@ $ gulp build--styleguide
 [bower]: <http://bower.io/>
 [bundler]: <http://bundler.io/>
 [gulp]: <https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md>
+[markdown]: <http://daringfireball.net/projects/markdown/>

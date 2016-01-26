@@ -1,17 +1,32 @@
-/* Variables */
-$form__message-text-color:                          get-color(red);
-$form__message-font-size:                           16px;
-
 /* Form Message */
 .form__message {
     display: block;
-    margin-top: px-2-rem(10px);
-    margin-bottom: px-2-rem(10px);
-    color: $form__message-text-color;
-    font-size: $form__message-font-size;
+    background: get-color("red");
+
+    color: get-color("white");
+    padding: 5px;
+
+    margin-top: 0;
+
+    font-size: 13px;
+    line-height: 1;
     font-weight: 700;
+
+    .form__entry &{
+        display: none;
+    }
+
+    .form__entry--invalid &{
+        display: block;
+    }
 }
 
+
+.form__field--textarea + .form__message {
+    margin-top: -10px;
+}
+
+.form__message .icon,
 .form__message--icon:before {
-    padding-right: 8px;
+    padding-right: 5px;
 }

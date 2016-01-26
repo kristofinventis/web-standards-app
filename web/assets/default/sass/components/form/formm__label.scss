@@ -1,5 +1,5 @@
-/* FILTER__LABEL */
-.filter__label {
+/* form__LABEL */
+.form__label {
     display: inline-block;
     cursor: pointer;
 
@@ -14,8 +14,8 @@
     }
 }
 
-.filter__label--checkbox,
-.filter__label--radio {
+.form__label--checkbox,
+.form__label--radio {
     position: relative;
 
     display: inline-block;

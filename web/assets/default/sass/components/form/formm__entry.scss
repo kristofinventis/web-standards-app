@@ -1,12 +1,12 @@
-/* FILTER__ENTRY */
-.filter__entry {
+/* form__ENTRY */
+.form__entry {
     position: relative;
 }
 
-.filter__entry--disabled {
+.form__entry--disabled {
     &,
-    .filter__field,
-    .filter__label {
+    .form__field,
+    .form__label {
         cursor: default;
         color: get-color("gray");
         @include input-placeholder {
@@ -14,11 +14,16 @@
         }
     }
 
-    .filter__label--checkbox,
-    .filter__label--radio {
+    .form__label--checkbox,
+    .form__label--radio {
         &:before,
         &:after {
             background: get-color("gray");
         }
     }
+}
+
+.form__entry--invalid {
+    // see form__field.scss
+    // see form__message.scss
 }

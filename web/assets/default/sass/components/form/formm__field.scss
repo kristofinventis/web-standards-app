@@ -1,23 +1,25 @@
-/* FILTER__FIELD */
+/* form__FIELD */
 
 // Defaults & resets
-.filter__field {
+.form__field {
     font-size: 16px;
     line-height: normal;
-    margin: 0 0 .5em 0;
+    margin: 0;
     width: 100%;
     padding: 10px;
 }
 
 
-.filter__field--date,
-.filter__field--email,
-.filter__field--number,
-.filter__field--password,
-.filter__field--search,
-.filter__field--tel,
-.filter__field--text,
-.filter__field--time {
+.form__field--date,
+.form__field--email,
+.form__field--file,
+.form__field--number,
+.form__field--password,
+.form__field--search,
+.form__field--tel,
+.form__field--text,
+.form__field--textarea,
+.form__field--time {
     -webkit-appearance: none !important; // HARD reset to remove shadow in input for IOS
     border-radius: 0;
 
@@ -40,13 +42,26 @@
         border-color: get-color("gray-2");
         outline: none;
     }
+
+    .form__entry--invalid &{
+        border-color: get-color("red");
+        background-color: lighten(get-color("red"), 45%);
+
+        @include input-placeholder {
+            color: get-color("white");
+        }
+
+        &:focus {
+            background-color: lighten(get-color("red"), 47%);
+        }
+    }
 }
 
 
-input[type="search"][class*="filter__field"] {
+input[type="search"][class*="form__field"] {
     box-sizing: border-box;
 }
 
 
-/* Filter Imports */
-@import 'filter/*';
+/* form Imports */
+@import 'form/*';

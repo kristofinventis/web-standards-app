@@ -25,6 +25,7 @@ $app->match('/', function (Request $request) use ($app) {
         ->addGroup(__DIR__ . '/docs/home', Group::VISIBILITY_HIDDEN)
         ->addGroup(__DIR__ . '/docs/standards')
         ->addGroup(__DIR__ . '/docs/pages', Group::VISIBILITY_DEV)
+        ->addGroup(__DIR__ . '/docs/examples', Group::VISIBILITY_DEV)
         ->addGroup(__DIR__ . '/docs/partials', Group::VISIBILITY_DEV)
         ->render($request->query->get('p', 'home/home.md'));
 });

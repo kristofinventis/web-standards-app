@@ -1,0 +1,85 @@
+<form action="?" method="POST">
+    <div class="form__entry">
+        <label for="frm_receiver_id" class="form__label">Wie contacteren?:</label>
+        <select name="frm_receiver_id" id="frm_receiver_id" class="form__field form__select">
+            <option value="">Wie contacteren?</option>
+        </select>
+    </div>
+    <br>
+
+    <div class="form__entry">
+        <label for="frm_firstname" class="form__label">Uw voornaam:</label>
+        <input type="text" name="frm_firstname" id="frm_firstname" placeholder="firstname" required class="form__field form__field--text" />
+    </div>
+    <br>
+
+    <div class="form__entry">
+        <label for="frm_lastname" class="form__label">Uw voornaam:</label>
+        <input type="text" name="frm_lastname" id="frm_lastname" placeholder="lastname" required class="form__field form__field--text" />
+    </div>
+    <br>
+
+    <div class="form__entry ">
+        <label for="frm_phone" class="form__label">Uw telefoonnummer <span class="form__optional">(Optioneel)</span>:</label>
+        <input type="tel" name="frm_phone" id="frm_phone" placeholder="phone" required class="form__field form__field--tel" />
+    </div>
+    <br>
+
+    <div class="form__entry">
+        <label for="frm_email" class="form__label">Uw e-mailadres:</label>
+        <input type="email" name="frm_email" id="frm_email" placeholder="email" required class="form__field form__field--email" />
+    </div>
+    <br>
+
+    <div class="form__entry">
+        <label for="frm_message" class="form__label">Uw boodschap:</label>
+        <textarea cols="30" rows="5" name="frm_message" id="frm_message" required class="form__field form__field--textarea"></textarea>
+    </div>
+    <br>
+
+    <fieldset class="form__fieldset">
+        <legend class="form__legend">Checkboxen even afchecken</legend>
+
+        <div class="form__entry">
+            <input type="checkbox" name="checkboxgroup" id="fltr_checkbox-1" class="form__field form__field--checkbox">
+            <label class="form__label form__label--checkbox" for="fltr_checkbox-1">form checkbox</label>
+        </div>
+        <div class="form__entry">
+            <input type="checkbox" name="checkboxgroup" id="fltr_checkbox-2" class="form__field form__field--checkbox">
+            <label class="form__label form__label--checkbox" for="fltr_checkbox-2">form checkbox</label>
+        </div>
+        <div class="form__entry">
+            <input type="checkbox" name="checkboxgroup" id="fltr_checkbox-3" class="form__field form__field--checkbox">
+            <label class="form__label form__label--checkbox" for="fltr_checkbox-3">form checkbox</label>
+        </div>
+        <div class="form__entry">
+            <input type="checkbox" name="checkboxgroup" id="fltr_checkbox-4" class="form__field form__field--checkbox">
+            <label class="form__label form__label--checkbox" for="fltr_checkbox-4">form checkbox</label>
+        </div>
+    </fieldset>
+    <br>
+
+    <fieldset class="form__fieldset">
+        <legend class="form__legend">Radiobutton even selecteren</legend>
+
+        <div class="form__entry">
+            <input type="radio" name="radiogroup" id="fltr_radio-1" class="form__field form__field--radio">
+            <label class="form__label form__label--radio" for="fltr_radio-1">form radio</label>
+        </div>
+        <div class="form__entry">
+            <input type="radio" name="radiogroup" id="fltr_radio-2" class="form__field form__field--radio">
+            <label class="form__label form__label--radio" for="fltr_radio-2">form radio</label>
+        </div>
+        <div class="form__entry">
+            <input type="radio" name="radiogroup" id="fltr_radio-3" class="form__field form__field--radio">
+            <label class="form__label form__label--radio" for="fltr_radio-3">form radio</label>
+        </div>
+        <div class="form__entry">
+            <input type="radio" name="radiogroup" id="fltr_radio-4" class="form__field form__field--radio">
+            <label class="form__label form__label--radio" for="fltr_radio-4">form radio</label>
+        </div>
+    </fieldset>
+    <br>
+
+    <button type="submit" class="button button--loading form__submit" name="frm_frm_submit">Verzenden</button>
+</form>
