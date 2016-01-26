@@ -78,3 +78,10 @@
     border-bottom: 1px solid #5b616b;
     padding-bottom: .8rem;
 }
+
+h1 { @extend .styleguide__title-1; }
+h2 { @extend .styleguide__title-2; }
+h3 { @extend .styleguide__title-3; }
+h4 { @extend .styleguide__title-4; }
+h5 { @extend .styleguide__title-5; }
+h6 { @extend .styleguide__title-6; }

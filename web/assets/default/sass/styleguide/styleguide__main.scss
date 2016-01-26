@@ -5,11 +5,12 @@
     z-index: 0;
 
     display: block;
-    padding: 20px;
+    padding: 1em;
     margin-top: 85px;
 
-    padding-left: 3em;
-    padding-right: 3em;
+    @include screen-size(medium, large) {
+        padding: 3em;
+    }
 
     @include screen-size(large) {
         width: calc(100% - 250px);

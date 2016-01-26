@@ -1,94 +1,139 @@
-/* VARIABLES */
-$breadcrumb-background-color:               transparent;
-$breadcrumb-border-radius:                  0;
-$breadcrumb-padding:                        0 15px 10px 15px;
-
-$breadcrumb-font-color:                     get-color(primary);
-$breadcrumb-font-weight:                    400;
-$breadcrumb-text-transform:                 none; // none, Capitalize, UPPERCASE, lowercase
-$breadcrumb-margin-bottom:                  px-2-rem(13px);
-
-$breadcrumb-link-color:                     get-color(primary);
-$breadcrumb-link-color-hover:               get-color(primary);
-$breadcrumb-link-text-decoration:           underline; // none, underline, overline, underline overline, line-through
-$breadcrumb-link-text-decoration-hover:     none; // none, underline, overline, underline overline, line-through
-
-$breadcrumb-large-font-size:                14px;
-$breadcrumb-large-line-height:              1.5;
-$breadcrumb-medium-font-size:               14px;
-$breadcrumb-medium-line-height:             1.5;
-
-
-
 /* BREADCRUMBS */
 .breadcrumbs {
-    border-radius: $breadcrumb-border-radius;
     box-sizing: border-box;
 
     width: auto;
-    margin: 0 0 $breadcrumb-margin-bottom 0;
-    padding: $breadcrumb-padding;
-    background: $breadcrumb-background-color;
+    margin: 0;
 
-    border-bottom: 1px solid get-color(gray);
+    padding: 10px 0 20px 0;
 
-    @media screen and (max-width:700px) {
-        display: none;
+    @include screen-size(medium, large) {
+        padding: 10px 0 50px 0;
     }
 }
 
-.breadcrumbs__content {
+.breadcrumb-container {
+    box-sizing: border-box;
+    position: relative;
+    z-index: 33;
+    width: 100%;
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
     @include screen-size(large) {
-        font-size: $breadcrumb-large-font-size;
-        line-height: $breadcrumb-large-line-height;
+        padding-left: 35px;
+        padding-right: 35px;
+        margin-bottom: -82px;
     }
-    @include screen-size(medium) {
-        font-size: $breadcrumb-medium-font-size;
-        line-height: $breadcrumb-medium-line-height;
-    }
+}
 
-    width: auto;
+.breadcrumb-container--inverted {
+    margin-bottom: -82px;
+}
+
+.breadcrumbs__content {
+    font-size: 13px;
+    line-height: 1.25;
+    font-weight: 400;
+
     display: block;
-
     margin: 0;
     padding: 0;
-    // padding-top: $breadcrumb-margin-bottom + px-2-rem(5px);
 
     position: relative;
     list-style: none;
 
-    text-transform: $breadcrumb-text-transform;
-    font-weight: $breadcrumb-font-weight;
-    color: $breadcrumb-font-color;
 
-    li {
-        display: inline-block;
-        font-family: $font-primary;
-        color: $breadcrumb-link-color;
+    @include screen-size(medium, large) {
+        font-size: 16px;
     }
-
-    span {
-        padding: 0 px-2-rem(10);
-        font-size: 9px;
-        color: #cccccc;
-    }
+}
 
 
-    @include screen-size(mini, small) {
+.breadcrumb__item {
+    &:before {
         display: none;
     }
 
+    font-size: 17px;
+    line-height: 1.25;
+    display: inline-block;
+    font-family: $font-primary;
+    font-weight: 400;
+
+    & > a {
+        font-size: 16px;
+        line-height: 1.25;
+        font-weight: 700;
+        text-decoration: none;
+        font-weight: 700;
+        color: get-color("black");
+
+        &:hover, &:focus {
+            text-decoration: underline;
+        }
+
+        @include screen-size(mini, small) {
+            font-size: 13px;
+            vertical-align: bottom;
+            display: inline-block;
+        }
+    }
+
+    @include screen-size(mini, small) {
+        font-size: 13px;
+        &:not(.breadcrumb__item--filler) {
+            display: none;
+        }
+
+        &:first-child,
+        &:last-child,
+        &:nth-last-child(2) {
+            display: inline-block;
+            & > .breadcrumbs__icon {
+                display: inline-block;
+            }
+        }
+    }
 }
 
-.breadcrumb__link {
-    font-family: $font-primary;
-    font-weight: $breadcrumb-font-weight;
+.breadcrumb__current {
+    display: inline-block;
+}
 
-    color: $breadcrumb-link-color;
-    text-decoration: $breadcrumb-link-text-decoration;
+.breadcrumb__item--filler {
+    @include screen-size(medium, large) {
+        display: none;
+    }
+}
 
-    &:hover, &:focus {
-        color: $breadcrumb-link-color-hover;
-        text-decoration: $breadcrumb-link-text-decoration-hover;
+.breadcrumbs__icon {
+    position: relative;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+
+    color: get-color("black");
+    top: 0;
+
+    display: inline-block;
+    margin-right: 3px;
+    margin-left: 3px;
+
+    @include screen-size(medium, large) {
+        font-size: 18px;
+        top: 0px;
+        margin-left: 7px;
+        margin-right: 7px;
+    }
+}
+
+.breadcrumbs--inverted {
+    .breadcrumb__item,
+    .breadcrumb__item  > a,
+    .breadcrumbs__icon {
+        color: get-color("white");
     }
 }

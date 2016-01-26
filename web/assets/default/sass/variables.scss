@@ -2,9 +2,6 @@
    Variables
    ========================================================================== */
 
-/* Browser support */
-$legacy-support-for-ie:                 false; // Used by compass, normalize & susy
-
 /* Responsive true/false */
 $layout-responsive:                     true;
 
@@ -17,10 +14,13 @@ $default-block-padding:                 px-2-rem(30px);
 /* Colors */
 $colors: (
     "purple":                             #5c2d91,
+    "blue":                               #1a94ff, // checkbox/radio:checked
 
     "white":                              #ffffff,
 
     "gray":                               #eceef1,
+    "gray-2":                             #cdcdcd,
+
     "black":                              #1a1a1a,
     "red":                                #8d313d,
     "green":                              #0092a7

@@ -1,18 +1,47 @@
-# Styleguide h1
-## Styleguide h2
-### Styleguide h3
-#### Styleguide h4
-##### Styleguide h5
-###### Styleguide h6
+Installing Web-Standards-App
+===
 
-<div class="styleguide__row">
-    <span class="styleguide__title-1">Styleguide h1</span>
-    <span class="styleguide__title-2">Styleguide h2</span>
-    <span class="styleguide__title-3">Styleguide h3</span>
-    <span class="styleguide__title-4">Styleguide h4</span>
-    <span class="styleguide__title-5">Styleguide h5</span>
-    <span class="styleguide__title-6">Styleguide h6</span>
+Vooraf:
+- Mamp in orde brengen
+- Gulpfile browserSync proxy juist zetten
+<br />
 
-    <p class="styleguide__summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At iusto corporis eum vel earum dolor ratione esse enim, atque temporibus commodi odit deserunt quaerat quis beatae rem sapiente eveniet! Similique.</p>
-    <p class="styleguide__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At iusto corporis eum vel earum dolor ratione esse enim, atque temporibus commodi odit deserunt quaerat quis beatae rem sapiente eveniet! Similique.</p>
-</div>
+Requirements
+---
+
+* [node.js]
+* [composer]
+* [bower]
+* [bundler]
+* [gulp]
+<br />
+
+Terminal commands
+---
+
+    $ npm install
+
+    $ composer install
+
+    $ bower install
+
+    $ bundle install
+
+    $ gulp build
+
+    $ gulp build--styleguide
+
+---
+
+### Markdown reference
+[markdown]
+<br />
+
+
+
+[node.js]: <http://nodejs.org>
+[composer]: <https://getcomposer.org/>
+[bower]: <http://bower.io/>
+[bundler]: <http://bundler.io/>
+[gulp]: <https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md>
+[markdown]: <http://daringfireball.net/projects/markdown/>

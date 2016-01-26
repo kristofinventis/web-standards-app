@@ -1,0 +1,24 @@
+/* FILTER__ENTRY */
+.filter__entry {
+    position: relative;
+}
+
+.filter__entry--disabled {
+    &,
+    .filter__field,
+    .filter__label {
+        cursor: default;
+        color: get-color("gray");
+        @include input-placeholder {
+            color: get-color("gray");
+        }
+    }
+
+    .filter__label--checkbox,
+    .filter__label--radio {
+        &:before,
+        &:after {
+            background: get-color("gray");
+        }
+    }
+}

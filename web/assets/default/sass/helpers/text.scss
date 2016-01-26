@@ -27,6 +27,11 @@
     text-align: right;
 }
 
+.text--default {
+    @include default-typography((font-size, line-height));
+    color: $default-font-color;
+}
+
 @each $color, $hex in $colors {
     .text--#{"" + $color} {
         color: $hex;

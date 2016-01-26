@@ -1,0 +1,27 @@
+<div class="filter__entry">
+    <label for="frm_filter_field" class="filter__label">Regular filter entry:</label>
+    <input type="text" name="filter_field" id="fltr_filter_field" placeholder="Regular filter entry" required class="filter__field filter__field--text" />
+</div>
+
+<br>
+
+<div class="filter__entry filter__entry--disabled">
+    <label for="frm_filter_field" class="filter__label">Disabled filter entry:</label>
+    <input disabled type="text" name="filter_field" id="fltr_filter_field" placeholder="Disabled filter entry" required class="filter__field filter__field--text" />
+</div>
+
+<br>
+
+<div class="filter__entry filter__entry--disabled">
+    <label for="frm_filter_field" class="filter__label">Disabled filter entry with radio and checkbox:</label>
+
+    <div>
+        <input disabled type="radio" name="radio" id="fltr_radio" class="filter__field filter__field--radio">
+        <label class="filter__label filter__label--radio" for="fltr_radio">Filter radio</label>
+    </div>
+
+    <div>
+        <input disabled type="checkbox" name="checkbox" id="fltr_checkbox" class="filter__field filter__field--checkbox">
+        <label class="filter__label filter__label--checkbox" for="fltr_checkbox">Filter checkbox</label>
+    </div>
+</div>

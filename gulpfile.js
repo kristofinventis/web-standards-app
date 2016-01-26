@@ -3,14 +3,15 @@
 var gulp = require('gulp');
 var sass = require('gulp-ruby-sass');
 var rename = require('gulp-rename');
+var svgstore = require('gulp-svgstore');
 var browserSync = require('browser-sync').create();
 
 // BUILD THE GRID
 gulp.task('sass:grid--main', function () {
-    return sass( 'web/assets/default/sass/grid/grid--main.scss', {
+    return sass( 'web/assets/default/sass/grid--main.scss', {
             bundleExec: true,
             scss: true,
-            require: ['sass-globbing', 'susy'],
+            require: ['sass-globbing'],
             style: 'compressed'
     })
     .on('error', sass.logError)
@@ -20,7 +21,7 @@ gulp.task('sass:grid--main', function () {
 
 // REBUILD GRID TO SCSS FILE
 gulp.task('rebuild:grid--main', ['sass:grid--main'], function() {
-    gulp.src('web/assets/default/sass/components/grid/grid.css')
+    gulp.src('web/assets/default/sass/components/grid/grid--main.css')
     .pipe(rename('grid.scss'))
     .pipe(gulp.dest('web/assets/default/sass/components'));
 });
@@ -28,7 +29,7 @@ gulp.task('rebuild:grid--main', ['sass:grid--main'], function() {
 
 // WATCH THE GRID
 gulp.task('sass:watch-grid', function () {
-    gulp.watch('web/assets/default/sass/grid.scss', ['sass:grid']);
+    gulp.watch('web/assets/default/sass/grid--main.scss', ['sass:grid']);
 });
 
 
@@ -37,6 +38,13 @@ gulp.task('normalize', function() {
     gulp.src('web/assets/lib/vendor/normalize.css/normalize.css')
     .pipe(rename('normalize.scss'))
     .pipe(gulp.dest('web/assets/default/sass/base/normalize'));
+});
+
+// REBUILD MAGNIFIC POPUP TO SCSS FILE
+gulp.task('magnific-popup', function() {
+    gulp.src('web/assets/lib/vendor/magnific-popup/dist/magnific-popup.css')
+    .pipe(rename('magnific-popup.scss'))
+    .pipe(gulp.dest('web/assets/default/sass/base/magnific-popup'));
 });
 
 
@@ -62,23 +70,20 @@ gulp.task('sass:watch', function () {
 gulp.task('browserSync', ['sass:front'], function() {
     browserSync.init({
         // proxy: '127.0.0.1:8080'
-        proxy: 'www.wsa.ish'
+        proxy: 'www.web-standards-app.ish'
     });
 
     gulp.watch('web/assets/default/sass/**/*.scss', ['sass:front']);
-    gulp.watch('web/components/pages/*').on('change', browserSync.reload);
-    gulp.watch('web/components/partials/**/*').on('change', browserSync.reload);
-    gulp.watch('web/components/pageparts/*').on('change', browserSync.reload);
-    gulp.watch('web/index.php').on('change', browserSync.reload);
-    gulp.watch('web/page.php').on('change', browserSync.reload);
-    gulp.watch('web/pagepart.php').on('change', browserSync.reload);
-    gulp.watch('web/partial.php').on('change', browserSync.reload);
+    gulp.watch('web/docs/pages/*').on('change', browserSync.reload);
+    gulp.watch('web/docs/partials/**/*').on('change', browserSync.reload);
+    gulp.watch('web/docs/standards/*').on('change', browserSync.reload);
+    gulp.watch('web/home/*').on('change', browserSync.reload);
 });
 
 
 // COPY FILES
 var styleguidePath = 'web/assets/default/';
-var styleguideDest = './../bricks/web/app/public/assets/default/';
+var styleguideDest = './../bricks/src/app/public/assets/default/';
 
 gulp.task('copy', function() {
     // Styles
@@ -99,12 +104,22 @@ gulp.task('copy', function() {
 });
 
 
+// SVG STORE
+gulp.task('svgstore', function () {
+    return gulp
+        .src('web/assets/default/images/svg/*.svg')
+        .pipe(rename({prefix: 'svg-icon--'}))
+        .pipe(svgstore({ inlineSvg: true }))
+        .pipe(gulp.dest('web/assets/default/images/'));
+});
+
 // ALL TASKS
 // MAIN
-gulp.task('build', ['rebuild:grid--main', 'normalize', 'sass:front']);
+gulp.task('build', ['rebuild:grid--main', 'normalize', 'magnific-popup', 'sass:front']);
 gulp.task('grid', ['rebuild:grid--main']);
 gulp.task('front', ['sass:front', 'sass:watch']);
 gulp.task('browsersync', ['browserSync', 'sass:watch']);
+gulp.task('svg', ['svgstore']);
 
 
 
@@ -112,13 +127,12 @@ gulp.task('browsersync', ['browserSync', 'sass:watch']);
 
 /* STYLEGUIDE */
 
-
 // BUILD THE GRID
 gulp.task('sass:grid--styleguide', function () {
-    return sass( 'web/assets/default/sass/grid/grid--styleguide.scss', {
+    return sass( 'web/assets/default/sass/grid--styleguide.scss', {
             bundleExec: true,
             scss: true,
-            require: ['sass-globbing', 'susy'],
+            require: ['sass-globbing'],
             style: 'compressed'
     })
     .on('error', sass.logError)

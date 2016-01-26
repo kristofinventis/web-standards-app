@@ -4,24 +4,9 @@
 /* Filter */
 .filter {
     box-sizing: border-box;
-    max-width: 255px;
-
-    // TODO
-    p {
-        margin-bottom: 5px;
-    }
-
-    @include screen-size(mini, small, medium) {
-        position: absolute !important;
-        left: -300px;
-
-        width: auto;
-        padding: 0 10px 10px 0;
-    }
+    background: get-color("gray");
 }
 
 .filter--active {
-    @include screen-size(mini, small, medium) {
-        left: 0;
-    }
+
 }

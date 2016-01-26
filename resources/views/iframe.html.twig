@@ -12,6 +12,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- CSS Styles -->
+    <link href="assets/lib/vendor/pickadate/lib/compressed/themes/classic.css" rel="stylesheet" type="text/css" media="all">
+    <link href="assets/lib/vendor/pickadate/lib/compressed/themes/classic.date.css" rel="stylesheet" type="text/css" media="all">
+    <link href="assets/lib/vendor/pickadate/lib/compressed/themes/classic.time.css" rel="stylesheet" type="text/css" media="all">
     <link href="assets/default/styles/main.css" rel="stylesheet" type="text/css" media="all">
 
     <!-- Url's -->
@@ -45,6 +48,12 @@
             highlight: '../../../assets/default/scripts/Components/Highlight.pack',
             placeholder: vendorDirectory + 'jquery-placeholder/jquery.placeholder',
             html5validator: '../../../assets/default/scripts/jquery.html5validator',
+            picker: vendorDirectory + 'pickadate/lib/compressed/picker',
+            pickadate: vendorDirectory + 'pickadate/lib/compressed/picker.date',
+            pickatime: vendorDirectory + 'pickadate/lib/compressed/picker.time',
+            inputDate: '../../../assets/default/scripts/Components/InputDate',
+            inputTime: '../../../assets/default/scripts/Components/InputTime',
+            fastclick: vendorDirectory + 'fastclick/lib/fastclick',
         },
         urlArgs: "t=" +  (new Date()).getTime()
     };

@@ -19,6 +19,7 @@
     "gulp-ruby-sass": "^2.0.5",
     "gulp-sass": "^2.0.4",
     "gulp-sourcemaps": "^1.6.0",
+    "gulp-svgstore": "^5.0.5",
     "pixrem": "^2.0.0"
   },
   "name": "styleguide",

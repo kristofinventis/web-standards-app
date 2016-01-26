@@ -1,4 +1,5 @@
 /* Styleguide Code */
+pre,
 .styleguide__code {
     box-sizing: border-box;
     word-wrap: initial;
@@ -36,6 +37,7 @@
    }
 }
 
+code,
 .styleguide__code--simple {
     display: inline-block;
     border-radius: 6px;
@@ -43,4 +45,5 @@
     margin: 0;
     border: none;
     width: auto;
+    background: #f8f8f8;
 }
