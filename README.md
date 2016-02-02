@@ -41,7 +41,7 @@ Navigate to the project map with terminal
 Navigate to the 'web' folder
 Enter the following command
 
-    /usr/bin/php -S 127.0.0.1:8080
+    php -S 127.0.0.1:8080
 
 This starts a local server using the PHP already installed on your Mac
 
