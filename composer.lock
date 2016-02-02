@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "1839c5fb78f22a9c50329dbbad19b143",
-    "content-hash": "cfd602e26048f39d9454acf042ce6db7",
+    "hash": "23e4be764c10b84ac1b261b308cd4725",
+    "content-hash": "9a5e01fed7cb57d0c7ae94902701bfcd",
     "packages": [
         {
             "name": "erusev/parsedown",
@@ -48,11 +48,11 @@
         },
         {
             "name": "inventis/web-standards",
-            "version": "1.0.2",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/inventis/web-standards.git",
-                "reference": "9604b2a207c75edac922b3c39a0308dd7e0db65d"
+                "reference": "6a2e8a0bcdc16f56a522d502d233409feb0028c8"
             },
             "require": {
                 "erusev/parsedown": "~1.6",
@@ -65,7 +65,7 @@
                     "Inventis\\WebStandards\\": "src/"
                 }
             },
-            "time": "2016-02-01 21:37:20"
+            "time": "2016-02-02 12:55:44"
         },
         {
             "name": "pimple/pimple",
