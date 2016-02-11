@@ -33,6 +33,19 @@ Terminal commands
 
 ---
 
+### Run on local server with terminal and php
+Navigate to the project map with terminal
+Navigate to the 'web' folder
+Enter the following command
+
+    php -S 127.0.0.1:8080
+
+This starts a local server using the PHP already installed on your Mac
+
+Enter the address <code>http://127.0.0.1:8080</code> into your browser to view the site
+
+---
+
 ### Markdown reference
 [markdown]
 <br />
