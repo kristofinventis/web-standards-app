@@ -10,6 +10,6 @@
         "silex/silex" : "~1.1",
         "twig/twig" : "~1.11",
         "erusev/parsedown": "~1.6",
-        "inventis/web-standards": "1.0.3"
+        "inventis/web-standards": "1.1"
     }
 }
