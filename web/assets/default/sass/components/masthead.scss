@@ -1,40 +1,7 @@
 /* MASTHEAD */
-/* MASTHEAD VARIABLES */
-$masthead-background-color:                 get-color(white);
-$masthead-border-width:                     1px;
-$masthead-border-style:                     solid;
-$masthead-border-color:                     #e9e9e9;
-
-$masthead-margin-bottom-large:              10px;
-$masthead-margin-bottom-medium:             10px;
-$masthead-margin-bottom-small:              10px;
-
-$masthead-padding-bottom-large:             $default-block-padding;
-$masthead-padding-bottom-medium:            $default-block-padding;
-$masthead-padding-bottom-small:             $default-block-padding;
+.masthead {
+    @include clearfix;
+}
 
 /* All masthead components */
 @import 'masthead/*';
-
-.masthead {
-    @extend .clearfix;
-    background-color: $masthead-background-color;
-    border-bottom: $masthead-border-width $masthead-border-style $masthead-border-color;
-
-    @include screen-size(mini, small) {
-        margin-bottom: $masthead-margin-bottom-large;
-        padding-bottom: $masthead-padding-bottom-large;
-    }
-    @include screen-size(medium) {
-        margin-bottom: $masthead-margin-bottom-medium;
-        padding-bottom: $masthead-padding-bottom-medium;
-    }
-    @include screen-size(large) {
-        margin-bottom: $masthead-margin-bottom-small;
-        padding-bottom: $masthead-padding-bottom-small;
-    }
-
-    @include screen-size(medium, large) {
-        padding-top: px-2-rem(15);
-    }
-}
