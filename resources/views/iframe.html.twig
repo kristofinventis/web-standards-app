@@ -30,7 +30,7 @@
 </head>
 <body>
 
-{{ content|raw }}
+{{ include(template_from_string(content)) }}
 
 <script>
     var vendorDirectory = '../../lib/vendor/',
