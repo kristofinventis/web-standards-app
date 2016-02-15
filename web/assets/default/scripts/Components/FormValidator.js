@@ -8,17 +8,24 @@ define(
     function ($, Field, Rule) {
         "use strict";
 
-        var Validator = function (form, config, validationMessageOverrides) {
+        var Validator = function (form, config) {
             this.form = form;
-            this.config = config;
+            this.config = {
+                fields: [],
+                validationMessageOverrides: undefined,
+                autoDetect: true
+            };
             this.fields = [];
 
+            $.extend(this.config, config);
 
             var validationMessages = {
                 REQUIRED: 'Dit veld is verplicht in the vullen',
                 MAXLENGTH: 'Dit veld mag max {0} karakters bevatten'
             };
-            $.extend(validationMessages, validationMessageOverrides);
+            if (this.config.validationMessageOverrides) {
+                $.extend(validationMessages, this.config.validationMessageOverrides);
+            }
 
             this.rules = {
                 required: new Rule(
@@ -39,7 +46,12 @@ define(
                 )
             };
 
-            this.createFieldsBasedOnRules();
+            if (this.config.fields) {
+                this.createFieldsBasedOnRules();
+            }
+            if (this.config.autoDetect) {
+                this.autoDetectFields();
+            }
 
             this.form.setAttribute('novalidate', true);
             this.form.addEventListener('submit', this.validateForm.bind(this));
@@ -63,6 +75,18 @@ define(
                 if (field) {
                     this.fields.push(field);
                 }
+            }
+        };
+
+        Validator.prototype.autoDetectFields = function () {
+            $('[required]', this.form).each(function (index, field) {
+                var validationRule = Object.create(this.rules['required']);
+                this.fields.push(new Field(field, [validationRule]));
+            }.bind(this));
+
+            var i = 0, length = this.rules.length;
+            for (i=0; i<=length; i++) {
+                this.rules[i].detect(this.form);
             }
         };
 

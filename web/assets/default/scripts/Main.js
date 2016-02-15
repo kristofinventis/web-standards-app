@@ -16,9 +16,9 @@ require(
         new FormValidator(
             $('form')[0],
             {
-                fields: {
+                /*fields: {
                     firstname: ['required', ['max-length', {length: 100}]]
-                }
+                }*/
             }
         );
     }
