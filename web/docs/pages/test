@@ -5,3 +5,6 @@
 <div class="grid--v-large__col--3">
     bar
 </div>
+
+{{ load(file='partials/box.html.twig', showCode=false) }}
+{{ load(file='partials/breadcrumbs.html.twig', showCode=false) }}
