@@ -5,132 +5,112 @@
 .title-4,
 .title-5,
 .title-6 {
-    @include text-color($default-font-color);
-    @include default-typography(margin);
+    color: get-color("black");
+    margin: 0 0 .5em 0;
+
+    line-height: 1.25;
 
     display: block;
-    font-family: $titles-font-family;
-    text-transform: none;
+    font-family: $font-secondary;
+    text-transform: uppercase;
 
     a {
         text-decoration: none;
         color: inherit;
+        &:hover, &:focus {
+            color: get-color("orange");
+        }
     }
+}
+
+.title-display {
+    font-family: $font-secondary;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 68px;
+    margin-bottom: 0.67em;
 }
 
 .title-1 {
+    font-family: $font-secondary;
     font-weight: 700;
-    color: get-color("secondary");
-    text-transform: uppercase;
+    font-size: 50px;
+    line-height: 60px;
+    letter-spacing: 1.3px;
+    margin-bottom: 0.67em;
 
-    @include screen-size(small, mini) {
-        font-size: px-2-rem(26px);
-        line-height: px-2-rem(24px);
-    }
-    @include screen-size(medium) {
-        font-size: px-2-rem(26px);
-        line-height: px-2-rem(24px);
-    }
-    @include screen-size(large) {
-        font-size: px-2-rem(26px);
-        line-height: px-2-rem(24px);
-    }
+    color: get-color("blue");
 }
 
 .title-2 {
-    color: get-color("secondary");
-    font-weight: 400;
-    text-transform: none;
+    font-family: $font-secondary;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 24px;
+    letter-spacing: 2.07px;
 
-    @include screen-size(small, mini) {
-        font-size: px-2-rem(24px);
-        line-height: px-2-rem(30px);
-    }
-    @include screen-size(medium) {
-        font-size: px-2-rem(26px);
-        line-height: px-2-rem(32px);
-    }
-    @include screen-size(large) {
-        font-size: px-2-rem(28px);
-        line-height: px-2-rem(35px);
-    }
+    color: get-color("blue");
 }
 
 .title-3 {
-    color: get-color("secondary");
-    font-weight: 400;
-    text-transform: none;
+    font-family: $font-secondary;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 1px;
 
-    @include screen-size(small, mini) {
-        font-size: px-2-rem(20px);
-        line-height: px-2-rem(25px);
-    }
-    @include screen-size(medium) {
-        font-size: px-2-rem(22px);
-        line-height: px-2-rem(30px);
-    }
-    @include screen-size(large) {
-        font-size: px-2-rem(22px);
-        line-height: px-2-rem(35px);
+    color: get-color("blue");
+
+    &.title-3--alt {
+        color: get-color("orange");
+        a {
+            &:hover, &:focus {
+                color: get-color("blue");
+            }
+        }
     }
 }
 
 .title-4 {
-    color: get-color("secondary");
-    font-weight: 400;
-    text-transform: uppercase;
-    @include screen-size(small, mini) {
-        font-size: px-2-rem(18px);
-        line-height: px-2-rem(25px);
-    }
-    @include screen-size(medium) {
-        font-size: px-2-rem(18px);
-        line-height: px-2-rem(25px);
-    }
-    @include screen-size(large) {
-        font-size: px-2-rem(20px);
-        line-height: px-2-rem(25px);
-    }
+    font-family: $font-secondary;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 1.33px;
+    text-transform: none;
+
+    color: get-color("black");
 }
 
 .title-5 {
-    color: get-color("secondary");
-    font-weight: normal;
-    text-transform: none;
-
-    @include screen-size(small, mini) {
-        font-size: px-2-rem(16px);
-        line-height: px-2-rem(25px);
-    }
-    @include screen-size(medium) {
-        font-size: px-2-rem(18px);
-        line-height: px-2-rem(25px);
-    }
-    @include screen-size(large) {
-        font-size: px-2-rem(20px);
-        line-height: px-2-rem(25px);
-    }
+    font-family: $font-secondary;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
 }
 
 .title-6 {
+    font-family: $font-primary;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+}
 
-    color: get-color("secondary");
-    font-weight: 700;
-    text-transform: none;
-    margin-bottom: 0;
+.title--bordered {
+    &:after {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 2px;
+        margin-top: 8px;
+        background: get-color("orange");
+    }
+}
 
-    @include screen-size(small, mini) {
-        font-size: px-2-rem(16px);
-        line-height: px-2-rem(25px);
-    }
-    @include screen-size(medium) {
-        font-size: px-2-rem(18px);
-        line-height: px-2-rem(25px);
-    }
-    @include screen-size(large) {
-        font-size: px-2-rem(18px);
-        line-height: px-2-rem(25px);
-    }
+.title--style-bordered {
+    border-bottom: 1px solid #5b616b;
+    padding-bottom: .8rem;
 }
 
 h1 { @extend .title-1; }
