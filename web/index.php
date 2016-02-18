@@ -1,7 +1,6 @@
 <?php
 
 use Inventis\WebStandards\NodeRouter;
-use Inventis\WebStandards\Twig\Extension\FileInclude;
 use Inventis\WebStandards\WebStandardsServiceProvider;
 use Symfony\Component\HttpFoundation\Request;
 
