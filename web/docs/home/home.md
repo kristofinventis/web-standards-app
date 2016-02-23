@@ -27,6 +27,10 @@ Terminal commands
 
     bundle install
 
+First time gulp installation:
+
+    npm install --global gulp-cli
+
     gulp build
 
     gulp build--styleguide

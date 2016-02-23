@@ -26,6 +26,12 @@ bower install
 bundle install
 ```
 
+First time gulp installation:
+
+```sh
+npm install --global gulp-cli
+```
+
 ```sh
 gulp build
 ```
