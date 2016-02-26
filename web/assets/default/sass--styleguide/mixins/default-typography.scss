@@ -1,0 +1,14 @@
+@mixin default-typography($properties) {
+    @each $screen-size, $screen-size-config in $screen-sizes {
+        @include screen-size($screen-size) {
+            $typography-config: map-get($screen-size-config, typography);
+            @each $property in $properties {
+                @if map-has-key($typography-config, $property) {
+                    #{$property}: map-get($typography-config, $property);
+                } @else {
+                    @warn "No default typography property found for '#{$property}' for screen size '#{$screen-size}'";
+                }
+            }
+        }
+    }
+}

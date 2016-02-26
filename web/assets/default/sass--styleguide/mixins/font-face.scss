@@ -1,0 +1,12 @@
+// More info: http://css-tricks.com/snippets/css/using-font-face/
+@mixin font-face($filename, $svgId: $filename, $name: $filename) {
+    @font-face {
+        font-family: '#{$name}';
+        src: url('#{$filename}.eot'); /* IE9 Compat Modes */
+        src: url('#{$filename}.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('#{$filename}.woff2') format('woff2'), /* Super Modern Browsers */
+        url('#{$filename}.woff') format('woff'), /* Pretty Modern Browsers */
+        url('#{$filename}.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('#{$filename}##{$svgId}') format('svg'); /* Legacy iOS */
+    }
+}

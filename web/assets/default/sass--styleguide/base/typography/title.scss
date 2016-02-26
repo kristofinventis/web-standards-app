@@ -1,0 +1,121 @@
+/* Titles */
+.title-1,
+.title-2,
+.title-3,
+.title-4,
+.title-5,
+.title-6 {
+    color: get-color("black");
+    margin: 0 0 .5em 0;
+
+    line-height: 1.25;
+
+    display: block;
+    font-family: $font-secondary;
+    text-transform: uppercase;
+
+    a {
+        text-decoration: none;
+        color: inherit;
+        &:hover, &:focus {
+            color: get-color("orange");
+        }
+    }
+}
+
+.title-display {
+    font-family: $font-secondary;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 68px;
+    margin-bottom: 0.67em;
+}
+
+.title-1 {
+    font-family: $font-secondary;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    letter-spacing: 1.3px;
+    margin-bottom: 0.67em;
+
+    color: get-color("blue");
+}
+
+.title-2 {
+    font-family: $font-secondary;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 24px;
+    letter-spacing: 2.07px;
+
+    color: get-color("blue");
+}
+
+.title-3 {
+    font-family: $font-secondary;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 1px;
+
+    color: get-color("blue");
+
+    &.title-3--alt {
+        color: get-color("orange");
+        a {
+            &:hover, &:focus {
+                color: get-color("blue");
+            }
+        }
+    }
+}
+
+.title-4 {
+    font-family: $font-secondary;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 1.33px;
+    text-transform: none;
+
+    color: get-color("black");
+}
+
+.title-5 {
+    font-family: $font-secondary;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.title-6 {
+    font-family: $font-primary;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+}
+
+.title--bordered {
+    &:after {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 2px;
+        margin-top: 8px;
+        background: get-color("orange");
+    }
+}
+
+.title--style-bordered {
+    border-bottom: 1px solid #5b616b;
+    padding-bottom: .8rem;
+}
+
+h1 { @extend .title-1; }
+h2 { @extend .title-2; }
+h3 { @extend .title-3; }
+h4 { @extend .title-4; }
+h5 { @extend .title-5; }
+h6 { @extend .title-6; }

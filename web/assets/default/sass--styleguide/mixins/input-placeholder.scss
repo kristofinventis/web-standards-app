@@ -1,0 +1,23 @@
+@mixin input-placeholder {
+    &::-webkit-input-placeholder {
+        @content;
+    }
+
+    // for Firefox 19 and below
+    &:-moz-placeholder {
+        @content;
+    }
+
+    // for Firefox 20 and above
+    &::-moz-placeholder {
+        @content;
+    }
+
+    &:-ms-input-placeholder {
+        @content;
+    }
+
+    &.placeholder {
+        @content;
+    }
+}

@@ -1,0 +1,12 @@
+/*
+ *   This one needs some explanation:
+ *
+ *   It might look weird at first but it's actually pretty logical: to get a number without its unit, you need to divide
+ *   it by 1 of the same unit. To get 42 from 42em, you need to divide 42em by 1em.
+ *
+ *   So we divide our number by the same number multiplied by 0 to which we then add 1.
+ *   With our example, here is what happen: 42em / 42em * 0 + 1, so 42em / 0em + 1 so, 42em / 1em so 42.
+ */
+@function strip-unit($num) {
+    @return $num / ($num * 0 + 1);
+}

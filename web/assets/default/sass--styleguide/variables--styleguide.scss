@@ -39,11 +39,7 @@ $screen-sizes: (
             margin:                         0 0 px-2-rem(30px) 0
         ),
         grid: (
-            screen-min-width:               $styleguide-breakpoint-medium + 1,
-            total-columns:                  12,
-            column-width:                   70px, // When you set this container-max-width will be calculated for you
-            gutter-width:                   30px,
-            side-padding:                   30px
+            screen-min-width:               $styleguide-breakpoint-medium + 1
         )
     ),
     medium: (
@@ -54,10 +50,7 @@ $screen-sizes: (
         ),
         grid: (
             screen-min-width:               $styleguide-breakpoint-small + 1,
-            screen-max-width:               $styleguide-breakpoint-medium,
-            total-columns:                  12,
-            gutter-width:                   20px,
-            side-padding:                   20px
+            screen-max-width:               $styleguide-breakpoint-medium
         )
     ),
     small: (
@@ -68,13 +61,7 @@ $screen-sizes: (
         ),
         grid: (
             screen-min-width:               $styleguide-breakpoint-mini + 1,
-            screen-max-width:               $styleguide-breakpoint-small,
-            total-columns:                  3,
-            gutter-width:                   20px,
-            side-padding:                   10px,
-            subgrids: (
-                2: (1)
-            )
+            screen-max-width:               $styleguide-breakpoint-small
         )
     ),
     mini: (
@@ -84,10 +71,7 @@ $screen-sizes: (
             margin:                         0 0 px-2-rem(10px) 0
         ),
         grid: (
-            screen-max-width:               $styleguide-breakpoint-mini,
-            total-columns:                  2,
-            gutter-width:                   15px,
-            side-padding:                   15px
+            screen-max-width:               $styleguide-breakpoint-mini
         )
     )
 );
