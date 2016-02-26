@@ -1,8 +1,8 @@
-<div class="styleguide__title-1">Grid</div>
+<div class="title-1">Grid</div>
 <p class="styleguide__summary">This 12-column, responsive grid provides structure for website content.</p>
 
-<div class="styleguide__title-2 styleguide__text--blue">Grid</div>
-<div class="styleguide__title-4">Grid for large viewport</div>
+<div class="title-2 styleguide__text--blue">Grid</div>
+<div class="title-4">Grid for large viewport</div>
 <section class="styleguide__box styleguide__box--preview styleguide__grid-example">
     {{ load(file='partials/grid-col.html.twig', showCode=true) }}
 </section>
@@ -16,7 +16,7 @@
 </div> -->
 <br>
 
-<div class="styleguide__title-4">Grid with equal cols</div>
+<div class="title-4">Grid with equal cols</div>
 <section class="styleguide__box styleguide__box--preview styleguide__grid-example">
     <?=partial('grid/equal-cols');?>
     {{ load(file='partials/grid-equal-cols.html.twig', showCode=true) }}
@@ -31,7 +31,7 @@
 </div> -->
 <br>
 
-<div class="styleguide__title-4">Grid offsets</div>
+<div class="title-4">Grid offsets</div>
 <section class="styleguide__box styleguide__box--preview styleguide__grid-example">
     <?=partial('grid/offset');?>
     {{ load(file='partials/grid-offset.html.twig', showCode=true) }}
