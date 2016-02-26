@@ -38,13 +38,30 @@
 
 .styleguide__nav-list {
     display: block;
-    margin: 0;
+    margin: 0 0 3rem 0;
     padding: 0;
     list-style-type: none;
 }
 
-.styleguide__nav-list--sub {
+.styleguide__nav-list li a {
+    text-decoration: none;
+}
+
+.styleguide__nav-list li .styleguide__nav-list li a {
+    font-size: inherit;
+    line-height: inherit;
+    text-transform: inherit;
+
+    @extend .styleguide__nav-list__link;
+}
+
+.styleguide__nav-list li .styleguide__nav-list li .styleguide__nav-list {
     display: none;
+    padding-left: 1rem;
+}
+
+.styleguide__nav-list li .styleguide__nav-list li .styleguide__nav-list__link--current + .styleguide__nav-list {
+    display: block;
 }
 
 .styleguide__nav-list__item {
