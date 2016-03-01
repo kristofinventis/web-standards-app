@@ -2,49 +2,22 @@
 define(
     [
         'jquery',
-        'Application/Components/FormValidator/Field',
-        'Application/Components/FormValidator/Rule'
+        'Application/Components/FormValidator/Field'
     ],
     function ($, Field, Rule) {
         "use strict";
 
-        var Validator = function (form, config) {
+        var Validator = function (form, config, rules) {
             this.form = form;
             this.config = {
                 fields: [],
                 validationMessageOverrides: undefined,
                 autoDetect: true
             };
+            this.rules = rules;
             this.fields = [];
 
             $.extend(this.config, config);
-
-            var validationMessages = {
-                REQUIRED: 'Dit veld is verplicht in the vullen',
-                MAXLENGTH: 'Dit veld mag max {0} karakters bevatten'
-            };
-            if (this.config.validationMessageOverrides) {
-                $.extend(validationMessages, this.config.validationMessageOverrides);
-            }
-
-            this.rules = {
-                required: new Rule(
-                    'required',
-                    function (value) {
-                        return value.length > 0;
-                    },
-                    validationMessages.REQUIRED
-                ),
-                'max-length': new Rule(
-                    'max-length',
-                    function (value, options) {
-                        return value.length < options.length;
-                    },
-                    function (value, options) {
-                        return validationMessages.MAXLENGTH.replace('{0}', options.length);
-                    }
-                )
-            };
 
             if (this.config.fields) {
                 this.createFieldsBasedOnRules();
@@ -80,7 +53,7 @@ define(
 
         Validator.prototype.autoDetectFields = function () {
             $('[required]', this.form).each(function (index, field) {
-                var validationRule = Object.create(this.rules['required']);
+                var validationRule = Object.create(this.rules.find('required'));
                 this.fields.push(new Field(field, [validationRule]));
             }.bind(this));
 
@@ -108,8 +81,10 @@ define(
                     rule = rule[0];
                 }
 
-                if (typeof this.rules[rule] != 'undefined') {
-                    var validationRule = Object.create(this.rules[rule]);
+                rule = this.rules.find(rule);
+
+                if (typeof rule != 'undefined') {
+                    var validationRule = Object.create(rule);
                     validationRule.setOptions(options);
                     rules.push(validationRule);
                 }
