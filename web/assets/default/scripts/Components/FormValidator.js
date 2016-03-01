@@ -95,14 +95,18 @@ define(
 
         Validator.prototype.validateForm = function (e) {
             var i,
-                length = this.fields.length;
+                length = this.fields.length,
+                firstInvalidField;
 
             for (i=0; i<length; i++) {
-                if (!this.fields[i].validate()) {
-                    e.preventDefault();
-                    this.fields[i].getElement().focus();
-                    return;
+                if (!this.fields[i].validate() && !firstInvalidField) {
+                    firstInvalidField = this.fields[i].getElement();
                 }
+            }
+
+            if (firstInvalidField) {
+                e.preventDefault();
+                firstInvalidField.focus();
             }
         };
 
