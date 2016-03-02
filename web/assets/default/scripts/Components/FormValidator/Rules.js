@@ -32,6 +32,9 @@ define(
         Rules.add(new Rule(
             'required',
             function (element) {
+                if (element.type == 'checkbox') {
+                    return element.checked;
+                }
                 return element.value.length > 0;
             },
             validationMessages.REQUIRED,
