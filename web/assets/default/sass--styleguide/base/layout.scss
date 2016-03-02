@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Global layout: header & footer
+   Styleguide layout: HTML and Body
    ========================================================================== */
 
 html, body {
@@ -9,7 +9,8 @@ html, body {
 }
 
 html {
-    @include default-typography((font-size, line-height));
+    font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
+    font-size: 10px;
     color: $default-font-color;
 }
 
@@ -26,6 +27,8 @@ body {
 
     // Don't let long words break the layout on small area's
     word-wrap: break-word;
+
+    font-size: 1.7rem;
 }
 
 [data-component-config] {

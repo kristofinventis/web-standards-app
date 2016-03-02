@@ -88,6 +88,7 @@ var browserSync = require('browser-sync').create();
         });
 
         gulp.watch('web/assets/default/sass/**/*.scss', ['sass:front']);
+        gulp.watch('web/assets/default/sass--styleguide/**/*.scss', ['sass:styleguide']);
         gulp.watch('web/docs/pages/*').on('change', browserSync.reload);
         gulp.watch('web/docs/partials/**/*').on('change', browserSync.reload);
         gulp.watch('web/docs/standards/*').on('change', browserSync.reload);

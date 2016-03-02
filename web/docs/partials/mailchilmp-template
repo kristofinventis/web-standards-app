@@ -1,0 +1,1512 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+    <!-- NAME: 1 COLUMN -->
+    <!--[if gte mso 15]>
+        <xml>
+            <o:OfficeDocumentSettings>
+            <o:AllowPNG/>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+            </o:OfficeDocumentSettings>
+        </xml>
+        <![endif]-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>*|MC:SUBJECT|*</title>
+
+<style type="text/css">
+        p{
+            margin:10px 0;
+            padding:0;
+        }
+        table{
+            border-collapse:collapse;
+        }
+        h1,h2,h3,h4,h5,h6{
+            display:block;
+            margin:0;
+            padding:0;
+        }
+        img,a img{
+            border:0;
+            height:auto;
+            outline:none;
+            text-decoration:none;
+        }
+        body,#bodyTable,#bodyCell{
+            height:100%;
+            margin:0;
+            padding:0;
+            width:100%;
+        }
+        #outlook a{
+            padding:0;
+        }
+        img{
+            -ms-interpolation-mode:bicubic;
+        }
+        table{
+            mso-table-lspace:0pt;
+            mso-table-rspace:0pt;
+        }
+        .ReadMsgBody{
+            width:100%;
+        }
+        .ExternalClass{
+            width:100%;
+        }
+        p,a,li,td,blockquote{
+            mso-line-height-rule:exactly;
+        }
+        a[href^=tel],a[href^=sms]{
+            color:inherit;
+            cursor:default;
+            text-decoration:none;
+        }
+        p,a,li,td,body,table,blockquote{
+            -ms-text-size-adjust:100%;
+            -webkit-text-size-adjust:100%;
+        }
+        .ExternalClass,.ExternalClass p,.ExternalClass td,.ExternalClass div,.ExternalClass span,.ExternalClass font{
+            line-height:100%;
+        }
+        a[x-apple-data-detectors]{
+            color:inherit !important;
+            text-decoration:none !important;
+            font-size:inherit !important;
+            font-family:inherit !important;
+            font-weight:inherit !important;
+            line-height:inherit !important;
+        }
+        #bodyCell{
+            padding:10px;
+        }
+        .templateContainer{
+            max-width:600px !important;
+        }
+        a.mcnButton{
+            display:block;
+        }
+        .mcnImage{
+            vertical-align:bottom;
+        }
+        .mcnTextContent{
+            word-break:break-word;
+        }
+        .mcnTextContent img{
+            height:auto !important;
+        }
+        .mcnDividerBlock{
+            table-layout:fixed !important;
+        }
+    /*
+    @tab Page
+    @section Background Style
+    @tip Set the background color and top border for your email. You may want to choose colors that match your company's branding.
+    */
+        body,#bodyTable{
+            /*@editable*/background-color:#eeeeee;
+        }
+    /*
+    @tab Page
+    @section Background Style
+    @tip Set the background color and top border for your email. You may want to choose colors that match your company's branding.
+    */
+        #bodyCell{
+            /*@editable*/border-top:0;
+        }
+    /*
+    @tab Page
+    @section Email Border
+    @tip Set the border for your email.
+    */
+        .templateContainer{
+            /*@editable*/border:0;
+        }
+    /*
+    @tab Page
+    @section Heading 1
+    @tip Set the styling for all first-level headings in your emails. These should be the largest of your headings.
+    @style heading 1
+    */
+        h1{
+            /*@editable*/color:#a01f1f;
+            /*@editable*/font-family:Georgia, Times, 'Times New Roman', serif;
+            /*@editable*/font-size:22px;
+            /*@editable*/font-style:italic;
+            /*@editable*/font-weight:normal;
+            /*@editable*/line-height:150%;
+            /*@editable*/letter-spacing:normal;
+            /*@editable*/text-align:left;
+        }
+    /*
+    @tab Page
+    @section Heading 2
+    @tip Set the styling for all second-level headings in your emails.
+    @style heading 2
+    */
+        h2{
+            /*@editable*/color:#a01f1f;
+            /*@editable*/font-family:Georgia, Times, 'Times New Roman', serif;
+            /*@editable*/font-size:22px;
+            /*@editable*/font-style:italic;
+            /*@editable*/font-weight:normal;
+            /*@editable*/line-height:150%;
+            /*@editable*/letter-spacing:normal;
+            /*@editable*/text-align:left;
+        }
+    /*
+    @tab Page
+    @section Heading 3
+    @tip Set the styling for all third-level headings in your emails.
+    @style heading 3
+    */
+        h3{
+            /*@editable*/color:#a01f1f;
+            /*@editable*/font-family:Georgia, Times, 'Times New Roman', serif;
+            /*@editable*/font-size:22px;
+            /*@editable*/font-style:italic;
+            /*@editable*/font-weight:normal;
+            /*@editable*/line-height:150%;
+            /*@editable*/letter-spacing:normal;
+            /*@editable*/text-align:left;
+        }
+    /*
+    @tab Page
+    @section Heading 4
+    @tip Set the styling for all fourth-level headings in your emails. These should be the smallest of your headings.
+    @style heading 4
+    */
+        h4{
+            /*@editable*/color:#a01f1f;
+            /*@editable*/font-family:Georgia, Times, 'Times New Roman', serif;
+            /*@editable*/font-size:22px;
+            /*@editable*/font-style:italic;
+            /*@editable*/font-weight:normal;
+            /*@editable*/line-height:150%;
+            /*@editable*/letter-spacing:normal;
+            /*@editable*/text-align:left;
+        }
+    /*
+    @tab Preheader
+    @section Preheader Style
+    @tip Set the background color and borders for your email's preheader area.
+    */
+        #templatePreheader{
+            /*@editable*/background-color:#e8e8e8;
+            /*@editable*/border-top:0;
+            /*@editable*/border-bottom:0;
+            /*@editable*/padding-top:9px;
+            /*@editable*/padding-bottom:9px;
+        }
+    /*
+    @tab Preheader
+    @section Preheader Text
+    @tip Set the styling for your email's preheader text. Choose a size and color that is easy to read.
+    */
+        #templatePreheader .mcnTextContent,#templatePreheader .mcnTextContent p{
+            /*@editable*/color:#1c1c1c;
+            /*@editable*/font-family:Georgia, Times, 'Times New Roman', serif;
+            /*@editable*/font-size:13px;
+            /*@editable*/line-height:150%;
+            /*@editable*/text-align:left;
+        }
+    /*
+    @tab Preheader
+    @section Preheader Link
+    @tip Set the styling for your email's preheader links. Choose a color that helps them stand out from your text.
+    */
+        #templatePreheader .mcnTextContent a,#templatePreheader .mcnTextContent p a{
+            /*@editable*/color:#a01f1f;
+            /*@editable*/font-weight:normal;
+            /*@editable*/text-decoration:underline;
+        }
+    /*
+    @tab Header
+    @section Header Style
+    @tip Set the background color and borders for your email's header area.
+    */
+        #templateHeader{
+            /*@editable*/background-color:#1c1c1c;
+            /*@editable*/border-top:0;
+            /*@editable*/border-bottom:0;
+            /*@editable*/padding-top:15px;
+            /*@editable*/padding-bottom:0px;
+        }
+    /*
+    @tab Header
+    @section Header Text
+    @tip Set the styling for your email's header text. Choose a size and color that is easy to read.
+    */
+        #templateHeader .mcnTextContent,#templateHeader .mcnTextContent p{
+            /*@editable*/color:#cacaca;
+            /*@editable*/font-family:Georgia, Times, 'Times New Roman', serif;
+            /*@editable*/font-size:16px;
+            /*@editable*/line-height:150%;
+            /*@editable*/text-align:left;
+        }
+    /*
+    @tab Header
+    @section Header Link
+    @tip Set the styling for your email's header links. Choose a color that helps them stand out from your text.
+    */
+        #templateHeader .mcnTextContent a,#templateHeader .mcnTextContent p a{
+            /*@editable*/color:#a01f1f;
+            /*@editable*/font-weight:normal;
+            /*@editable*/text-decoration:underline;
+        }
+    /*
+    @tab Body
+    @section Body Style
+    @tip Set the background color and borders for your email's body area.
+    */
+        #templateBody{
+            /*@editable*/background-color:#FFFFFF;
+            /*@editable*/border-top:0;
+            /*@editable*/border-bottom:2px solid #EAEAEA;
+            /*@editable*/padding-top:29px;
+            /*@editable*/padding-bottom:0;
+        }
+    /*
+    @tab Body
+    @section Body Text
+    @tip Set the styling for your email's body text. Choose a size and color that is easy to read.
+    */
+        #templateBody .mcnTextContent,#templateBody .mcnTextContent p{
+            /*@editable*/color:#000000;
+            /*@editable*/font-family:Helvetica;
+            /*@editable*/font-size:16px;
+            /*@editable*/line-height:150%;
+            /*@editable*/text-align:left;
+        }
+    /*
+    @tab Body
+    @section Body Link
+    @tip Set the styling for your email's body links. Choose a color that helps them stand out from your text.
+    */
+        #templateBody .mcnTextContent a,#templateBody .mcnTextContent p a{
+            /*@editable*/color:#a01f1f;
+            /*@editable*/font-weight:normal;
+            /*@editable*/text-decoration:underline;
+        }
+    /*
+    @tab Footer
+    @section Footer Style
+    @tip Set the background color and borders for your email's footer area.
+    */
+        #templateFooter{
+            /*@editable*/background-color:#1c1c1c;
+            /*@editable*/border-top:0;
+            /*@editable*/border-bottom:0;
+            /*@editable*/padding-top:9px;
+            /*@editable*/padding-bottom:9px;
+        }
+    /*
+    @tab Footer
+    @section Footer Text
+    @tip Set the styling for your email's footer text. Choose a size and color that is easy to read.
+    */
+        #templateFooter .mcnTextContent,#templateFooter .mcnTextContent p{
+            /*@editable*/color:#cacaca;
+            /*@editable*/font-family:Georgia, Times, 'Times New Roman', serif;
+            /*@editable*/font-size:13px;
+            /*@editable*/line-height:150%;
+            /*@editable*/text-align:left;
+        }
+    /*
+    @tab Footer
+    @section Footer Link
+    @tip Set the styling for your email's footer links. Choose a color that helps them stand out from your text.
+    */
+        #templateFooter .mcnTextContent a,#templateFooter .mcnTextContent p a{
+            /*@editable*/color:#cacaca;
+            /*@editable*/font-weight:normal;
+            /*@editable*/text-decoration:underline;
+        }
+    @media only screen and (min-width:768px){
+        .templateContainer{
+            width:600px !important;
+        }
+
+}   @media only screen and (max-width: 480px){
+        body,table,td,p,a,li,blockquote{
+            -webkit-text-size-adjust:none !important;
+        }
+
+}   @media only screen and (max-width: 480px){
+        body{
+            width:100% !important;
+            min-width:100% !important;
+        }
+
+}   @media only screen and (max-width: 480px){
+        #bodyCell{
+            padding-top:10px !important;
+        }
+
+}   @media only screen and (max-width: 480px){
+        .mcnImage{
+            width:100% !important;
+        }
+
+}   @media only screen and (max-width: 480px){
+        .mcnCaptionTopContent,.mcnCaptionBottomContent,.mcnTextContentContainer,.mcnBoxedTextContentContainer,.mcnImageGroupContentContainer,.mcnCaptionLeftTextContentContainer,.mcnCaptionRightTextContentContainer,.mcnCaptionLeftImageContentContainer,.mcnCaptionRightImageContentContainer,.mcnImageCardLeftTextContentContainer,.mcnImageCardRightTextContentContainer{
+            max-width:100% !important;
+            width:100% !important;
+        }
+
+}   @media only screen and (max-width: 480px){
+        .mcnBoxedTextContentContainer{
+            min-width:100% !important;
+        }
+
+}   @media only screen and (max-width: 480px){
+        .mcnImageGroupContent{
+            padding:9px !important;
+        }
+
+}   @media only screen and (max-width: 480px){
+        .mcnCaptionLeftContentOuter .mcnTextContent,.mcnCaptionRightContentOuter .mcnTextContent{
+            padding-top:9px !important;
+        }
+
+}   @media only screen and (max-width: 480px){
+        .mcnImageCardTopImageContent,.mcnCaptionBlockInner .mcnCaptionTopContent:last-child .mcnTextContent{
+            padding-top:18px !important;
+        }
+
+}   @media only screen and (max-width: 480px){
+        .mcnImageCardBottomImageContent{
+            padding-bottom:9px !important;
+        }
+
+}   @media only screen and (max-width: 480px){
+        .mcnImageGroupBlockInner{
+            padding-top:0 !important;
+            padding-bottom:0 !important;
+        }
+
+}   @media only screen and (max-width: 480px){
+        .mcnImageGroupBlockOuter{
+            padding-top:9px !important;
+            padding-bottom:9px !important;
+        }
+
+}   @media only screen and (max-width: 480px){
+        .mcnTextContent,.mcnBoxedTextContentColumn{
+            padding-right:18px !important;
+            padding-left:18px !important;
+        }
+
+}   @media only screen and (max-width: 480px){
+        .mcnImageCardLeftImageContent,.mcnImageCardRightImageContent{
+            padding-right:18px !important;
+            padding-bottom:0 !important;
+            padding-left:18px !important;
+        }
+
+}   @media only screen and (max-width: 480px){
+        .mcpreview-image-uploader{
+            display:none !important;
+            width:100% !important;
+        }
+
+}   @media only screen and (max-width: 480px){
+    /*
+    @tab Mobile Styles
+    @section Heading 1
+    @tip Make the first-level headings larger in size for better readability on small screens.
+    */
+        h1{
+            /*@editable*/font-size:22px !important;
+            /*@editable*/line-height:125% !important;
+        }
+
+}   @media only screen and (max-width: 480px){
+    /*
+    @tab Mobile Styles
+    @section Heading 2
+    @tip Make the second-level headings larger in size for better readability on small screens.
+    */
+        h2{
+            /*@editable*/font-size:20px !important;
+            /*@editable*/line-height:125% !important;
+        }
+
+}   @media only screen and (max-width: 480px){
+    /*
+    @tab Mobile Styles
+    @section Heading 3
+    @tip Make the third-level headings larger in size for better readability on small screens.
+    */
+        h3{
+            /*@editable*/font-size:18px !important;
+            /*@editable*/line-height:125% !important;
+        }
+
+}   @media only screen and (max-width: 480px){
+    /*
+    @tab Mobile Styles
+    @section Heading 4
+    @tip Make the fourth-level headings larger in size for better readability on small screens.
+    */
+        h4{
+            /*@editable*/font-size:16px !important;
+            /*@editable*/line-height:150% !important;
+        }
+
+}   @media only screen and (max-width: 480px){
+    /*
+    @tab Mobile Styles
+    @section Boxed Text
+    @tip Make the boxed text larger in size for better readability on small screens. We recommend a font size of at least 16px.
+    */
+        .mcnBoxedTextContentContainer .mcnTextContent,.mcnBoxedTextContentContainer .mcnTextContent p{
+            /*@editable*/font-size:14px !important;
+            /*@editable*/line-height:150% !important;
+        }
+
+}   @media only screen and (max-width: 480px){
+    /*
+    @tab Mobile Styles
+    @section Preheader Visibility
+    @tip Set the visibility of the email's preheader on small screens. You can hide it to save space.
+    */
+        #templatePreheader{
+            /*@editable*/display:block !important;
+        }
+
+}   @media only screen and (max-width: 480px){
+    /*
+    @tab Mobile Styles
+    @section Preheader Text
+    @tip Make the preheader text larger in size for better readability on small screens.
+    */
+        #templatePreheader .mcnTextContent,#templatePreheader .mcnTextContent p{
+            /*@editable*/font-size:14px !important;
+            /*@editable*/line-height:150% !important;
+        }
+
+}   @media only screen and (max-width: 480px){
+    /*
+    @tab Mobile Styles
+    @section Header Text
+    @tip Make the header text larger in size for better readability on small screens.
+    */
+        #templateHeader .mcnTextContent,#templateHeader .mcnTextContent p{
+            /*@editable*/font-size:16px !important;
+            /*@editable*/line-height:150% !important;
+        }
+
+}   @media only screen and (max-width: 480px){
+    /*
+    @tab Mobile Styles
+    @section Body Text
+    @tip Make the body text larger in size for better readability on small screens. We recommend a font size of at least 16px.
+    */
+        #templateBody .mcnTextContent,#templateBody .mcnTextContent p{
+            /*@editable*/font-size:16px !important;
+            /*@editable*/line-height:150% !important;
+        }
+
+}   @media only screen and (max-width: 480px){
+    /*
+    @tab Mobile Styles
+    @section Footer Text
+    @tip Make the footer content text larger in size for better readability on small screens.
+    */
+        #templateFooter .mcnTextContent,#templateFooter .mcnTextContent p{
+            /*@editable*/font-size:14px !important;
+            /*@editable*/line-height:150% !important;
+        }
+
+}   @media only screen and (max-width: 480px){
+        table[class=mcnImageContentContainer] .show-for-small,table[class=mcnTextContentContainer] .show-for-small{
+            display:inline !important;
+            width:100% !important;
+            max-height:inherit !important;
+        }
+
+}   @media only screen and (max-width: 480px){
+        table .hide-for-small{
+            width:0% !important;
+            display:none !important;
+        }
+
+}</style></head>
+
+<body style="height: 100%;margin: 0;padding: 0;width: 100%;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;background-color: #eeeeee;">
+    <center>
+        <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;height: 100%;margin: 0;padding: 0;width: 100%;background-color: #eeeeee;">
+            <tr>
+                <td align="center" valign="top" id="bodyCell" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;height: 100%;margin: 0;padding: 10px;width: 100%;border-top: 0;">
+                    <!-- BEGIN TEMPLATE // -->
+                    <!--[if gte mso 9]>
+                        <table align="center" border="0" cellspacing="0" cellpadding="0" width="600" style="width:600px;">
+                        <tr>
+                        <td align="center" valign="top" width="600" style="width:600px;">
+                        <![endif]-->
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="templateContainer" style="width: 600px;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;border: 0;max-width: 600px !important;">
+                        <tr>
+                            <td valign="top" id="templatePreheader" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;background-color: #e8e8e8;border-top: 0;border-bottom: 0;padding-top: 9px;padding-bottom: 9px;">
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                    <tbody class="mcnTextBlockOuter">
+                                        <tr>
+                                            <td valign="top" class="mcnTextBlockInner" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                <table align="left" border="0" cellpadding="0" cellspacing="0" width="306" class="mcnTextContentContainer" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td valign="middle" class="mcnTextContent" style="padding-top: 9px;padding-left: 18px;padding-bottom: 9px;padding-right: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #1c1c1c;font-family: Georgia, Times, 'Times New Roman', serif;font-size: 13px;line-height: 150%;text-align: left;">
+                                                                <!--[if !mso]><!-->
+                                                                <!-- mobile only -->
+                                                                <center style="width: 100%;  display: inline-block; text-align: center;">
+                                                                <!-- mobile only -->
+                                                                <!--<![endif]-->
+                                                                <em><a href="*|ARCHIVE|*" target="_blank" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #a01f1f;font-weight: normal;text-decoration: underline;">Bekijk de nieuwsbrief online</a></em>
+                                                                <!--[if !mso]><!-->
+                                                                <!-- mobile only -->
+                                                                </center>
+                                                                <!-- mobile only -->
+                                                                <!--<![endif]-->
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <table align="right" border="0" cellpadding="0" cellspacing="0" width="257" class="mcnTextContentContainer" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td valign="middle" class="mcnTextContent" style="padding-top: 9px;padding-right: 18px;padding-bottom: 9px;padding-left: 18px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #1c1c1c;font-family: Georgia, Times, 'Times New Roman', serif;font-size: 13px;line-height: 150%;text-align: left;">
+                                                                <!--[if !mso]><!-->
+                                                                <!-- mobile only -->
+                                                                <center style="width: 100%;  display: inline-block; text-align: center;">
+                                                                <!-- mobile only -->
+                                                                <!--<![endif]-->
+                                                                <em>Volg ons ook op: </em>
+                                                                <a href="*|FACEBOOK:PROFILEURL|*" target="_blank" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #a01f1f;font-weight: normal;text-decoration: underline;"><img src="https://gallery.mailchimp.com/725775a670588f4a5d5235fce/images/d6074b10-8a03-4a13-9209-440095f56477.png" style="display: inline-block;vertical-align: middle;border: 0;height: auto !important;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" height="24" width="24" class=""></a>
+                                                                <a href="*|TWITTER:PROFILEURL|*" target="_blank" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #a01f1f;font-weight: normal;text-decoration: underline;"><img src="https://gallery.mailchimp.com/725775a670588f4a5d5235fce/images/8b8f14d4-cd44-43db-979b-9e5028fd1fda.png" style="display: inline-block;vertical-align: middle;border: 0;height: auto !important;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" height="24" width="24" class=""></a>
+                                                                <a href="*|SHARE:INSTAGRAM|*" target="_blank" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #a01f1f;font-weight: normal;text-decoration: underline;"><img src="https://gallery.mailchimp.com/725775a670588f4a5d5235fce/images/4962d7e4-19b1-4e55-ae6d-b1e1aaa87f71.png" style="display: inline-block;vertical-align: middle;border: 0;height: auto !important;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" height="24" width="24" class=""></a>
+                                                                <a href="*|SHARE:YOUTUBE|*" target="_blank" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #a01f1f;font-weight: normal;text-decoration: underline;"><img src="https://gallery.mailchimp.com/725775a670588f4a5d5235fce/images/1f32ccad-ac23-4e66-83f1-918ceb8c622e.png" style="display: inline-block;vertical-align: middle;border: 0;height: auto !important;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" height="24" width="24" class=""></a>
+                                                                <!--[if !mso]><!-->
+                                                                <!-- mobile only -->
+                                                                </center>
+                                                                <!-- mobile only -->
+                                                                <!--<![endif]-->
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top" id="templateHeader" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;background-color: #1c1c1c;border-top: 0;border-bottom: 0;padding-top: 15px;padding-bottom: 0px;">
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                    <tbody class="mcnTextBlockOuter">
+                                        <tr>
+                                            <td valign="top" class="mcnTextBlockInner" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                <table align="left" border="0" cellpadding="0" cellspacing="0" width="282" class="mcnTextContentContainer" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td valign="bottom" class="mcnTextContent" style="padding-top: 30px;padding-left: 18px;padding-bottom: 9px;padding-right: 0;vertical-align: bottom;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #cacaca;font-family: Georgia, Times, 'Times New Roman', serif;font-size: 16px;line-height: 150%;text-align: left;">
+                                                                <!--[if !mso]><!-->
+                                                                <!-- mobile only -->
+                                                                <center style="width: 100%;  display: inline-block; text-align: center;">
+                                                                <!-- mobile only -->
+                                                                <!--<![endif]-->
+                                                                <div mc:edit="Onderwerp">
+                                                                    *|MC:SUBJECT|*
+                                                                </div>
+                                                                <!--[if !mso]><!-->
+                                                                <!-- mobile only -->
+                                                                </center>
+                                                                <!-- mobile only -->
+                                                                <!--<![endif]-->
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <table align="right" border="0" cellpadding="0" cellspacing="0" width="282" class="mcnTextContentContainer" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                    <tbody>
+                                                        <tr>
+                                                            <!--[if !mso]><!-->
+                                                            <!-- mobile only -->
+                                                            <td class="show-for-small" style="width: 0;max-height: 0;overflow: hidden;float: left;display: none;border-collapse: collapse !important;vertical-align: top;text-align: center;font-weight: normal;margin: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" align="center" valign="top">
+                                                                <center style="width: 100%;  display: inline-block; text-align: center;">
+                                                                    <img src="https://gallery.mailchimp.com/725775a670588f4a5d5235fce/images/54e64b2f-7052-4582-bf32-a3bc0804eb6a.png" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;width: 69px;max-width: 69px;clear: both;display: inline;margin: 0 auto;border: none;height: auto;" align="center">
+                                                                </center>
+                                                            </td>
+                                                            <!-- mobile only -->
+                                                            <!--<![endif]-->
+
+
+                                                            <td valign="top" class="mcnTextContent hide-for-small" style="padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 18px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #cacaca;font-family: Georgia, Times, 'Times New Roman', serif;font-size: 16px;line-height: 150%;text-align: left;">
+                                                                <img align="right" height="90" src="https://gallery.mailchimp.com/725775a670588f4a5d5235fce/images/38544ea5-525a-4d15-89de-43f2654f0d88.png" style="width: 170px;height: 90px;margin: 0px;border: 0;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" width="170">
+                                                            </td>
+
+
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnImageBlock" style="min-width: 100%;border-bottom: 1px solid #ffffff;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                    <tbody class="mcnImageBlockOuter">
+                                        <tr>
+                                            <td valign="top" style="padding: 0px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" class="mcnImageBlockInner">
+                                                <table align="left" width="100%" border="0" cellpadding="0" cellspacing="0" class="mcnImageContentContainer" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="mcnImageContent hide-for-small" valign="top" style="padding-right: 0px;padding-left: 0px;padding-top: 0;padding-bottom: 0;text-align: center;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                <img align="center" alt="" src="https://gallery.mailchimp.com/725775a670588f4a5d5235fce/images/65707ca0-c8c5-40fc-95d5-f06cbed90955.png" width="600" style="max-width: 600px;padding-bottom: 0;display: inline !important;vertical-align: bottom;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" class="mcnImage">
+                                                            </td>
+
+                                                            <!--[if !mso]><!-->
+                                                            <!-- mobile only -->
+                                                            <td class="show-for-small" style="width: 0;max-height: 0;overflow: hidden;float: left;display: none;border-collapse: collapse !important;vertical-align: top;text-align: center;font-weight: normal;margin: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" align="center" valign="top">
+                                                                <center style="width: 100%;  display: inline-block;">
+                                                                    <img src="https://gallery.mailchimp.com/725775a670588f4a5d5235fce/images/4b1c1c39-ced6-4796-be25-1539310cb8d0.png" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;width: 100%;max-width: 100%;float: left;clear: both;display: block;margin: 0 auto;border: none;height: auto;" align="left">
+                                                                </center>
+                                                            </td>
+                                                            <!-- mobile only -->
+                                                            <!--<![endif]-->
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnImageBlock" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                    <tbody class="mcnImageBlockOuter">
+                                        <tr>
+                                            <td valign="top" style="padding: 0px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" class="mcnImageBlockInner">
+                                                <table align="left" width="100%" border="0" cellpadding="0" cellspacing="0" class="mcnImageContentContainer" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="mcnImageContent" valign="top" style="padding-right: 0px;padding-left: 0px;padding-top: 0;padding-bottom: 0;text-align: center;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                <img mc:edit="Grote afbeelding" align="center" alt="" src="https://gallery.mailchimp.com/725775a670588f4a5d5235fce/images/5d127d7b-acf1-4729-b387-823aeb058de3.png" width="600" style="max-width: 600px;padding-bottom: 0;display: inline !important;vertical-align: bottom;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" class="mcnImage">
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top" id="templateBody" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;background-color: #FFFFFF;border-top: 0;border-bottom: 2px solid #EAEAEA;padding-top: 29px;padding-bottom: 0;">
+
+                                <div mc:repeatable="Text block" mc:variant="White background">
+                                <!-- TEXT BLOCK ################################################## -->
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                    <tbody class="mcnTextBlockOuter">
+                                        <tr>
+                                            <td valign="top" class="mcnTextBlockInner" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" class="mcnTextContentContainer">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td valign="top" class="mcnTextContent" style="padding-top: 9px;padding-right: 18px;padding-bottom: 18px;padding-left: 18px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #000000;font-family: Helvetica;font-size: 16px;line-height: 150%;text-align: left;">
+                                                                <div mc:edit="Tekstblok">
+                                                                <h1 style="display: block;margin: 0;padding: 0;color: #a01f1f;font-family: Georgia, Times, 'Times New Roman', serif;font-size: 22px;font-style: italic;font-weight: normal;line-height: 150%;letter-spacing: normal;text-align: left;"><em>Kleine okapi met belangrijke genen geboren</em></h1>
+                                                                <p style="margin: 10px 0;padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #000000;font-family: Helvetica;font-size: 16px;line-height: 150%;text-align: left;">Okapi Yenthe beviel na een dracht van veertien maanden op 15 november van een flink kleintje. Het meisje woog bij de geboorte 24 kilo en heeft een schofthoogte van 85 centimeter, een stevige meid. De geboorte is fantastisch nieuws voor de soort én voor ZOO Antwerpen. Deze baby is een afstammeling van ons koningskoppel, een belangrijke genetische combinatie.</p>
+                                                                </div>
+
+                                                                <!-- BUTTON BLOCK ################################################## -->
+                                                                <table mc:hideable border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnButtonBlock" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                    <tbody class="mcnButtonBlockOuter">
+                                                                        <tr>
+                                                                            <td style="padding-top: 0;padding-right: 18px;padding-bottom: 18px;padding-left: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" valign="top" align="left" class="mcnButtonBlockInner">
+                                                                                <table border="0" cellpadding="0" cellspacing="0" class="mcnButtonContentContainer" style="border-collapse: separate !important;border-radius: 0px;background-color: #A01F1F;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td align="center" valign="middle" class="mcnButtonContent" style="font-family: Arial;font-size: 16px;padding: 15px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                                <a mc:edit="button" class="mcnButton " title="Bekijk de foto's" href="http://google.be" target="_blank" style="font-weight: bold;letter-spacing: normal;line-height: 100%;text-align: center;text-decoration: none;color: #FFFFFF;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;display: block;">Bekijk de foto's</a>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                                <!-- END BUTTON BLOCK ################################################## -->
+                                                                <!-- FACEBOOK LIKE BLOCK ################################################## -->
+                                                                <table mc:hideable border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                    <tbody class="mcnTextBlockOuter">
+                                                                        <tr>
+                                                                            <td valign="top" class="mcnTextBlockInner" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" class="mcnTextContentContainer">
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td valign="top" class="mcnTextContent" style="padding-top: 9px;padding-right: 18px;padding-bottom: 9px;padding-left: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #000000;font-family: Helvetica;font-size: 16px;line-height: 150%;text-align: left;">
+                                                                                                *|FACEBOOK:LIKE|*
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <!-- END FACEBOOK LIKE BLOCK ################################################## -->
+                                <!-- END TEXT BLOCK ################################################## -->
+                                </div>
+
+
+                                <!-- TEXT BLOCK COLORED BG ################################################## -->
+                                <div mc:repeatable="Text block" mc:variant="Colored background">
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width: 100%;background-color: #F7F8F0;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                    <tbody class="mcnTextBlockOuter">
+                                        <tr>
+                                            <td valign="top" class="mcnTextBlockInner" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" class="mcnTextContentContainer">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td valign="top" class="mcnTextContent" style="padding-top: 9px;padding-right: 18px;padding-bottom: 9px;padding-left: 18px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #000000;font-family: Helvetica;font-size: 16px;line-height: 150%;text-align: left;">
+                                                                <div mc:edit="Tekstblok">
+                                                                <h1 style="display: block;margin: 0;padding: 0;color: #a01f1f;font-family: Georgia, Times, 'Times New Roman', serif;font-size: 22px;font-style: italic;font-weight: normal;line-height: 150%;letter-spacing: normal;text-align: left;"><em>Kleine okapi met belangrijke genen geboren</em></h1>
+                                                                <p style="margin: 10px 0;padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #000000;font-family: Helvetica;font-size: 16px;line-height: 150%;text-align: left;">Okapi Yenthe beviel na een dracht van veertien maanden op 15 november van een flink kleintje. Het meisje woog bij de geboorte 24 kilo en heeft een schofthoogte van 85 centimeter, een stevige meid. De geboorte is fantastisch nieuws voor de soort én voor ZOO Antwerpen. Deze baby is een afstammeling van ons koningskoppel, een belangrijke genetische combinatie.</p>
+                                                                </div>
+                                                                <table mc:hideable border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnButtonBlock" style="min-width: 100%;background-color: #F7F8F0;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                    <tbody class="mcnButtonBlockOuter">
+                                                                        <tr>
+                                                                            <td style="padding-top: 0;padding-right: 18px;padding-bottom: 18px;padding-left: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" valign="top" align="left" class="mcnButtonBlockInner">
+                                                                                <table border="0" cellpadding="0" cellspacing="0" class="mcnButtonContentContainer" style="border-collapse: separate !important;border-radius: 0px;background-color: #AA7E4F;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td align="center" valign="middle" class="mcnButtonContent" style="font-family: Arial;font-size: 16px;padding: 15px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                                <a mc:edit="button" class="mcnButton " title="Bekijk de foto's" href="http://google.be" target="_blank" style="font-weight: bold;letter-spacing: normal;line-height: 100%;text-align: center;text-decoration: none;color: #FFFFFF;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;display: block;">Bekijk de foto's</a>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                                <table mc:hideable border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width: 100%;background-color: #F7F8F0;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                    <tbody class="mcnTextBlockOuter">
+                                                                        <tr>
+                                                                            <td valign="top" class="mcnTextBlockInner" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" class="mcnTextContentContainer">
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td valign="top" class="mcnTextContent" style="padding-top: 9px;padding-right: 18px;padding-bottom: 9px;padding-left: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #000000;font-family: Helvetica;font-size: 16px;line-height: 150%;text-align: left;">
+                                                                                                *|FACEBOOK:LIKE|*
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <!-- END TEXT BLOCK COLORED BG ################################################## -->
+                                </div>
+
+                                <!-- CONTENT BLOCK IMG LEFT ################################################## -->
+                                <div mc:repeatable="Image block" mc:variant="Left image with text">
+
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnImageCardBlock" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                    <tbody class="mcnImageCardBlockOuter">
+                                        <tr>
+                                            <td class="mcnImageCardBlockInner" valign="top" style="padding-top: 27px;padding-right: 18px;padding-bottom: 9px;padding-left: 18px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                <table border="0" cellpadding="0" cellspacing="0" class="mcnImageCardRightContentOuter" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td align="center" valign="top" class="mcnImageCardRightContentInner" style="padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                <table align="left" border="0" cellpadding="0" cellspacing="0" class="mcnImageCardRightImageContentContainer" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td class="mcnImageCardRightImageContentE2E " align="center" valign="top" style="padding-top: 8px;padding-right: 0;padding-bottom: 0px;padding-left: 0px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                <div mc:edit><img alt="" src="https://gallery.mailchimp.com/725775a670588f4a5d5235fce/images/46552a0d-14a1-469b-8d75-7617dba1b0b3.png" width="194" style="max-width: 570px;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;vertical-align: bottom;" class="mcnImage"></div>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                                <table class="mcnImageCardRightTextContentContainer" align="right" border="0" cellpadding="0" cellspacing="0" width="352" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td valign="top" class="mcnTextContent" style="padding-right: 18px;padding-top: 0;padding-bottom: 18px;font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;font-size: 16px;font-style: normal;font-weight: normal;line-height: 150%;text-align: left;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #000000;">
+                                                                                <div mc:edit="Tekst">
+                                                                                <h1 class="null" style="display: block;margin: 0;padding: 0;color: #a01f1f;font-family: Georgia, Times, 'Times New Roman', serif;font-size: 22px;font-style: italic;font-weight: normal;line-height: 150%;letter-spacing: normal;text-align: left;"><em>Twee zwartvoetbaby's kropen uit het ei</em></h1>
+                                                                                <p style="font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;font-size: 16px;font-style: normal;font-weight: normal;line-height: 150%;text-align: left;margin: 10px 0;padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #000000;">In de nestboxen bij de rotonde is het druk, druk, druk. Er zitten verschillende koppeltjes van de zwartvoetpinguïns met één of twee eieren. Twee koppels hebben al een piepend kleintje. Dagelijks checken en wegen onze pinguïnverzorgers de borelingen.</p>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td valign="top" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                <!-- BUTTON BLOCK ################################################## -->
+                                                                                <table mc:hideable border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnButtonBlock" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                    <tbody class="mcnButtonBlockOuter">
+                                                                                        <tr>
+                                                                                            <td style="padding-top: 0;padding-right: 0;padding-bottom: 18px;padding-left: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" valign="top" align="left" class="mcnButtonBlockInner">
+                                                                                                <table border="0" cellpadding="0" cellspacing="0" class="mcnButtonContentContainer" style="border-collapse: separate !important;border-radius: 0px;background-color: #A01F1F;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                                    <tbody>
+                                                                                                        <tr>
+                                                                                                            <td align="center" valign="middle" class="mcnButtonContent" style="font-family: Arial;font-size: 16px;padding: 15px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                                                <a mc:edit="button" class="mcnButton " title="Bekijk de foto's" href="http://google.be" target="_blank" style="font-weight: bold;letter-spacing: normal;line-height: 100%;text-align: center;text-decoration: none;color: #FFFFFF;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;display: block;">Bekijk de foto's</a>
+                                                                                                            </td>
+                                                                                                        </tr>
+                                                                                                    </tbody>
+                                                                                                </table>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                                <!-- END BUTTON BLOCK ################################################## -->
+                                                                                <!-- FACEBOOK LIKE BLOCK ################################################## -->
+                                                                                <table mc:hideable border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                    <tbody class="mcnTextBlockOuter">
+                                                                                        <tr>
+                                                                                            <td valign="top" class="mcnTextBlockInner" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                                <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" class="mcnTextContentContainer">
+                                                                                                    <tbody>
+                                                                                                        <tr>
+                                                                                                            <td valign="top" class="mcnTextContent" style="padding-top: 9px;padding-right: 0;padding-bottom: 18px;padding-left: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #000000;font-family: Helvetica;font-size: 16px;line-height: 150%;text-align: left;">
+                                                                                                                *|FACEBOOK:LIKE|*
+                                                                                                            </td>
+                                                                                                        </tr>
+                                                                                                    </tbody>
+                                                                                                </table>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                                <!-- END FACEBOOK LIKE BLOCK ################################################## -->
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                </div>
+                                <!-- END CONTENT BLOCK IMG LEFT ################################################## -->
+                                <!-- CONTENT BLOCK IMG LEFT COLORED ################################################## -->
+                                <div mc:repeatable="Image block" mc:variant="Left image with text and colored background">
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnImageCardBlock" style="background-color: #F7F8F0;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                    <tbody class="mcnImageCardBlockOuter">
+                                        <tr>
+                                            <td class="mcnImageCardBlockInner" valign="top" style="padding-top: 27px;padding-right: 18px;padding-bottom: 9px;padding-left: 18px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                <table border="0" cellpadding="0" cellspacing="0" class="mcnImageCardRightContentOuter" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td align="center" valign="top" class="mcnImageCardRightContentInner" style="padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                <table align="left" border="0" cellpadding="0" cellspacing="0" class="mcnImageCardRightImageContentContainer" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td class="mcnImageCardRightImageContentE2E " align="center" valign="top" style="padding-top: 8px;padding-right: 0;padding-bottom: 0px;padding-left: 0px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                <div mc:edit><img alt="" src="https://gallery.mailchimp.com/725775a670588f4a5d5235fce/images/46552a0d-14a1-469b-8d75-7617dba1b0b3.png" width="194" style="max-width: 570px;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;vertical-align: bottom;" class="mcnImage"></div>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                                <table class="mcnImageCardRightTextContentContainer" align="right" border="0" cellpadding="0" cellspacing="0" width="352" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td valign="top" class="mcnTextContent" style="padding-right: 18px;padding-top: 0;padding-bottom: 18px;font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;font-size: 16px;font-style: normal;font-weight: normal;line-height: 150%;text-align: left;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #000000;">
+                                                                                <div mc:edit="Tekst">
+                                                                                <h1 class="null" style="display: block;margin: 0;padding: 0;color: #a01f1f;font-family: Georgia, Times, 'Times New Roman', serif;font-size: 22px;font-style: italic;font-weight: normal;line-height: 150%;letter-spacing: normal;text-align: left;"><em>Twee zwartvoetbaby's kropen uit het ei</em></h1>
+                                                                                <p style="font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;font-size: 16px;font-style: normal;font-weight: normal;line-height: 150%;text-align: left;margin: 10px 0;padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #000000;">In de nestboxen bij de rotonde is het druk, druk, druk. Er zitten verschillende koppeltjes van de zwartvoetpinguïns met één of twee eieren. Twee koppels hebben al een piepend kleintje. Dagelijks checken en wegen onze pinguïnverzorgers de borelingen.</p>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td valign="top" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                <!-- BUTTON BLOCK COLORED ################################################## -->
+                                                                                <table mc:hideable border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnButtonBlock" style="min-width: 100%;background-color: #F7F8F0;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                    <tbody class="mcnButtonBlockOuter">
+                                                                                        <tr>
+                                                                                            <td style="padding-top: 0;padding-right: 0;padding-bottom: 18px;padding-left: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" valign="top" align="left" class="mcnButtonBlockInner">
+                                                                                                <table border="0" cellpadding="0" cellspacing="0" class="mcnButtonContentContainer" style="border-collapse: separate !important;border-radius: 0px;background-color: #AA7E4F;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                                    <tbody>
+                                                                                                        <tr>
+                                                                                                            <td align="center" valign="middle" class="mcnButtonContent" style="font-family: Arial;font-size: 16px;padding: 15px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                                                <a mc:edit="button" class="mcnButton " title="Bekijk de foto's" href="http://google.be" target="_blank" style="font-weight: bold;letter-spacing: normal;line-height: 100%;text-align: center;text-decoration: none;color: #FFFFFF;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;display: block;">Bekijk de foto's</a>
+                                                                                                            </td>
+                                                                                                        </tr>
+                                                                                                    </tbody>
+                                                                                                </table>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                                <!-- END BUTTON BLOCK COLORED ################################################## -->
+                                                                                <!-- FACEBOOK LIKE BLOCK ################################################## -->
+                                                                                <table mc:hideable border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                    <tbody class="mcnTextBlockOuter">
+                                                                                        <tr>
+                                                                                            <td valign="top" class="mcnTextBlockInner" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                                <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" class="mcnTextContentContainer">
+                                                                                                    <tbody>
+                                                                                                        <tr>
+                                                                                                            <td valign="top" class="mcnTextContent" style="padding-top: 9px;padding-right: 0;padding-bottom: 18px;padding-left: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #000000;font-family: Helvetica;font-size: 16px;line-height: 150%;text-align: left;">
+                                                                                                                *|FACEBOOK:LIKE|*
+                                                                                                            </td>
+                                                                                                        </tr>
+                                                                                                    </tbody>
+                                                                                                </table>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                                <!-- END FACEBOOK LIKE BLOCK ################################################## -->
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                </div>
+                                <!-- END CONTENT BLOCK IMG LEFT COLORED ################################################## -->
+                                <!-- CONTENT BLOCK IMG RIGHT ############################################################ -->
+                                <div mc:repeatable="Image block" mc:variant="Right image with text">
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnImageCardBlock" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                    <tbody class="mcnImageCardBlockOuter">
+                                        <tr>
+                                            <td class="mcnImageCardBlockInner" valign="top" style="padding-top: 27px;padding-right: 18px;padding-bottom: 9px;padding-left: 18px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                <table border="0" cellpadding="0" cellspacing="0" class="mcnImageCardLeftContentOuter" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td align="center" valign="top" class="mcnImageCardLeftContentInner" style="padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                <table align="right" border="0" cellpadding="0" cellspacing="0" class="mcnImageCardLeftImageContentContainer" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td class="mcnImageCardLeftImageContentE2E " align="center" valign="top" style="padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                <div mc:edit><img alt="" src="https://gallery.mailchimp.com/725775a670588f4a5d5235fce/images/d0e4f9d7-4d39-42b7-8e04-ffad0492075d.png" width="194" style="max-width: 570px;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;vertical-align: bottom;" class="mcnImage"></div>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                                <table class="mcnImageCardLeftTextContentContainer" align="left" border="0" cellpadding="0" cellspacing="0" width="352" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td valign="top" class="mcnTextContent" style="padding-left: 18px;padding-top: 0;padding-bottom: 18px;font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;font-size: 16px;font-style: normal;font-weight: normal;line-height: 150%;text-align: left;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #000000;">
+                                                                                <div mc:edit="Tekst">
+                                                                                <h1 class="null" style="display: block;margin: 0;padding: 0;color: #a01f1f;font-family: Georgia, Times, 'Times New Roman', serif;font-size: 22px;font-style: italic;font-weight: normal;line-height: 150%;letter-spacing: normal;text-align: left;"><em>Nijlpaard Heini werd vandaag 50 jaar !</em></h1>
+                                                                                <p style="font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;font-size: 16px;font-style: normal;font-weight: normal;line-height: 150%;text-align: left;margin: 10px 0;padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #000000;">Dat moest natuurlijk op gepaste manier gevierd worden! Heini heeft genoten van zijn verjaardagstaart. Dank aan iedereen die mee kwam vieren.</p>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td valign="top" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                <!-- BUTTON BLOCK ################################################## -->
+                                                                                <table mc:hideable border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnButtonBlock" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                    <tbody class="mcnButtonBlockOuter">
+                                                                                        <tr>
+                                                                                            <td style="padding-top: 0;padding-right: 0;padding-bottom: 18px;padding-left: 18px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" valign="top" align="left" class="mcnButtonBlockInner">
+                                                                                                <table border="0" cellpadding="0" cellspacing="0" class="mcnButtonContentContainer" style="border-collapse: separate !important;border-radius: 0px;background-color: #A01F1F;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                                    <tbody>
+                                                                                                        <tr>
+                                                                                                            <td align="center" valign="middle" class="mcnButtonContent" style="font-family: Arial;font-size: 16px;padding: 15px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                                                <a mc:edit="button" class="mcnButton " title="Bekijk de foto's" href="http://google.be" target="_blank" style="font-weight: bold;letter-spacing: normal;line-height: 100%;text-align: center;text-decoration: none;color: #FFFFFF;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;display: block;">Bekijk de foto's</a>
+                                                                                                            </td>
+                                                                                                        </tr>
+                                                                                                    </tbody>
+                                                                                                </table>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                                <!-- END BUTTON BLOCK ################################################## -->
+                                                                                <!-- FACEBOOK LIKE BLOCK ################################################## -->
+                                                                                <table mc:hideable border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                    <tbody class="mcnTextBlockOuter">
+                                                                                        <tr>
+                                                                                            <td valign="top" class="mcnTextBlockInner" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                                <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" class="mcnTextContentContainer">
+                                                                                                    <tbody>
+                                                                                                        <tr>
+                                                                                                            <td valign="top" class="mcnTextContent" style="padding-top: 9px;padding-right: 0;padding-bottom: 18px;padding-left: 18px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #000000;font-family: Helvetica;font-size: 16px;line-height: 150%;text-align: left;">
+                                                                                                                *|FACEBOOK:LIKE|*
+                                                                                                            </td>
+                                                                                                        </tr>
+                                                                                                    </tbody>
+                                                                                                </table>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                                <!-- END FACEBOOK LIKE BLOCK ################################################## -->
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                </div>
+                                <!-- END CONTENT BLOCK IMG RIGHT ############################################################ -->
+                                <!-- CONTENT BLOCK IMG RIGHT COLORED ############################################################ -->
+                                <div mc:repeatable="Image block" mc:variant="Right image with text with colored background">
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnImageCardBlock" style="background-color: #F7F8F0;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                    <tbody class="mcnImageCardBlockOuter">
+                                        <tr>
+                                            <td class="mcnImageCardBlockInner" valign="top" style="padding-top: 27px;padding-right: 18px;padding-bottom: 9px;padding-left: 18px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                <table border="0" cellpadding="0" cellspacing="0" class="mcnImageCardLeftContentOuter" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td align="center" valign="top" class="mcnImageCardLeftContentInner" style="padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                <table align="right" border="0" cellpadding="0" cellspacing="0" class="mcnImageCardLeftImageContentContainer" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td class="mcnImageCardLeftImageContentE2E " align="center" valign="top" style="padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                <div mc:edit><img alt="" src="https://gallery.mailchimp.com/725775a670588f4a5d5235fce/images/d0e4f9d7-4d39-42b7-8e04-ffad0492075d.png" width="194" style="max-width: 570px;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;vertical-align: bottom;" class="mcnImage"></div>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                                <table class="mcnImageCardLeftTextContentContainer" align="left" border="0" cellpadding="0" cellspacing="0" width="352" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td valign="top" class="mcnTextContent" style="padding-left: 18px;padding-top: 0;padding-bottom: 18px;font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;font-size: 16px;font-style: normal;font-weight: normal;line-height: 150%;text-align: left;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #000000;">
+                                                                                <div mc:edit="Tekst">
+                                                                                <h1 class="null" style="display: block;margin: 0;padding: 0;color: #a01f1f;font-family: Georgia, Times, 'Times New Roman', serif;font-size: 22px;font-style: italic;font-weight: normal;line-height: 150%;letter-spacing: normal;text-align: left;"><em>Nijlpaard Heini werd vandaag 50 jaar !</em></h1>
+                                                                                <p style="font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;font-size: 16px;font-style: normal;font-weight: normal;line-height: 150%;text-align: left;margin: 10px 0;padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #000000;">Dat moest natuurlijk op gepaste manier gevierd worden! Heini heeft genoten van zijn verjaardagstaart. Dank aan iedereen die mee kwam vieren.</p>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td valign="top" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                <!-- BUTTON BLOCK COLORED ################################################## -->
+                                                                                <table mc:hideable border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnButtonBlock" style="min-width: 100%;background-color: #F7F8F0;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                    <tbody class="mcnButtonBlockOuter">
+                                                                                        <tr>
+                                                                                            <td style="padding-top: 0;padding-right: 18px;padding-bottom: 18px;padding-left: 18px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" valign="top" align="left" class="mcnButtonBlockInner">
+                                                                                                <table border="0" cellpadding="0" cellspacing="0" class="mcnButtonContentContainer" style="border-collapse: separate !important;border-radius: 0px;background-color: #AA7E4F;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                                    <tbody>
+                                                                                                        <tr>
+                                                                                                            <td align="center" valign="middle" class="mcnButtonContent" style="font-family: Arial;font-size: 16px;padding: 15px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                                                <a mc:edit="button" class="mcnButton " title="Bekijk de foto's" href="http://google.be" target="_blank" style="font-weight: bold;letter-spacing: normal;line-height: 100%;text-align: center;text-decoration: none;color: #FFFFFF;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;display: block;">Bekijk de foto's</a>
+                                                                                                            </td>
+                                                                                                        </tr>
+                                                                                                    </tbody>
+                                                                                                </table>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                                <!-- END BUTTON BLOCK COLORED ################################################## -->
+                                                                                <!-- FACEBOOK LIKE BLOCK ################################################## -->
+                                                                                <table mc:hideable border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                    <tbody class="mcnTextBlockOuter">
+                                                                                        <tr>
+                                                                                            <td valign="top" class="mcnTextBlockInner" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                                <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" class="mcnTextContentContainer">
+                                                                                                    <tbody>
+                                                                                                        <tr>
+                                                                                                            <td valign="top" class="mcnTextContent" style="padding-top: 9px;padding-right: 0;padding-bottom: 18px;padding-left: 18px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #000000;font-family: Helvetica;font-size: 16px;line-height: 150%;text-align: left;">
+                                                                                                                *|FACEBOOK:LIKE|*
+                                                                                                            </td>
+                                                                                                        </tr>
+                                                                                                    </tbody>
+                                                                                                </table>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                                <!-- END FACEBOOK LIKE BLOCK ################################################## -->
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                </div>
+                                <!-- END CONTENT BLOCK IMG RIGHT COLORED ############################################################ -->
+
+
+                                <!-- DUAL CONTENT BLOCK ############################################################ -->
+                                <div mc:repeatable="Dual Content block" mc:variant="Dual content block with white background">
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnCaptionBlock" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                    <tbody class="mcnCaptionBlockOuter">
+                                        <tr>
+                                            <td class="mcnCaptionBlockInner" valign="top" style="padding: 9px;padding-top: 18px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                <table align="left" border="0" cellpadding="0" cellspacing="0" class="mcnCaptionBottomContent" width="282" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="mcnCaptionBottomImageContent" align="center" valign="top" style="padding: 0 9px 9px 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                <div mc:edit="Afbeelding"><img alt="" src="https://gallery.mailchimp.com/725775a670588f4a5d5235fce/images/7ebb6aa6-19bc-4644-acca-258b992655bf.png" width="264" style="max-width: 570px;display: block;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;vertical-align: bottom;" class="mcnImage"></div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="mcnTextContent" valign="top" style="padding: 0 9px 0 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #000000;font-family: Helvetica;font-size: 16px;line-height: 150%;text-align: left;" width="264">
+                                                                <div mc:edit="Tekst">
+                                                                <h1 class="null" style="display: block;margin: 0;padding: 0;color: #a01f1f;font-family: Georgia, Times, 'Times New Roman', serif;font-size: 22px;font-style: italic;font-weight: normal;line-height: 150%;letter-spacing: normal;text-align: left;"><em>Siberische tijger Yessie overleden 1</em></h1>
+                                                                <p style="margin: 10px 0;padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #000000;font-family: Helvetica;font-size: 16px;line-height: 150%;text-align: left;">Deze week is onze Siberische tijger Yessie gestorven. Ze was al enkele dagen futloos en at weinig. Haar toestand ging snel achteruit waardoor er werd beslist om haar niet langer te laten lijden. Dierenarts Francis heeft haar zachtjes laten inslapen. Yessie was een kranige, oudere dame van 17 jaar en we zullen haar missen.</p>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td valign="top" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                <!-- BUTTON BLOCK ################################################## -->
+                                                                <table mc:hideable border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnButtonBlock" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                    <tbody class="mcnButtonBlockOuter">
+                                                                        <tr>
+                                                                            <td style="padding-top: 0;padding-right: 0;padding-bottom: 18px;padding-left: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" valign="top" align="left" class="mcnButtonBlockInner">
+                                                                                <table border="0" cellpadding="0" cellspacing="0" class="mcnButtonContentContainer" style="border-collapse: separate !important;border-radius: 0px;background-color: #A01F1F;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td align="center" valign="middle" class="mcnButtonContent" style="font-family: Arial;font-size: 16px;padding: 15px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                                <a mc:edit="button" class="mcnButton " title="Bekijk de foto's" href="http://google.be" target="_blank" style="font-weight: bold;letter-spacing: normal;line-height: 100%;text-align: center;text-decoration: none;color: #FFFFFF;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;display: block;">Bekijk de foto's</a>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                                <!-- END BUTTON BLOCK ################################################## -->
+                                                                <!-- FACEBOOK LIKE BLOCK ################################################## -->
+                                                                <table mc:hideable border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                    <tbody class="mcnTextBlockOuter">
+                                                                        <tr>
+                                                                            <td valign="top" class="mcnTextBlockInner" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" class="mcnTextContentContainer">
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td valign="top" class="mcnTextContent" style="padding-top: 9px;padding-right: 0;padding-bottom: 18px;padding-left: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #000000;font-family: Helvetica;font-size: 16px;line-height: 150%;text-align: left;">
+                                                                                                *|FACEBOOK:LIKE|*
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                                <!-- END FACEBOOK LIKE BLOCK ################################################## -->
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            <!--[if gte mso 9]>
+                                            </td>
+                                            <td>
+                                            <![endif]-->
+                                            <!-- // END TEMPLATE -->
+                                                <table mc:hideable align="right" border="0" cellpadding="0" cellspacing="0" class="mcnCaptionBottomContent" width="282" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="mcnCaptionBottomImageContent" align="center" valign="top" style="padding: 0 9px 9px 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                <div mc:edit="Afbeelding 2"><img alt="" src="https://gallery.mailchimp.com/725775a670588f4a5d5235fce/images/7ebb6aa6-19bc-4644-acca-258b992655bf.png" width="264" style="max-width: 570px;display: block;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;vertical-align: bottom;" class="mcnImage"></div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="mcnTextContent" valign="top" style="padding: 0 9px 0 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #000000;font-family: Helvetica;font-size: 16px;line-height: 150%;text-align: left;" width="264">
+                                                                <div mc:edit="Tekst 2">
+                                                                <h1 class="null" style="display: block;margin: 0;padding: 0;color: #a01f1f;font-family: Georgia, Times, 'Times New Roman', serif;font-size: 22px;font-style: italic;font-weight: normal;line-height: 150%;letter-spacing: normal;text-align: left;"><em>Siberische tijger Yessie overleden 2</em></h1>
+                                                                <p style="margin: 10px 0;padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #000000;font-family: Helvetica;font-size: 16px;line-height: 150%;text-align: left;">Deze week is onze Siberische tijger Yessie gestorven. Ze was al enkele dagen futloos en at weinig. Haar toestand ging snel achteruit waardoor er werd beslist om haar niet langer te laten lijden. Dierenarts Francis heeft haar zachtjes laten inslapen. Yessie was een kranige, oudere dame van 17 jaar en we zullen haar missen.</p>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td valign="top" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                <!-- BUTTON BLOCK ################################################## -->
+                                                                <table mc:hideable border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnButtonBlock" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                    <tbody class="mcnButtonBlockOuter">
+                                                                        <tr>
+                                                                            <td style="padding-top: 0;padding-right: 0;padding-bottom: 18px;padding-left: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" valign="top" align="left" class="mcnButtonBlockInner">
+                                                                                <table border="0" cellpadding="0" cellspacing="0" class="mcnButtonContentContainer" style="border-collapse: separate !important;border-radius: 0px;background-color: #A01F1F;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td align="center" valign="middle" class="mcnButtonContent" style="font-family: Arial;font-size: 16px;padding: 15px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                                <a mc:edit="button 2" class="mcnButton " title="Bekijk de foto's" href="http://google.be" target="_blank" style="font-weight: bold;letter-spacing: normal;line-height: 100%;text-align: center;text-decoration: none;color: #FFFFFF;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;display: block;">Bekijk de foto's</a>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                                <!-- END BUTTON BLOCK ################################################## -->
+                                                                <!-- FACEBOOK LIKE BLOCK ################################################## -->
+                                                                <table mc:hideable border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                    <tbody class="mcnTextBlockOuter">
+                                                                        <tr>
+                                                                            <td valign="top" class="mcnTextBlockInner" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" class="mcnTextContentContainer">
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td valign="top" class="mcnTextContent" style="padding-top: 9px;padding-right: 0;padding-bottom: 18px;padding-left: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #000000;font-family: Helvetica;font-size: 16px;line-height: 150%;text-align: left;">
+                                                                                                *|FACEBOOK:LIKE|*
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                                <!-- END FACEBOOK LIKE BLOCK ################################################## -->
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                </div>
+                                <!-- END DUAL CONTENT BLOCK ######################################## -->
+
+                                <!-- DUAL CONTENT BLOCK COLORED ############################################################ -->
+                                <div mc:repeatable="Dual Content block" mc:variant="Dual content block with colored background">
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnCaptionBlock" style="background-color: #F7F8F0;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                    <tbody class="mcnCaptionBlockOuter">
+                                        <tr>
+                                            <td class="mcnCaptionBlockInner" valign="top" style="padding: 9px;padding-top: 18px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                <table align="left" border="0" cellpadding="0" cellspacing="0" class="mcnCaptionBottomContent" width="282" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="mcnCaptionBottomImageContent" align="center" valign="top" style="padding: 0 9px 9px 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                <div mc:edit="Afbeelding"><img alt="" src="https://gallery.mailchimp.com/725775a670588f4a5d5235fce/images/7ebb6aa6-19bc-4644-acca-258b992655bf.png" width="264" style="max-width: 570px;display: block;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;vertical-align: bottom;" class="mcnImage"></div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="mcnTextContent" valign="top" style="padding: 0 9px 0 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #000000;font-family: Helvetica;font-size: 16px;line-height: 150%;text-align: left;" width="264">
+                                                                <div mc:edit="Tekst">
+                                                                <h1 class="null" style="display: block;margin: 0;padding: 0;color: #a01f1f;font-family: Georgia, Times, 'Times New Roman', serif;font-size: 22px;font-style: italic;font-weight: normal;line-height: 150%;letter-spacing: normal;text-align: left;"><em>Siberische tijger Yessie overleden</em></h1>
+                                                                <p style="margin: 10px 0;padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #000000;font-family: Helvetica;font-size: 16px;line-height: 150%;text-align: left;">Deze week is onze Siberische tijger Yessie gestorven. Ze was al enkele dagen futloos en at weinig. Haar toestand ging snel achteruit waardoor er werd beslist om haar niet langer te laten lijden. Dierenarts Francis heeft haar zachtjes laten inslapen. Yessie was een kranige, oudere dame van 17 jaar en we zullen haar missen.</p>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td valign="top" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                <!-- BUTTON BLOCK COLORED ################################################## -->
+                                                                <table mc:hideable border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnButtonBlock" style="min-width: 100%;background-color: #F7F8F0;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                    <tbody class="mcnButtonBlockOuter">
+                                                                        <tr>
+                                                                            <td style="padding-top: 0;padding-right: 18px;padding-bottom: 18px;padding-left: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" valign="top" align="left" class="mcnButtonBlockInner">
+                                                                                <table border="0" cellpadding="0" cellspacing="0" class="mcnButtonContentContainer" style="border-collapse: separate !important;border-radius: 0px;background-color: #AA7E4F;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td align="center" valign="middle" class="mcnButtonContent" style="font-family: Arial;font-size: 16px;padding: 15px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                                <a mc:edit="button" class="mcnButton " title="Bekijk de foto's" href="http://google.be" target="_blank" style="font-weight: bold;letter-spacing: normal;line-height: 100%;text-align: center;text-decoration: none;color: #FFFFFF;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;display: block;">Bekijk de foto's</a>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                                <!-- END BUTTON BLOCK COLORED ################################################## -->
+                                                                <!-- FACEBOOK LIKE BLOCK ################################################## -->
+                                                                <table mc:hideable border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                    <tbody class="mcnTextBlockOuter">
+                                                                        <tr>
+                                                                            <td valign="top" class="mcnTextBlockInner" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" class="mcnTextContentContainer">
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td valign="top" class="mcnTextContent" style="padding-top: 9px;padding-right: 0;padding-bottom: 18px;padding-left: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #000000;font-family: Helvetica;font-size: 16px;line-height: 150%;text-align: left;">
+                                                                                                *|FACEBOOK:LIKE|*
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                                <!-- END FACEBOOK LIKE BLOCK ################################################## -->
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            <!--[if gte mso 9]>
+                                            </td>
+                                            <td>
+                                            <![endif]-->
+                                            <!-- // END TEMPLATE -->
+                                                <table mc:hideable align="right" border="0" cellpadding="0" cellspacing="0" class="mcnCaptionBottomContent" width="282" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="mcnCaptionBottomImageContent" align="center" valign="top" style="padding: 0 9px 9px 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                <div mc:edit="Afbeelding 2"><img alt="" src="https://gallery.mailchimp.com/725775a670588f4a5d5235fce/images/7ebb6aa6-19bc-4644-acca-258b992655bf.png" width="264" style="max-width: 570px;display: block;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;vertical-align: bottom;" class="mcnImage"></div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="mcnTextContent" valign="top" style="padding: 0 9px 0 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #000000;font-family: Helvetica;font-size: 16px;line-height: 150%;text-align: left;" width="264">
+                                                                <div mc:edit="Tekst 2">
+                                                                <h1 class="null" style="display: block;margin: 0;padding: 0;color: #a01f1f;font-family: Georgia, Times, 'Times New Roman', serif;font-size: 22px;font-style: italic;font-weight: normal;line-height: 150%;letter-spacing: normal;text-align: left;"><em>Siberische tijger Yessie overleden</em></h1>
+                                                                <p style="margin: 10px 0;padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #000000;font-family: Helvetica;font-size: 16px;line-height: 150%;text-align: left;">Deze week is onze Siberische tijger Yessie gestorven. Ze was al enkele dagen futloos en at weinig. Haar toestand ging snel achteruit waardoor er werd beslist om haar niet langer te laten lijden. Dierenarts Francis heeft haar zachtjes laten inslapen. Yessie was een kranige, oudere dame van 17 jaar en we zullen haar missen.</p>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td valign="top" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                <!-- BUTTON BLOCK COLORED ################################################## -->
+                                                                <table mc:hideable border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnButtonBlock" style="min-width: 100%;background-color: #F7F8F0;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                    <tbody class="mcnButtonBlockOuter">
+                                                                        <tr>
+                                                                            <td style="padding-top: 0;padding-right: 18px;padding-bottom: 18px;padding-left: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" valign="top" align="left" class="mcnButtonBlockInner">
+                                                                                <table border="0" cellpadding="0" cellspacing="0" class="mcnButtonContentContainer" style="border-collapse: separate !important;border-radius: 0px;background-color: #AA7E4F;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td align="center" valign="middle" class="mcnButtonContent" style="font-family: Arial;font-size: 16px;padding: 15px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                                <a mc:edit="button 2" class="mcnButton " title="Bekijk de foto's" href="http://google.be" target="_blank" style="font-weight: bold;letter-spacing: normal;line-height: 100%;text-align: center;text-decoration: none;color: #FFFFFF;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;display: block;">Bekijk de foto's</a>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                                <!-- END BUTTON BLOCK COLORED ################################################## -->
+                                                                <!-- FACEBOOK LIKE BLOCK ################################################## -->
+                                                                <table mc:hideable border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                    <tbody class="mcnTextBlockOuter">
+                                                                        <tr>
+                                                                            <td valign="top" class="mcnTextBlockInner" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" class="mcnTextContentContainer">
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td valign="top" class="mcnTextContent" style="padding-top: 9px;padding-right: 0;padding-bottom: 18px;padding-left: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #000000;font-family: Helvetica;font-size: 16px;line-height: 150%;text-align: left;">
+                                                                                                *|FACEBOOK:LIKE|*
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                                <!-- END FACEBOOK LIKE BLOCK ################################################## -->
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                </div>
+                                <!-- END DUAL CONTENT BLOCK COLORED ######################################## -->
+
+                                <!-- SOCIAL LINKS BLOCK ########## -->
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnFollowBlock" style="min-width: 100%;background: #DDDDDD url(https://gallery.mailchimp.com/725775a670588f4a5d5235fce/images/e23d1e05-f13a-4c26-86aa-c0b41f4c24cb.png) center center repeat;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                    <tbody class="mcnFollowBlockOuter">
+                                        <tr>
+                                            <td align="center" valign="top" style="padding: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" class="mcnFollowBlockInner">
+                                                <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                    <tbody class="mcnTextBlockOuter">
+                                                        <tr>
+                                                            <td valign="top" class="mcnTextBlockInner" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" class="mcnTextContentContainer">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td valign="top" class="mcnTextContent" style="padding-top: 18px;padding-right: 18px;padding-bottom: 18px;padding-left: 18px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #000000;font-family: Helvetica;font-size: 16px;line-height: 150%;text-align: left;">
+                                                                                <span style="color: #000; font-family: Georgia, Times, 'Times New Roman', serif; font-weight: bold;">Volg ons ook op:</span> &nbsp; &nbsp;
+                                                                                <a href="*|FACEBOOK:PROFILEURL|*" target="_blank" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #a01f1f;font-weight: normal;text-decoration: underline;"><img src="https://gallery.mailchimp.com/725775a670588f4a5d5235fce/images/d6074b10-8a03-4a13-9209-440095f56477.png" style="display: inline-block;vertical-align: middle;border: 0;height: auto !important;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" height="30" width="30" class=""></a>
+                                                                                <a href="*|TWITTER:PROFILEURL|*" target="_blank" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #a01f1f;font-weight: normal;text-decoration: underline;"><img src="https://gallery.mailchimp.com/725775a670588f4a5d5235fce/images/8b8f14d4-cd44-43db-979b-9e5028fd1fda.png" style="display: inline-block;vertical-align: middle;border: 0;height: auto !important;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" height="30" width="30" class=""></a>
+                                                                                <a href="*|SHARE:INSTAGRAM|*" target="_blank" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #a01f1f;font-weight: normal;text-decoration: underline;"><img src="https://gallery.mailchimp.com/725775a670588f4a5d5235fce/images/4962d7e4-19b1-4e55-ae6d-b1e1aaa87f71.png" style="display: inline-block;vertical-align: middle;border: 0;height: auto !important;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" height="30" width="30" class=""></a>
+                                                                                <a href="*|SHARE:YOUTUBE|*" target="_blank" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #a01f1f;font-weight: normal;text-decoration: underline;"><img src="https://gallery.mailchimp.com/725775a670588f4a5d5235fce/images/1f32ccad-ac23-4e66-83f1-918ceb8c622e.png" style="display: inline-block;vertical-align: middle;border: 0;height: auto !important;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" height="30" width="30" class=""></a>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top" id="templateFooter" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;background-color: #1c1c1c;border-top: 0;border-bottom: 0;padding-top: 9px;padding-bottom: 9px;">
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                    <tbody class="mcnTextBlockOuter">
+                                        <tr>
+                                            <td valign="top" class="mcnTextBlockInner" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" class="mcnTextContentContainer">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td valign="top" class="mcnTextContent" style="padding-top: 9px;padding-right: 18px;padding-bottom: 9px;padding-left: 18px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #cacaca;font-family: Georgia, Times, 'Times New Roman', serif;font-size: 13px;line-height: 150%;text-align: left;">
+                                                                <p style="margin: 10px 0;padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #cacaca;font-family: Georgia, Times, 'Times New Roman', serif;font-size: 13px;line-height: 150%;text-align: left;">Koninklijke Maatschappij voor Dierkunde vzw | Koningin Astridplein 26, 2018 Antwerpen&nbsp;
+                                                                    <br> RPR Antwerpen – BTW BE 0407 186 105 | Alle rechten voorbehouden aan KMDA&nbsp;
+                                                                    <br> Copyright 2016
+                                                                    <br>
+                                                                    <br>
+                                                                    <span style="line-height:1.6">You can </span><a href="*|UPDATE_PROFILE|*" style="line-height: 1.6;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #cacaca;font-weight: normal;text-decoration: underline;">Update uw gegevens hier</a><span style="line-height:1.6">&nbsp;| </span><a href="*|UNSUB|*" style="line-height: 1.6;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #cacaca;font-weight: normal;text-decoration: underline;">U kan zich hier uitschrijven</a></p>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                    <!--[if gte mso 9]>
+                        </td>
+                        </tr>
+                        </table>
+                        <![endif]-->
+                    <!-- // END TEMPLATE -->
+                </td>
+            </tr>
+        </table>
+    </center>
+</body>
+
+</html>
+„
