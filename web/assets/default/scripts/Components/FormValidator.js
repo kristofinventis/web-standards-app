@@ -60,7 +60,8 @@ define(
                 }
 
                 $(rule.getSelector(), this.form).each(function (index, field) {
-                    this.fields.push(new Field(field, [Object.create(rule)]));
+                    var validationRule = Object.create(rule);
+                    this.fields.push(new Field(field, [validationRule]));
                 }.bind(this));
             }
         };
@@ -99,6 +100,8 @@ define(
             var i,
                 length = this.fields.length,
                 firstInvalidField;
+
+            console.log(this.fields);
 
             for (i=0; i<length; i++) {
                 if (!this.fields[i].validate() && !firstInvalidField) {

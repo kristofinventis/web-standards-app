@@ -18,13 +18,13 @@ define([], function () {
         this.options = options;
     };
 
-    Rule.prototype.validate = function (value) {
-        return this.validationCallback.apply(this, [value, this.options]);
+    Rule.prototype.validate = function (element) {
+        return this.validationCallback.apply(this, [element, this.options]);
     };
 
-    Rule.prototype.getMessage = function (value) {
+    Rule.prototype.getMessage = function (element) {
         if (typeof this.message == 'function') {
-            return this.message.apply(this, [value, this.options]);
+            return this.message.apply(this, [element.value, this.options]);
         }
 
         return this.message;

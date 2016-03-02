@@ -31,8 +31,8 @@ define(
         var Rules = new Collection();
         Rules.add(new Rule(
             'required',
-            function (value) {
-                return value.length > 0;
+            function (element) {
+                return element.value.length > 0;
             },
             validationMessages.REQUIRED,
             '[required]'
@@ -41,8 +41,8 @@ define(
         var emailRegEx = /^([\w-\.\+]+@([\w-]+\.)+[\w-]{2,4})?$/;
         Rules.add(new Rule(
             'email',
-            function (value) {
-                return emailRegEx.test(value);
+            function (element) {
+                return emailRegEx.test(element.value);
             },
             validationMessages.EMAIL,
             '[type=email]'
@@ -50,13 +50,15 @@ define(
 
         Rules.add(new Rule(
             'max-length',
-            function (value, options) {
-                return value.length < options.length;
+            function (element, options) {
+                var maxlength = options ? option.length : element.attributes.maxlength.value;
+                return element.value.length <= maxlength;
             },
-            function (value, options) {
-                return validationMessages.MAXLENGTH.replace('{0}', options.length);
+            function (element, options) {
+                var maxlength = options ? option.length : element.attributes.maxlength.value;
+                return validationMessages.MAXLENGTH.replace('{0}', maxlength);
             },
-            '[max-length]'
+            '[maxlength]'
         ));
 
         return Rules;

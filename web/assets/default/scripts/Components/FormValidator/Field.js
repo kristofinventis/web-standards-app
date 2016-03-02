@@ -40,7 +40,7 @@ define([], function () {
         var i, length = this.rules.length;
 
         for (i=0; i<length; i++) {
-            if (!this.rules[i].validate(this.el.value)) {
+            if (!this.rules[i].validate(this.el)) {
                 this.failedRule = this.rules[i];
                 return false;
             }
