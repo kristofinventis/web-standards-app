@@ -2,11 +2,12 @@
 define([], function () {
     "use strict";
 
-    var Rule = function (name, validationCallback, message) {
+    var Rule = function (name, validationCallback, message, selector) {
         this.name = name;
         this.options = undefined;
         this.validationCallback = validationCallback;
         this.message = message;
+        this.selector = selector;
     };
 
     Rule.prototype.getName = function () {
@@ -27,6 +28,10 @@ define([], function () {
         }
 
         return this.message;
+    };
+
+    Rule.prototype.getSelector = function () {
+        return this.selector;
     };
 
     return Rule;

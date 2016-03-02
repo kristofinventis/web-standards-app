@@ -52,14 +52,16 @@ define(
         };
 
         Validator.prototype.autoDetectFields = function () {
-            $('[required]', this.form).each(function (index, field) {
-                var validationRule = Object.create(this.rules.find('required'));
-                this.fields.push(new Field(field, [validationRule]));
-            }.bind(this));
+            var i, length = this.rules.length, rule;
+            for (i=0; i<length; i++) {
+                rule = this.rules.list[i];
+                if (!rule.getSelector()) {
+                    continue;
+                }
 
-            var i = 0, length = this.rules.length;
-            for (i=0; i<=length; i++) {
-                this.rules[i].detect(this.form);
+                $(rule.getSelector(), this.form).each(function (index, field) {
+                    this.fields.push(new Field(field, [Object.create(rule)]));
+                }.bind(this));
             }
         };
 

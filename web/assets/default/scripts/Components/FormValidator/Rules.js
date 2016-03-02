@@ -5,14 +5,17 @@ define(
 
         var validationMessages = {
             REQUIRED: 'Dit veld is verplicht in the vullen',
+            EMAIL: 'Dit is geen geldig e-mailadres',
             MAXLENGTH: 'Dit veld mag max {0} karakters bevatten'
         };
 
         var Collection = function () {
-            this.list = []
+            this.list = [];
+            this.length = 0;
         };
         Collection.prototype.add = function (rule) {
             this.list.push(rule);
+            this.length = this.list.length;
         };
         Collection.prototype.find = function (name) {
             var i = 0, length = this.list.length;
@@ -31,7 +34,18 @@ define(
             function (value) {
                 return value.length > 0;
             },
-            validationMessages.REQUIRED
+            validationMessages.REQUIRED,
+            '[required]'
+        ));
+
+        var emailRegEx = /^([\w-\.\+]+@([\w-]+\.)+[\w-]{2,4})?$/;
+        Rules.add(new Rule(
+            'email',
+            function (value) {
+                return emailRegEx.test(value);
+            },
+            validationMessages.EMAIL,
+            '[type=email]'
         ));
 
         Rules.add(new Rule(
@@ -41,7 +55,8 @@ define(
             },
             function (value, options) {
                 return validationMessages.MAXLENGTH.replace('{0}', options.length);
-            }
+            },
+            '[max-length]'
         ));
 
         return Rules;
