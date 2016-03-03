@@ -1,15 +1,15 @@
-/* STYLEGUIDE__ACCORDION */
-.styleguide__accordion {
+/* ACCORDION */
+.accordion {
     box-sizing: border-box;
     margin-bottom: 10px;
     width: 100%;
 }
 
-.styleguide__accordion--margined {
+.accordion--margined {
     margin-bottom: 30px;
 }
 
-.styleguide__accordion__header {
+.accordion__header {
     box-sizing: border-box;
     position: relative;
 
@@ -56,28 +56,28 @@
 }
 
 
-.styleguide__accordion__content {
+.accordion__content {
     display: none;
     border-bottom: 3px solid #f1f1f1;
     border-left: 3px solid #f1f1f1;
     border-right: 3px solid #f1f1f1;
 }
 
-.styleguide__accordion__content--alt {
+.accordion__content--alt {
     background-color: white;
     overflow: auto;
     padding: 3rem;
 }
 
 
-.styleguide__accordion--active {
-    .styleguide__accordion__header {
+.accordion--active {
+    .accordion__header {
         &:after, .after {
             @extend .icon-content--arrow-up !optional;
         }
     }
 
-    .styleguide__accordion__content {
+    .accordion__content {
         display: block;
     }
 }
