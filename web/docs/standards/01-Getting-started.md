@@ -29,22 +29,22 @@
     <li>Images and icons are located in <span class="styleguide__code styleguide__code--simple">"styleguide/assets/default/images"</span>.</li>
 </ol>
 
-<div class="styleguide__accordion" data-component="Application/Components/StyleguideAccordion">
-    <header class="styleguide__accordion__header">
+<div class="accordion" data-component="Application/Components/StyleguideAccordion">
+    <header class="accordion__header">
         Installing the styleguide
     </header>
-    <div class="styleguide__accordion__content styleguide__accordion__content--alt">
+    <div class="accordion__content accordion__content--alt">
         <p class="styleguide__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore porro ad enim quidem similique et doloremque perspiciatis sint a, itaque vel reprehenderit. Mollitia repudiandae quod, animi corrupti vero? Tempore, commodi.</p>
         <p class="styleguide__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore porro ad enim quidem similique et doloremque perspiciatis sint a, itaque vel reprehenderit. Mollitia repudiandae quod, animi corrupti vero? Tempore, commodi.</p>
         <p class="styleguide__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore porro ad enim quidem similique et doloremque perspiciatis sint a, itaque vel reprehenderit. Mollitia repudiandae quod, animi corrupti vero? Tempore, commodi.</p>
     </div>
 </div>
 
-<div class="styleguide__accordion" data-component="Application/Components/StyleguideAccordion">
-    <header class="styleguide__accordion__header">
+<div class="accordion" data-component="Application/Components/StyleguideAccordion">
+    <header class="accordion__header">
         Installing sass, bundler, gulp
     </header>
-    <div class="styleguide__accordion__content styleguide__accordion__content--alt">
+    <div class="accordion__content accordion__content--alt">
         <p class="styleguide__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore porro ad enim quidem similique et doloremque perspiciatis sint a, itaque vel reprehenderit. Mollitia repudiandae quod, animi corrupti vero? Tempore, commodi.</p>
         <p class="styleguide__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore porro ad enim quidem similique et doloremque perspiciatis sint a, itaque vel reprehenderit. Mollitia repudiandae quod, animi corrupti vero? Tempore, commodi.</p>
         <p class="styleguide__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore porro ad enim quidem similique et doloremque perspiciatis sint a, itaque vel reprehenderit. Mollitia repudiandae quod, animi corrupti vero? Tempore, commodi.</p>
@@ -106,20 +106,20 @@
 
 
 </section>
-<div class="styleguide__accordion" data-component="Application/Components/StyleguideAccordion">
-    <header class="styleguide__accordion__header">
+<div class="accordion" data-component="Application/Components/StyleguideAccordion">
+    <header class="accordion__header">
         Codeblock
     </header>
-    <div class="styleguide__accordion__content">
+    <div class="accordion__content">
         <pre class="styleguide__code" data-component="Application/Components/Code"><div class="styleguide__button styleguide__button--copy tooltip" data-clipboard-target="#<?=$cur;?>"><img src="assets/default/images/svg/clippy.svg" alt="Copy to clipboard"></div><code>This is code</code></pre>
     </div>
 </div>
 
-<div class="styleguide__accordion" data-component="Application/Components/StyleguideAccordion">
-    <header class="styleguide__accordion__header">
+<div class="accordion" data-component="Application/Components/StyleguideAccordion">
+    <header class="accordion__header">
         Documentation block
     </header>
-    <div class="styleguide__accordion__content styleguide__accordion__content--alt">
+    <div class="accordion__content accordion__content--alt">
         Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus.
     </div>
 </div>

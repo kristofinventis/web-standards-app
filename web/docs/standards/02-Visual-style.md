@@ -24,38 +24,38 @@
 <div class="title-3 styleguide__text--blue">Pairings + Styles</div>
 <p class="styleguide__paragraph">To do</p>
 
-<div class="styleguide__accordion" data-component="Application/Components/StyleguideAccordion">
-    <header class="styleguide__accordion__header">
+<div class="accordion" data-component="Application/Components/StyleguideAccordion">
+    <header class="accordion__header">
         Default: Primary font + Secondary font
     </header>
-    <div class="styleguide__accordion__content styleguide__accordion__content--alt">
+    <div class="accordion__content accordion__content--alt">
         Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus.
     </div>
 </div>
 
-<div class="styleguide__accordion" data-component="Application/Components/StyleguideAccordion">
-    <header class="styleguide__accordion__header">
+<div class="accordion" data-component="Application/Components/StyleguideAccordion">
+    <header class="accordion__header">
         Pair 2
     </header>
-    <div class="styleguide__accordion__content styleguide__accordion__content--alt">
+    <div class="accordion__content accordion__content--alt">
         Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus.
     </div>
 </div>
 
-<div class="styleguide__accordion" data-component="Application/Components/StyleguideAccordion">
-    <header class="styleguide__accordion__header">
+<div class="accordion" data-component="Application/Components/StyleguideAccordion">
+    <header class="accordion__header">
         Pair 3
     </header>
-    <div class="styleguide__accordion__content styleguide__accordion__content--alt">
+    <div class="accordion__content accordion__content--alt">
         Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus.
     </div>
 </div>
 
-<div class="styleguide__accordion" data-component="Application/Components/StyleguideAccordion">
-    <header class="styleguide__accordion__header">
+<div class="accordion" data-component="Application/Components/StyleguideAccordion">
+    <header class="accordion__header">
         Pair 4
     </header>
-    <div class="styleguide__accordion__content styleguide__accordion__content--alt">
+    <div class="accordion__content accordion__content--alt">
         Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus.
     </div>
 </div>

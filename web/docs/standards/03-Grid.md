@@ -6,11 +6,11 @@
 <section class="styleguide__box styleguide__box--preview styleguide__grid-example">
     {{ load(file='partials/grid-col.html.twig', showCode=true) }}
 </section>
-<!-- <div class="styleguide__accordion" data-component="Application/Components/StyleguideAccordion">
-    <header class="styleguide__accordion__header">
+<!-- <div class="accordion" data-component="Application/Components/StyleguideAccordion">
+    <header class="accordion__header">
         Code
     </header>
-    <div class="styleguide__accordion__content">
+    <div class="accordion__content">
         <pre class="styleguide__code" data-component="Application/Components/Code"><div class="styleguide__button styleguide__button--copy tooltip" data-clipboard-target="#<?=$cur;?>"><img src="assets/default/images/svg/clippy.svg" alt="Copy to clipboard"></div><code id="<?=$cur;?>"><?=printPartial('components/partials/grid/col');?></code></pre>
     </div>
 </div> -->
@@ -21,11 +21,11 @@
     <?=partial('grid/equal-cols');?>
     {{ load(file='partials/grid-equal-cols.html.twig', showCode=true) }}
 </section>
-<!-- <div class="styleguide__accordion" data-component="Application/Components/StyleguideAccordion">
-    <header class="styleguide__accordion__header">
+<!-- <div class="accordion" data-component="Application/Components/StyleguideAccordion">
+    <header class="accordion__header">
         Code
     </header>
-    <div class="styleguide__accordion__content">
+    <div class="accordion__content">
         <pre class="styleguide__code" data-component="Application/Components/Code"><div class="styleguide__button styleguide__button--copy tooltip" data-clipboard-target="#<?=$cur;?>"><img src="assets/default/images/svg/clippy.svg" alt="Copy to clipboard"></div><code id="<?=$cur;?>"><?=printPartial('components/partials/grid/equal-cols');?></code></pre>
     </div>
 </div> -->
@@ -36,11 +36,11 @@
     <?=partial('grid/offset');?>
     {{ load(file='partials/grid-offset.html.twig', showCode=true) }}
 </section>
-<!-- <div class="styleguide__accordion" data-component="Application/Components/StyleguideAccordion">
-    <header class="styleguide__accordion__header">
+<!-- <div class="accordion" data-component="Application/Components/StyleguideAccordion">
+    <header class="accordion__header">
         Code
     </header>
-    <div class="styleguide__accordion__content">
+    <div class="accordion__content">
         <pre class="styleguide__code" data-component="Application/Components/Code"><div class="styleguide__button styleguide__button--copy tooltip" data-clipboard-target="#<?=$cur;?>"><img src="assets/default/images/svg/clippy.svg" alt="Copy to clipboard"></div><code id="<?=$cur;?>"><?=printPartial('components/partials/grid/equal-cols');?></code></pre>
     </div>
 </div> -->
