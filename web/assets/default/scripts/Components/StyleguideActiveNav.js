@@ -11,10 +11,10 @@ define(
             var hash = window.location.hash;
             var param = url.pathname + url.search;
 
-            $(el).find('.styleguide__nav-list__link').each(function(){
+            $(el).find('.nav-list__link').each(function(){
                 var href = $(this).attr('href');
                 if (href == param.slice(1)) {
-                    $(this).addClass('styleguide__nav-list__link--current');
+                    $(this).addClass('nav-list__link--current');
                 }
                 $(this).on('click', function(e){
                     scrollto(e, $(this));

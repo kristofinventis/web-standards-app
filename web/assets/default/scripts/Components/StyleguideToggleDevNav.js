@@ -9,7 +9,7 @@ define(
 
             $(el).on('click', function(e) {
                 e.preventDefault();
-                $('.styleguide__nav-container--developer').toggleClass('styleguide__nav-container--active');
+                $('.nav-container--developer').toggleClass('nav-container--active');
             });
 
         };
