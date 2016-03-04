@@ -1,5 +1,5 @@
 /* Button */
-.styleguide__button--reset {
+.button--reset {
     transition: background .2s ease;
     box-sizing: border-box;
     display: inline-block;
@@ -19,8 +19,8 @@
     vertical-align: middle;
 }
 
-.styleguide__button {
-    @extend .styleguide__button--reset;
+.button {
+    @extend .button--reset;
     border-radius: 35px;
 
     box-sizing: border-box;
@@ -40,7 +40,7 @@
     }
 }
 
-.styleguide__button--secondary {
+.button--secondary {
     background: get-color("green");
     color: get-color("white");
 
@@ -55,16 +55,16 @@
     }
 }
 
-.styleguide__button--large {
+.button--large {
 
 }
 
-.styleguide__button--full-width {
+.button--full-width {
     width: 100%;
     text-align: center;
 }
 
-.styleguide__button--copy {
+.button--copy {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -110,16 +110,16 @@
     }
 }
 
-.styleguide__button--inline-copy {
-    @extend .styleguide__button--copy;
+.button--inline-copy {
+    @extend .button--copy;
     position: relative;
     z-index: 1;
     border-radius: 3px;
 }
 
-.styleguide__button--no-style,
-.styleguide__button--no-style:hover,
-.styleguide__button--no-style:focus {
+.button--no-style,
+.button--no-style:hover,
+.button--no-style:focus {
     border-radius: 0;
     bottom: 0;
     margin: 0;
@@ -141,7 +141,7 @@
     }
 }
 
-.styleguide__button--loading[disabled] {
+.button--loading[disabled] {
     position: relative;
     //overflow: hidden;
     color: transparent;

@@ -8,8 +8,8 @@ define(
             // el = current DOM el
             // config = Object {foo: "bar"}
 
-            var button = '.styleguide__button--copy';
-            var $button = $(el).find('.styleguide__button--copy');
+            var button = '.button--copy';
+            var $button = $(el).find('.button--copy');
 
             $(document).ready(function() {
                 $(el).each(function(i, block) {

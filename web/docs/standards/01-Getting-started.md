@@ -111,7 +111,7 @@
         Codeblock
     </header>
     <div class="accordion__content">
-        <pre class="styleguide__code" data-component="Application/Components/Code"><div class="styleguide__button styleguide__button--copy tooltip" data-clipboard-target="#<?=$cur;?>"><img src="assets/default/images/svg/clippy.svg" alt="Copy to clipboard"></div><code>This is code</code></pre>
+        <pre class="styleguide__code" data-component="Application/Components/Code"><div class="button button--copy tooltip" data-clipboard-target="#<?=$cur;?>"><img src="assets/default/images/svg/clippy.svg" alt="Copy to clipboard"></div><code>This is code</code></pre>
     </div>
 </div>
 

@@ -11,7 +11,7 @@
         Code
     </header>
     <div class="accordion__content">
-        <pre class="styleguide__code" data-component="Application/Components/Code"><div class="styleguide__button styleguide__button--copy tooltip" data-clipboard-target="#<?=$cur;?>"><img src="assets/default/images/svg/clippy.svg" alt="Copy to clipboard"></div><code id="<?=$cur;?>"><?=printPartial('components/partials/grid/col');?></code></pre>
+        <pre class="styleguide__code" data-component="Application/Components/Code"><div class="button button--copy tooltip" data-clipboard-target="#<?=$cur;?>"><img src="assets/default/images/svg/clippy.svg" alt="Copy to clipboard"></div><code id="<?=$cur;?>"><?=printPartial('components/partials/grid/col');?></code></pre>
     </div>
 </div> -->
 <br>
@@ -26,7 +26,7 @@
         Code
     </header>
     <div class="accordion__content">
-        <pre class="styleguide__code" data-component="Application/Components/Code"><div class="styleguide__button styleguide__button--copy tooltip" data-clipboard-target="#<?=$cur;?>"><img src="assets/default/images/svg/clippy.svg" alt="Copy to clipboard"></div><code id="<?=$cur;?>"><?=printPartial('components/partials/grid/equal-cols');?></code></pre>
+        <pre class="styleguide__code" data-component="Application/Components/Code"><div class="button button--copy tooltip" data-clipboard-target="#<?=$cur;?>"><img src="assets/default/images/svg/clippy.svg" alt="Copy to clipboard"></div><code id="<?=$cur;?>"><?=printPartial('components/partials/grid/equal-cols');?></code></pre>
     </div>
 </div> -->
 <br>
@@ -41,7 +41,7 @@
         Code
     </header>
     <div class="accordion__content">
-        <pre class="styleguide__code" data-component="Application/Components/Code"><div class="styleguide__button styleguide__button--copy tooltip" data-clipboard-target="#<?=$cur;?>"><img src="assets/default/images/svg/clippy.svg" alt="Copy to clipboard"></div><code id="<?=$cur;?>"><?=printPartial('components/partials/grid/equal-cols');?></code></pre>
+        <pre class="styleguide__code" data-component="Application/Components/Code"><div class="button button--copy tooltip" data-clipboard-target="#<?=$cur;?>"><img src="assets/default/images/svg/clippy.svg" alt="Copy to clipboard"></div><code id="<?=$cur;?>"><?=printPartial('components/partials/grid/equal-cols');?></code></pre>
     </div>
 </div> -->
 <br>
