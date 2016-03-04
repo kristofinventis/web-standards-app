@@ -1,5 +1,5 @@
-/* STYLEGUIDE__HEADER */
-.styleguide__header {
+/* header */
+.header {
     box-sizing: border-box;
     display: block;
     width: 100%;
@@ -23,7 +23,7 @@
     }
 }
 
-.styleguide__header--title {
+.header--title {
     font-family: $font-secondary;
     font-size: 2rem;
     display: inline-block;
