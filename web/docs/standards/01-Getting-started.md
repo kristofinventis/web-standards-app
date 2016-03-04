@@ -22,11 +22,11 @@
 
 <div class="title-4">Where things are</div>
 <ol class="styleguide__list">
-    <li>HTML markup for the components are located in <span class="styleguide__code styleguide__code--simple">"styleguide/components"</span>.</li>
-    <li>Sass styles are located in <span class="styleguide__code styleguide__code--simple">"styleguide/assets/default/sass"</span>. Compiled CSS is located in <span class="styleguide__code styleguide__code--simple">"styleguide/assets/default/styles"</span>.</li>
-    <li>JS is located in <span class="styleguide__code styleguide__code--simple">"styleguide/assets/default/scripts"</span>.</li>
-    <li>Fonts are located in <span class="styleguide__code styleguide__code--simple">"styleguide/assets/default/fonts"</span>.</li>
-    <li>Images and icons are located in <span class="styleguide__code styleguide__code--simple">"styleguide/assets/default/images"</span>.</li>
+    <li>HTML markup for the components are located in <span class="code code--simple">"styleguide/components"</span>.</li>
+    <li>Sass styles are located in <span class="code code--simple">"styleguide/assets/default/sass"</span>. Compiled CSS is located in <span class="code code--simple">"styleguide/assets/default/styles"</span>.</li>
+    <li>JS is located in <span class="code code--simple">"styleguide/assets/default/scripts"</span>.</li>
+    <li>Fonts are located in <span class="code code--simple">"styleguide/assets/default/fonts"</span>.</li>
+    <li>Images and icons are located in <span class="code code--simple">"styleguide/assets/default/images"</span>.</li>
 </ol>
 
 <div class="accordion" data-component="Application/Components/StyleguideAccordion">
@@ -111,7 +111,7 @@
         Codeblock
     </header>
     <div class="accordion__content">
-        <pre class="styleguide__code" data-component="Application/Components/Code"><div class="button button--copy tooltip" data-clipboard-target="#<?=$cur;?>"><img src="assets/default/images/svg/clippy.svg" alt="Copy to clipboard"></div><code>This is code</code></pre>
+        <pre class="code" data-component="Application/Components/Code"><div class="button button--copy tooltip" data-clipboard-target="#<?=$cur;?>"><img src="assets/default/images/svg/clippy.svg" alt="Copy to clipboard"></div><code>This is code</code></pre>
     </div>
 </div>
 
