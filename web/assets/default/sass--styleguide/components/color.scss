@@ -1,5 +1,5 @@
-/* STYLEGUIDE__COLOR */
-.styleguide__color {
+/* color */
+.color {
     box-sizing: border-box;
     display: inline-block;
     width: 100%;
@@ -9,13 +9,13 @@
     border-bottom: 0;
 }
 
-.styleguide__color__description {
+.color__description {
     padding: 15px;
     border: 1px solid get-color("gray");
     margin-bottom: 20px;
 }
 
-.styleguide__color__item {
+.color__item {
     margin: 0;
     display: block;
     font-size: 16px;
@@ -26,17 +26,17 @@
     margin-bottom: 10px;
 }
 
-.styleguide__color__item--class {
+.color__item--class {
     text-transform: none;
 }
 
-.styleguide__color__item--hex {
+.color__item--hex {
     text-transform: uppercase;
 }
 
 @each $color, $hex in $colors {
     .styleguide__background--#{$color},
-    .styleguide__color--#{$color} {
+    .color--#{$color} {
         background: $hex !important;
     }
     .styleguide__text--#{"" + $color} {
