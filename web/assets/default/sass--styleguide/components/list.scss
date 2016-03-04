@@ -1,5 +1,5 @@
-/* STYLEGUIDE__LIST */
-.styleguide__list {
+/* list */
+.list {
     max-width: 53rem;
     list-style: none;
     margin-bottom: 2em;
@@ -28,7 +28,7 @@
     }
 }
 
-ul.styleguide__list {
+ul.list {
     li {
         &:before {
             content: '\2022';
@@ -36,7 +36,7 @@ ul.styleguide__list {
     }
 }
 
-ol.styleguide__list {
+ol.list {
     li {
         counter-increment: table-ol;
         &:before {
@@ -46,13 +46,13 @@ ol.styleguide__list {
     }
 }
 
-[class*="styleguide__title-"] + .styleguide__list,
-h1 + .styleguide__list,
-h2 + .styleguide__list,
-h3 + .styleguide__list,
-h4 + .styleguide__list,
-h5 + .styleguide__list,
-h6 + .styleguide__list,
-p + .styleguide__list {
+[class*="styleguide__title-"] + .list,
+h1 + .list,
+h2 + .list,
+h3 + .list,
+h4 + .list,
+h5 + .list,
+h6 + .list,
+p + .list {
     margin-top: 0;
 }

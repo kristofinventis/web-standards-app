@@ -7,7 +7,7 @@
 <p class="styleguide__paragraph">The UI components are built on a solid <strong>HTML</strong> foundation, progressively enhanced to provide core experiences across browsers. All users get critical information and experiences. New browsers get the prettiest experiences, while older browsers get less pretty, but usable ones. If JavaScript fails, users will still get a robust HTML foundation.</p>
 
 <div class="title-4">CSS architecture</div>
-<ol class="styleguide__list">
+<ol class="list">
     <li>The CSS foundation of this site is built with the <strong>Sass</strong> preprocessor language.</li>
     <li>Is independent of 3rd party libraries for its main styling, with the exception of a <a href="github.com/necolas/normalize.css" target="_blank"><strong>normalizer</strong></a>.</li>
     <li>3rd party libaries can be used (like <a href="http://dimsemenov.com/plugins/magnific-popup/" target="_blank"><strong>magnific popup</strong></a>) but only if they work propperly and are of a good enough quality.</li>
@@ -21,7 +21,7 @@
 </ol>
 
 <div class="title-4">Where things are</div>
-<ol class="styleguide__list">
+<ol class="list">
     <li>HTML markup for the components are located in <span class="code code--simple">"styleguide/components"</span>.</li>
     <li>Sass styles are located in <span class="code code--simple">"styleguide/assets/default/sass"</span>. Compiled CSS is located in <span class="code code--simple">"styleguide/assets/default/styles"</span>.</li>
     <li>JS is located in <span class="code code--simple">"styleguide/assets/default/scripts"</span>.</li>
@@ -84,7 +84,7 @@
     <div class="styleguide__row">
         <div class="grid--v-large--styleguide__cols--6">
             <div class="title-6 title--bordered">Styleguide unordered list</div>
-            <ul class="styleguide__list">
+            <ul class="list">
                 <li>Unordered list item</li>
                 <li>Unordered list item</li>
                 <li>Unordered list item</li>
@@ -92,7 +92,7 @@
         </div>
         <div class="grid--v-large--styleguide__cols--6">
             <div class="title-6 title--bordered">Styleguide ordered list</div>
-            <ol class="styleguide__list">
+            <ol class="list">
                 <li>Ordered list item</li>
                 <li>Ordered list item</li>
                 <li>Ordered list item</li>

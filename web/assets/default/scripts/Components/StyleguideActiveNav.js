@@ -21,12 +21,12 @@ define(
                 })
             });
 
-            $(el).find('a[href="'+hash+'"]').addClass('styleguide__list-item--same-hash');
+            $(el).find('a[href="'+hash+'"]').addClass('list-item--same-hash');
 
             $(window).on('hashchange', function() {
                 hash = window.location.hash;
-                $(el).find('.styleguide__list-item--same-hash').removeClass('styleguide__list-item--same-hash');
-                $(el).find('a[href="'+hash+'"]').addClass('styleguide__list-item--same-hash');
+                $(el).find('.list-item--same-hash').removeClass('list-item--same-hash');
+                $(el).find('a[href="'+hash+'"]').addClass('list-item--same-hash');
             });
 
 
