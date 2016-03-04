@@ -62,7 +62,7 @@
 <p class="styleguide__paragraph">The color palette and typography were selected to provide both consistency and flexibility. The combination of a sturdy serif and slender sans serif with brighter hues can create a contemporary look and feel. When used alongside softer colors, different font pairings from the set will communicate a more classic and traditional aesthetic. The typography meets a range of layout needs; from polished marketing pages to content-heavy digital services. The palette&rsquo;s blue, white, and red can be applied generously or sparingly, all in attempt to create a distinct design with adaptability baked in.</p>
 <p class="styleguide__paragraph">We fully expect many teams will need to customize this style guide, but we encourage you to incorporate as much consistency in look, feel and usability as possible.</p>
 
-<section class="styleguide__box styleguide__box--preview">
+<section class="box box--preview">
     <div class="title-display">Styleguide Display</div>
     <div class="title-1">Styleguide Header 1</div>
     <div class="title-2">Styleguide Header 2</div>
@@ -74,7 +74,7 @@
     <p class="styleguide__paragraph">Styleguide paragraph Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis adipisci eveniet beatae atque minima! Culpa dolorem nisi ad cum expedita, vel perferendis iste hic vitae error sed deleniti consequatur placeat.</p>
     <a href="#" class="styleguide__link">This is a free styleguide link</a>
     <p class="styleguide__paragraph"><a href="#" class="styleguide__link">This is a styleguide link</a> inside a stylguide paragraph</p>
-    <div class="styleguide__box styleguide__box--padded styleguide__background--black">
+    <div class="box box--padded styleguide__background--black">
         <p class="styleguide__paragraph styleguide__text--white">
             <a href="#" class="styleguide__link styleguide__link--dark">This is a styleguide link</a>
             inside a paragraph in a dark background box
@@ -99,7 +99,7 @@
             </ol>
         </div>
     </div>
-    <div class="styleguide__box styleguide__box--left-bordered">
+    <div class="box box--left-bordered">
         <div class="title-5">Left bordered styleguide box</div>
         <p class="styleguide__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque laborum impedit nemo iure iusto vero doloribus mollitia illum accusamus incidunt provident, facilis reiciendis, recusandae! Quod, ullam quibusdam vero facere vitae.</p>
     </div>

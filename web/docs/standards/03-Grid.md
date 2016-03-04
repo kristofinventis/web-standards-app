@@ -3,7 +3,7 @@
 
 <div class="title-2 styleguide__text--blue">Grid</div>
 <div class="title-4">Grid for large viewport</div>
-<section class="styleguide__box styleguide__box--preview styleguide__grid-example">
+<section class="box box--preview styleguide__grid-example">
     {{ load(file='partials/grid-col.html.twig', showCode=true) }}
 </section>
 <!-- <div class="accordion" data-component="Application/Components/StyleguideAccordion">
@@ -17,7 +17,7 @@
 <br>
 
 <div class="title-4">Grid with equal cols</div>
-<section class="styleguide__box styleguide__box--preview styleguide__grid-example">
+<section class="box box--preview styleguide__grid-example">
     <?=partial('grid/equal-cols');?>
     {{ load(file='partials/grid-equal-cols.html.twig', showCode=true) }}
 </section>
@@ -32,7 +32,7 @@
 <br>
 
 <div class="title-4">Grid offsets</div>
-<section class="styleguide__box styleguide__box--preview styleguide__grid-example">
+<section class="box box--preview styleguide__grid-example">
     <?=partial('grid/offset');?>
     {{ load(file='partials/grid-offset.html.twig', showCode=true) }}
 </section>
