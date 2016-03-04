@@ -1,6 +1,6 @@
 <div class="title-1">Getting started</div>
 
-<p class="styleguide__summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium reprehenderit labore obcaecati, repudiandae, commodi iste modi, aperiam, distinctio quo asperiores maiores consequuntur architecto? Recusandae, pariatur id ullam maxime voluptate sit.</p>
+<p class="summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium reprehenderit labore obcaecati, repudiandae, commodi iste modi, aperiam, distinctio quo asperiores maiores consequuntur architecto? Recusandae, pariatur id ullam maxime voluptate sit.</p>
 <p class="paragraph">Laborum, dignissimos suscipit ipsum esse, pariatur, <a href="#" class="link">cum alias veritatis nam itaque</a> magni tenetur ipsam repellat quisquam a quod, doloremque animi et blanditiis.</p>
 
 <div class="title-3 styleguide__text--blue">For developers</div>
@@ -70,7 +70,7 @@
     <div class="title-4">Styleguide Header 4</div>
     <div class="title-5">Styleguide Header 5</div>
     <div class="title-6">Styleguide Header 6</div>
-    <p class="styleguide__summary">Styleguide summary Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis adipisci eveniet beatae atque minima! Culpa dolorem nisi ad cum expedita, vel perferendis iste hic vitae error sed deleniti consequatur placeat.</p>
+    <p class="summary">Styleguide summary Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis adipisci eveniet beatae atque minima! Culpa dolorem nisi ad cum expedita, vel perferendis iste hic vitae error sed deleniti consequatur placeat.</p>
     <p class="paragraph">Styleguide paragraph Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis adipisci eveniet beatae atque minima! Culpa dolorem nisi ad cum expedita, vel perferendis iste hic vitae error sed deleniti consequatur placeat.</p>
     <a href="#" class="link">This is a free styleguide link</a>
     <p class="paragraph"><a href="#" class="link">This is a styleguide link</a> inside a stylguide paragraph</p>

@@ -1,5 +1,5 @@
 <div class="title-1">Visual style</div>
-<p class="styleguide__summary">A typography suite and color palette designed to meet the highest standards of usability and accessibility, while setting a consistent visual voice of credibility, warmth, and ease-of-use across U.S. government digital platforms.</p>
+<p class="summary">A typography suite and color palette designed to meet the highest standards of usability and accessibility, while setting a consistent visual voice of credibility, warmth, and ease-of-use across U.S. government digital platforms.</p>
 <br>
 
 <a name="Typography"></a>

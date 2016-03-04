@@ -1,5 +1,5 @@
 <div class="title-1">Grid</div>
-<p class="styleguide__summary">This 12-column, responsive grid provides structure for website content.</p>
+<p class="summary">This 12-column, responsive grid provides structure for website content.</p>
 
 <div class="title-2 styleguide__text--blue">Grid</div>
 <div class="title-4">Grid for large viewport</div>
