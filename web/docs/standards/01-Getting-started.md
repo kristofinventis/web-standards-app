@@ -1,7 +1,7 @@
 <div class="title-1">Getting started</div>
 
 <p class="styleguide__summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium reprehenderit labore obcaecati, repudiandae, commodi iste modi, aperiam, distinctio quo asperiores maiores consequuntur architecto? Recusandae, pariatur id ullam maxime voluptate sit.</p>
-<p class="styleguide__paragraph">Laborum, dignissimos suscipit ipsum esse, pariatur, <a href="#" class="styleguide__link">cum alias veritatis nam itaque</a> magni tenetur ipsam repellat quisquam a quod, doloremque animi et blanditiis.</p>
+<p class="styleguide__paragraph">Laborum, dignissimos suscipit ipsum esse, pariatur, <a href="#" class="link">cum alias veritatis nam itaque</a> magni tenetur ipsam repellat quisquam a quod, doloremque animi et blanditiis.</p>
 
 <div class="title-3 styleguide__text--blue">For developers</div>
 <p class="styleguide__paragraph">The UI components are built on a solid <strong>HTML</strong> foundation, progressively enhanced to provide core experiences across browsers. All users get critical information and experiences. New browsers get the prettiest experiences, while older browsers get less pretty, but usable ones. If JavaScript fails, users will still get a robust HTML foundation.</p>
@@ -72,11 +72,11 @@
     <div class="title-6">Styleguide Header 6</div>
     <p class="styleguide__summary">Styleguide summary Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis adipisci eveniet beatae atque minima! Culpa dolorem nisi ad cum expedita, vel perferendis iste hic vitae error sed deleniti consequatur placeat.</p>
     <p class="styleguide__paragraph">Styleguide paragraph Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis adipisci eveniet beatae atque minima! Culpa dolorem nisi ad cum expedita, vel perferendis iste hic vitae error sed deleniti consequatur placeat.</p>
-    <a href="#" class="styleguide__link">This is a free styleguide link</a>
-    <p class="styleguide__paragraph"><a href="#" class="styleguide__link">This is a styleguide link</a> inside a stylguide paragraph</p>
+    <a href="#" class="link">This is a free styleguide link</a>
+    <p class="styleguide__paragraph"><a href="#" class="link">This is a styleguide link</a> inside a stylguide paragraph</p>
     <div class="box box--padded styleguide__background--black">
         <p class="styleguide__paragraph styleguide__text--white">
-            <a href="#" class="styleguide__link styleguide__link--dark">This is a styleguide link</a>
+            <a href="#" class="link link--dark">This is a styleguide link</a>
             inside a paragraph in a dark background box
         </p>
     </div>

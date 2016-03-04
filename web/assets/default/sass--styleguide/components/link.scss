@@ -1,14 +1,14 @@
-/* STYLEGUIDE__LINK */
-.styleguide__link {
+/* link */
+.link {
     color: #0071bc;
     text-decoration: none;
     background-color: transparent;
 }
 
-p .styleguide__link {
+p .link {
     text-decoration: underline;
 }
 
-.styleguide__link--dark {
+.link--dark {
     color: get-color("white");
 }
