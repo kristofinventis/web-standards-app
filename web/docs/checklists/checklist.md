@@ -1,3 +1,5 @@
+<button class="button button--print" onClick="window.print()"><img src="assets/default/images/svg/print.svg" alt="Print this page"></button>
+
 # Design Checklist
 
 ### Basic

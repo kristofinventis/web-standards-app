@@ -36,6 +36,11 @@
 
             color: get-color("white");
             text-align: center;
+
+            @media print {
+                width: 1.2rem;
+                height: 1.2rem;
+            }
         }
     }
 

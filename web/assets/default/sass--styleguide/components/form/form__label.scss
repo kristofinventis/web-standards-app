@@ -12,6 +12,10 @@
     @include screen-size(mini, small) {
         display: block;
     }
+
+    @media print {
+        font-size: 1.2rem;
+    }
 }
 
 .form__label--checkbox,

@@ -28,6 +28,11 @@
     font-size: 52px;
     line-height: 68px;
     margin-bottom: 0.67em;
+
+    @media print {
+        font-size: 30px;
+        line-height: 1.5;
+    }
 }
 
 .title-1 {
@@ -36,6 +41,11 @@
     font-size: 40px;
     line-height: 52px;
     margin-bottom: 0.67em;
+
+    @media print {
+        font-size: 18px;
+        line-height: 1.5;
+    }
 }
 
 .title-2 {
@@ -43,27 +53,47 @@
     font-weight: 700;
     font-size: 30px;
     line-height: 39px;
+
+    @media print {
+        font-size: 17px;
+        line-height: 1.5;
+    }
 }
 
 .title-3 {
     font-family: $font-secondary;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 26px;
+
+    @media print {
+        font-size: 18px;
+        line-height: 1.5;
+    }
 }
 
 .title-4 {
     font-family: $font-secondary;
     font-weight: 700;
-    font-size: 17px;
+    font-size: 15px;
     line-height: 22px;
+
+    @media print {
+        font-size: 16px;
+        line-height: 1.5;
+    }
 }
 
 .title-5 {
     font-family: $font-secondary;
     font-weight: 700;
-    font-size: 15px;
+    font-size: 14px;
     line-height: 20px;
+
+    @media print {
+        font-size: 15px;
+        line-height: 1.5;
+    }
 }
 
 .title-6 {
@@ -72,6 +102,11 @@
     font-size: 13px;
     line-height: 17px;
     text-transform: uppercase;
+
+    @media print {
+        font-size: 13px;
+        line-height: 1.5;
+    }
 }
 
 .title--bordered {

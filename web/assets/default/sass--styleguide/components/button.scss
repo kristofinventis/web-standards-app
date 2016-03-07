@@ -110,6 +110,15 @@
     }
 }
 
+.button--print {
+    @extend .button--copy;
+    right: 1rem;
+
+    @media print {
+        display: none;
+    }
+}
+
 .button--inline-copy {
     @extend .button--copy;
     position: relative;
