@@ -6,7 +6,6 @@
     display: block;
     width: 100%;
 
-    background-color: tomato;
     overflow: hidden;
 
     @include screen-size(mini, small) {
