@@ -1,3 +1,5 @@
+/* STYLEGUIDE TITLES */
+
 /* Titles */
 .title-1,
 .title-2,
@@ -12,14 +14,11 @@
 
     display: block;
     font-family: $font-secondary;
-    text-transform: uppercase;
+    text-transform: none;
 
     a {
         text-decoration: none;
         color: inherit;
-        &:hover, &:focus {
-            color: get-color("orange");
-        }
     }
 }
 
@@ -34,81 +33,48 @@
 .title-1 {
     font-family: $font-secondary;
     font-weight: 700;
-    font-size: 50px;
-    line-height: 60px;
-    letter-spacing: 1.3px;
+    font-size: 40px;
+    line-height: 52px;
     margin-bottom: 0.67em;
-
-    color: get-color("blue");
 }
 
 .title-2 {
     font-family: $font-secondary;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 24px;
-    letter-spacing: 2.07px;
-
-    color: get-color("blue");
+    font-size: 30px;
+    line-height: 39px;
 }
 
 .title-3 {
     font-family: $font-secondary;
     font-weight: 700;
-    font-size: 18px;
-    line-height: 24px;
-    letter-spacing: 1px;
-
-    color: get-color("blue");
-
-    &.title-3--alt {
-        color: get-color("orange");
-        a {
-            &:hover, &:focus {
-                color: get-color("blue");
-            }
-        }
-    }
+    font-size: 16px;
+    line-height: 26px;
 }
 
 .title-4 {
     font-family: $font-secondary;
     font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
-    letter-spacing: 1.33px;
-    text-transform: none;
-
-    color: get-color("black");
+    font-size: 15px;
+    line-height: 22px;
 }
 
 .title-5 {
     font-family: $font-secondary;
     font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 14px;
+    line-height: 20px;
 }
 
 .title-6 {
     font-family: $font-primary;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 13px;
+    line-height: 17px;
     text-transform: uppercase;
 }
 
 .title--bordered {
-    &:after {
-        content: '';
-        display: block;
-        width: 30px;
-        height: 2px;
-        margin-top: 8px;
-        background: get-color("orange");
-    }
-}
-
-.title--style-bordered {
     border-bottom: 1px solid #5b616b;
     padding-bottom: .8rem;
 }

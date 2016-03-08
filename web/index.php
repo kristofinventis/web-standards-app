@@ -24,6 +24,7 @@ $app->match('/', function (Request $request) use ($app) {
         ->addPath(__DIR__ . '/docs/pages'/*, NodeRouter::VISIBILITY_DEV*/)
         ->addPath(__DIR__ . '/docs/examples'/*, NodeRouter::VISIBILITY_DEV*/)
         ->addPath(__DIR__ . '/docs/partials'/*, NodeRouter::VISIBILITY_DEV*/)
+        ->addPath(__DIR__ . '/docs/miscellaneous'/*, NodeRouter::VISIBILITY_DEV*/)
         ->addPath(__DIR__ . '/docs/checklists'/*, NodeRouter::VISIBILITY_DEV*/);
 
     $page = $request->query->get('p', 'home/home.md');
