@@ -53,15 +53,6 @@ define(
                 'margin-top': -(imgHeight / 2)
             });
 
-            // if (direction === 'bottom') {
-            //     $inner.css({
-            //         'top': 'inherit',
-            //         'bottom': '50%',
-            //         'margin-top': -(imgHeight / 2)
-            //     });
-            // }
-
-
             // Hide image
             $img.css({
                 'display': 'none'
@@ -75,7 +66,6 @@ define(
                 }
                 moveImage(toShift);
             });
-
 
             // Change bg-image position for parallax effect
             function moveImage(toShift) {
@@ -97,7 +87,6 @@ define(
 
             scrollTop = $(window).scrollTop();
             moveImage(calculateShift() + (overflowHeight/2));
-
         }
     }
 );

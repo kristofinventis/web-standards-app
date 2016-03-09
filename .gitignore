@@ -29,7 +29,7 @@ Thumbs.db
 /nbproject/
 /.idea/
 atlassian-ide-plugin.xml
-/web/ftpsync.settings
+ftpsync.settings
 
 ###################################
 # ECLIPSE GENERATED PROJECT FILES #

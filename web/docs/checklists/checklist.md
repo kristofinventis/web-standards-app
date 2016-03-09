@@ -77,56 +77,60 @@
 
 
 
+<script type="text/javascript">
+    // Local storage for checklist
+    CheckBrowser();
+
+    // forEach method, could be shipped as part of an Object Literal/Module
+    var forEach = function (array, callback, scope) {
+        for (var i = 0; i < array.length; i++) {
+            callback.call(scope, i, array[i]); // passes back stuff we need
+        }
+    };
+
+    var checkboxes = document.querySelectorAll('.form__field--checkbox');
 
 
+    forEach(checkboxes, function (index, node) {
+        if(!localStorage.getItem('checked-' + (index+1))) {
+            populateStorage(index);
+        } else {
+            setCheck(index);
+        }
+
+        node.addEventListener('click', function (e) {
+            populateStorage(index);
+        });
+    });
 
 
+    function populateStorage(index) {
+        localStorage.setItem('checked-' + (index+1), document.getElementById('checklist-' + (index+1)).checked);
+        setCheck(index);
+    }
 
+    function setCheck(index) {
 
+        var isChecked = localStorage.getItem('checked-' + (index+1));
 
+        if( (localStorage.getItem('checked-' + (index+1))) === "true") {
+            document.getElementById('checklist-' + (index+1)).checked = true;
+        } else {
+            document.getElementById('checklist-' + (index+1)).checked = false;
+        }
 
+    }
 
+    console.log(localStorage);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    // Check if localStorage is possible
+    function CheckBrowser() {
+        if ('localStorage' in window && window['localStorage'] !== null) {
+            console.log('Local storage support');
+            return true; // we can use localStorage object to store data
+        } else {
+            console.log('No support for local storage with this browser');
+            return false;
+        }
+    }
+</script>
