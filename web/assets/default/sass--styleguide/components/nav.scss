@@ -46,8 +46,25 @@
     }
 }
 
+.nav-list {
+    list-style-type: none;
+    list-style: none;
+    padding-left: 0;
 
-.nav-list__title {
+    li {
+        position: relative;
+        border-top: 1px solid #5b616b;
+        font-size: 1.7rem;
+        line-height: 1.5;
+        display: list-item;
+        margin: 0;
+    }
+    li:first-child {
+        border-top: none;
+    }
+}
+
+.nav-list__item {
     border: none;
     color: #212121;
     display: block;
@@ -55,51 +72,54 @@
     line-height: 1;
     padding: 1rem 1rem 1rem 1.8rem;
     text-decoration: none;
-    text-transform: capitalize;
-
-    border-top: 1px solid #5b616b;
-    font-size: 1.7rem;
 
     &:hover, &:focus {
         background-color: #f1f1f1;
         color: #0071bc;
         text-decoration: none;
     }
+}
 
-    &.nav-list__link--current {
-        border-left: 4px solid #0071bc;
-        padding-left: 1.4rem;
-        color: #0071bc;
-        font-weight: 700;
-    }
+.nav-list__item--active {
+    border-left: 4px solid #0071bc;
+    padding-left: 1.4rem;
+    color: #0071bc;
+    font-weight: 700;
 }
 
 
-// Nav LIST
-.nav-list .nav-list {
+.nav-list--sub {
+    display: none;
+    margin: 0;
+    width: 100%;
     li {
         border: none;
         font-size: 1.5rem;
-        position: relative;
     }
 
-    .nav-list__link {
-        text-decoration: none;
+    .nav-list__item {
         padding-left: 2.8rem;
         line-height: 1.3;
-        border: none;
-        color: #212121;
-        display: block;
-        line-height: 1;
-        padding: 1rem 1rem 1rem 1.8rem;
+    }
 
-        &:hover, &:focus {
-            background-color: #f1f1f1;
-            color: #0071bc;
-            text-decoration: none;
+    .nav-list__item--active {
+        border: none;
+        padding-left: 2.8rem;
+    }
+
+    .nav-list--sub {
+        display: block;
+
+        .nav-list__item {
+            padding-left: 3.8rem;
         }
     }
 }
+
+.nav-list--active {
+    display: block;
+}
+
 
 .nav-list__external {
     position: absolute;
@@ -113,103 +133,15 @@
     z-index: 1;
 }
 
-.nav-list .nav-list li {
-    &:hover, &:focus {
-        .nav-list__external {
-            display: block;
+.nav-list {
+    li {
+        &:hover, &:focus {
+            & > .nav-list__external {
+                display: block;
+            }
         }
     }
 }
-
-// // .nav-list li a {
-// //     text-decoration: none;
-// // }
-
-// .nav-list {
-//     & > li {
-//         border-top: 1px solid #5b616b;
-//         font-size: 1.7rem;
-//     }
-// }
-
-// .nav-list li .nav-list li a {
-//     // font-size: inherit;
-//     // line-height: inherit;
-//     // text-transform: inherit;
-
-//     // @extend .nav-list__link;
-
-//     border: none;
-//     color: #212121;
-//     display: block;
-//     font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
-//     line-height: 1;
-//     padding: 1rem 1rem 1rem 1.8rem;
-// }
-
-// .nav-list li .nav-list li .nav-list {
-//     display: none;
-//     padding-left: 1rem;
-// }
-
-// .nav-list li .nav-list li .nav-list__link--current + .nav-list {
-//     display: block;
-// }
-
-// .nav-list__item {
-//     display: list-item;
-//     margin: 0;
-//     border-top: 1px solid #5b616b;
-//     font-size: 1.7rem;
-//     line-height: 1.5;
-
-//     &:first-child {
-//         border-top: none;
-//     }
-
-//     & > ul li {
-//         border: none;
-//         font-size: 1.5rem;
-
-//         & > a {
-//             padding-left: 2.8rem;
-//             line-height: 1.3;
-//         }
-
-//         & > ul li a {
-//             padding-left: 3.8rem;
-//         }
-//     }
-// }
-
-// .nav-list__link {
-//     border: none;
-//     color: #212121;
-//     display: block;
-//     font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
-//     line-height: 1;
-//     padding-bottom: 1rem;
-//     padding-left: 1.8rem;
-//     padding-right: 1rem;
-//     padding-top: 1rem;
-//     text-decoration: none;
-//     &:hover, &:focus {
-//         background-color: #f1f1f1;
-//         color: #0071bc;
-//         text-decoration: none;
-//     }
-// }
-
-// .nav-list__link--current {
-//     border-left: 4px solid #0071bc;
-//     padding-left: 1.4rem;
-//     color: #0071bc;
-//     font-weight: 700;
-// }
-
-// .nav-list__link--current ~ .nav-list--sub {
-//     display: block;
-// }
 
 .nav__developer-toggle {
     font-family: Arial, sans-serif;
