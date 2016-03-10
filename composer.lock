@@ -52,7 +52,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/inventis/web-standards.git",
-                "reference": "503a37c8ecc33d0caa5b1173eba8d31ed8815e6b"
+                "reference": "be02e5724e19c2cef550c6d89ebeb48dc7010f21"
             },
             "require": {
                 "erusev/parsedown": "~1.6",
@@ -65,7 +65,7 @@
                     "Inventis\\WebStandards\\": "src/"
                 }
             },
-            "time": "2016-02-13 10:09:13"
+            "time": "2016-03-10 13:31:34"
         },
         {
             "name": "pimple/pimple",
