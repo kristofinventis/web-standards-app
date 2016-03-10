@@ -45,36 +45,41 @@
 <div class="form__entry"><input type="checkbox" name="checkboxgroup" id="checklist-23" class="form__field form__field--checkbox"><label for="checklist-23" class="form__label form__label--checkbox">Image styles</label></div>
 <div class="form__entry"><input type="checkbox" name="checkboxgroup" id="checklist-24" class="form__field form__field--checkbox"><label for="checklist-24" class="form__label form__label--checkbox">Filter</label></div>
 <div class="form__entry"><input type="checkbox" name="checkboxgroup" id="checklist-25" class="form__field form__field--checkbox"><label for="checklist-25" class="form__label form__label--checkbox">Breadcrumbs</label></div>
-<div class="form__entry"><input type="checkbox" name="checkboxgroup" id="checklist-26" class="form__field form__field--checkbox"><label for="checklist-26" class="form__label form__label--checkbox"></label></div>
-<div class="form__entry"><input type="checkbox" name="checkboxgroup" id="checklist-27" class="form__field form__field--checkbox"><label for="checklist-27" class="form__label form__label--checkbox"></label></div>
-<div class="form__entry"><input type="checkbox" name="checkboxgroup" id="checklist-28" class="form__field form__field--checkbox"><label for="checklist-28" class="form__label form__label--checkbox"></label></div>
-<div class="form__entry"><input type="checkbox" name="checkboxgroup" id="checklist-29" class="form__field form__field--checkbox"><label for="checklist-29" class="form__label form__label--checkbox"></label></div>
-<div class="form__entry"><input type="checkbox" name="checkboxgroup" id="checklist-30" class="form__field form__field--checkbox"><label for="checklist-30" class="form__label form__label--checkbox"></label></div>
-<div class="form__entry"><input type="checkbox" name="checkboxgroup" id="checklist-31" class="form__field form__field--checkbox"><label for="checklist-31" class="form__label form__label--checkbox"></label></div>
-<div class="form__entry"><input type="checkbox" name="checkboxgroup" id="checklist-32" class="form__field form__field--checkbox"><label for="checklist-32" class="form__label form__label--checkbox"></label></div>
-<div class="form__entry"><input type="checkbox" name="checkboxgroup" id="checklist-33" class="form__field form__field--checkbox"><label for="checklist-33" class="form__label form__label--checkbox"></label></div>
-<div class="form__entry"><input type="checkbox" name="checkboxgroup" id="checklist-34" class="form__field form__field--checkbox"><label for="checklist-34" class="form__label form__label--checkbox"></label></div>
-<div class="form__entry"><input type="checkbox" name="checkboxgroup" id="checklist-35" class="form__field form__field--checkbox"><label for="checklist-35" class="form__label form__label--checkbox"></label></div>
-<div class="form__entry"><input type="checkbox" name="checkboxgroup" id="checklist-36" class="form__field form__field--checkbox"><label for="checklist-36" class="form__label form__label--checkbox"></label></div>
-<div class="form__entry"><input type="checkbox" name="checkboxgroup" id="checklist-37" class="form__field form__field--checkbox"><label for="checklist-37" class="form__label form__label--checkbox"></label></div>
-<div class="form__entry"><input type="checkbox" name="checkboxgroup" id="checklist-38" class="form__field form__field--checkbox"><label for="checklist-38" class="form__label form__label--checkbox"></label></div>
-<div class="form__entry"><input type="checkbox" name="checkboxgroup" id="checklist-39" class="form__field form__field--checkbox"><label for="checklist-39" class="form__label form__label--checkbox"></label></div>
-<div class="form__entry"><input type="checkbox" name="checkboxgroup" id="checklist-40" class="form__field form__field--checkbox"><label for="checklist-40" class="form__label form__label--checkbox"></label></div>
-<div class="form__entry"><input type="checkbox" name="checkboxgroup" id="checklist-41" class="form__field form__field--checkbox"><label for="checklist-41" class="form__label form__label--checkbox"></label></div>
-<div class="form__entry"><input type="checkbox" name="checkboxgroup" id="checklist-42" class="form__field form__field--checkbox"><label for="checklist-42" class="form__label form__label--checkbox"></label></div>
-<div class="form__entry"><input type="checkbox" name="checkboxgroup" id="checklist-43" class="form__field form__field--checkbox"><label for="checklist-43" class="form__label form__label--checkbox"></label></div>
-<div class="form__entry"><input type="checkbox" name="checkboxgroup" id="checklist-44" class="form__field form__field--checkbox"><label for="checklist-44" class="form__label form__label--checkbox"></label></div>
-<div class="form__entry"><input type="checkbox" name="checkboxgroup" id="checklist-45" class="form__field form__field--checkbox"><label for="checklist-45" class="form__label form__label--checkbox"></label></div>
-<div class="form__entry"><input type="checkbox" name="checkboxgroup" id="checklist-46" class="form__field form__field--checkbox"><label for="checklist-46" class="form__label form__label--checkbox"></label></div>
-<div class="form__entry"><input type="checkbox" name="checkboxgroup" id="checklist-47" class="form__field form__field--checkbox"><label for="checklist-47" class="form__label form__label--checkbox"></label></div>
-<div class="form__entry"><input type="checkbox" name="checkboxgroup" id="checklist-48" class="form__field form__field--checkbox"><label for="checklist-48" class="form__label form__label--checkbox"></label></div>
-<div class="form__entry"><input type="checkbox" name="checkboxgroup" id="checklist-49" class="form__field form__field--checkbox"><label for="checklist-49" class="form__label form__label--checkbox"></label></div>
-<div class="form__entry"><input type="checkbox" name="checkboxgroup" id="checklist-50" class="form__field form__field--checkbox"><label for="checklist-50" class="form__label form__label--checkbox"></label></div>
-<div class="form__entry"><input type="checkbox" name="checkboxgroup" id="checklist-51" class="form__field form__field--checkbox"><label for="checklist-51" class="form__label form__label--checkbox"></label></div>
-<div class="form__entry"><input type="checkbox" name="checkboxgroup" id="checklist-52" class="form__field form__field--checkbox"><label for="checklist-52" class="form__label form__label--checkbox"></label></div>
-<div class="form__entry"><input type="checkbox" name="checkboxgroup" id="checklist-53" class="form__field form__field--checkbox"><label for="checklist-53" class="form__label form__label--checkbox"></label></div>
-<div class="form__entry"><input type="checkbox" name="checkboxgroup" id="checklist-54" class="form__field form__field--checkbox"><label for="checklist-54" class="form__label form__label--checkbox"></label></div>
 
+
+---
+
+### Specific
+<div class="form__entry"><input type="checkbox" name="checkboxgroup" id="checklist-26" class="form__field form__field--checkbox"><label for="checklist-26" class="form__label form__label--checkbox"><input type="text" class="form__field form__field--textbox" value="" placeholder="____________________" id="text-1"></label></div>
+<div class="form__entry"><input type="checkbox" name="checkboxgroup" id="checklist-27" class="form__field form__field--checkbox"><label for="checklist-27" class="form__label form__label--checkbox"><input type="text" class="form__field form__field--textbox" value="" placeholder="____________________" id="text-2"></label></div>
+<div class="form__entry"><input type="checkbox" name="checkboxgroup" id="checklist-28" class="form__field form__field--checkbox"><label for="checklist-28" class="form__label form__label--checkbox"><input type="text" class="form__field form__field--textbox" value="" placeholder="____________________" id="text-3"></label></div>
+<div class="form__entry"><input type="checkbox" name="checkboxgroup" id="checklist-29" class="form__field form__field--checkbox"><label for="checklist-29" class="form__label form__label--checkbox"><input type="text" class="form__field form__field--textbox" value="" placeholder="____________________" id="text-4"></label></div>
+<div class="form__entry"><input type="checkbox" name="checkboxgroup" id="checklist-30" class="form__field form__field--checkbox"><label for="checklist-30" class="form__label form__label--checkbox"><input type="text" class="form__field form__field--textbox" value="" placeholder="____________________" id="text-5"></label></div>
+<div class="form__entry"><input type="checkbox" name="checkboxgroup" id="checklist-31" class="form__field form__field--checkbox"><label for="checklist-31" class="form__label form__label--checkbox"><input type="text" class="form__field form__field--textbox" value="" placeholder="____________________" id="text-6"></label></div>
+<div class="form__entry"><input type="checkbox" name="checkboxgroup" id="checklist-32" class="form__field form__field--checkbox"><label for="checklist-32" class="form__label form__label--checkbox"><input type="text" class="form__field form__field--textbox" value="" placeholder="____________________" id="text-7"></label></div>
+<div class="form__entry"><input type="checkbox" name="checkboxgroup" id="checklist-33" class="form__field form__field--checkbox"><label for="checklist-33" class="form__label form__label--checkbox"><input type="text" class="form__field form__field--textbox" value="" placeholder="____________________" id="text-8"></label></div>
+<div class="form__entry"><input type="checkbox" name="checkboxgroup" id="checklist-34" class="form__field form__field--checkbox"><label for="checklist-34" class="form__label form__label--checkbox"><input type="text" class="form__field form__field--textbox" value="" placeholder="____________________" id="text-9"></label></div>
+<div class="form__entry"><input type="checkbox" name="checkboxgroup" id="checklist-35" class="form__field form__field--checkbox"><label for="checklist-35" class="form__label form__label--checkbox"><input type="text" class="form__field form__field--textbox" value="" placeholder="____________________" id="text-10"></label></div>
+<div class="form__entry"><input type="checkbox" name="checkboxgroup" id="checklist-36" class="form__field form__field--checkbox"><label for="checklist-36" class="form__label form__label--checkbox"><input type="text" class="form__field form__field--textbox" value="" placeholder="____________________" id="text-11"></label></div>
+<div class="form__entry"><input type="checkbox" name="checkboxgroup" id="checklist-37" class="form__field form__field--checkbox"><label for="checklist-37" class="form__label form__label--checkbox"><input type="text" class="form__field form__field--textbox" value="" placeholder="____________________" id="text-12"></label></div>
+<div class="form__entry"><input type="checkbox" name="checkboxgroup" id="checklist-38" class="form__field form__field--checkbox"><label for="checklist-38" class="form__label form__label--checkbox"><input type="text" class="form__field form__field--textbox" value="" placeholder="____________________" id="text-13"></label></div>
+<div class="form__entry"><input type="checkbox" name="checkboxgroup" id="checklist-39" class="form__field form__field--checkbox"><label for="checklist-39" class="form__label form__label--checkbox"><input type="text" class="form__field form__field--textbox" value="" placeholder="____________________" id="text-14"></label></div>
+<div class="form__entry"><input type="checkbox" name="checkboxgroup" id="checklist-40" class="form__field form__field--checkbox"><label for="checklist-40" class="form__label form__label--checkbox"><input type="text" class="form__field form__field--textbox" value="" placeholder="____________________" id="text-15"></label></div>
+<div class="form__entry"><input type="checkbox" name="checkboxgroup" id="checklist-41" class="form__field form__field--checkbox"><label for="checklist-41" class="form__label form__label--checkbox"><input type="text" class="form__field form__field--textbox" value="" placeholder="____________________" id="text-16"></label></div>
+<div class="form__entry"><input type="checkbox" name="checkboxgroup" id="checklist-42" class="form__field form__field--checkbox"><label for="checklist-42" class="form__label form__label--checkbox"><input type="text" class="form__field form__field--textbox" value="" placeholder="____________________" id="text-17"></label></div>
+<div class="form__entry"><input type="checkbox" name="checkboxgroup" id="checklist-43" class="form__field form__field--checkbox"><label for="checklist-43" class="form__label form__label--checkbox"><input type="text" class="form__field form__field--textbox" value="" placeholder="____________________" id="text-18"></label></div>
+<div class="form__entry"><input type="checkbox" name="checkboxgroup" id="checklist-44" class="form__field form__field--checkbox"><label for="checklist-44" class="form__label form__label--checkbox"><input type="text" class="form__field form__field--textbox" value="" placeholder="____________________" id="text-19"></label></div>
+<div class="form__entry"><input type="checkbox" name="checkboxgroup" id="checklist-45" class="form__field form__field--checkbox"><label for="checklist-45" class="form__label form__label--checkbox"><input type="text" class="form__field form__field--textbox" value="" placeholder="____________________" id="text-20"></label></div>
+<div class="form__entry"><input type="checkbox" name="checkboxgroup" id="checklist-46" class="form__field form__field--checkbox"><label for="checklist-46" class="form__label form__label--checkbox"><input type="text" class="form__field form__field--textbox" value="" placeholder="____________________" id="text-21"></label></div>
+<div class="form__entry"><input type="checkbox" name="checkboxgroup" id="checklist-47" class="form__field form__field--checkbox"><label for="checklist-47" class="form__label form__label--checkbox"><input type="text" class="form__field form__field--textbox" value="" placeholder="____________________" id="text-22"></label></div>
+<div class="form__entry"><input type="checkbox" name="checkboxgroup" id="checklist-48" class="form__field form__field--checkbox"><label for="checklist-48" class="form__label form__label--checkbox"><input type="text" class="form__field form__field--textbox" value="" placeholder="____________________" id="text-23"></label></div>
+<div class="form__entry"><input type="checkbox" name="checkboxgroup" id="checklist-49" class="form__field form__field--checkbox"><label for="checklist-49" class="form__label form__label--checkbox"><input type="text" class="form__field form__field--textbox" value="" placeholder="____________________" id="text-24"></label></div>
+<div class="form__entry"><input type="checkbox" name="checkboxgroup" id="checklist-50" class="form__field form__field--checkbox"><label for="checklist-50" class="form__label form__label--checkbox"><input type="text" class="form__field form__field--textbox" value="" placeholder="____________________" id="text-25"></label></div>
+<div class="form__entry"><input type="checkbox" name="checkboxgroup" id="checklist-51" class="form__field form__field--checkbox"><label for="checklist-51" class="form__label form__label--checkbox"><input type="text" class="form__field form__field--textbox" value="" placeholder="____________________" id="text-26"></label></div>
+<div class="form__entry"><input type="checkbox" name="checkboxgroup" id="checklist-52" class="form__field form__field--checkbox"><label for="checklist-52" class="form__label form__label--checkbox"><input type="text" class="form__field form__field--textbox" value="" placeholder="____________________" id="text-27"></label></div>
+<div class="form__entry"><input type="checkbox" name="checkboxgroup" id="checklist-53" class="form__field form__field--checkbox"><label for="checklist-53" class="form__label form__label--checkbox"><input type="text" class="form__field form__field--textbox" value="" placeholder="____________________" id="text-28"></label></div>
+<div class="form__entry"><input type="checkbox" name="checkboxgroup" id="checklist-54" class="form__field form__field--checkbox"><label for="checklist-54" class="form__label form__label--checkbox"><input type="text" class="form__field form__field--textbox" value="" placeholder="____________________" id="text-29"></label></div>
+<div class="form__entry"><input type="checkbox" name="checkboxgroup" id="checklist-55" class="form__field form__field--checkbox"><label for="checklist-55" class="form__label form__label--checkbox"><input type="text" class="form__field form__field--textbox" value="" placeholder="____________________" id="text-30"></label></div>
 
 
 <script type="text/javascript">
@@ -89,39 +94,64 @@
     };
 
     var checkboxes = document.querySelectorAll('.form__field--checkbox');
+    var textboxes = document.querySelectorAll('.form__field--textbox');
 
 
-    forEach(checkboxes, function (index, node) {
-        if(!localStorage.getItem('checked-' + (index+1))) {
-            populateStorage(index);
-        } else {
-            setCheck(index);
-        }
+    forEach(checkboxes, function(index, node) {
+        init(index, node, 'checked-', 'checklist-');
+    });
 
-        node.addEventListener('click', function (e) {
-            populateStorage(index);
-        });
+    forEach(textboxes, function(index, node) {
+        init(index, node, 'textbox-', 'text-');
     });
 
 
-    function populateStorage(index) {
-        localStorage.setItem('checked-' + (index+1), document.getElementById('checklist-' + (index+1)).checked);
-        setCheck(index);
+    function init(index, node, storage, elementId) {
+        if(!localStorage.getItem(storage + (index+1))) {
+            populateStorage(index, storage, elementId);
+        } else {
+            setCheck(index, storage, elementId);
+        }
+
+        if (elementId != "text-") {
+            node.addEventListener('click', function (e) {
+                populateStorage(index, storage, elementId);
+            });
+        } else {
+            node.addEventListener('change', function (e) {
+                populateStorage(index, storage, elementId);
+            });
+        }
     }
 
-    function setCheck(index) {
 
-        var isChecked = localStorage.getItem('checked-' + (index+1));
-
-        if( (localStorage.getItem('checked-' + (index+1))) === "true") {
-            document.getElementById('checklist-' + (index+1)).checked = true;
+    function populateStorage(index, storage, elementId) {
+        if (elementId === "text-") {
+            localStorage.setItem(storage + (index+1), document.getElementById(elementId + (index+1)).value);
         } else {
-            document.getElementById('checklist-' + (index+1)).checked = false;
+            localStorage.setItem(storage + (index+1), document.getElementById(elementId + (index+1)).checked);
+        }
+        setCheck(index, storage, elementId);
+    }
+
+    function setCheck(index, storage, elementId) {
+        var value = localStorage.getItem(storage + (index+1));
+
+        if (elementId != "text-") {
+            if( (localStorage.getItem(storage + (index+1))) === "true") {
+                document.getElementById(elementId + (index+1)).checked = true;
+            } else {
+                document.getElementById(elementId + (index+1)).checked = false;
+            }
+        }
+
+        if(elementId === "text-") {
+            document.getElementById(elementId + (index+1)).value = value;
         }
 
     }
 
-    console.log(localStorage);
+    // console.log(localStorage);
 
     // Check if localStorage is possible
     function CheckBrowser() {

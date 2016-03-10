@@ -27,6 +27,12 @@
     text-align: right;
 }
 
+
+.text--huge {
+    font-size: 140px;
+    line-height: 1.05;
+}
+
 .text--default {
     @include default-typography((font-size, line-height));
     color: $default-font-color;

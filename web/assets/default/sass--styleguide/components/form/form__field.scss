@@ -34,6 +34,8 @@
 
 
     @include input-placeholder {
+        position: relative;
+        transition: all .3s ease;
         color: get-color("gray-2");
     }
 
@@ -54,6 +56,29 @@
         &:focus {
             background-color: lighten(get-color("red"), 47%);
         }
+    }
+}
+
+
+.form__field--textbox {
+    transition: all .3s ease;
+    box-sizing: border-box;
+    line-height: 1;
+    font-size: 1.6rem;
+    padding: 2px 5px;
+    position: relative;
+    top: -4px;
+
+    border: 1px solid transparent;
+    &:hover, &:focus {
+        border: 1px solid get-color("gray");
+        @include input-placeholder {
+            transition: all .3s ease;
+            color: get-color("gray");
+            position: relative;
+            top: 7px !important;
+        }
+
     }
 }
 
