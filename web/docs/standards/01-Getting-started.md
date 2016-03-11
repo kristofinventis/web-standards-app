@@ -81,7 +81,7 @@
         </p>
     </div>
     <br>
-    <div class="styleguide__row">
+    <div class="grid__row">
         <div class="grid--v-large--styleguide__cols--6">
             <div class="title-6 title--bordered">Styleguide unordered list</div>
             <ul class="list">

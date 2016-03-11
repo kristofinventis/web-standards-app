@@ -1,7 +1,7 @@
 /* Grid Container */
 // @import '../../grid.scss';
 
-.styleguide__container {
+.grid__container {
     box-sizing: border-box;
     position: relative;
     margin-left: auto;
@@ -18,7 +18,7 @@
     }
 }
 
-.styleguide__container--alt {
+.grid__container--alt {
     margin-left: 0;
     margin-right: 0;
 }
