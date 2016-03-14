@@ -124,7 +124,7 @@
 
 .nav-list__external {
     position: absolute;
-    top: 0;
+    top: 1rem;
     right: 0;
 
     display: none;
@@ -132,6 +132,13 @@
     text-decoration: none;
     color: get-color("blue");
     z-index: 1;
+
+    max-width: 1rem;
+
+    img {
+        display: block;
+        width: 100%;
+    }
 }
 
 .nav-list {
