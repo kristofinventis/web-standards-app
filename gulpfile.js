@@ -108,7 +108,7 @@ var browserSync = require('browser-sync').create();
             .pipe(gulp.dest(dest + 'styles/'));
 
         // Images
-        gulp.src(cwd + 'images/**/*.{jpg,png,jpeg,svg,gif}')
+        gulp.src(cwd + 'images/**/*.{jpg,png,jpeg,svg,gif,ico}')
             .pipe(gulp.dest(dest + 'images/'));
 
         // Fonts
