@@ -69,6 +69,17 @@ var browserSync = require('browser-sync').create();
         gulp.watch('web/assets/default/sass/**/*.scss', ['sass:front']);
     });
 
+    // BUILD THE CKEDITOR
+    gulp.task('sass:ckeditor', function () {
+        return sass( 'web/assets/default/sass/ckeditor.scss', {
+            bundleExec: true,
+            require: ['sass-globbing']
+        })
+            .on('error', sass.logError)
+            .pipe(gulp.dest('web/assets/default/styles'))
+            .pipe(browserSync.stream());
+    });
+
 
     // SVG STORE
     gulp.task('svgstore', function () {
@@ -122,7 +133,7 @@ var browserSync = require('browser-sync').create();
 
 
     // MAIN TASKS
-    gulp.task('build', ['rebuild:grid--main', 'normalize', 'magnific-popup', 'sass:front']);
+    gulp.task('build', ['rebuild:grid--main', 'normalize', 'magnific-popup', 'sass:front', 'sass:ckeditor']);
     gulp.task('grid', ['rebuild:grid--main']);
     gulp.task('front', ['sass:front', 'sass:watch']);
     gulp.task('svg', ['svgstore']);
