@@ -11,6 +11,9 @@ $color-purple:                          purple;
 $color-blue:                            #1a94ff;
 $color-gray:                            #cdcdcd;
 
+// Colors array for looping (add all colors to it)
+$colors: $color-white $color-black $color-red $color-green $color-purple $color-blue $color-gray;
+
 $color-primary:                         $color-blue;
 $color-secondary:                       $color-purple;
 $default-text-color:                    $color-black;
