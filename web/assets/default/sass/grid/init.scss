@@ -1,24 +1,28 @@
-// Make sure we have all parameters we gonna need
+/* Make sure we have all parameters we gonna need */
 
-$grid-config: getGridConfig(large);
+// Get first screen size
+$keys: map-keys($screen-sizes);
+$first-screen-size: nth($keys, 1);
 
-$nrOfCols: map-get($grid-config, total-columns);
-$gutterWidth: map-get($grid-config, gutter-width);
+$grid-config: getGridConfig($first-screen-size);
+
+$nr-of-cols: map-get($grid-config, total-columns);
+$gutter-width: map-get($grid-config, gutter-width);
 
 @if (map-has-key($grid-config, column-width)) {
-    $colWidth: map-get($grid-config, column-width);
+    $col-width: map-get($grid-config, column-width);
 
     // Calculate container-max-width
-    $containerMaxWidth: $nrOfCols * $colWidth + ($nrOfCols - 1) * $gutterWidth;
-    $screen-sizes: map-set-deep($screen-sizes, large grid container-max-width, $containerMaxWidth);
+    $container-max-width: $nr-of-cols * $col-width + ($nr-of-cols - 1) * $gutter-width;
+    $screen-sizes: map-set-deep($screen-sizes, $first-screen-size grid container-max-width, $container-max-width);
 
 } @elseif (map-has-key($grid-config, container-max-width)) {
-    $containerMaxWidth: map-get($grid-config, container-max-width);
+    $container-max-width: map-get($grid-config, container-max-width);
 
     // Calculate column-width
-    $columnWidth: ($containerMaxWidth - ($nrOfCols - 1) * $gutterWidth) / $nrOfCols;
-    $screen-sizes: map-set-deep($screen-sizes, large grid column-width, $columnWidth);
+    $column-width: ($container-max-width - ($nr-of-cols - 1) * $gutter-width) / $nr-of-cols;
+    $screen-sizes: map-set-deep($screen-sizes, $first-screen-size grid column-width, $column-width);
 
 } @else {
-    @error "No column-width or container-max-width set for large grid";
+    @error "No column-width or container-max-width set for the largest grid";
 }
