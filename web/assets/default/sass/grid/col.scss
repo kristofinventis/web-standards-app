@@ -14,21 +14,16 @@
     }
 }
 
-// generateCols($start, $end, $screen-size, $subgrid: false, $modifier: '')
-
-/* Generate col & cols */
 @each $screen-size, $screen-size-config in $screen-sizes {
     $grid-config: getGridConfig($screen-size);
     @include screen-size($screen-size) {
+
+        /* Generate col & cols */
         $nrOfCols: map-get($grid-config, total-columns);
         @include generateCols(1, $nrOfCols, $screen-size);
-    }
-}
+        // generateCols($start, $end, $screen-size, $subgrid: false, $modifier: '')
 
-/* Subgrids */
-@each $screen-size, $screen-size-config in $screen-sizes {
-    $grid-config: getGridConfig($screen-size);
-    @include screen-size($screen-size) {
+        /* Subgrids */
         @if map-has-key($grid-config, subgrids) {
             $total-columns: map-get($grid-config, total-columns);
 
@@ -37,6 +32,11 @@
                     @include generateCols($columns,$total-columns,$screen-size,true);
                 }
             }
+        }
+
+        /* Omega class */
+        .-v-#{$screen-size}-omega {
+            margin-right: 0 !important;
         }
     }
 }

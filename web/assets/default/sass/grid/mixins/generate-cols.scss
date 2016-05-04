@@ -33,7 +33,7 @@
                 &:nth-child(#{floor($nrOfCols / $i)}n +1) { clear: left; }
             }
 
-            [class*="grid--v-#{$screen-size}"].-offset--#{$i} {
+            .-v-#{$screen-size}-offset--#{$i} {
                 margin-left: $w + ($gutter);
             }
         }
