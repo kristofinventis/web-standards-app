@@ -1,0 +1,16 @@
+$selection-colors-backgroundcolor: #B3D4FD; // Browser default (chrome)
+$selection-colors-color: $default-text-color;
+
+
+
+::-moz-selection {
+    background-color: $selection-colors-backgroundcolor;
+    color: $selection-colors-color;
+    text-shadow: none;
+}
+
+::selection {
+    background-color: $selection-colors-backgroundcolor;
+    color: $selection-colors-color;
+    text-shadow: none;
+}

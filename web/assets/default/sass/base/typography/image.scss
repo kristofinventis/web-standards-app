@@ -1,0 +1,8 @@
+img {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 0.4rem; // Align with possible surrounding text
+    max-width: 100%; // Never stretch images
+    height: auto; // Always keep original image ratio
+}

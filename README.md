@@ -37,7 +37,7 @@ gulp build
 ```
 
 ```sh
-gulp build--styleguide
+gulp build --theme styleguide
 ```
 
 ---

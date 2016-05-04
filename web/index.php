@@ -14,7 +14,10 @@ $app = new Silex\Application();
 $app['debug'] = true;
 
 // Web Standards
-$app->register(new WebStandardsServiceProvider(__DIR__ . '/../resources/views/'));
+$app->register(new WebStandardsServiceProvider([
+    __DIR__ . '/../resources/views/',
+    __DIR__ . '/docs/'
+]));
 
 // Routing
 $app->match('/', function (Request $request) use ($app) {

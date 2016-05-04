@@ -1,82 +1,68 @@
 /* Button */
-.button--reset {
-    transition: background .2s ease;
+%button {
+    @include default-typography(margin);
+
     box-sizing: border-box;
     display: inline-block;
-    margin: 0;
-    padding: 0;
+    padding: 1em 1.5em;
+    vertical-align: middle;
+
     border: 0;
+    border-radius: 5px;
+    color: $color-white;
+    background: $color-primary;
 
-    color: get-color("white");
-    background: get-color("green");
-
-    font-size: 12px;
+    font-size: px-2-rem(18px);
     line-height: 1;
     text-decoration: none;
-    font-weight: 700;
-    text-transform: uppercase;
+    font-weight: $font-weight-semi-bold;
+    text-transform: none;
+    text-align: center;
 
-    vertical-align: middle;
+    cursor: pointer;
+    transition: background .2s ease;
+
+    &:hover, &:focus {
+        background: darken($color-primary, 5%);
+        color: $color-white;
+        outline: none;
+    }
+
+    &:active {
+        background: darken($color-primary, 10%);
+        color: $color-white;
+    }
+
+    &.-full-width {
+        width: 100%;
+    }
+
+    &.is-loading[disabled] {
+        position: relative;
+        color: transparent;
+
+        &:hover, &:focus {
+            color: transparent;
+        }
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 40px;
+            height: 40px;
+            margin: -20px -20px;
+            background-color: $color-white;
+            border-radius: 100%;
+            animation: scaleout 1.0s infinite ease-in-out;
+        }
+    }
 }
 
 .button {
-    @extend .button--reset;
-    border-radius: 3px;
-
-    box-sizing: border-box;
-    padding: 13px 17px;
-
-    background: get-color("green");
-    color: get-color("white");
-
-    &:hover, &:focus {
-        background: darken(get-color("green"), 5%);
-        color: get-color("white");
-    }
-
-    &:active {
-        background: darken(get-color("green"), 10%);
-        color: get-color("white");
-    }
+    @extend %button;
 }
-
-.button--secondary {
-    background: get-color("green");
-    color: get-color("white");
-
-    &:hover, &:focus {
-        background: darken(get-color("green"), 5%);
-        color: get-color("white");
-    }
-
-    &:active {
-        background: darken(get-color("green"), 10%);
-        color: get-color("white");
-    }
-}
-
-.button--large {
-
-}
-
-.button--full-width {
-    width: 100%;
-    text-align: center;
-}
-
-.button--no-style,
-.button--no-style:hover,
-.button--no-style:focus {
-    border-radius: 0;
-    bottom: 0;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    background: none;
-    color: get-color("primary");
-    font-weight: 400;
-}
-
 
 @keyframes scaleout {
     0% {
@@ -85,26 +71,5 @@
     100% {
         transform: scale(1.0);
         opacity: 0;
-    }
-}
-
-.button--loading[disabled] {
-    position: relative;
-    //overflow: hidden;
-    color: transparent;
-    &:hover, &:focus {
-        color: transparent;
-    }
-    &:before {
-        content: '';
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 40px;
-        height: 40px;
-        margin: -20px -20px;
-        background-color: get-color("white");
-        border-radius: 100%;
-        animation: scaleout 1.0s infinite ease-in-out;
     }
 }

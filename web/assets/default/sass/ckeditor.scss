@@ -4,19 +4,16 @@
 
 // Variables
 @import 'variables.scss';
-$directory-vendor: '../../lib/vendor/';
 
 // Crossbrowser normalisations
-@import 'base/normalize/*';
+@import 'base/normalize.scss';
 
-// Helper classes
-@import 'base/helpers';
+// Fonts
+@import 'base/font';
 
-@import "base/typography";
-@import "components/summary";
-@import "components/figure";
-@import "components/images";
+// Typography: Markup styles
+@import "base/typography/*";
 
 body {
-    padding: 7px;
+    padding: 0.5em;
 }

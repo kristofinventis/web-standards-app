@@ -1,0 +1,9 @@
+$properties: margin-bottom margin-top;
+
+@for $i from 1 through 3 {
+    @each $property in $properties {
+        .h-#{$property}--#{$i} {
+            #{$property}: $i * 1rem;
+        }
+    }
+}

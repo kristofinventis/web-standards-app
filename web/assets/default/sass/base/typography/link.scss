@@ -1,10 +1,9 @@
-/* Defaults */
 a {
-    color: $default-link-color;
-    text-decoration: $default-link-text-decoration;
+    color: $color-secondary;
+    text-decoration: underline;
 
     &:hover, &:focus {
-        text-decoration: $default-link-text-decoration-hover;
+        text-decoration: none;
     }
 }
 

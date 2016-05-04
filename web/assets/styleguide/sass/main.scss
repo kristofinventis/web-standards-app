@@ -1,0 +1,46 @@
+/*! Inventis styleguide v2.0.0 */
+
+// Helper functions & mixins
+@import 'functions/*';
+@import 'mixins/*';
+
+// Variables
+@import 'variables.scss';
+
+// Crossbrowser normalisations
+@import 'base/normalize/*';
+
+// Helper classes
+@import 'base/helpers';
+
+// Fonts
+// @import 'base/font';
+
+// Icons
+// @import 'base/icon';
+
+// Typography: Markup styles
+@import 'base/typography';
+
+// Global layout (header & footer)
+@import 'base/layout';
+
+// All website components
+@import 'components/*';
+
+// All website helpers
+@import 'helpers/*';
+
+// Print
+@import 'base/print';
+
+body::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background: white;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 20px;
+}

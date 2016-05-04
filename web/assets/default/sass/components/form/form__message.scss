@@ -1,9 +1,9 @@
 /* Form Message */
 .form__message {
     display: block;
-    background: get-color("red");
+    background: $color-red;
 
-    color: get-color("white");
+    color: $color-white;
     padding: 5px;
 
     margin-top: 0;
@@ -16,7 +16,7 @@
         display: none;
     }
 
-    .form__entry--invalid &{
+    .form__entry.is-invalid &{
         display: block;
     }
 }

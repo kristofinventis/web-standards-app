@@ -3,13 +3,12 @@
     opacity: 1;
     transition: opacity 0.8s;
 
+    .-hide {
+        opacity: 0;
+    }
 }
 
-.flash-container--hide {
-    opacity: 0;
-}
-
-.flash-message {
+%flash-message {
     box-sizing: border-box;
     position: relative;
     margin-bottom: 20px;
@@ -24,48 +23,55 @@
         max-width: 100%;
         color: inherit;
         line-height: 1;
-        padding-left: 35px;
+        //padding-left: 35px;
     }
 
-    &:before {
+    /*&:before {
         display: inline-block;
         position: absolute;
         left: 20px;
-        @extend .icon;
         width: 25px;
         text-align: center;
-    }
+    }*/
 }
 
 
 .flash-message--success {
+    @extend %flash-message;
+
     background: rgba(green, .1%);
     color: green;
-    &:before {
+    /*&:before {
         @extend .icon--check;
-    }
+    }*/
 }
 
 .flash-message--error {
+    @extend %flash-message;
+
     background: rgba(red, .1%);// fallback
     color: red;
-    &:before {
+    /*&:before {
         @extend .icon--cross;
-    }
+    }*/
 }
 
 .flash-message--info {
+    @extend %flash-message;
+
     background: rgba(blue, .1%);
     color: black;
-    &:before {
+    /*&:before {
         @extend .icon--info;
-    }
+    }*/
 }
 
 .flash-message--warning {
+    @extend %flash-message;
+
     background: rgba(orange, .1%);
     color: black;
-    &:before {
+    /*&:before {
         @extend .icon--warning;
-    }
+    }*/
 }

@@ -1,27 +1,32 @@
-/* Variables */
-$list-custom-color-dots:    false;
-$list-dot-color:            get-color(primary);
+$list-custom-color-dots:    true;
+$list-dot-color:            $color-secondary;
 
-$list-item-margin-bottom:   0px;
-$list-padding-left:         20px;
 
-/* List */
+
 ul, ol {
-    @include default-typography((margin));
-    overflow: hidden;
-    padding-left: $list-padding-left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 
     li {
-        display: list-item;
-        margin-bottom: $list-item-margin-bottom;
+        margin: 0;
+        padding: 0;
     }
 }
 
-ol {
-    padding-left: $list-padding-left + 14px;
+// Lists without class can get a default styling
+ul:not([class]), ol:not([class]) {
+    @include default-typography(margin);
+    overflow: hidden;
+    padding-left: 1.5em;
+
+    li {
+        display: list-item;
+        margin-bottom: 1em;
+    }
 }
 
-ul {
+ul:not([class]) {
     list-style-type: disc;
 
     @if $list-custom-color-dots {
@@ -31,14 +36,14 @@ ul {
             position: relative;
 
             &:before {
-                @include border-radius(5px);
+                border-radius: 50%;
                 content: '';
                 position: absolute;
                 display: block;
-                left: px-2-em(-16px);
-                top: px-2-em(12px);
-                width: 5px;
-                height: 5px;
+                left: -1em;
+                top: 0.6em;
+                width: 4px;
+                height: 4px;
                 background-color: $list-dot-color;
             }
         }
@@ -53,6 +58,6 @@ ul {
     }
 }
 
-ol {
+ol:not([class]) {
     list-style-type: decimal;
 }

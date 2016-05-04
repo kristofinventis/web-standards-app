@@ -8,28 +8,22 @@
 @import 'variables.scss';
 
 // Crossbrowser normalisations
-@import 'base/normalize/*';
+@import 'base/normalize.scss';
 
 // Helper classes
-@import 'base/helpers';
+@import 'helpers/*';
 
 // Fonts
 @import 'base/font';
 
-// Icons
-@import 'base/icon';
-
 // Typography: Markup styles
-@import 'base/typography';
+@import 'base/typography/*';
 
 // Global layout (header & footer)
-@import 'base/layout';
+@import 'base/body';
 
 // All website components
 @import 'components/*';
-
-// All website helpers
-@import 'helpers/*';
 
 // Print
 @import 'base/print';

@@ -1,0 +1,13 @@
+.h-sticky-footer__body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.h-sticky-footer__main {
+    flex: 1 0 auto;
+}
+
+.h-sticky-footer__footer {
+    flex-shrink: 0;
+}

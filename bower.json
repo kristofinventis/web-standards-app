@@ -20,7 +20,8 @@
     "requirejs": "~2.1.9",
     "sizzle": "~1.10.13",
     "susy": "~2.2.6",
-    "when": "~3.1.0"
+    "when": "~3.1.0",
+    "sassy-maps": "^0.4.0"
   },
   "description": "",
   "main": "",

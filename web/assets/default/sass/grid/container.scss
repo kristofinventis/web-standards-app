@@ -1,0 +1,47 @@
+/* Grid Container */
+// @import '../../grid.scss';
+
+%grid__container {
+    $grid-config: getGridConfig(large);
+    box-sizing: border-box;
+    position: relative;
+    max-width: map-get($grid-config, container-max-width) + (map-get($grid-config, side-padding) * 2);
+    @if (map-has-key($grid-config, margin)) {
+        margin: map-get($grid-config, margin);
+    } @else {
+        margin: 0 auto;
+    }
+
+    @each $screen-size, $screen-size-config in $screen-sizes {
+        $grid-config: getGridConfig($screen-size);
+        @if (map-has-key($grid-config, side-padding)) {
+            $side-padding: map-get($grid-config, side-padding);
+            @include screen-size($screen-size) {
+                padding-left: $side-padding;
+                padding-right: $side-padding;
+            }
+        }
+    }
+}
+
+.grid__container {
+    @extend %grid__container;
+}
+
+.grid__container--test {
+    @extend %grid__container;
+
+    [class*="__col"] {
+        box-sizing: border-box;
+        background: rgba(0,0,0,0.2);
+        color: #fff;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 0 solid #ccc;
+        box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.1);
+    }
+
+    [class*="__col"] [class*="__col"] {
+        margin-bottom: 0;
+    }
+}

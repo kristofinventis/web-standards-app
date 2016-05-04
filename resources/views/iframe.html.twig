@@ -12,9 +12,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- CSS Styles -->
-    <link href="assets/lib/vendor/pickadate/lib/compressed/themes/classic.css" rel="stylesheet" type="text/css" media="all">
-    <link href="assets/lib/vendor/pickadate/lib/compressed/themes/classic.date.css" rel="stylesheet" type="text/css" media="all">
-    <link href="assets/lib/vendor/pickadate/lib/compressed/themes/classic.time.css" rel="stylesheet" type="text/css" media="all">
+    <link href="assets/vendor/pickadate/lib/compressed/themes/classic.css" rel="stylesheet" type="text/css" media="all">
+    <link href="assets/vendor/pickadate/lib/compressed/themes/classic.date.css" rel="stylesheet" type="text/css" media="all">
+    <link href="assets/vendor/pickadate/lib/compressed/themes/classic.time.css" rel="stylesheet" type="text/css" media="all">
     <link href="assets/default/styles/main.css" rel="stylesheet" type="text/css" media="all">
 
     <!-- Url's -->
@@ -33,11 +33,11 @@
 {{ include(template_from_string(content)) }}
 
 <script>
-    var vendorDirectory = '../../lib/vendor/',
+    var vendorDirectory = '../../vendor/',
             requireModule = false; // e.g. '/assets/default/scripts/Modules/Home/module.js'
 
     var require = {
-        baseUrl: "assets/lib/vendor",
+        baseUrl: "assets/vendor",
         paths: {
             Application: "../../../assets/default/scripts",
             jquery: [
@@ -85,7 +85,7 @@
 
 <!-- Our own Scripts -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
-<script data-main="Application/Main" src="assets/lib/vendor/requirejs/require.js"></script>
+<script data-main="Application/Main" src="assets/vendor/requirejs/require.js"></script>
 
 </body>
 </html>

@@ -1,5 +1,0 @@
-@each $color, $hex in $colors {
-    .background--#{"" + $color} {
-        background-color: $hex;
-    }
-}

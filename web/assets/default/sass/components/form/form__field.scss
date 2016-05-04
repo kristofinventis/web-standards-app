@@ -1,0 +1,67 @@
+/* form__FIELD */
+
+// Defaults & resets
+%form__field--base-reset {
+    font-size: 1rem;
+    line-height: normal;
+    margin: 0;
+    width: 100%;
+    padding: px-2-rem(10px);
+}
+
+%form__field--full-reset {
+    @extend %form__field--base-reset;
+
+    -webkit-appearance: none !important; // HARD reset to remove shadow in input for IOS
+    border-radius: 0;
+
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 10px;
+    word-break: normal;
+    border: 1px solid $color-gray;
+
+    background-color: $color-white;
+    color: $color-black;
+
+
+    @include input-placeholder {
+        color: $color-gray;
+    }
+
+    &:focus {
+        background-color: $color-white;
+        border-color: $color-gray;
+        outline: none;
+    }
+
+    .form__field.is-invalid &{
+        border-color: $color-red;
+        background-color: lighten($color-red, 45%);
+
+        @include input-placeholder {
+            color: $color-white;
+        }
+
+        &:focus {
+            background-color: lighten($color-red, 47%);
+        }
+    }
+}
+
+
+.form__field--date,
+.form__field--email,
+.form__field--file,
+.form__field--number,
+.form__field--password,
+.form__field--search,
+.form__field--tel,
+.form__field--text,
+.form__field--textarea,
+.form__field--time {
+    @extend %form__field--full-reset;
+}
+
+/* form Imports */
+@import 'form/*';

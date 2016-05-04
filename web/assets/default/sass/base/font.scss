@@ -1,12 +1,7 @@
-@font-face {
-    font-family: 'League Spartan';
-    src: url('../fonts/leaguespartan-bold.eot');
-    src: url('../fonts/leaguespartan-bold.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/leaguespartan-bold.woff2') format('woff2'),
-         url('../fonts/leaguespartan-bold.woff') format('woff'),
-         url('../fonts/leaguespartan-bold.ttf') format('truetype'),
-         url('../fonts/leaguespartan-bold.svg#league_spartanbold') format('svg');
-    font-weight: bold;
-    font-style: normal;
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,400italic,600italic,700italic);
 
-}
+$font-primary:                          'Open Sans Pro', Arial, sans-serif;
+$font-secondary:                        $font-primary;
+$font-weight-normal:                    400;
+$font-weight-semi-bold:                 600;
+$font-weight-bold:                      700;

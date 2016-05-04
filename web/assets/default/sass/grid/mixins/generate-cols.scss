@@ -1,0 +1,65 @@
+/* MIXIN */
+@mixin generateCols($start, $end, $screen-size, $subgrid: false, $modifier: '') {
+    $start: if($start != '', $start, 1);
+
+    /* Variables */
+    $nrOfCols: $end;
+
+    $grid-config: getGridConfig($screen-size);
+    $large-grid-config: $grid-config;
+    @if ($screen-size != large) {
+        $large-grid-config: getGridConfig(large);
+    }
+    $sidePaddings: map-get($grid-config, side-padding);
+    $gutterWidth: map-get($grid-config, gutter-width);
+    $containerMaxWidth: 0;
+    $containerMaxWidth: map-get($large-grid-config, container-max-width);
+    $gutter: $gutterWidth / $containerMaxWidth * 100;
+    $modifier: if($modifier != '', ('--' + $modifier), '');
+
+    @if($subgrid == false) {
+        @for $i from $start through ($end - 1) {
+            $singleCol: ( (100% - ($gutter * ($nrOfCols - 1) ) ) / $nrOfCols);
+            $w: (( $singleCol * $i ) + ($gutter * ($i - 1) ) );
+
+            .grid--v-#{$screen-size}#{$modifier}__col--#{$i},
+            .grid--v-#{$screen-size}#{$modifier}__cols--#{$i} {
+                width: $w;
+                margin-right: $gutter * 1%;
+            }
+
+            .grid--v-#{$screen-size}#{$modifier}__cols--#{$i} {
+                &:nth-child(#{floor($nrOfCols / $i)}n) { margin-right: 0; }
+                &:nth-child(#{floor($nrOfCols / $i)}n +1) { clear: left; }
+            }
+
+            [class*="grid--v-#{$screen-size}"].-offset--#{$i} {
+                margin-left: $w + ($gutter);
+            }
+        }
+    } @elseif (map-has-key($grid-config, subgrids)) {
+        $subgrids: map-get($grid-config, subgrids);
+        $colWidth: map-get($large-grid-config, column-width);
+
+        @each $totalColumns, $columns-list in $subgrids {
+            $maxWidth: ($colWidth * $totalColumns) + ($gutterWidth * ($totalColumns - 1));
+            $gutter: ($gutterWidth / $maxWidth) * 100 ; // pecentage
+
+            @each $column in $columns-list {
+                $singleColPx: ($maxWidth - ($gutterWidth * ($totalColumns - 1))) / $totalColumns;
+                $singleCol: ($singleColPx / $maxWidth) * 100;
+                $w: (( $singleCol * $column ) + ($gutter * ($column - 1) )) * 1%;
+
+                .grid--v-#{$screen-size}__col--#{$column}-#{$totalColumns},
+                .grid--v-#{$screen-size}__cols--#{$column}-#{$totalColumns} {
+                    width: $w;
+                    margin-right: $gutter * 1%;
+                }
+                .grid--v-#{$screen-size}__cols--#{$column}-#{$totalColumns} {
+                    &:nth-child(#{floor($totalColumns / $column)}n) { margin-right: 0; }
+                    &:nth-child(#{floor($totalColumns / $column)}n +1) { clear: left; }
+                }
+            }
+        }
+    }
+}

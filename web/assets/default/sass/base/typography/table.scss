@@ -1,16 +1,15 @@
-/* Variables */
 $table-border-color:                        transparent;
 
-$table-head-color:                          $default-font-color;
+$table-head-color:                          $default-text-color;
 $table-head-background-color:               #e9e9e9;
 
-$table-row-color:                           $default-font-color;
+$table-row-color:                           $default-text-color;
 $table-row-background-color-even:           #f9f9f9;
-$table-row-background-color-odd:            get-color(white);
+$table-row-background-color-odd:            $color-white;
 
 
-/* Tables */
-.table {
+
+table {
     @include default-typography(margin);
 
     table-layout: fixed;
@@ -18,8 +17,6 @@ $table-row-background-color-odd:            get-color(white);
     max-width: 100%;
     border-collapse: collapse;
     border-spacing: 0;
-    // font-size: 0;
-    // line-height: 0;
 
     tr {
         &:nth-child(even) {
@@ -117,9 +114,4 @@ $table-row-background-color-odd:            get-color(white);
             border-bottom: 0;
         }
     }
-
-}
-
-.table__td--padded-left {
-    padding-left: 20px;
 }

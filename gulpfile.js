@@ -5,178 +5,149 @@ var sass = require('gulp-ruby-sass');
 var rename = require('gulp-rename');
 var svgstore = require('gulp-svgstore');
 var browserSync = require('browser-sync').create();
+var argv = require('yargs').argv;
+var theme = null;
 
 
-/* GULP--MAIN */
+// SET THEME
+gulp.task('set:theme', function() {
+    theme = (typeof argv.theme === 'undefined') ? 'default' : argv.theme;
+    console.log(theme);
+});
 
-    // BUILD THE GRID
-    gulp.task('sass:grid--main', function () {
-        return sass( 'web/assets/default/sass--grid/grid--main.scss', {
-                bundleExec: true,
-                scss: true,
-                require: ['sass-globbing'],
-                style: 'compressed'
-        })
+
+
+// BUILD THE GRID
+gulp.task('sass:grid', function () {
+    return sass( 'web/assets/'+theme+'/sass/grid.scss', {
+        bundleExec: true,
+        scss: true,
+        require: ['sass-globbing'],
+        style: 'compressed'
+    })
         .on('error', sass.logError)
-        .pipe(gulp.dest('web/assets/default/sass/components/grid'));
-    });
+        .pipe(gulp.dest('web/assets/'+theme+'/styles'));
+});
 
-
-    // REBUILD GRID TO SCSS FILE
-    gulp.task('rebuild:grid--main', ['sass:grid--main'], function() {
-        gulp.src('web/assets/default/sass/components/grid/grid--main.css')
+// BUILD GRID FILE
+gulp.task('build:grid', ['sass:grid'], function() {
+    gulp.src('web/assets/'+theme+'/styles/grid.css')
         .pipe(rename('grid.scss'))
-        .pipe(gulp.dest('web/assets/default/sass/components'));
-    });
+        .pipe(gulp.dest('web/assets/'+theme+'/sass/components'));
+});
 
 
-    // WATCH THE GRID
-    // gulp.task('sass:watch-grid', function () {
-    //     gulp.watch('web/assets/default/sass/grid--main.scss', ['sass:grid']);
-    // });
 
-
-    // REBUILD NORMALIZE TO SCSS FILE
-    gulp.task('normalize', function() {
-        gulp.src('web/assets/lib/vendor/normalize.css/normalize.css')
+// REBUILD NORMALIZE TO SCSS FILE
+gulp.task('normalize', function() {
+    gulp.src('web/assets/vendor/normalize.css/normalize.css')
         .pipe(rename('normalize.scss'))
-        .pipe(gulp.dest('web/assets/default/sass/base/normalize'));
-    });
+        .pipe(gulp.dest('web/assets/vendor-processed/normalize.css'));
+});
 
 
-    // REBUILD MAGNIFIC POPUP TO SCSS FILE
-    gulp.task('magnific-popup', function() {
-        gulp.src('web/assets/lib/vendor/magnific-popup/dist/magnific-popup.css')
+// REBUILD MAGNIFIC POPUP TO SCSS FILE
+gulp.task('magnific-popup', function() {
+    gulp.src('web/assets/vendor/magnific-popup/dist/magnific-popup.css')
         .pipe(rename('magnific-popup.scss'))
-        .pipe(gulp.dest('web/assets/default/sass/base/magnific-popup'));
-    });
+        .pipe(gulp.dest('web/assets/vendor-processed/magnific-popup'));
+});
 
 
-    // BUILD THE FRONT
-    gulp.task('sass:front', function () {
-        return sass( 'web/assets/default/sass/main.scss', {
-            bundleExec: true,
-            require: ['sass-globbing']
-        })
+
+// BUILD THE FRONT
+gulp.task('sass:front', function () {
+    return sass( 'web/assets/'+theme+'/sass/main.scss', {
+        bundleExec: true,
+        require: ['sass-globbing']
+    })
         .on('error', sass.logError)
-        .pipe(gulp.dest('web/assets/default/styles'))
+        .pipe(gulp.dest('web/assets/'+theme+'/styles'))
         .pipe(browserSync.stream());
-    });
+});
 
 
-    // WATCH THE FRONT
-    gulp.task('sass:watch', function () {
-        gulp.watch('web/assets/default/sass/**/*.scss', ['sass:front']);
-    });
+// WATCH THE FRONT
+gulp.task('sass:watch', function () {
+    gulp.watch('web/assets/'+theme+'/sass/**/*.scss', ['sass:front']);
+});
 
 
-    // SVG STORE
-    gulp.task('svgstore', function () {
-        return gulp
-            .src('web/assets/default/images/svg/*.svg')
-            .pipe(rename({prefix: 'svg-icon--'}))
-            .pipe(svgstore({ inlineSvg: true }))
-            .pipe(gulp.dest('web/assets/default/images/'));
-    });
-
-
-    // BROWSERSYNC
-    gulp.task('browserSync', ['sass:front'], function() {
-        browserSync.init({
-            // proxy: '127.0.0.1:8080'
-            proxy: 'www.web-standards-app.ish'
-        });
-
-        gulp.watch('web/assets/default/sass/**/*.scss', ['sass:front']);
-        gulp.watch('web/assets/default/sass--styleguide/**/*.scss', ['sass:styleguide']);
-        gulp.watch('web/docs/pages/*').on('change', browserSync.reload);
-        gulp.watch('web/docs/examples/*').on('change', browserSync.reload);
-        gulp.watch('web/docs/partials/**/*').on('change', browserSync.reload);
-        gulp.watch('web/docs/miscellaneous/*').on('change', browserSync.reload);
-        gulp.watch('web/docs/standards/*').on('change', browserSync.reload);
-        gulp.watch('web/home/*').on('change', browserSync.reload);
-    });
-
-
-    // COPY FILES
-    var cwd = 'web/assets/default/';
-    var dest = './../bricks/src/app/public/assets/default/';
-
-    gulp.task('copy', function() {
-        // Styles
-        gulp.src(cwd + 'styles/*.css')
-            .pipe(gulp.dest(dest + 'styles/'));
-
-        // Images
-        gulp.src(cwd + 'images/**/*.{jpg,png,jpeg,svg,gif,ico}')
-            .pipe(gulp.dest(dest + 'images/'));
-
-        // Fonts
-        gulp.src(cwd + 'fonts/**/*.{ttf,woff,eot,svg,json}')
-            .pipe(gulp.dest(dest + 'fonts/'));
-
-        // Scripts
-        gulp.src(cwd + 'scripts/**/*.js')
-            .pipe(gulp.dest(dest + 'scripts/'));
-    });
-
-
-    // MAIN TASKS
-    gulp.task('build', ['rebuild:grid--main', 'normalize', 'magnific-popup', 'sass:front']);
-    gulp.task('grid', ['rebuild:grid--main']);
-    gulp.task('front', ['sass:front', 'sass:watch']);
-    gulp.task('svg', ['svgstore']);
-    gulp.task('browsersync', ['browserSync', 'sass:watch']);
-
-
-
-
-
-
-
-/* GULP STYLEGUIDE */
-
-    // BUILD THE GRID
-    gulp.task('sass:grid--styleguide', function () {
-        return sass( 'web/assets/default/sass--grid/grid--styleguide.scss', {
-                bundleExec: true,
-                scss: true,
-                require: ['sass-globbing'],
-                style: 'compressed'
-        })
+// BUILD THE CKEDITOR
+gulp.task('sass:ckeditor', function () {
+    return sass( 'web/assets/'+theme+'/sass/ckeditor.scss', {
+        bundleExec: true,
+        require: ['sass-globbing']
+    })
         .on('error', sass.logError)
-        .pipe(gulp.dest('web/assets/default/sass--styleguide/components/grid'));
-    });
-
-
-    // REBUILD GRID TO SCSS FILE
-    gulp.task('rebuild:grid--styleguide', ['sass:grid--styleguide'], function() {
-        gulp.src('web/assets/default/sass--styleguide/components/grid/grid--styleguide.css')
-        .pipe(rename('grid.scss'))
-        .pipe(gulp.dest('web/assets/default/sass--styleguide/components'));
-    });
-
-
-    // BUILD THE STYLEGUIDE
-    gulp.task('sass:styleguide', function () {
-        return sass( 'web/assets/default/sass--styleguide/styleguide.scss', {
-            bundleExec: true,
-            require: ['sass-globbing']
-        })
-        .on('error', sass.logError)
-        .pipe(gulp.dest('web/assets/default/styles'))
+        .pipe(gulp.dest('web/assets/'+theme+'/styles'))
         .pipe(browserSync.stream());
+});
+
+
+// SVG STORE
+gulp.task('svgstore', function () {
+    return gulp
+        .src('web/assets/'+theme+'/images/svg/*.svg')
+        .pipe(rename({prefix: 'svg-icon--'}))
+        .pipe(svgstore({ inlineSvg: true }))
+        .pipe(gulp.dest('web/assets/'+theme+'/images/'));
+});
+
+
+// BROWSERSYNC
+gulp.task('browserSync', ['sass:front'], function() {
+    browserSync.init({
+        // proxy: '127.0.0.1:8080'
+        proxy: 'standards.inventis.iwh'
     });
 
+    gulp.watch('web/assets/default/sass/**/*.scss', ['sass:front']);
+    gulp.watch('web/assets/styleguide/sass/**/*.scss', ['sass:styleguide']);
+    gulp.watch('web/docs/pages/*').on('change', browserSync.reload);
+    gulp.watch('web/docs/examples/*').on('change', browserSync.reload);
+    gulp.watch('web/docs/partials/**/*').on('change', browserSync.reload);
+    gulp.watch('web/docs/miscellaneous/*').on('change', browserSync.reload);
+    gulp.watch('web/docs/standards/*').on('change', browserSync.reload);
+    gulp.watch('web/home/*').on('change', browserSync.reload);
+});
 
-    // WATCH THE STYLEGUIDE
-    gulp.task('sass:watch--styleguide', function () {
-        gulp.watch('web/assets/default/sass--styleguide/**/*.scss', ['sass:styleguide']);
-    });
+
+// COPY FILES
+gulp.task('copy', ['set:theme'], function() {
+    var cwd = 'web/assets/'+theme+'/';
+    var dest = './../src/app/public/assets/'+theme+'/';
+
+    // Styles
+    gulp.src(cwd + 'styles/*.css')
+        .pipe(gulp.dest(dest + 'styles/'));
+
+    // Images
+    gulp.src(cwd + 'images/**/*.{jpg,png,jpeg,svg,gif,ico}')
+        .pipe(gulp.dest(dest + 'images/'));
+
+    // Scripts
+    gulp.src(cwd + 'scripts/**/*.js')
+        .pipe(gulp.dest(dest + 'scripts/'));
+});
 
 
+// WATCH AND COPY (very handy for small changes after slicing)
+gulp.task('watch-copy', ['set:theme'], function () {
+    gulp.watch('web/assets/'+theme+'/sass/**/*.scss', ['sass:front']);
+    gulp.watch(['web/assets/'+theme+'/styles/*.css', 'web/assets/'+theme+'/scripts/**/*.js', 'web/assets/'+theme+'/images/**/*.*'], ['copy']);
+});
 
-    // STYLEGUIDE
-    gulp.task('build--styleguide', ['rebuild:grid--styleguide', 'sass:styleguide']);
-    gulp.task('grid--styleguide', ['rebuild:grid--styleguide']);
-    gulp.task('front--styleguide', ['sass:styleguide', 'sass:watch--styleguide']);
+
+// MAIN TASKS
+gulp.task('build',          ['set:theme', 'build:grid', 'normalize', 'magnific-popup', 'sass:front', 'sass:ckeditor']);
+gulp.task('build-copy',     ['set:theme', 'build', 'copy']);
+gulp.task('grid',           ['set:theme', 'build:grid']);
+gulp.task('front',          ['set:theme', 'sass:front', 'sass:watch']);
+gulp.task('svg',            ['set:theme', 'svgstore']);
+gulp.task('browsersync',    ['set:theme', 'browserSync', 'sass:watch']);
+
+// ALIASES
+gulp.task('bc', ['build-copy']);
+gulp.task('wc', ['watch-copy']);
+gulp.task('bs', ['browsersync']);

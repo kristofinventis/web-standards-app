@@ -1,33 +1,42 @@
 /* Figure */
-.figure {
+%figure {
     max-width: 892px;
     width: 100%;
     float: none;
     margin: 0;
     margin-bottom: 20px;
+    padding-left: 4px;
+    padding-top: 4px;
+    left: -4px;
+    top: -4px;
+    position: relative;
+    overflow: hidden;
 
-    a,
     img {
-        border-radius: 5px;
+        margin-top: 0;
     }
+}
+
+.figure {
+    @extend %figure;
 }
 
 /* Is used by developer */
 @each $screen-size, $screen-size-config in $screen-sizes {
     @include screen-size($screen-size) {
-        .figure--v-#{$screen-size}__left {
+        .figure.-v-#{$screen-size}__left {
             img {
                 float: left;
-                margin-right: 20px;
-                margin-bottom: 20px;
+                margin-right: 1rem;
+                margin-bottom: 1rem;
             }
         }
 
-        .figure--v-#{$screen-size}__right {
+        .figure.-v-#{$screen-size}__right {
             img {
                 float: right;
-                margin-left: 20px;
-                margin-bottom: 20px;
+                margin-left: 1rem;
+                margin-bottom: 1rem;
 
             }
         }

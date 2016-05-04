@@ -1,0 +1,15 @@
+/* form__LEGEND */
+.form__legend {
+    display: inline-block;
+    cursor: pointer;
+
+    color: $color-black;
+
+    font-size: 16px;
+    line-height: 1.25;
+    margin: 0 0 .5em 0;
+
+    @include screen-size(mini, small) {
+        display: block;
+    }
+}

@@ -1,0 +1,13 @@
+@import "../../../vendor-processed/normalize.css/normalize.scss";
+
+[data-component-config] {
+    display: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+address {
+    font-style: normal;
+}

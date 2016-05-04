@@ -1,0 +1,3 @@
+@function getGridConfig($screen-size) {
+    @return map-get-deep($screen-sizes, $screen-size grid);
+}

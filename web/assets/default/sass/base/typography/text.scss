@@ -1,0 +1,11 @@
+strong, b {
+    font-weight: $font-weight-semi-bold;
+}
+
+p {
+    @include default-typography(margin);
+
+    &.summary {
+        font-size: 120%;
+    }
+}

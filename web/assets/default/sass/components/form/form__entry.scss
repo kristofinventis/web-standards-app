@@ -1,0 +1,29 @@
+/* form__ENTRY */
+.form__entry {
+    position: relative;
+
+    .is-disabled {
+        &,
+        .form__field,
+        .form__label {
+            cursor: default;
+            color: $color-blue;
+            @include input-placeholder {
+                color: $color-gray;
+            }
+        }
+
+        .form__label--checkbox,
+        .form__label--radio {
+            &:before,
+            &:after {
+                background: $color-gray;
+            }
+        }
+    }
+
+    .is-invalid {
+        // see form__field.scss
+        // see form__message.scss
+    }
+}

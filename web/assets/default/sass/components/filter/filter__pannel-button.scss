@@ -1,6 +1,0 @@
-/* FILTER__PANNEL-BUTTON */
-.filter__pannel-button {
-    @include screen-size(large) {
-        display: none;
-    }
-}

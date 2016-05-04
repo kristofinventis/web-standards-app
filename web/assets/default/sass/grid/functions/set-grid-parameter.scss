@@ -1,0 +1,9 @@
+// This is a function in disguise because sass doesn't support void functions
+@function setGridParameter($screen-sizes, $screen-size, $parameter, $value) {
+    $new: ($screen-size: (
+        grid: (
+            $parameter: $value
+        )
+    ));
+    @return map-merge($screen-sizes, $new);
+}

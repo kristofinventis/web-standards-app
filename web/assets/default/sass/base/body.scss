@@ -1,0 +1,29 @@
+/* ==========================================================================
+   Global layout: header & footer
+   ========================================================================== */
+
+html, body {
+    min-width: 320px;
+    width: 100%;
+    font-family: $font-primary;
+}
+
+html {
+    @include default-typography((font-size, line-height));
+    color: $default-text-color;
+}
+
+body {
+    position: relative;
+    min-height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    @if $layout-responsive {
+        min-width: 320px;
+    } @else {
+        min-width: map-get-deep($screen-sizes, large grid screen-min-width);
+    }
+
+    // Don't let long words break the layout on small area's
+    word-wrap: break-word;
+}
