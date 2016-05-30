@@ -29,6 +29,15 @@
             .grid--v-#{$screen-size}#{$modifier}__offset--#{$i} {
                 margin-left: $w + ($gutter);
             }
+
+            .grid--v-#{$screen-size}#{$modifier}__push--#{$i} {
+                position: relative;
+                left: $w + ($gutter);
+            }
+            .grid--v-#{$screen-size}#{$modifier}__pull--#{$i} {
+                position: relative;
+                right: $w + ($gutter);
+            }
         }
     } @else {
         $sub-grids: getSubGrid($screen-size);
