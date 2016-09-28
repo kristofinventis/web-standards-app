@@ -74,7 +74,7 @@ var browserSync = require('browser-sync').create();
     gulp.task('svgstore', function () {
         return gulp
             .src('web/assets/default/images/svg/*.svg')
-            .pipe(rename({prefix: 'svg-icon--'}))
+            .pipe(rename({prefix: 'svg-icon-'}))
             .pipe(svgstore({ inlineSvg: true }))
             .pipe(gulp.dest('web/assets/default/images/'));
     });
