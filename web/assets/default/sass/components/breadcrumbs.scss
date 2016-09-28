@@ -3,40 +3,16 @@
     box-sizing: border-box;
 
     width: auto;
-    margin: 0;
-
-    padding: 10px 0 20px 0;
-
-    @include screen-size(medium, large) {
-        padding: 10px 0 50px 0;
-    }
-}
-
-.breadcrumb-container {
-    box-sizing: border-box;
-    position: relative;
-    z-index: 33;
-    width: 100%;
-    max-width: 1180px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 20px;
-    padding-right: 20px;
-    @include screen-size(large) {
-        padding-left: 35px;
-        padding-right: 35px;
-        margin-bottom: -82px;
-    }
-}
-
-.breadcrumb-container--inverted {
-    margin-bottom: -82px;
+    margin: 0 0 19px 0;
+    padding: 0;
 }
 
 .breadcrumbs__content {
-    font-size: 13px;
+    // @extend .grid__container;
+    box-sizing: border-box;
+
+    font-size: 14px;
     line-height: 1.25;
-    font-weight: 400;
 
     display: block;
     margin: 0;
@@ -47,44 +23,62 @@
 
 
     @include screen-size(medium, large) {
-        font-size: 16px;
+        font-size: px-2-rem(16px);
     }
+
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+    -webkit-flex-flow: flex-start;
+    -ms-flex-flow: flex-start;
+    flex-flow: flex-start;
 }
 
 
 .breadcrumb__item {
-    &:before {
-        display: none;
-    }
-
-    font-size: 17px;
-    line-height: 1.25;
     display: inline-block;
     font-family: $font-primary;
-    font-weight: 400;
+
+    white-space: nowrap;
+
+    .svg-icon-house {
+        width: 16px;
+        height: 9px;
+    }
+
+    .svg-icon-angle-right {
+        width: 6px;
+        height: 9px;
+    }
 
     & > a {
-        font-size: 16px;
+        font-size: 14px;
         line-height: 1.25;
         font-weight: 700;
         text-decoration: none;
-        font-weight: 700;
-        color: get-color("black");
 
         &:hover, &:focus {
             text-decoration: underline;
         }
 
         @include screen-size(mini, small) {
-            font-size: 13px;
             vertical-align: bottom;
             display: inline-block;
+            max-width: 110px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
     }
 
     @include screen-size(mini, small) {
-        font-size: 13px;
-        &:not(.breadcrumb__item--filler) {
+        &:not(.-filler) {
             display: none;
         }
 
@@ -97,43 +91,69 @@
             }
         }
     }
+
+    &:last-child {
+        box-sizing: border-box;
+        padding-right: 20px;
+        display: inline-block;
+        // width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+
+        span {
+            display: block;
+            position: relative;
+            max-width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+        &:after {
+            content: '';
+
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 100%;
+            z-index: 1;
+
+            display: block;
+            margin-left: -60px;
+            width: 60px;
+            height: 100%;
+            background: linear-gradient(
+                to left,
+                rgba(get-color("white"), 1),
+                rgba(get-color("white"), 0)
+            );
+        }
+    }
 }
 
 .breadcrumb__current {
     display: inline-block;
 }
 
-.breadcrumb__item--filler {
+.breadcrumb__item.-filler {
     @include screen-size(medium, large) {
         display: none;
     }
 }
 
 .breadcrumbs__icon {
-    position: relative;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 700;
+    font-size: 6px;
 
-    color: get-color("black");
-    top: 0;
+    color: get-color("gray");
+    top: -1px;
 
     display: inline-block;
     margin-right: 3px;
     margin-left: 3px;
 
     @include screen-size(medium, large) {
-        font-size: 18px;
-        top: 0px;
-        margin-left: 7px;
-        margin-right: 7px;
-    }
-}
-
-.breadcrumbs--inverted {
-    .breadcrumb__item,
-    .breadcrumb__item  > a,
-    .breadcrumbs__icon {
-        color: get-color("white");
+        margin-left: 5px;
+        margin-right: 5px;
     }
 }

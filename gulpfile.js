@@ -84,7 +84,7 @@ var browserSync = require('browser-sync').create();
     gulp.task('browserSync', ['sass:front'], function() {
         browserSync.init({
             // proxy: '127.0.0.1:8080'
-            proxy: 'www.web-standards-app.ish'
+            proxy: 'www.bb.ish'
         });
 
         gulp.watch('web/assets/default/sass/**/*.scss', ['sass:front']);
@@ -112,7 +112,7 @@ var browserSync = require('browser-sync').create();
             .pipe(gulp.dest(dest + 'images/'));
 
         // Fonts
-        gulp.src(cwd + 'fonts/**/*.{ttf,woff,eot,svg,json}')
+        gulp.src(cwd + 'fonts/**/*.{ttf,woff,woff2,eot,svg,json}')
             .pipe(gulp.dest(dest + 'fonts/'));
 
         // Scripts
