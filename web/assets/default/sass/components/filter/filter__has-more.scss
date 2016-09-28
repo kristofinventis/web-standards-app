@@ -9,7 +9,7 @@
     overflow: hidden;
 }
 
-.filter__has-more__items--visible {
+.filter__has-more__items.-visible {
     transition: max-height .35s cubic-bezier(0.7,0,0.3,1);
     max-height: 999px; // fallback. The real max-height will be set with FilterHasMore.js component
 }
@@ -36,8 +36,8 @@
 }
 
 .filter__has-more__trigger {
-    .filter__has-more__toggle--less { display: none; }
-    .filter__has-more__toggle--more { display: inline-block; }
+    .filter__has-more__toggle.-less { display: none; }
+    .filter__has-more__toggle.-more { display: inline-block; }
     .filter__has-more__icon {
         &:before {
             @extend .icon;
@@ -46,9 +46,9 @@
     }
 }
 
-.filter__has-more__trigger--open {
-    .filter__has-more__toggle--less { display: inline-block; }
-    .filter__has-more__toggle--more { display: none; }
+.filter__has-more__trigger.-open {
+    .filter__has-more__toggle.-less { display: inline-block; }
+    .filter__has-more__toggle.-more { display: none; }
     .filter__has-more__icon {
         &:before {
             @extend .icon;

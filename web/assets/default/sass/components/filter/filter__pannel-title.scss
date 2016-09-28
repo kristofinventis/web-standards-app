@@ -30,13 +30,13 @@
     }
 }
 
-.filter__pannel-title--open {
+.filter__pannel-title.-open {
     &:before {
         @extend .icon-content--arrow-up;
     }
 }
 
-.filter__pannel-title--tagged {
+.filter__pannel-title.-tagged {
     &:after {
         display: inline-block;
     }

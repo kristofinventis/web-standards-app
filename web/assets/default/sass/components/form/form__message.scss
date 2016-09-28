@@ -16,13 +16,13 @@
         display: none;
     }
 
-    .form__entry--invalid &{
+    .form__entry.-invalid &{
         display: block;
     }
 }
 
 
-.form__field--textarea + .form__message {
+.form__field.-textarea + .form__message {
     margin-top: -10px;
 }
 

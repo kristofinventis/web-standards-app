@@ -5,7 +5,7 @@
 
 }
 
-.flash-container--hide {
+.flash-container.-hide {
     opacity: 0;
 }
 
@@ -38,7 +38,7 @@
 }
 
 
-.flash-message--success {
+.flash-message.-success {
     background: rgba(green, .1%);
     color: green;
     &:before {
@@ -46,7 +46,7 @@
     }
 }
 
-.flash-message--error {
+.flash-message.-error {
     background: rgba(red, .1%);// fallback
     color: red;
     &:before {
@@ -54,7 +54,7 @@
     }
 }
 
-.flash-message--info {
+.flash-message.-info {
     background: rgba(blue, .1%);
     color: black;
     &:before {
@@ -62,7 +62,7 @@
     }
 }
 
-.flash-message--warning {
+.flash-message.-warning {
     background: rgba(orange, .1%);
     color: black;
     &:before {

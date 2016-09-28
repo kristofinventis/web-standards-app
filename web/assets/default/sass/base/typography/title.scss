@@ -74,7 +74,7 @@
     text-transform: uppercase;
 }
 
-.title--bordered {
+.title.-bordered {
     &:after {
         content: '';
         display: block;
@@ -85,7 +85,7 @@
     }
 }
 
-.title--style-bordered {
+.title.-style-bordered {
     border-bottom: 1px solid #5b616b;
     padding-bottom: .8rem;
 }

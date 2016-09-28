@@ -10,7 +10,7 @@
 }
 
 // Todo
-.filter-results--active {
+.filter-results.-active {
     @include screen-size(mini, small, medium) {
         left: 270px;
     }

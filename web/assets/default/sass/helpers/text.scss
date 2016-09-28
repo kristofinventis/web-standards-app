@@ -1,45 +1,52 @@
 /* Text helpers */
-.text--underline {
-    text-decoration: underline;
-}
+.text {
+    &.-underline {
+        text-decoration: underline;
+    }
 
-.text--uppercase {
-    text-transform: uppercase;
-}
-
-.text--centered {
-    text-align: center;
-}
-
-.text--alt-font {
-    font-family: $font-secondary
-}
-
-.text--no-margin {
-    margin-bottom: 0;
-}
-
-.text--left {
-    text-align: left;
-}
-
-.text--right {
-    text-align: right;
-}
+    &.-uppercase {
+        text-transform: uppercase;
+    }
 
 
-.text--huge {
-    font-size: 140px;
-    line-height: 1.05;
-}
+    &.-centered {
+        text-align: center;
+    }
 
-.text--default {
-    @include default-typography((font-size, line-height));
-    color: $default-font-color;
-}
 
-@each $color, $hex in $colors {
-    .text--#{"" + $color} {
-        color: $hex;
+    &.-alt-font {
+        font-family: $font-secondary
+    }
+
+
+    &.-no-margin {
+        margin-bottom: 0;
+    }
+
+
+    &.-left {
+        text-align: left;
+    }
+
+
+    &.-right {
+        text-align: right;
+    }
+
+
+    &.-huge {
+        font-size: 140px;
+        line-height: 1.05;
+    }
+
+    &.-default {
+        @include default-typography((font-size, line-height));
+        color: $default-font-color;
+    }
+
+    @each $color, $hex in $colors {
+        &.-#{"" + $color} {
+            color: $hex;
+        }
     }
 }

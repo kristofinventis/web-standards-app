@@ -3,7 +3,7 @@
     position: relative;
 }
 
-.form__entry--disabled {
+.form__entry.-disabled {
     &,
     .form__field,
     .form__label {
@@ -14,8 +14,8 @@
         }
     }
 
-    .form__label--checkbox,
-    .form__label--radio {
+    .form__label.-checkbox,
+    .form__label.-radio {
         &:before,
         &:after {
             background: get-color("gray");
@@ -23,7 +23,7 @@
     }
 }
 
-.form__entry--invalid {
+.form__entry.-invalid {
     // see form__field.scss
     // see form__message.scss
 }

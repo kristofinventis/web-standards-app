@@ -10,14 +10,14 @@
 }
 
 
-.filter__field--date,
-.filter__field--email,
-.filter__field--number,
-.filter__field--password,
-.filter__field--search,
-.filter__field--tel,
-.filter__field--text,
-.filter__field--time {
+.filter__field.-date,
+.filter__field.-email,
+.filter__field.-number,
+.filter__field.-password,
+.filter__field.-search,
+.filter__field.-tel,
+.filter__field.-text,
+.filter__field.-time {
     -webkit-appearance: none !important; // HARD reset to remove shadow in input for IOS
     border-radius: 0;
 

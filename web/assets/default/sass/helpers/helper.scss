@@ -1,62 +1,62 @@
 /* Helper classes */
-.h--no-margin {
+.h-no-margin {
     margin: 0;
 }
 
-.h--mini-margin-bottom {
+.h-mini-margin-bottom {
     margin-bottom: 5px;
 }
 
-.h--small-margin-bottom {
+.h-small-margin-bottom {
     margin-bottom: 10px;
 }
 
-.h--medium-margin-bottom {
+.h-medium-margin-bottom {
     margin-bottom: 20px;
 }
 
-.h--large-margin-bottom {
+.h-large-margin-bottom {
     margin-bottom: 30px;
 }
 
-.h--extra-large-margin-bottom {
+.h-extra-large-margin-bottom {
     margin-bottom: 40px;
 }
 
-.h--no-padding {
+.h-no-padding {
     padding: 0;
 }
 
-.h--small-padding {
+.h-small-padding {
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
-.h--medium-padding {
+.h-medium-padding {
     padding-top: 30px;
     padding-bottom: 30px;
 }
 
-.h--medium-padding-bottom {
+.h-medium-padding-bottom {
     padding-bottom: 30px;
 }
 
-.h--large-padding {
+.h-large-padding {
     padding-top: 50px;
     padding-bottom: 50px;
 }
 
-.h--large-padding-bottom {
+.h-large-padding-bottom {
     padding-bottom: 40px;
 }
 
-.h--bottom-border {
+.h-bottom-border {
     border-bottom: 1px solid get-color("orange");
 }
 
 /* HELPER-EQUAL-HEIGHT */
-.h--equal-height,
-.h--flexbox {
+.h-equal-height,
+.h-flexbox {
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -70,7 +70,7 @@
     font: 0/0 $default-font-family; // for IE10-9
 }
 
-.h--v-large__equal-height {
+.h-v-large__equal-height {
     @include screen-size(large) {
         display: -webkit-box;
         display: -moz-box;
@@ -86,7 +86,7 @@
     }
 }
 
-.h--v-medium__equal-height {
+.h-v-medium__equal-height {
     @include screen-size(medium) {
         display: -webkit-box;
         display: -moz-box;
@@ -102,7 +102,7 @@
     }
 }
 
-.h--v-small__equal-height {
+.h-v-small__equal-height {
     @include screen-size(small) {
         display: -webkit-box;
         display: -moz-box;
@@ -118,7 +118,7 @@
     }
 }
 
-.h--v-mini__equal-height {
+.h-v-mini__equal-height {
     @include screen-size(mini) {
         display: -webkit-box;
         display: -moz-box;
@@ -134,29 +134,29 @@
     }
 }
 
-.h--flex {
+.h-flex {
     flex: 1;
 }
 
-.h--hide-mini {
+.h-hide-mini {
     @include screen-size(mini) {
         display: none;
     }
 }
 
-.h--hide-small {
+.h-hide-small {
     @include screen-size(small) {
         display: none;
     }
 }
 
-.h--hide-medium {
+.h-hide-medium {
     @include screen-size(medium) {
         display: none;
     }
 }
 
-.h--hide-large {
+.h-hide-large {
     @include screen-size(large) {
         display: none;
     }

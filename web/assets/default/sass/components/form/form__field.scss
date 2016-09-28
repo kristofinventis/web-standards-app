@@ -10,16 +10,16 @@
 }
 
 
-.form__field--date,
-.form__field--email,
-.form__field--file,
-.form__field--number,
-.form__field--password,
-.form__field--search,
-.form__field--tel,
-.form__field--text,
-.form__field--textarea,
-.form__field--time {
+.form__field.-date,
+.form__field.-email,
+.form__field.-file,
+.form__field.-number,
+.form__field.-password,
+.form__field.-search,
+.form__field.-tel,
+.form__field.-text,
+.form__field.-textarea,
+.form__field.-time {
     -webkit-appearance: none !important; // HARD reset to remove shadow in input for IOS
     border-radius: 0;
 
@@ -43,7 +43,7 @@
         outline: none;
     }
 
-    .form__entry--invalid &{
+    .form__entry.-invalid &{
         border-color: get-color("red");
         background-color: lighten(get-color("red"), 45%);
 

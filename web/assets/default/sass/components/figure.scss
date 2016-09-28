@@ -15,7 +15,7 @@
 /* Is used by developer */
 @each $screen-size, $screen-size-config in $screen-sizes {
     @include screen-size($screen-size) {
-        .figure--v-#{$screen-size}__left {
+        .figure.-v-#{$screen-size}__left {
             img {
                 float: left;
                 margin-right: 20px;
@@ -23,7 +23,7 @@
             }
         }
 
-        .figure--v-#{$screen-size}__right {
+        .figure.-v-#{$screen-size}__right {
             img {
                 float: right;
                 margin-left: 20px;
@@ -36,9 +36,9 @@
 }
 
 /* Is used by the webadmin */
-.figure--left {
+.figure.-left {
     a.img,
-    a.img--alt,
+    a.img.-alt,
     img {
         @include screen-size(medium, large) {
             float: left;
@@ -49,9 +49,9 @@
     }
 }
 
-.figure--right {
+.figure.-right {
     a.img,
-    a.img--alt,
+    a.img.-alt,
     img {
         @include screen-size(medium, large) {
             float: right;
@@ -62,11 +62,11 @@
     }
 }
 
-.figure--center {
+.figure.-center {
     @include default-typography(margin);
     clear: both;
     a.img,
-    a.img--alt,
+    a.img.-alt,
     img {
         box-sizing: border-box;
         display: block;

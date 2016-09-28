@@ -2,15 +2,15 @@
 .wrapper {
     position: relative;
     width: 100%;
-}
 
-.wrapper--alt {
-    padding-top: $default-block-padding;
-    padding-bottom: $default-block-padding;
-}
+    &.-alt {
+        padding-top: $default-block-padding;
+        padding-bottom: $default-block-padding;
+    }
 
-@each $color, $hex in $colors {
-    .wrapper--#{$color} {
-        background: $hex;
+    @each $color, $hex in $colors {
+        &.-#{$color} {
+            background: $hex;
+        }
     }
 }

@@ -4,8 +4,7 @@
     padding-bottom: 20px;
     margin-bottom: 25px;
 
-    &:last-of-type,
-    &.slvzr-last-of-type {
+    &:last-of-type {
         margin-bottom: 20px;
     }
 }
@@ -19,6 +18,11 @@
         color: map-get($colors, "gray-3");
         text-decoration: underline;
     }
+
+    &.-small {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
 }
 
 .post-item__image {
@@ -30,11 +34,6 @@
         position: relative;
         top: -33px;
     }
-}
-
-.post-item__title--small {
-    font-size: 20px;
-    margin-bottom: 5px;
 }
 
 .post-item__content {

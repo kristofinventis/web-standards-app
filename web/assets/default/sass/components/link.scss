@@ -3,9 +3,9 @@
     @extend a;
 }
 
-.link--more {
+.link.-more {
     position: relative;
-    // color: $link--more-color;
+    // color: $link.-more-color;
     &:after, .after {
         @extend .icon !optional;
         @extend .icon-content--arrow-right !optional;
@@ -19,14 +19,14 @@
     }
 }
 
-.link--mailto {
+.link.-mailto {
 
 }
 
-.link--tel {
+.link.-tel {
 
 }
 
-.link--external {
+.link.-external {
 
 }
