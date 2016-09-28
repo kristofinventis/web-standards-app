@@ -1,1 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="4px" height="7px" viewBox="0 0 4 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>bullet</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Homepagina" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Landingspagina-&quot;Bouwheren&quot;" transform="translate(-365.000000, -203.000000)" fill="currentColor">
+            <g id="Navigatie" transform="translate(37.000000, 144.000000)">
+                <path d="M329.109252,65.3487046 L331.800575,62.7235446 C331.803525,62.7206671 331.807507,62.71966 331.81031,62.7167825 C331.937162,62.5931931 331.999998,62.4296061 331.999998,62.2665947 C332.00044,62.1035833 331.937752,61.9407158 331.81031,61.816407 C331.807507,61.8136734 331.803525,61.8125223 331.800575,61.8096448 L329.109252,59.1850604 C328.856286,58.9383132 328.442543,58.9383132 328.190167,59.1850604 C327.937349,59.4318076 327.937349,59.8353795 328.190167,60.0815512 L330.430428,62.2665947 L328.189725,64.4523576 C327.936758,64.6989609 327.936758,65.1025329 328.189725,65.3487046 C328.442543,65.5948763 328.856286,65.5948763 329.109252,65.3487046" id="bullet"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -30,6 +30,10 @@
 </head>
 <body>
 
+<div style="display: none;">
+{{ fileGetContents('assets/default/images/svg.svg')|raw }}
+</div>
+
 {{ include(template_from_string(content)) }}
 
 <script>
