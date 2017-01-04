@@ -5,8 +5,6 @@
 ## Requirements
 * [node.js]
 * [composer]
-* [bower]
-* [bundler]
 * [gulp]
 
 ## Terminal commands
@@ -18,13 +16,6 @@ npm install
 composer install
 ```
 
-```sh
-bower install
-```
-
-```sh
-bundle install
-```
 
 First time gulp installation:
 
@@ -63,7 +54,5 @@ Enter the address <code>http://127.0.0.1:8080</code> into your browser to view t
 
 [node.js]: <http://nodejs.org>
 [composer]: <https://getcomposer.org/>
-[bower]: <http://bower.io/>
-[bundler]: <http://bundler.io/>
 [gulp]: <https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md>
 [markdown]: <http://daringfireball.net/projects/markdown/>

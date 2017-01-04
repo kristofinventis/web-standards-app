@@ -18,7 +18,6 @@ web/assets/default/sass/components/grid.scss.map
 web/assets/default/sass/components/magnific-popup/magnific-popup.scss
 web/assets/default/sass/components/magnific-popup/magnific-popup.scss.map
 
-
 ######################
 # OS generated files #
 ######################
@@ -28,8 +27,8 @@ ehthumbs.db
 Thumbs.db
 /nbproject/
 /.idea/
+/.sass-cache/
 atlassian-ide-plugin.xml
-ftpsync.settings
 
 ###################################
 # ECLIPSE GENERATED PROJECT FILES #
@@ -38,10 +37,17 @@ ftpsync.settings
 .project
 /.settings/
 
-############################
-# SUBLIME SFTP CONFIG FILE #
-############################
+######################
+# ST generated files #
+######################
+ftpsync.settings
 sftp-config.json
+
+######################
+# COMPOSER INSTALLED #
+######################
+src/lib/vendor/Inventis/date-time/
+src/lib/vendor/Inventis/enum/
 
 ############################
 # OTHER PROJECT FILES      #
