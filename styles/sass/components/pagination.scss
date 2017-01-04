@@ -147,7 +147,7 @@
 
     &:before, &.before {
         @extend .icon !optional;
-        @extend .icon-content--larr !optional;
+        @extend .icon-content-larr !optional;
         font-size: 12px;
     }
 
@@ -162,7 +162,7 @@
 
     &:after, &.after {
         @extend .icon !optional;
-        @extend .icon-content--rarr !optional;
+        @extend .icon-content-rarr !optional;
         font-size: 12px;
     }
 

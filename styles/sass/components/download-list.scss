@@ -21,7 +21,7 @@
         color: get-color(primary);
         &:before, .before {
             @extend .icon !optional;
-            @extend .icon--download !optional;
+            @extend .icon-download !optional;
             position: absolute;
             left: 0;
             top: 4px;

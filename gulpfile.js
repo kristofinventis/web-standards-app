@@ -102,7 +102,7 @@ gulp.task('browserSync', ['front'], function() {
 
 
 // Generate Icon-font
-var fontName = 'webadmin-icons',
+var fontName = 'project-icons',
     fontPath = 'web/assets/default/fonts/' + fontName + '/';
 
 gulp.task('iconfont', function(){

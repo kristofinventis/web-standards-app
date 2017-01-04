@@ -35,7 +35,7 @@
 
     &:after, .after {
         @extend .icon !optional;
-        @extend .icon-content--arrow-down !optional;
+        @extend .icon-content-arrow-down !optional;
         display: block;
         width: 18px;
         height: 18px;
@@ -73,7 +73,7 @@
 .accordion--active {
     .accordion__header {
         &:after, .after {
-            @extend .icon-content--arrow-up !optional;
+            @extend .icon-content-arrow-up !optional;
         }
     }
 

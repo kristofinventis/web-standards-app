@@ -7,7 +7,7 @@
 
     &:before {
         @extend .icon;
-        @extend .icon-content--arrow-down;
+        @extend .icon-content-arrow-down;
         position: absolute;
         top: 50%;
         right: 10px;
@@ -32,7 +32,7 @@
 
 .filter__pannel-title.-open {
     &:before {
-        @extend .icon-content--arrow-up;
+        @extend .icon-content-arrow-up;
     }
 }
 

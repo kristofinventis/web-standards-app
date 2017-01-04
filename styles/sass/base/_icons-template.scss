@@ -1,0 +1,43 @@
+@font-face {
+    font-family: "<%= fontName %>";
+    src: url('../fonts/<%= fontName %>/<%= fontName %>.eot');
+    src: url('../fonts/<%= fontName %>/<%= fontName %>.eot?#iefix') format('eot'),
+        url('../fonts/<%= fontName %>/<%= fontName %>.woff2') format('woff2'),
+        url('../fonts/<%= fontName %>/<%= fontName %>.woff') format('woff'),
+        url('../fonts/<%= fontName %>/<%= fontName %>.ttf') format('truetype'),
+        url('../fonts/<%= fontName %>/<%= fontName %>.svg#<%= fontName %>') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$icons: (
+<% _.each(glyphs, function(glyph) { %>    "<%= glyph.fileName %>": "\<%= glyph.codePoint %>",
+<% });%>
+);
+
+.<%= cssClass %> {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+
+    font-family: "<%= fontName %>";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    text-decoration: none;
+    line-height: 1;
+
+    @each $icon, $content in $icons {
+        &.-#{$icon},
+        &.icon-content-#{$icon} {
+            &:before {
+                content: $content;
+            }
+        }
+    }
+}

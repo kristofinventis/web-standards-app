@@ -39,33 +39,33 @@
 
 
 .flash-message.-success {
-    background: rgba(green, .1%);
+    background: rgba(green, .1);
     color: green;
     &:before {
-        @extend .icon--check;
+        @extend .icon-check;
     }
 }
 
 .flash-message.-error {
-    background: rgba(red, .1%);// fallback
+    background: rgba(red, .1);// fallback
     color: red;
     &:before {
-        @extend .icon--cross;
+        @extend .icon-cross;
     }
 }
 
 .flash-message.-info {
-    background: rgba(blue, .1%);
+    background: rgba(blue, .1);
     color: black;
     &:before {
-        @extend .icon--info;
+        @extend .icon-info;
     }
 }
 
 .flash-message.-warning {
-    background: rgba(orange, .1%);
+    background: rgba(orange, .1);
     color: black;
     &:before {
-        @extend .icon--warning;
+        @extend .icon-warning;
     }
 }

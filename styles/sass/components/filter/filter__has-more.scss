@@ -41,7 +41,7 @@
     .filter__has-more__icon {
         &:before {
             @extend .icon;
-            @extend .icon-content--arrow-down;
+            @extend .icon-content-arrow-down;
         }
     }
 }
@@ -52,7 +52,7 @@
     .filter__has-more__icon {
         &:before {
             @extend .icon;
-            @extend .icon-content--arrow-up;
+            @extend .icon-content-arrow-up;
         }
     }
 }
