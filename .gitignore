@@ -46,6 +46,7 @@ sftp-config.json
 ######################
 # COMPOSER INSTALLED #
 ######################
+composer.lock
 src/lib/vendor/Inventis/date-time/
 src/lib/vendor/Inventis/enum/
 
