@@ -33,11 +33,13 @@ $icons: (
     line-height: 1;
 
     @each $icon, $content in $icons {
-        &.-#{$icon},
-        &.icon-content-#{$icon} {
+        &.-#{$icon} {
             &:before {
                 content: $content;
             }
+        }
+        &.icon-content-#{$icon} {
+            content: $content;
         }
     }
 }

@@ -21,11 +21,11 @@ $app->match('/', function (Request $request) use ($app) {
     $app['web-standards']
         ->addPath(__DIR__ . '/docs/home', NodeRouter::VISIBILITY_HIDDEN)
         ->addPath(__DIR__ . '/docs/standards', NodeRouter::VISIBILITY_DEV)
-        ->addPath(__DIR__ . '/docs/pages', NodeRouter::VISIBILITY_DEV)
-        ->addPath(__DIR__ . '/docs/examples', NodeRouter::VISIBILITY_DEV)
+        ->addPath(__DIR__ . '/docs/pages'/*, NodeRouter::VISIBILITY_DEV*/)
+        ->addPath(__DIR__ . '/docs/examples'/*, NodeRouter::VISIBILITY_DEV*/)
         ->addPath(__DIR__ . '/docs/partials'/*, NodeRouter::VISIBILITY_DEV*/)
-        ->addPath(__DIR__ . '/docs/miscellaneous'/*, NodeRouter::VISIBILITY_DEV*/)
-        ->addPath(__DIR__ . '/docs/checklists'/*, NodeRouter::VISIBILITY_DEV*/);
+        ->addPath(__DIR__ . '/docs/miscellaneous', NodeRouter::VISIBILITY_DEV)
+        ->addPath(__DIR__ . '/docs/checklists', NodeRouter::VISIBILITY_DEV);
 
     $page = $request->query->get('p', 'home/home.md');
     if ($request->query->getBoolean('iframe', false) == true) {

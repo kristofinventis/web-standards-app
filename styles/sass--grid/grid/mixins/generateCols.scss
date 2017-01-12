@@ -15,26 +15,26 @@
             $singleCol: ( (100% - ($gutter * ($nrOfCols - 1) ) ) / $nrOfCols);
             $w: (( $singleCol * $i ) + ($gutter * ($i - 1) ) );
 
-            .grid--v-#{$screen-size}#{$modifier}__col--#{$i},
-            .grid--v-#{$screen-size}#{$modifier}__cols--#{$i} {
+            .col.-#{$screen-size}#{$modifier}-#{$i},
+            .col.-#{$screen-size}#{$modifier}-#{$i}-equal {
                 width: $w;
                 margin-right: $gutter * 1%;
             }
 
-            .grid--v-#{$screen-size}#{$modifier}__cols--#{$i} {
+            .col.-#{$screen-size}#{$modifier}-#{$i}-equal {
                 &:nth-child(#{floor($nrOfCols / $i)}n) { margin-right: 0; }
                 &:nth-child(#{floor($nrOfCols / $i)}n +1) { clear: left; }
             }
 
-            .grid--v-#{$screen-size}#{$modifier}__offset--#{$i} {
+            .col.-#{$screen-size}#{$modifier}-offset-#{$i} {
                 margin-left: $w + ($gutter);
             }
 
-            .grid--v-#{$screen-size}#{$modifier}__push--#{$i} {
+            .col.-#{$screen-size}#{$modifier}-push-#{$i} {
                 position: relative;
                 left: $w + ($gutter);
             }
-            .grid--v-#{$screen-size}#{$modifier}__pull--#{$i} {
+            .col.-#{$screen-size}#{$modifier}-pull-#{$i} {
                 position: relative;
                 right: $w + ($gutter);
             }
@@ -53,12 +53,12 @@
                 $singleCol: ($singleColPx / $maxWidth) * 100;
                 $w: (( $singleCol * $column ) + ($gutter * ($column - 1) )) * 1%;
 
-                .grid--v-#{$screen-size}__col--#{$column}-#{$totalColumns},
-                .grid--v-#{$screen-size}__cols--#{$column}-#{$totalColumns} {
+                .col.-#{$screen-size}-#{$column}-#{$totalColumns},
+                .col.-#{$screen-size}-#{$column}-#{$totalColumns}-equal {
                     width: $w;
                     margin-right: $gutter * 1%;
                 }
-                .grid--v-#{$screen-size}__cols--#{$column}-#{$totalColumns} {
+                .col.-#{$screen-size}-#{$column}-#{$totalColumns}-equal {
                     &:nth-child(#{floor($totalColumns / $column)}n) { margin-right: 0; }
                     &:nth-child(#{floor($totalColumns / $column)}n +1) { clear: left; }
                 }

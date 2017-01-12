@@ -23,16 +23,17 @@
 
 .nav-container--alt {
     display: none;
-    z-index: 9999;
+    z-index: 9998;
 }
 
 .nav-container--developer {
     display: none;
-    z-index: 9999;
+    z-index: 9997;
 }
 
 .nav-container--active {
     display: block;
+    z-index: 9997;
 }
 
 // First nav list wrapper

@@ -1,8 +1,5 @@
-/* Grid Col */
-// @import '../../grid.scss';
-
-[class*="__col--"],
-[class*="__cols--"]{
+/* Col */
+.col {
     box-sizing: border-box;
     position: relative;
     display: block;
@@ -39,7 +36,7 @@
 /* Generate omega class */
 @each $screen-size, $screen-size-config in $screen-sizes {
     @include screen-size($screen-size) {
-        .grid--v-#{$screen-size}__col--omega {
+        .col.-#{$screen-size}-omega {
             margin-right: 0 !important;
         }
     }

@@ -2,11 +2,9 @@
 .flash-container {
     opacity: 1;
     transition: opacity 0.8s;
-
-}
-
-.flash-container.-hide {
-    opacity: 0;
+    &.-hide {
+        opacity: 0;
+    }
 }
 
 .flash-message {
@@ -28,44 +26,36 @@
     }
 
     &:before {
+        @extend .icon;
         display: inline-block;
         position: absolute;
         left: 20px;
-        @extend .icon;
         width: 25px;
         text-align: center;
     }
-}
 
+    &.-success {
+        background: rgba(green, .1);
+        color: green;
+        @extend .-check !optional;
+    }
 
-.flash-message.-success {
-    background: rgba(green, .1);
-    color: green;
-    &:before {
-        @extend .icon-check;
+    &.-error {
+        background: rgba(red, .1);
+        color: red;
+        @extend .-cross !optional;
+    }
+
+    &.-info {
+        background: rgba(blue, .1);
+        color: black;
+        @extend .-info !optional;
+    }
+
+    &.-warning {
+        background: rgba(orange, .1);
+        color: black;
+        @extend .-warning !optional;
     }
 }
 
-.flash-message.-error {
-    background: rgba(red, .1);// fallback
-    color: red;
-    &:before {
-        @extend .icon-cross;
-    }
-}
-
-.flash-message.-info {
-    background: rgba(blue, .1);
-    color: black;
-    &:before {
-        @extend .icon-info;
-    }
-}
-
-.flash-message.-warning {
-    background: rgba(orange, .1);
-    color: black;
-    &:before {
-        @extend .icon-warning;
-    }
-}

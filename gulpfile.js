@@ -84,8 +84,8 @@ gulp.task('watch:main', function () {
 // Browsersync - Helpfull during development
 gulp.task('browserSync', ['front'], function() {
     browserSync.init({
-        proxy: '127.0.0.1:8000'
-        // proxy: 'ws.my-project.ish'
+        // proxy: '127.0.0.1:8000'
+        proxy: 'www.wsa.ish'
     });
 
     // Watch sass

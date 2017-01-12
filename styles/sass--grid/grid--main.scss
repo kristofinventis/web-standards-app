@@ -67,6 +67,6 @@ $screen-sizes: (
 @import 'grid/functions/*';
 @import 'grid/mixins/*';
 
-@import 'grid/grid--main/grid__container.scss';
-@import 'grid/grid--main/grid__row.scss';
-@import 'grid/grid--main/grid__col.scss';
+@import 'grid/grid--main/container.scss';
+@import 'grid/grid--main/row.scss';
+@import 'grid/grid--main/col.scss';
