@@ -20,13 +20,13 @@
 // @import 'base/icon';
 
 // Typography: Markup styles
-@import 'base/typography';
+@import 'base/typography/*';
 
 // Global layout (header & footer)
 @import 'base/layout';
 
 // All website components
-@import 'components/*';
+@import 'components/**/*';
 
 // All website helpers
 @import 'helpers/*';
