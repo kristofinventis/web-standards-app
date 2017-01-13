@@ -27,3 +27,19 @@ composer install
 # Gulp
 gulp build--styleguide
 gulp build
+
+osascript -e 'tell application "Terminal"
+    # Activate it.
+    activate
+
+    # Do command 1.
+    set firstCommand to "gulp browsersync"
+    do script firstCommand in window 0
+
+    # Open a new tab.
+    tell application "System Events" to tell process "Terminal" to keystroke "t" using command down
+
+    # Do command 2.
+    set secondCommand to "cd web && PHP -S 127.0.0.1:8000"
+    do script secondCommand in window 1
+end tell'

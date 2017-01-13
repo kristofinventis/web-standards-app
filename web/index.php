@@ -1,4 +1,5 @@
 <?php
+date_default_timezone_set("Europe/Brussels");
 
 use Inventis\WebStandards\NodeRouter;
 use Inventis\WebStandards\Twig\Extension\FileInclude;
