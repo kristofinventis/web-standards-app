@@ -7,7 +7,13 @@
 * [composer]
 * [gulp]
 
-## Terminal commands
+## Terminal commands (simple version)
+```sh
+bash install.sh
+```
+
+
+## Terminal commands (extended version)
 ```sh
 npm install
 ```
