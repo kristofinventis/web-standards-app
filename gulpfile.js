@@ -17,7 +17,10 @@ gulp.task('grid:styleguide', function() {
         .pipe(sassGlob())
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
         .pipe(gulp.dest('./styles/sass--styleguide/components/grid'))
-        .pipe(rename('grid-styleguide.scss'))
+        .pipe(rename({
+            basename: 'grid-styleguide',
+            extname: '.scss'
+        }))
         .pipe(gulp.dest('./styles/sass--styleguide/components'));
 });
 
@@ -27,7 +30,10 @@ gulp.task('grid:main', function() {
         .pipe(sassGlob())
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
         .pipe(gulp.dest('./styles/sass/components/grid'))
-        .pipe(rename('grid-styleguide.scss'))
+        .pipe(rename({
+            basename: 'grid-styleguide',
+            extname: '.scss'
+        }))
         .pipe(gulp.dest('./styles/sass/components'));
 });
 
@@ -52,7 +58,10 @@ gulp.task('main', function() {
 // Rebuild Normalize to scss file
 gulp.task('normalize', function() {
     return gulp.src('./node_modules/normalize.css/normalize.css')
-        .pipe(rename('normalize.scss'))
+        .pipe(rename({
+            basename: 'normalize',
+            extname: '.scss'
+        }))
         .pipe(gulp.dest('./styles/sass/base/normalize'));
 });
 
