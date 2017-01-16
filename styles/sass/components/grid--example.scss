@@ -1,6 +1,6 @@
 /* Styleguide Grid--example */
-.grid--example {
-    [class*="__col"] {
+.grid-example {
+    .col {
         box-sizing: border-box;
         background: rgba(0,0,0,0.2);
         color: #fff;
@@ -8,9 +8,6 @@
         margin-bottom: 10px;
         border: 0 solid #ccc;
         box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.1);
-    }
-
-    [class*="__col"] [class*="__col"] {
         margin-bottom: 0;
     }
 }

@@ -82,7 +82,7 @@
     </div>
     <br>
     <div class="row">
-        <div class="grid--v-large--styleguide__cols--6">
+        <div class="col -large--styleguide-6-equal">
             <div class="title-6 title--bordered">Styleguide unordered list</div>
             <ul class="list">
                 <li>Unordered list item</li>
@@ -90,7 +90,7 @@
                 <li>Unordered list item</li>
             </ul>
         </div>
-        <div class="grid--v-large--styleguide__cols--6">
+        <div class="col -large--styleguide-6-equal">
             <div class="title-6 title--bordered">Styleguide ordered list</div>
             <ol class="list">
                 <li>Ordered list item</li>

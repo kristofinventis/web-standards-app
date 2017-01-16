@@ -12,7 +12,7 @@ var browserSync = require('browser-sync').create();
 
 /* Builds */
 // Build the styleguide grid
-gulp.task('grid:styleguide', function () {
+gulp.task('grid:styleguide', function() {
     return gulp.src('./styles/sass--grid/grid--styleguide.scss')
         .pipe(sassGlob())
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
@@ -22,7 +22,7 @@ gulp.task('grid:styleguide', function () {
 });
 
 // Build the main grid
-gulp.task('grid:main', function () {
+gulp.task('grid:main', function() {
     return gulp.src('./styles/sass--grid/grid--main.scss.scss')
         .pipe(sassGlob())
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
@@ -32,7 +32,7 @@ gulp.task('grid:main', function () {
 });
 
 // Build the styleguide front-end
-gulp.task('styleguide', function () {
+gulp.task('styleguide', function() {
     return gulp.src('./styles/sass--styleguide/styleguide.scss')
         .pipe(sassGlob())
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
@@ -41,7 +41,7 @@ gulp.task('styleguide', function () {
 });
 
 // Build the main front-end
-gulp.task('main', function () {
+gulp.task('main', function() {
     return gulp.src('./styles/sass/main.scss')
         .pipe(sassGlob())
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
@@ -50,7 +50,7 @@ gulp.task('main', function () {
 });
 
 // Rebuild Normalize to scss file
-gulp.task('normalize', function () {
+gulp.task('normalize', function() {
     return gulp.src('./node_modules/normalize.css/normalize.css')
         .pipe(rename('normalize.scss'))
         .pipe(gulp.dest('./styles/sass/base/normalize'));
@@ -58,12 +58,12 @@ gulp.task('normalize', function () {
 
 // /* Watchers */
 // Watch the Styleguide
-gulp.task('watch:styleguide', function () {
+gulp.task('watch:styleguide', function() {
     gulp.watch('./styles/sass--styleguide/**/*.scss', ['styleguide']);
 });
 
 // Watch the Main Front-end
-gulp.task('watch:main', function () {
+gulp.task('watch:main', function() {
     gulp.watch('./styles/sass/**/*.scss', ['main']);
 });
 

@@ -1,8 +1,7 @@
-
-<div class="grid--v-large__col--3">
+<div class="col -large-3">
     foo
 </div>
-<div class="grid--v-large__col--3">
+<div class="col -large-3">
     bar
 </div>
 
