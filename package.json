@@ -21,6 +21,7 @@
     "gulp-sourcemaps": "^2.1.1",
     "gulp-util": "^3.0.7",
     "modernizr": "^3.3.1",
-    "normalize.css": "git://github.com/necolas/normalize.css.git"
+    "normalize.css": "git://github.com/necolas/normalize.css.git",
+    "yargs": "^6.6.0"
   }
 }

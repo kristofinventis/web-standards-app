@@ -9,76 +9,53 @@ var iconfont = require('gulp-iconfont'); // To generate an icon-font
 var iconfontCss = require('gulp-iconfont-css'); // To generate a css file for the icon-font
 var browserSync = require('browser-sync').create();
 
+var argv = require('yargs').argv;
+var theme = null;
 
-/* Builds */
-// Build the styleguide grid
-gulp.task('grid:styleguide', function() {
-    return gulp.src('./styles/sass--grid/grid--styleguide.scss')
-        .pipe(sassGlob())
-        .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
-        .pipe(gulp.dest('./styles/sass--styleguide/components/grid'))
-        .pipe(rename({
-            basename: 'grid-styleguide',
-            extname: '.scss'
-        }))
-        .pipe(gulp.dest('./styles/sass--styleguide/components'));
+/* Set Theme */
+gulp.task('set:theme', function() {
+    theme = (typeof argv.theme === 'undefined') ? 'default' : argv.theme;
+    console.log(theme);
 });
 
-// Build the main grid
-gulp.task('grid:main', function() {
-    return gulp.src('./styles/sass--grid/grid--main.scss.scss')
-        .pipe(sassGlob())
-        .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
-        .pipe(gulp.dest('./styles/sass/components/grid'))
-        .pipe(rename({
-            basename: 'grid-styleguide',
-            extname: '.scss'
-        }))
-        .pipe(gulp.dest('./styles/sass/components'));
-});
-
-// Build the styleguide front-end
-gulp.task('styleguide', function() {
-    return gulp.src('./styles/sass--styleguide/styleguide.scss')
-        .pipe(sassGlob())
-        .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
-        .pipe(gulp.dest('./web/assets/default/styles'))
-        .pipe(browserSync.stream());
-});
-
-// Build the main front-end
-gulp.task('main', function() {
-    return gulp.src('./styles/sass/main.scss')
-        .pipe(sassGlob())
-        .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
-        .pipe(gulp.dest('./web/assets/default/styles'))
-        .pipe(browserSync.stream());
-});
-
-// Rebuild Normalize to scss file
+/* Rebuild Normalize to scss file */
 gulp.task('normalize', function() {
     return gulp.src('./node_modules/normalize.css/normalize.css')
         .pipe(rename({
             basename: 'normalize',
             extname: '.scss'
         }))
-        .pipe(gulp.dest('./styles/sass/base/normalize'));
+        .pipe(gulp.dest('./styles/sass--'+theme+'/base/normalize'));
 });
 
-// /* Watchers */
-// Watch the Styleguide
-gulp.task('watch:styleguide', function() {
-    gulp.watch('./styles/sass--styleguide/**/*.scss', ['styleguide']);
+/* Build the grid */
+gulp.task('grid', function() {
+    return gulp.src('./styles/sass--grid/grid--'+theme+'.scss')
+        .pipe(sassGlob())
+        .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+        .pipe(gulp.dest('./styles/sass--'+theme+'/components/grid'))
+        .pipe(rename({
+            basename: 'grid-'+theme+'',
+            extname: '.scss'
+        }))
+        .pipe(gulp.dest('./styles/sass--'+theme+'/components'));
 });
 
-// Watch the Main Front-end
-gulp.task('watch:main', function() {
-    gulp.watch('./styles/sass/**/*.scss', ['main']);
+/* Build the front-end */
+gulp.task('sass', function() {
+    return gulp.src('./styles/sass--'+theme+'/main.scss')
+        .pipe(sassGlob())
+        .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+        .pipe(gulp.dest('./web/assets/'+theme+'/styles'))
+        .pipe(browserSync.stream());
 });
 
+/* Watch */
+gulp.task('watch', function () {
+    gulp.watch('./styles/sass--'+theme+'/**/*.scss', [''+theme+'']);
+});
 
-/* Extra Tools */
-// Browsersync - Helpfull during development
+/* Browsersync */
 gulp.task('browserSync', ['front'], function() {
     browserSync.init({
         proxy: '127.0.0.1:8000'
@@ -86,8 +63,7 @@ gulp.task('browserSync', ['front'], function() {
     });
 
     // Watch sass
-    gulp.watch('./styles/sass/**/*.scss', ['main']);
-    gulp.watch('./styles/sass--styleguide/**/*.scss', ['styleguide']);
+    gulp.watch('./styles/sass--'+theme+'/**/*.scss', ['sass']);
 
     // Watch components
     gulp.watch('./web/home/*').on('change', browserSync.reload);
@@ -98,33 +74,11 @@ gulp.task('browserSync', ['front'], function() {
 });
 
 
-// Generate Icon-font
-var fontName = 'project-icons',
-    fontPath = 'web/assets/default/fonts/' + fontName + '/';
+/* Copy Assets */
+gulp.task('copy', ['set:theme'], function() {
+    var cwd = './web/assets/'+theme+'/';
+    var dest = './../bricks/src/app/public/assets/'+theme+'/';
 
-gulp.task('iconfont', function(){
-    gulp.src(['./web/assets/default/images/svg/*.svg'])
-    .pipe(iconfontCss({
-        fontName: fontName,
-        path: './styles/sass/base/_icons-template.scss',
-        targetPath: '../../../../../styles/sass/base/icon.scss',
-        cssClass: 'icon',
-        fontPath: fontPath
-    }))
-    .pipe(iconfont({
-        fontName: fontName,
-        formats: ['ttf', 'eot', 'woff', 'woff2', 'svg'], // 'ttf', 'eot', 'woff', 'woff2' and 'svg' are available
-        normalize: true,
-    }))
-    .pipe(gulp.dest(fontPath));
-});
-
-
-// Copy Assets
-var cwd = './web/assets/default/';
-var dest = './../bricks/src/app/public/assets/default/';
-
-gulp.task('copy', function() {
     // Styles
     gulp.src(cwd + 'styles/*.css')
         .pipe(gulp.dest(dest + 'styles/'));
@@ -143,12 +97,29 @@ gulp.task('copy', function() {
 });
 
 
-// /* Tasks */
-// Styleguide tasks
-gulp.task('build--styleguide', ['grid:styleguide', 'styleguide']);
-gulp.task('front--styleguide', ['styleguide', 'watch:styleguide']);
+/* Generate Icon-font */
+gulp.task('iconfont', ['set:theme'], function(){
+    var fontName = 'project-icons',
+        fontPath = './web/assets/'+theme+'/fonts/' + fontName + '/';
 
-// Frond-end tasks
-gulp.task('build', ['grid:main', 'normalize', 'main']);
-gulp.task('front', ['main', 'watch:main']);
-gulp.task('browsersync', ['browserSync', 'watch:main']);
+    gulp.src(['./web/assets/'+theme+'/images/svg/*.svg'])
+    .pipe(iconfontCss({
+        fontName: fontName,
+        path: './styles/sass--'+theme+'/base/_icons-template.scss',
+        targetPath: '../../../../../styles/sass--'+theme+'/base/icon.scss',
+        cssClass: 'icon',
+        fontPath: fontPath
+    }))
+    .pipe(iconfont({
+        fontName: fontName,
+        formats: ['ttf', 'eot', 'woff', 'woff2', 'svg'], // 'ttf', 'eot', 'woff', 'woff2' and 'svg' are available
+        normalize: true,
+    }))
+    .pipe(gulp.dest(fontPath));
+});
+
+
+/* Tasks */
+gulp.task('build', ['set:theme', 'grid', 'normalize', 'sass']);
+gulp.task('front', ['set:theme', 'sass', 'watch']);
+gulp.task('browsersync', ['browserSync', 'watch']);

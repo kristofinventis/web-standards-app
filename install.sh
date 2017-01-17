@@ -25,7 +25,7 @@ npm install
 composer install
 
 # Gulp
-gulp build--styleguide
+gulp build --theme styleguide
 gulp build
 
 osascript -e 'tell application "Terminal"
