@@ -64,7 +64,7 @@
 
         // default validation
         if ( !this.options.disableAutoValidation ) {
-            this.validate( 'required', $('input[type!=checkbox][required]:enabled, textarea[required]:enabled, select', this.element) );
+            this.validate( 'required', $('input[type!=checkbox][required]:enabled, textarea[required]:enabled, select[required]', this.element) );
             this.validate( 'requiredCheckbox', $('input[type=checkbox][required]:enabled, input[type=radio][required]:enabled', this.element) );
             this.validate( 'minlength', $('input[minlength]:enabled', this.element) );
             this.validate( 'maxlength', $('input[maxlength]:enabled', this.element) );
@@ -218,7 +218,7 @@
             var errorElement =  this.options.showError( errorObject.element, errorObject.type, message );
         } else {
             // fallback to the default action
-            errorObject.element.parents(this.options.fieldParentSelector).first().addClass('form__entry--invalid');
+            errorObject.element.parents(this.options.fieldParentSelector).first().addClass('-invalid');
 
             if ( message ) {
                 var errorElement = $('<span />').addClass(this.options.errorMessageClass).text(message);
@@ -237,7 +237,7 @@
         if ( typeof( this.options.hideErrors ) == 'function' ) {
             this.options.hideErrors();
         } else {
-            $('.form__entry--invalid', this.element).removeClass('form__entry--invalid');
+            $('.form__entry.-invalid', this.element).removeClass('-invalid');
         }
     }
 
