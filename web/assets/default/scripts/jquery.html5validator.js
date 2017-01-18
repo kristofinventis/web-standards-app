@@ -9,6 +9,7 @@
         defaults = {
             disableBrowserValidation: true,
             disableAutoValidation: false,
+            liveValidation: true,
             messages: {
                 required: 'This field is required',
                 requiredCheckbox: 'This field is required',
@@ -21,7 +22,7 @@
             },
             customValidators: {},
             fieldParentSelector: '.form__entry',
-            errorMessageClass: 'form__message icon-content icon--warning form__message--icon'
+            errorMessageClass: 'form__message'
         };
 
     // The actual plugin constructor
@@ -51,9 +52,64 @@
             this.element.noValidate = true;
         }
 
+        if (this.options.liveValidation) {
+            $('input, select').on('blur', function (e) {
+                this.validateElement(e.target);
+            }.bind(this));
+        }
+
         // Bind submit event
         $(this.element).submit($.proxy( this.onFormSubmit, this ));
         // $('button').click($.proxy( this.onFormSubmit, this ));
+    };
+
+    Plugin.prototype.validateElement = function (el) {
+        var $el = $(el);
+
+        this.hideError($el);
+
+        // validation rules set in the config
+        if ( this.options.fields ) {
+            for ( field in this.options.fields ) {
+                // check if the field exists
+                if ( $el.is('[name=' + field + ']') ) {
+                    // extract validator rules
+                    var rules = this.options.fields[field].split('|');
+                    for ( i in rules ) {
+                        this.validate(rules[i], $el);
+                    }
+                }
+            }
+        }
+
+        if ( this.options.disableAutoValidation ) {
+            return;
+        }
+
+        if ($el.is('input[type!=checkbox][required]:enabled, textarea[required]:enabled, select[required]')) {
+            this.validate('required', $el);
+        }
+        if ($el.is('input[type=checkbox][required]:enabled, input[type=radio][required]:enabled')) {
+            this.validate('requiredCheckbox', $el);
+        }
+        if ($el.is('input[minlength]:enabled')) {
+            this.validate('minlength', $el);
+        }
+        if ($el.is('input[maxlength]:enabled')) {
+            this.validate('maxlength', $el);
+        }
+        if ($el.is('input[type=email]:enabled')) {
+            this.validate('email', $el);
+        }
+        if ($el.is('input[type=tel]:enabled')) {
+            this.validate('tel', $el);
+        }
+        if ($el.is('input[type=min]:enabled')) {
+            this.validate('min', $el);
+        }
+        if ($el.is('input[type=max]:enabled')) {
+            this.validate('max', $el);
+        }
     };
 
     Plugin.prototype.onFormSubmit = function() {
@@ -62,35 +118,11 @@
         this.validationErrors = [];
         this.hideErrors();
 
-        // default validation
-        if ( !this.options.disableAutoValidation ) {
-            this.validate( 'required', $('input[type!=checkbox][required]:enabled, textarea[required]:enabled, select[required]', this.element) );
-            this.validate( 'requiredCheckbox', $('input[type=checkbox][required]:enabled, input[type=radio][required]:enabled', this.element) );
-            this.validate( 'minlength', $('input[minlength]:enabled', this.element) );
-            this.validate( 'maxlength', $('input[maxlength]:enabled', this.element) );
-            this.validate( 'email', $('input[type=email]:enabled', this.element) );
-            this.validate( 'tel', $('input[type=tel]:enabled', this.element) );
-            this.validate( 'min', $('input[type=number]:enabled', this.element) );
-            this.validate( 'max', $('input[type=number]:enabled', this.element) );
-        }
-
-        // validation rules set in the config
-        if ( this.options.fields ) {
-            for ( field in this.options.fields ) {
-                // check if the field exists
-                var fieldEl = $('[name=' + field + ']', this.element);
-                if ( fieldEl ) {
-                    // extract validator rules
-                    var rules = this.options.fields[field].split('|');
-                    for ( i in rules ) {
-                        this.validate(rules[i], fieldEl);
-                    }
-                }
-            }
-        }
+        $('input, select').each(function (index, el) {
+            this.validateElement(el);
+        }.bind(this));
 
         if ( this.validationErrors.length > 0) {
-            $(this.validationErrors).each( $.proxy( this.showError, this ) );
             $(this.element).trigger('failed');
             this.validationErrors[0].element.focus();
             return false;
@@ -112,6 +144,10 @@
         if ( this.validators[rule] ) {
             elements.each( $.proxy( function(index, el) {
                 if ( !this.validators[validatorRule]( el, rule.split(':') ) ) {
+                    this.showError({
+                        element: $(el),
+                        type: validatorRule
+                    });
                     this.validationErrors.push({
                         element: $(el),
                         type: validatorRule
@@ -193,12 +229,12 @@
 
     };
 
-    Plugin.prototype.showError = function(index, errorObject) {
+    Plugin.prototype.showError = function(errorObject) {
         // we only show the first error per element
         if ( $.inArray( errorObject.element.attr('name'), this.visibleErrors ) != -1 ) {
             return false;
         }
-        this.visibleErrors.push(errorObject.element.attr('name'));
+        //this.visibleErrors.push(errorObject.element.attr('name'));
 
         // default error message
         var message = this.options.messages[errorObject.type];
@@ -239,7 +275,14 @@
         } else {
             $('.form__entry.-invalid', this.element).removeClass('-invalid');
         }
-    }
+    };
+
+    Plugin.prototype.hideError = function ($el) {
+        var $parent = $el.parents(this.options.fieldParentSelector).first();
+
+        $('.' + this.options.errorMessageClass, $parent).remove();
+        $parent.removeClass('-invalid');
+    };
 
     // A really lightweight plugin wrapper around the constructor,
     // preventing against multiple instantiations
