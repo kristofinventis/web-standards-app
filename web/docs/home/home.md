@@ -20,3 +20,8 @@ Web Standards: << My Project >>
 <div class="boxed">
 {{ load(file='examples/typography-example.html.twig', showCode=false, wrapInIframe=true) }}
 </div>
+
+###Icons:
+<div class="boxed">
+{{ svgList('assets/default/images/svg/') }}
+</div>
