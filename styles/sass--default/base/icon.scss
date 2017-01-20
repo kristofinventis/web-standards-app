@@ -52,7 +52,7 @@ $icons: (
     display: inline-block;
     vertical-align: middle;
 
-    font-family: "project-icons";
+    font-family: "project-icons", $default-font-family;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 

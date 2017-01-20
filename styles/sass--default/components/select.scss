@@ -1,0 +1,91 @@
+/* SELECT */
+.select {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    width: auto;
+
+    &.-full {
+        display: block;
+        width: 100%;
+    }
+
+    &.-fixed-width {
+        min-width: 10rem;
+    }
+
+    @include screen-size(mini, small) {
+        width: 100%;
+    }
+}
+
+.select__input {
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    min-height: 43px;
+    cursor: pointer;
+    &:hover, &:focus {
+        & ~ .select__label {
+            background: get-color("white");
+        }
+    }
+}
+
+.select__label {
+    transition: background .2s ease;
+    box-sizing: border-box;
+
+    border-radius: 5px;
+
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    padding: 0.9rem 2.5rem 0.9rem 1.2rem;
+    vertical-align: baseline;
+
+    color: get-color("gray");
+    background: get-color("white");
+    border: 1px solid get-color("gray");
+
+    // font-family: $font-open-sans;
+    font-size: 1.5rem;
+    line-height: normal;
+    font-weight: 400;
+    white-space: nowrap;
+
+    &:after, .after {
+        content: '';
+        display: block;
+
+        position: absolute;
+        right: 1rem;
+        top: 50%;
+        z-index: 2;
+
+        width: 0;
+        height: 0;
+
+        margin-top: -2px;
+
+        border: {
+            top:    4px solid get-color("black");
+            right:  4px solid transparent;
+            bottom: 4px solid transparent;
+            left:   4px solid transparent;
+        }
+    }
+}
+
+.select__item {
+    @extend .select__label;
+    &:after, .after {
+        display: none;
+    }
+    display: none;
+}

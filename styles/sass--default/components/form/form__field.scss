@@ -1,67 +1,61 @@
-/* form__FIELD */
-
-// Defaults & resets
-.form__field {
-    font-size: 16px;
-    line-height: normal;
-    margin: 0;
-    width: 100%;
-    padding: 10px;
-}
-
-
-.form__field.-date,
-.form__field.-email,
-.form__field.-file,
-.form__field.-number,
-.form__field.-password,
-.form__field.-search,
-.form__field.-tel,
-.form__field.-text,
-.form__field.-textarea,
-.form__field.-time {
-    -webkit-appearance: none !important; // HARD reset to remove shadow in input for IOS
-    border-radius: 0;
-
+/* FORM__FIELD */
+%form__field-reset {
+    transition: all .3s ease;
     box-sizing: border-box;
+
+    -webkit-appearance: none !important; // HARD reset to remove shadow in input for IOS
+    border-radius: 0.4rem;
+
     display: inline-block;
-    padding: 10px;
-    word-break: normal;
+    width: 100%;
+    margin: 0;
+    padding: 0.9rem 1.2rem;
+    vertical-align: baseline;
+
+    color: get-color("black");
+    background: get-color("white");
     border: 1px solid get-color("gray");
 
-    background-color: get-color("white");
-    color: get-color("black");
+    // font-family: $font-open-sans;
+    font-size: 1.5rem;
+    line-height: normal;
+    font-weight: 400;
+}
 
+.form__field {
+    @extend %form__field-reset;
+    border-radius: 5px;
 
     @include input-placeholder {
-        color: get-color("gray-2");
+        position: relative;
+        top: -1px;
+        font-size: 1.4rem;
+        color: get-color("gray");
     }
 
     &:focus {
-        background-color: get-color("white");
-        border-color: get-color("gray-2");
         outline: none;
+        border-color: darken(get-color("gray"), 10%);
+    }
+
+    &[disabled] {
+        background: get-color("gray");
+        color: get-color("gray-2");
     }
 
     .form__entry.-invalid &{
-        border-color: get-color("red");
-        background-color: lighten(get-color("red"), 45%);
-
-        @include input-placeholder {
-            color: get-color("white");
-        }
-
-        &:focus {
-            background-color: lighten(get-color("red"), 47%);
-        }
+        border-radius: 5px 5px 0 0;
+        border: 1px solid get-color("red");
     }
 }
 
-
-input[type="search"][class*="form__field"] {
-    box-sizing: border-box;
+.form__checkbox,
+.form__radio {
+    position: relative;
+    top: -1px;
+    margin-right: 0.7rem;
+    vertical-align: baseline;
+    &.-hidden {
+        display: none;
+    }
 }
-
-
-/* form Imports */
-// @import 'form/*';

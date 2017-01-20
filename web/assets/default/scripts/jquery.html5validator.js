@@ -48,13 +48,18 @@
 
     Plugin.prototype.init = function () {
         // Browser validation
-        if ( this.options.disableBrowserValidation ) {
+        if (this.options.disableBrowserValidation) {
             this.element.noValidate = true;
         }
 
         if (this.options.liveValidation) {
             $('input, select').on('blur', function (e) {
-                this.validateElement(e.target);
+                var failedValidationRule = this.getFailedValidationRuleForElement(e.target);
+                if (failedValidationRule) {
+                    this.showError($(e.target), failedValidationRule);
+                } else {
+                    this.hideError($(e.target));
+                }
             }.bind(this));
         }
 
@@ -63,53 +68,55 @@
         // $('button').click($.proxy( this.onFormSubmit, this ));
     };
 
-    Plugin.prototype.validateElement = function (el) {
-        var $el = $(el);
+    Plugin.prototype.getFailedValidationRuleForElement = function (el) {
 
-        this.hideError($el);
+        var $el = $(el),
+            failedValidationRule;
 
         // validation rules set in the config
-        if ( this.options.fields ) {
-            for ( field in this.options.fields ) {
+        if (this.options.fields) {
+            for (field in this.options.fields) {
                 // check if the field exists
-                if ( $el.is('[name=' + field + ']') ) {
+                if ($el.is('[name=' + field + ']')) {
                     // extract validator rules
                     var rules = this.options.fields[field].split('|');
-                    for ( i in rules ) {
-                        this.validate(rules[i], $el);
+                    for (i in rules) {
+                        if (this.validate(rules[i], $el) !== true) {
+                            return this.validate(rules[i], $el);
+                        }
                     }
                 }
             }
         }
 
-        if ( this.options.disableAutoValidation ) {
-            return;
+        if (!this.options.disableAutoValidation) {
+            if ($el.is('input[type!=checkbox][required]:enabled, textarea[required]:enabled, select[required]') && this.validate('required', $el) !== true) {
+                return 'required';
+            }
+            if ($el.is('input[type=checkbox][required]:enabled, input[type=radio][required]:enabled') && this.validate('requiredCheckbox', $el) !== true) {
+                return 'requiredCheckbox';
+            }
+            if ($el.is('input[minlength]:enabled') && this.validate('minlength', $el) !== true) {
+                return 'minlength';
+            }
+            if ($el.is('input[maxlength]:enabled') && this.validate('maxlength', $el) !== true) {
+                return 'maxlength';
+            }
+            if ($el.is('input[type=email]:enabled') && this.validate('email', $el) !== true) {
+                return 'email';
+            }
+            if ($el.is('input[type=tel]:enabled') && this.validate('tel', $el) !== true) {
+                return 'tel';
+            }
+            if ($el.is('input[type=min]:enabled') && this.validate('min', $el) !== true) {
+                return 'min';
+            }
+            if ($el.is('input[type=max]:enabled') && this.validate('max', $el) !== true) {
+                return 'max';
+            }
         }
 
-        if ($el.is('input[type!=checkbox][required]:enabled, textarea[required]:enabled, select[required]')) {
-            this.validate('required', $el);
-        }
-        if ($el.is('input[type=checkbox][required]:enabled, input[type=radio][required]:enabled')) {
-            this.validate('requiredCheckbox', $el);
-        }
-        if ($el.is('input[minlength]:enabled')) {
-            this.validate('minlength', $el);
-        }
-        if ($el.is('input[maxlength]:enabled')) {
-            this.validate('maxlength', $el);
-        }
-        if ($el.is('input[type=email]:enabled')) {
-            this.validate('email', $el);
-        }
-        if ($el.is('input[type=tel]:enabled')) {
-            this.validate('tel', $el);
-        }
-        if ($el.is('input[type=min]:enabled')) {
-            this.validate('min', $el);
-        }
-        if ($el.is('input[type=max]:enabled')) {
-            this.validate('max', $el);
-        }
+        return false;
     };
 
     Plugin.prototype.onFormSubmit = function() {
@@ -119,7 +126,12 @@
         this.hideErrors();
 
         $('input, select').each(function (index, el) {
-            this.validateElement(el);
+            var failedValidationRule = this.getFailedValidationRuleForElement(e.target);
+            if (failedValidationRule) {
+                this.showError($(el), failedValidationRule);
+            } else {
+                this.hideError($(el));
+            }
         }.bind(this));
 
         if ( this.validationErrors.length > 0) {
@@ -136,6 +148,7 @@
     };
 
     Plugin.prototype.validate = function( rule, elements ) {
+        var failedValidationRule;
         if (elements.length == 0 ) return false;
 
         validatorRule = rule.split(':')[0];
@@ -144,19 +157,14 @@
         if ( this.validators[rule] ) {
             elements.each( $.proxy( function(index, el) {
                 if ( !this.validators[validatorRule]( el, rule.split(':') ) ) {
-                    this.showError({
-                        element: $(el),
-                        type: validatorRule
-                    });
-                    this.validationErrors.push({
-                        element: $(el),
-                        type: validatorRule
-                    });
+                    failedValidationRule = validatorRule;
                 }
             }, this ) );
         } else {
             console.log('validator "' + rules[i] + '" not found!');
         }
+
+        return failedValidationRule ? failedValidationRule : true;
     }
 
     Plugin.prototype.validators = {
@@ -229,58 +237,52 @@
 
     };
 
-    Plugin.prototype.showError = function(errorObject) {
-        // we only show the first error per element
-        if ( $.inArray( errorObject.element.attr('name'), this.visibleErrors ) != -1 ) {
-            return false;
-        }
-        //this.visibleErrors.push(errorObject.element.attr('name'));
-
+    Plugin.prototype.showError = function(element, type) {
         // default error message
-        var message = this.options.messages[errorObject.type];
+        var message = this.options.messages[type];
 
         // check for a custom error message on the element
-        if ( errorObject.element.data( errorObject.type + '-error' ) ) {
-            message = errorObject.element.data( errorObject.type + '-error' );
+        if ( element.data( type + '-error' ) ) {
+            message = element.data( type + '-error' );
         }
 
         // set attribute value on placeholder
         if (message.search('%1') != -1) {
-            message = message.replace('%1$s', errorObject.element.attr(errorObject.type));
+            message = message.replace('%1$s', element.attr(type));
         }
 
         // check for a custom function to show the error
         if ( typeof( this.options.showError ) == 'function' ) {
-            var errorElement =  this.options.showError( errorObject.element, errorObject.type, message );
-        } else {
-            // fallback to the default action
-            errorObject.element.parents(this.options.fieldParentSelector).first().addClass('-invalid');
-
-            if ( message ) {
-                var errorElement = $('<span />').addClass(this.options.errorMessageClass).text(message);
-                errorObject.element.parents(this.options.fieldParentSelector).first().append( errorElement );
-            }
+            return this.options.showError( element, type, message );
         }
 
-        this.errorElements.push( errorElement );
-    };
+        // fallback to the default action
+        var $parent = element.parents(this.options.fieldParentSelector).first(),
+            errorElement = $parent.children('.' + this.options.errorMessageClass);
 
-    Plugin.prototype.hideErrors = function() {
-        $(this.errorElements).each(function( index, el ) { $(el).remove(); });
-        this.errorElements = [];
+        $parent.addClass('-invalid');
 
-        // check for a custom function to show the error
-        if ( typeof( this.options.hideErrors ) == 'function' ) {
-            this.options.hideErrors();
+        if ( !message ) {
+            return;
+        }
+
+        if (errorElement.length) {
+            errorElement.text(message);
         } else {
-            $('.form__entry.-invalid', this.element).removeClass('-invalid');
+            errorElement = $('<span />').addClass(this.options.errorMessageClass).text(message);
+            $parent.append( errorElement );
         }
     };
 
     Plugin.prototype.hideError = function ($el) {
-        var $parent = $el.parents(this.options.fieldParentSelector).first();
+        var $parent = $el.parents(this.options.fieldParentSelector).first(),
+            $message = $('.' + this.options.errorMessageClass, $parent);
 
-        $('.' + this.options.errorMessageClass, $parent).remove();
+        // $('.' + this.options.errorMessageClass, $parent).remove();
+        $message.addClass('-hide');
+        setTimeout(function(){
+            $message.remove();
+        }, 710);
         $parent.removeClass('-invalid');
     };
 

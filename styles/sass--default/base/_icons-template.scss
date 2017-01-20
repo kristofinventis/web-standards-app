@@ -20,7 +20,7 @@ $icons: (
     display: inline-block;
     vertical-align: middle;
 
-    font-family: "<%= fontName %>";
+    font-family: "<%= fontName %>", $default-font-family;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
