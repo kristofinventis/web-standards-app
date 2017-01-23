@@ -1,0 +1,29 @@
+/* ICON-EXAMPLE */
+.icon-example {
+    display: block;
+    padding: 4rem;
+    border: 1px solid #CECECE;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    background: #FDFDFD;
+
+    .icon {
+        display: block;
+    }
+
+    .svgicon {
+        display: block;
+        svg {
+            max-width: 4rem;
+            max-height: 4rem;
+        }
+    }
+
+}
+
+.icon-example__title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+

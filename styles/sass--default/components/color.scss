@@ -6,3 +6,30 @@
         }
     }
 }
+
+
+.color-example {
+    position: relative;
+    display: inline-block;
+    width: 30rem;
+    height: 30rem;
+
+    &:before {
+        content: attr(data-name);
+    }
+
+    &:after {
+        content: attr(data-hex);
+    }
+
+    &:before,
+    &:after {
+        color: get-color("white");
+        background: rgba(get-color("black"), .7);
+        display: table;
+        padding: 0.5rem 1.3rem;
+        line-height: 1;
+        margin-bottom: 2px;
+        text-transform: uppercase;
+    }
+}
