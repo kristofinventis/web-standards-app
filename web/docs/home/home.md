@@ -23,10 +23,10 @@ Web Standards: << My Project >>
 
 ###Colors:
 <div class="boxed">
-{{ colorList('../styles/sass--default/variables.scss') }}
+{{ load(file='partials/colors.html.twig', showCode=false, wrapInIframe=true) }}
 </div>
 
 ###Icons:
 <div class="boxed">
-{{ svgList('assets/default/images/svg/') }}
+{{ load(file='partials/icons.html.twig', showCode=false, wrapInIframe=true) }}
 </div>

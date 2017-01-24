@@ -1,14 +1,20 @@
+define(
+    [
+        'jquery'
+    ],
+    function ($){
+        return function(el, config) {
+            // el = current DOM el
+            // config = Object {foo: "bar"}
+            var $flashContainer = $('.flash-container');
 
-/* global define */
-define(['jquery'], function ($) {
-    "use strict";
-
-    // Closing flash message
-    $('.flash-container .alert-message__close').show().on('click', function(e) {
-        e.preventDefault();
-        $(this).parents('.flash-container').addClass('flash-container--hide').delay(800).queue(function() {
-            $(this).remove();
-        });
-    });
-
-});
+            $(el).on('click', function(e){
+                e.preventDefault();
+                $flashContainer.addClass('-hide');
+                setTimeout(function(){
+                    $flashContainer.remove();
+                }, 801);
+            });
+        }
+    }
+);
