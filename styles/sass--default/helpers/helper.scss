@@ -1,4 +1,33 @@
 /* Helper classes */
+%clearfix {
+    &:before,
+    &:after {
+        content: " "; /* 1 */
+        display: table; /* 2 */
+    }
+    &:after {
+        clear: both;
+    }
+
+    /*
+     * For IE 6/7 only
+     * Include this rule to trigger hasLayout and contain floats.
+     */
+    .ie7 & {
+        zoom: 1;
+    }
+
+    @include screen-size(medium, large) {
+        .left {
+            float: left;
+        }
+
+        .right {
+            float: right;
+        }
+    }
+}
+
 .h-no-margin {
     margin: 0;
 }

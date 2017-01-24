@@ -1,7 +1,7 @@
 /* STYLE */
 .pagination {
     box-sizing: border-box;
-    @extend .clearfix;
+    @extend %clearfix;
 
     width: 100%;
     margin-bottom: 20px;
@@ -33,7 +33,7 @@
 }
 
 .pagination__holder {
-    @extend .clearfix;
+    @extend %clearfix;
 
     min-height: 40px;
     line-height: 40px;

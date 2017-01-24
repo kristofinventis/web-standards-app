@@ -4,74 +4,90 @@
     width: 100%;
     float: none;
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
 
     a,
     img {
-        border-radius: 5px;
+        margin-bottom: 1rem;
     }
-}
 
-/* Is used by developer */
-@each $screen-size, $screen-size-config in $screen-sizes {
-    @include screen-size($screen-size) {
-        .figure.-v-#{$screen-size}__left {
-            img {
+    &.-small {
+        img,
+        .figure__caption {
+            max-width: 50%
+        }
+    }
+
+    &.-medium {
+        img,
+        .figure__caption {
+            max-width: 75%
+        }
+    }
+
+    &.-large {
+        img,
+        .figure__caption {
+            max-width: 100%
+        }
+    }
+
+    &.-left {
+        img {
+            @include screen-size(medium, large) {
                 float: left;
-                margin-right: 20px;
-                margin-bottom: 20px;
+                margin-right: 2rem;
+                margin-bottom: 2rem;
             }
         }
 
-        .figure.-v-#{$screen-size}__right {
-            img {
+        .figure__caption {
+            @include screen-size(medium, large) {
+                float: left;
+                margin-top: -1rem;
+            }
+        }
+    }
+
+    &.-right {
+        img {
+            @include screen-size(medium, large) {
                 float: right;
-                margin-left: 20px;
-                margin-bottom: 20px;
-
+                margin-left: 2rem;
+                margin-bottom: 2rem;
             }
         }
-
+        .figure__caption {
+            @include screen-size(medium, large) {
+                float: right;
+                margin-top: -1rem;
+            }
+        }
     }
-}
 
-/* Is used by the webadmin */
-.figure.-left {
-    a.img,
-    a.img.-alt,
-    img {
-        @include screen-size(medium, large) {
-            float: left;
-            margin-right: 20px;
-            margin-bottom: 20px;
-
+    &.-center {
+        clear: both;
+        text-align: center;
+        img {
+            box-sizing: border-box;
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 2rem;
+        }
+        .figure__caption {
+            @include screen-size(medium, large) {
+                margin: 0 auto;
+                margin-top: -1rem;
+            }
         }
     }
 }
 
-.figure.-right {
-    a.img,
-    a.img.-alt,
-    img {
-        @include screen-size(medium, large) {
-            float: right;
-            margin-left: 20px;
-            margin-bottom: 20px;
-
-        }
-    }
-}
-
-.figure.-center {
-    @include default-typography(margin);
-    clear: both;
-    a.img,
-    a.img.-alt,
-    img {
-        box-sizing: border-box;
-        display: block;
-        margin: 0 auto;
-        margin-bottom: 20px;
-
-    }
+.figure__caption {
+    display: block;
+    width: 100%;
+    color: get-color("gray-2");
+    font-size: 1.3rem;
+    font-style: italic;
+    margin-bottom: 2rem;
 }

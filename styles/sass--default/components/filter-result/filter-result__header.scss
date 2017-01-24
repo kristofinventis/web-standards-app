@@ -1,7 +1,7 @@
 /* Filter-result Header */
 // TODO
 .filter-result__header {
-    @extend .clearfix;
+    @extend %clearfix;
     border-bottom: 1px solid #d6d6d7;
     margin-bottom: 20px;
     padding-bottom: 10px;

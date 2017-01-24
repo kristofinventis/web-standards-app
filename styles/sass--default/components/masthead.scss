@@ -1,6 +1,6 @@
 /* MASTHEAD */
 .masthead {
-    @include clearfix;
+    @extend %clearfix;
 }
 
 /* All masthead components */
