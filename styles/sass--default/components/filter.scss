@@ -1,12 +1,8 @@
-/* Filter Imports */
-// @import 'filter/*';
-
 /* Filter */
 .filter {
     box-sizing: border-box;
     background: get-color("gray");
-}
+    &.-active {
 
-.filter.-active {
-
+    }
 }

@@ -1,8 +1,7 @@
 /* BOX */
 .box {
     box-sizing: border-box;
-    padding: 20px;
-    margin-bottom: 20px;
+    padding: 2rem;
 
     & > *:last-child {
         margin-bottom: 0;

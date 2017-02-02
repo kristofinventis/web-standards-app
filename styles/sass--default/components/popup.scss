@@ -16,6 +16,7 @@
 
     transition: all .3s;
     visibility: hidden;
+    padding: 1rem;
 
     &::-webkit-scrollbar {
         display: none;
@@ -29,7 +30,12 @@
             transition: all .3s;
             transform: scale(1);
             opacity: 1;
+        }
 
+        .popup-bg {
+            transition: all .3s;
+            opacity: 1;
+            visibility: visible;
         }
     }
 }
@@ -79,8 +85,8 @@
     opacity: 0;
     visibility: hidden;
 
-    background: get-color("purple"); // fallback
-    background: rgba(get-color("purple"), .50);
+    background: get-color("black"); // fallback
+    background: rgba(get-color("black"), .50);
     position: fixed;
     width: 100%;
     height: 100%;
@@ -90,9 +96,9 @@
     bottom: 0;
     left: 0;
     z-index: 9996;
-    &.-active {
-        transition: all .3s;
-        opacity: 1;
-        visibility: visible;
-    }
+    // &.-active {
+    //     transition: all .3s;
+    //     opacity: 1;
+    //     visibility: visible;
+    // }
 }

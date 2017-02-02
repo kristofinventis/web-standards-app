@@ -1,0 +1,125 @@
+/* Form Success */
+.form__success {
+    transition: all .3s ease;
+    box-sizing: border-box;
+
+    border-radius: 100%;
+    display: inline-block;
+    width: 2.5rem;
+    height: 2.5rem;
+
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    z-index: 10;
+
+    text-align: center;
+    font-size: 1rem;
+    line-height: 2.5rem;
+    color: rgba(get-color("white"), 1);
+    background: get-color("green");
+
+    opacity: 0;
+    transform: scale(0,0);
+
+    animation-name: showSuccess;
+    animation-duration: .5s;
+    animation-delay: .2s;
+    animation-fill-mode: forwards;
+
+    @extend .icon !optional;
+    @extend .-checkmark !optional;
+    &:before {
+        vertical-align: middle;
+    }
+
+    &.-hide {
+        animation-name: hideSuccess;
+        animation-duration: .3s;
+        animation-delay: 0s;
+        animation-fill-mode: forwards;
+    }
+}
+
+
+.form__field.-textarea + .form__success {
+    border-radius: 0 0 5px 0;
+    width: 4rem;
+    height: 4rem;
+    right: 0;
+    bottom: 0.6rem;
+
+    text-align: right;
+    background: none;
+
+    opacity: 0;
+    transform: scale(0,0);
+
+    animation-name: showSuccess;
+    animation-duration: .5s;
+    animation-delay: .2s;
+    animation-fill-mode: forwards;
+
+    &.-hide {
+        animation-name: hideSuccess;
+        animation-duration: .3s;
+        animation-delay: 0s;
+        animation-fill-mode: forwards;
+    }
+
+    &:before {
+        position: absolute;
+        right: 5px;
+        bottom: 0px;
+        z-index: 1;
+    }
+
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        border: {
+            top    : 2rem solid transparent;
+            right  : 2rem solid get-color("green");
+            bottom : 2rem solid get-color("green");
+            left   : 2rem solid transparent;
+        }
+    }
+}
+
+.form__fieldset {
+    .form__success {
+        top: 5px;
+        bottom: auto;
+    }
+}
+
+@keyframes showSuccess {
+    0% {
+        opacity: 0;
+        transform: scale(0,0);
+    }
+    70% {
+        transform: scale(1.1,1.1);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1,1);
+    }
+}
+
+@keyframes hideSuccess {
+    0% {
+        opacity: 1;
+        transform: scale(1,1);
+    }
+    30% {
+        transform: scale(1.1,1.1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0,0);
+    }
+}

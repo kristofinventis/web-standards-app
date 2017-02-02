@@ -48,14 +48,3 @@
         border: 1px solid get-color("red");
     }
 }
-
-.form__checkbox,
-.form__radio {
-    position: relative;
-    top: -1px;
-    margin-right: 0.7rem;
-    vertical-align: baseline;
-    &.-hidden {
-        display: none;
-    }
-}

@@ -1,11 +1,13 @@
 <div class="row">
     <div class="col -large-6">
-        <form action="" method="POST">
+        <form action="" method="POST" data-component="FormValidator">
             <div class="form__entry">
                 <label for="custom-select" class="form__label">Wie contacteren?:</label>
-                <div class="select -full" data-component="Application/Components/Select">
-                    <select class="select__input">
-                        <option selected="selected" value="Custom select">- Custom select -</option>
+                <div class="select -full" data-component="Select">
+                    <select class="select__input" required>
+                        {# FIRST OPTION IN A REQUIRED SELECT IS A LABEL AND MUST ALWAYS EXIST INSIDE A REQUIRED SELECT #}
+                        <option>- Custom select -</option>
+
                         <option value="With custom styling">With custom styling</option>
                         <option value="And native functionality">And native functionality</option>
                         <option value="Yep.. a custop select">Yep.. a custop select</option>
@@ -17,57 +19,56 @@
 
             <div class="form__entry">
                 <label for="frm_firstname" class="form__label">Uw voornaam:</label>
-                <input type="text" name="frm_firstname" id="frm_firstname" placeholder="firstname" required class="form__field" />
+                <input type="text" name="frm_firstname" required id="frm_firstname" placeholder="firstname" class="form__field" />
             </div>
             <br>
 
             <div class="form__entry">
                 <label for="frm_lastname" class="form__label">Uw voornaam:</label>
-                <input type="text" name="frm_lastname" id="frm_lastname" placeholder="lastname" required class="form__field" />
+                <input type="text" name="frm_lastname" id="frm_lastname" placeholder="lastname" class="form__field" />
             </div>
             <br>
 
             <div class="form__entry ">
                 <label for="frm_phone" class="form__label">Uw telefoonnummer <span class="form__optional">(Optioneel)</span>:</label>
-                <input type="tel" name="frm_phone" id="frm_phone" placeholder="phone" required class="form__field" />
+                <input type="tel" name="frm_phone" id="frm_phone" placeholder="phone" class="form__field" />
             </div>
             <br>
 
             <div class="form__entry">
                 <label for="frm_email" class="form__label">Uw e-mailadres:</label>
-                <input type="email" name="frm_email" id="frm_email" placeholder="email" required class="form__field" />
+                <input type="email" name="frm_email" id="frm_email" placeholder="email" class="form__field" />
             </div>
             <br>
 
             <div class="form__entry">
                 <label for="frm_message" class="form__label">Uw boodschap:</label>
-                <textarea cols="30" rows="5" name="frm_message" id="frm_message" required class="form__field"></textarea>
+                <textarea cols="30" rows="5" name="frm_message" id="frm_message" required class="form__field -textarea" data-component="TextareaAutoGrow"></textarea>
             </div>
             <br>
 
-            <fieldset class="form__fieldset">
+            <fieldset class="form__fieldset" required>
                 <legend class="form__legend">Checkboxen even afchecken</legend>
 
                 <div class="form__entry">
-                    <input type="checkbox" name="checkboxgroup" id="frm_checkbox-1" class="form__checkbox">
+                    <input type="checkbox" name="checkboxgroup[]" data-group="group" id="frm_checkbox-1" class="form__checkbox">
                     <label class="form__label -checkbox" for="frm_checkbox-1">form checkbox</label>
                 </div>
                 <div class="form__entry">
-                    <input type="checkbox" name="checkboxgroup" id="frm_checkbox-2" class="form__checkbox">
+                    <input type="checkbox" name="checkboxgroup[]" data-group="group" id="frm_checkbox-2" class="form__checkbox">
                     <label class="form__label -checkbox" for="frm_checkbox-2">form checkbox</label>
                 </div>
                 <div class="form__entry">
-                    <input type="checkbox" name="checkboxgroup" id="frm_checkbox-3" class="form__checkbox">
+                    <input type="checkbox" name="checkboxgroup[]" data-group="group" id="frm_checkbox-3" class="form__checkbox">
                     <label class="form__label -checkbox" for="frm_checkbox-3">form checkbox</label>
                 </div>
                 <div class="form__entry">
-                    <input type="checkbox" name="checkboxgroup" id="frm_checkbox-4" class="form__checkbox">
+                    <input type="checkbox" name="checkboxgroup[]" data-group="group" id="frm_checkbox-4" class="form__checkbox">
                     <label class="form__label -checkbox" for="frm_checkbox-4">form checkbox</label>
                 </div>
             </fieldset>
-            <br>
 
-            <fieldset class="form__fieldset">
+            <fieldset class="form__fieldset" required>
                 <legend class="form__legend">Radiobutton even selecteren</legend>
 
                 <div class="form__entry">
@@ -87,6 +88,12 @@
                     <label class="form__label -radio" for="frm_radio-4">form radio</label>
                 </div>
             </fieldset>
+            <br>
+
+            <div class="form__entry">
+                <input type="checkbox" name="single" id="frm_checkbox-s" class="form__checkbox">
+                <label class="form__label -checkbox" for="frm_checkbox-s">Single checkbox</label>
+            </div>
             <br>
 
             <button type="submit" class="button button--loading form__submit" name="frm_frm_submit">Verzenden</button>

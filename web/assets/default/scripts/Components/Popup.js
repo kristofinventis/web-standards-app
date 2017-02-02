@@ -1,35 +1,24 @@
-define(
-    [
-        'jquery',
-    ],
-    function ($) {
-        return function(el, config) {
-            // el = current DOM el
-            // config = Object {foo: "bar"}
+/* Popup.js */
+;(function(){
+    var component = document.querySelectorAll('[data-component="Popup"]')
 
-            if (config == undefined) {
-                var $popup = $('.popup');
-                var $popupBg = $('.popup-bg');
+    for (var i = 0; i < component.length; i++) {
+        var $el = component[i],
+            config = component[i].dataset.config;
 
-                $(el).on('click', function(e){
-                    e.preventDefault();
+        var $popup = document.querySelector('.popup'),
+            $popupBg = document.querySelector('.popup-bg'),
+            popupId;
 
-                    if (!$popup.hasClass('-active')) {
-                        $popup.toggleClass('-active');
-                        $popupBg.toggleClass('-active');
-                    } else {
-                        $popup.toggleClass('-active');
-                        $popupBg.toggleClass('-active');
-                    }
-                });
-            } else {
-                $(el).on('click', function(e){
-                    e.preventDefault();
-                    $('#'+config.popupId).toggleClass('-active');
-                    $popupBg.toggleClass('-active');
-                });
+        $el.addEventListener('click', function(event) {
+            event.preventDefault();
+            if (!config) {
+                $popup.classList.toggle('-active');
+                return;
             }
 
-        };
+            var popup = document.querySelector("#"+this.dataset.config);
+            popup.classList.toggle('-active');
+        });
     }
-);
+}());

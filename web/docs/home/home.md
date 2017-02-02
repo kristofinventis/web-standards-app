@@ -6,6 +6,11 @@ Web Standards: << My Project >>
 {{ load(file='partials/logo.html.twig', showCode=false, wrapInIframe=true) }}
 </div>
 
+###Favicon:
+<div class="boxed">
+{{ load(file='partials/favicon.html.twig', showCode=false, wrapInIframe=true) }}
+</div>
+
 ###Typography Styles:
 <div class="boxed">
 {{ load(file='partials/typography-styles.html.twig', showCode=false, wrapInIframe=true) }}

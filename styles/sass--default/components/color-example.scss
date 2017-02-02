@@ -1,13 +1,4 @@
 /* color */
-.color {
-    @each $color, $hex in $colors {
-        &.-#{$color} {
-            background: $hex;
-        }
-    }
-}
-
-
 .color-example {
     position: relative;
     display: inline-block;

@@ -75,13 +75,13 @@ gulp.task('browserSync', ['front'], function() {
 
 gulp.task('vendors', ['set:theme'], function() {
     var cwd = './node_modules/';
-    var dest = './web/assets/lib/vendor/';
+    var dest = './web/assets/'+theme+'/';
 
-    gulp.src(cwd + 'requirejs/**/*')
-        .pipe(gulp.dest(dest + 'requirejs/'));
+    gulp.src(cwd + 'jsonlylightbox/js/lightbox.min.js')
+        .pipe(gulp.dest(dest + 'scripts/vendors/jsonlylightbox/'));
 
-    gulp.src(cwd + 'magnific-popup/**/*')
-        .pipe(gulp.dest(dest + 'magnific-popup/'));
+    gulp.src(cwd + 'jsonlylightbox/css/lightbox.scss')
+        .pipe(gulp.dest('./styles/sass--'+theme+'/vendors/jsonlylightbox/'));
 });
 
 /* Copy Assets */

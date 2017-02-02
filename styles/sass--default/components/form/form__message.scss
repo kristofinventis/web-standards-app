@@ -17,11 +17,6 @@
     background: get-color("red");
     border-radius: 0 0 5px 5px;
 
-    animation-name: showMessage;
-    animation-duration: .5s;
-    animation-delay: .2s;
-    animation-fill-mode: forwards;
-
     @extend .icon !optional;
     @extend .-warning !optional;
     &:before {
@@ -30,6 +25,11 @@
         line-height: 0;
         top: -3px;
     }
+
+    animation-name: showMessage;
+    animation-duration: .5s;
+    animation-delay: .2s;
+    animation-fill-mode: forwards;
 
     &.-hide {
         animation-name: hideMessage;
@@ -42,6 +42,18 @@
 
 .form__field.-textarea + .form__message {
     margin-top: -10px;
+
+    animation-name: showMessage;
+    animation-duration: .5s;
+    animation-delay: .2s;
+    animation-fill-mode: forwards;
+
+    &.-hide {
+        animation-name: hideMessage;
+        animation-duration: .5s;
+        animation-delay: 0s;
+        animation-fill-mode: forwards;
+    }
 }
 
 @keyframes showMessage {

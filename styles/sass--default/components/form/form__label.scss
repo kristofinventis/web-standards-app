@@ -12,18 +12,19 @@
     @include screen-size(mini, small) {
         display: block;
     }
+
+    &.-checkbox,
+    &.-radio {
+        position: relative;
+
+        display: inline-block;
+        vertical-align: bottom;
+
+        cursor: pointer;
+        line-height: 1;
+
+        margin-bottom: 0.5em;
+        padding-right: 1.5em;
+    }
 }
 
-.form__label.-checkbox,
-.form__label.-radio {
-    position: relative;
-
-    display: inline-block;
-    vertical-align: bottom;
-
-    cursor: pointer;
-    line-height: 1;
-
-    margin-bottom: 0.5em;
-    padding-right: 1.5em;
-}

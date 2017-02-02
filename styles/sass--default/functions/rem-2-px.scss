@@ -1,3 +1,0 @@
-@function rem-2-px($rem) {
-    @return strip-unit($rem) * $default-rem-size;
-}

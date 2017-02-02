@@ -1,34 +1,36 @@
-<div class="form__entry">
-    <label for="frm_form_field" class="form__label">Regular form entry:</label>
-    <input type="text" name="form_field" id="frm_form_field" placeholder="Regular form entry" required class="form__field form__field--text" />
-</div>
-
-<br>
-
-<div class="form__entry form__entry--invalid">
-    <label for="frm_form_field" class="form__label">Invalid form entry:</label>
-    <input type="text" name="form_field" id="frm_form_field" placeholder="Regular form entry" required class="form__field form__field--text" />
-</div>
-
-<br>
-
-<div class="form__entry form__entry--disabled">
-    <label for="frm_form_field" class="form__label">Disabled form entry:</label>
-    <input disabled type="text" name="form_field" id="frm_form_field" placeholder="Disabled form entry" required class="form__field form__field--text" />
-</div>
-
-<br>
-
-<div class="form__entry form__entry--disabled">
-    <label for="frm_form_field" class="form__label">Disabled form entry with radio and checkbox:</label>
-
-    <div>
-        <input disabled type="radio" name="radio" id="frm_radio" class="form__field form__field--radio">
-        <label class="form__label form__label--radio" for="frm_radio">form radio</label>
+<section>
+    <div class="form__entry">
+        <label for="frm_form_field" class="form__label">Regular form entry:</label>
+        <input type="text" name="form_field" id="frm_form_field" placeholder="Regular form entry" required class="form__field" />
     </div>
 
-    <div>
-        <input disabled type="checkbox" name="checkbox" id="frm_checkbox" class="form__field form__field--checkbox">
-        <label class="form__label form__label--checkbox" for="frm_checkbox">form checkbox</label>
+    <br>
+
+    <div class="form__entry -invalid">
+        <label for="frm_form_field" class="form__label">Invalid form entry:</label>
+        <input type="text" name="form_field" id="frm_form_field" placeholder="Regular form entry" required class="form__field" />
     </div>
-</div>
+
+    <br>
+
+    <div class="form__entry -disabled">
+        <label for="frm_form_field" class="form__label">Disabled form entry:</label>
+        <input disabled type="text" name="form_field" id="frm_form_field" placeholder="Disabled form entry" required class="form__field" />
+    </div>
+
+    <br>
+
+    <div class="form__entry form__entry--disabled">
+        <label for="frm_form_field" class="form__label">Disabled form entry with radio and checkbox:</label>
+
+        <div>
+            <input disabled type="radio" name="radio" id="frm_radio" class="form__field form__field--radio">
+            <label class="form__label form__label--radio" for="frm_radio">form radio</label>
+        </div>
+
+        <div>
+            <input disabled type="checkbox" name="checkbox" id="frm_checkbox" class="form__field form__field--checkbox">
+            <label class="form__label form__label--checkbox" for="frm_checkbox">form checkbox</label>
+        </div>
+    </div>
+</section>

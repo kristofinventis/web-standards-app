@@ -35,6 +35,12 @@
             background: get-color("white");
         }
     }
+
+    &:focus {
+        & ~ .select__label {
+            border-color: darken(get-color("gray"), 10%);
+        }
+    }
 }
 
 .select__label {

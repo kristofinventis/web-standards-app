@@ -1,12 +1,48 @@
+/* FormValidator.js */
+;(function(){
+    var component = document.querySelectorAll('[data-component="FormValidator"]')
 
-/* global require, define */
-require(['jquery'], function ($) {
-    "use strict";
+    // Dependancy
+    var script = document.createElement('script');
+    script.src = './assets/default/scripts/HTML5FormValidator.js';
+    script.onload = function () {
+        init();
+    };
 
-    // This require forces placeholder to be loaded after $ is available
-    require(['html5validator'], function() {
-        $('form').not('.no-js-validation').html5validator({
-            messages: formvalidator_translations
-        });
-    });
-});
+    document.head.appendChild(script);
+
+    function init(){
+        for (var i = 0; i < component.length; i++) {
+            var $el = component[i];
+            var fields = document.querySelectorAll('input, textarea, select');
+            var submitButton = $el.querySelector('[type=submit]');
+
+            for (var i = 0; i < fields.length; i++) {
+                fields[i].addEventListener('blur', function(){
+                    // Validate this field
+                    // and pass translations for validator message
+                    var validate = new HTML5FormValidator(this, {messages: formvalidator_translations, showSuccess: true});
+                });
+            }
+
+            // Validate form on submit
+            submitButton.addEventListener('click', function(e){
+                var formIsValid = true;
+
+                // Loop each field
+                for (var i = 0; i < fields.length; i++) {
+                    // Pass translations for validator message
+                    var field = new HTML5FormValidator(fields[i], {messages: formvalidator_translations, showSuccess: true});
+                    if(!field.isValid) {
+                        formIsValid = false;
+                    }
+                }
+
+                if (!formIsValid) {
+                    e.preventDefault();
+                    document.querySelector('.-invalid').querySelector('input, textarea, select').focus();
+                }
+            });
+        }
+    }
+}());

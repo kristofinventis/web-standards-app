@@ -1,53 +1,61 @@
+/* Lightbox.js */
+;(function(){
+    var component = document.querySelectorAll('[data-component="Lightbox"]')
 
-/* global require, define */
-define(['jquery'], function ($) {
-    "use strict";
+    // Dependancy
+    var script = document.createElement('script');
+    script.src = './assets/default/scripts/vendors/jsonlylightbox/lightbox.min.js';
+    script.onload = function () {
+        console.log('loaded');
+        start();
+    };
 
-    // This require forces magnificPopup to be loaded after $ is available
-    require(['magnificPopup'], function() {
-        // Translations
-        $.extend(true, $.magnificPopup.defaults, lightbox_translations);
+    document.head.appendChild(script);
 
-        // Lightbox
-        if ($('a.lightbox').length) {
-            $('a.lightbox').magnificPopup({
-                type:'image',
-                iframe: {
-                    patterns: {
-                        youtube: {
-                            index: 'youtube.com/', // String that detects type of video (in this case YouTube). Simply via url.indexOf(index).
+    function start(){
+        for (var i = 0; i < component.length; i++) {
+            //var $el = component[i];
 
-                            id: 'v=', // String that splits URL in a two parts, second part should be %id%
-                            // Or null - full URL will be returned
-                            // Or a function that should return %id%, for example:
-                            // id: function(url) { return 'parsed id'; }
+            var lightbox = new Lightbox();
 
-                            src: '//www.youtube.com/embed/%id%?autoplay=1' // URL that will be set as a source for iframe.
-                        },
-                        vimeo: {
-                            index: 'vimeo.com/',
-                            id: '/',
-                            src: '//player.vimeo.com/video/%id%?autoplay=1'
-                        },
-                        gmaps: {
-                            index: '//maps.google.',
-                            src: '%id%&output=embed'
-                        }
-                    },
+            // options
+            // all options at: https://github.com/felixhagspiel/jsOnlyLightbox
+            var lightBoxOptions = {
+                // boxId: false,
+                // dimensions: true,
+                // captions: true,
+                // prevImg: false,
+                // nextImg: false,
+                // hideCloseBtn: false,
+                // closeOnClick: true,
+                // loadingAnimation: 200,
+                // animElCount: 4,
+                // preload: true,
+                // carousel: true,
+                // animation: 400,
+                // nextOnClick: true,
+                // responsive: true,
+                // maxImgSize: 0.8,
+                // keyControl: true,
+                // // callbacks
+                // onopen: function(){
+                // // ...
+                // },
+                // onclose: function(){
+                // // ...
+                // },
+                // onload: function(event){
+                // // ...
+                // },
+                // onresize: function(){
+                // // ...
+                // }
+                // onloaderror: function(event){
+                // // ...
+                // }
+            }
 
-                    srcAction: 'iframe_src' // Templating object key. First part defines CSS selector, second attribute. "iframe_src" means: find "iframe" and set attribute "src".
-                }
-            });
+            lightbox.load();
         }
-
-        // Lightbox gallery
-        $('.lightbox-gallery, .media-grid').each(function() { // the containers for all your galleries should have the class gallery
-            $(this).magnificPopup({
-                delegate: 'a', // the container for each your gallery items
-                type: 'image',
-                gallery:{enabled:true}
-            });
-        });
-    });
-
-});
+    }
+}());

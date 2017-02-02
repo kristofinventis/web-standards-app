@@ -1,5 +1,5 @@
-/* form__FIELD.-RADIO */
-.form__field.-radio {
+/* FORM__CHECKBOX */
+.form__checkbox {
     /* NATIVE STYLING */
     /*
     display: inline-block;
@@ -11,8 +11,23 @@
     */
 
     /* Custom Styling in label */
-    display: none;
+    display: block;
+    width: 100%;
+    height: 16px;
+    opacity: 0;
+    font-size: 0;
+    line-height: 0;
+    z-index: 1;
 
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-right: 0.7rem;
+    vertical-align: baseline;
+
+    &.-hidden {
+        display: none;
+    }
 
     & + label {
         position: relative;
@@ -24,7 +39,6 @@
             display: inline-block;
             width: 16px;
             height: 16px;
-            border-radius: 16px;
 
             position: absolute;
             left: 0;
@@ -42,20 +56,14 @@
 
     &:checked + label {
         &:before {
+            //content: '\2714'; // heavy checkmark ✔
+            content: '\2713'; // regular checkmark ✓
             background: #1a94ff;
+            border-radius: 2px;
         }
-        &:after {
-            content: '';
-            display: block;
-            width: 8px;
-            height: 8px;
-            border-radius: 8px;
+    }
 
-            position: absolute;
-            top: 5px;
-            left: 4px;
-
-            background: get-color("white");
-        }
+    &:focus + label {
+        box-shadow: 0 0 5px rgba(get-color("blue"),1);
     }
 }

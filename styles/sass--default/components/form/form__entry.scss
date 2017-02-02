@@ -1,29 +1,29 @@
 /* form__ENTRY */
 .form__entry {
     position: relative;
-}
 
-.form__entry.-disabled {
-    &,
-    .form__field,
-    .form__label {
-        cursor: default;
-        color: get-color("gray");
-        @include input-placeholder {
+    &.-disabled {
+        &,
+        .form__field,
+        .form__label {
+            cursor: default;
             color: get-color("gray");
+            @include input-placeholder {
+                color: get-color("gray");
+            }
+        }
+
+        .form__label.-checkbox,
+        .form__label.-radio {
+            &:before,
+            &:after {
+                background: get-color("gray");
+            }
         }
     }
 
-    .form__label.-checkbox,
-    .form__label.-radio {
-        &:before,
-        &:after {
-            background: get-color("gray");
-        }
+    &.-invalid {
+        // see form__field.scss
+        // see form__message.scss
     }
-}
-
-.form__entry.-invalid {
-    // see form__field.scss
-    // see form__message.scss
 }

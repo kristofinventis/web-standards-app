@@ -1,32 +1,31 @@
-define(
-    [
-        'jquery',
-    ],
-    function ($) {
-        return function(el, config) {
-            var submitOnChange = $(el).data('submit-on-change');
-            var $select__label = $(el).find('.select__label');
-            var $select__input = $(el).find('.select__input');
+/* Select.js */
+;(function(){
+    var component = document.querySelectorAll('[data-component="Select"]')
 
-            var updateValues = function() {
-                selectedValue = $(el).find('option:selected').val();
+    for (var i = 0; i < component.length; i++) {
 
-                var selectedText = $(el).find('option:selected').text();
+        var $select = component[i];
+        var submitOnChange = $select.dataset.submitOnChange;
+        var $select__label = $select.querySelector('.select__label');
+        var $select__input = $select.querySelector('.select__input');
 
-                $select__label.html(selectedText);
-            };
+        var updateValues = function() {
+            selectedValue = $select__input.options[$select__input.selectedIndex].value;
+            var selectedText = $select__input.options[$select__input.selectedIndex].text;
+            $select__label.innerHTML = selectedText;
+        };
 
-            var onFieldChange = function () {
-                updateValues();
-
-                if (submitOnChange == '1') {
-                    $select__input.closest('form').submit();
-                }
-            };
-
-            $select__input.on('change', onFieldChange);
-
+        var onFieldChange = function () {
             updateValues();
-        }
+
+            if (submitOnChange == '1') {
+                $select__input.closest('form').submit();
+            }
+        };
+
+        // $select__input.on('change', onFieldChange);
+        $select__input.addEventListener('change', onFieldChange);
+
+        updateValues();
     }
-);
+}());
