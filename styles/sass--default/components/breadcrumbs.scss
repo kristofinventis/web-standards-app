@@ -116,15 +116,13 @@
     position: relative;
     color: get-color("black");
 
-    width: 4px;
-    height: 7px;
+    font-size: 0.8rem;
 
     display: inline-block;
     margin-right: 3px;
     margin-left: 3px;
 
     @include screen-size(medium, large) {
-        top: -1px;
         margin-left: 7px;
         margin-right: 7px;
     }
