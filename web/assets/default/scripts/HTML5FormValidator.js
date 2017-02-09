@@ -79,6 +79,7 @@
             requiredCheckbox:      'This field is required',
             requiredCheckboxgroup: 'At least one option must be selected',
             requiredRadiogroup:    'An option must be selected',
+            password:              'Must have 1 lower- and uppercase letter, 1 number and 1 symbol',
             minlength:             'The minimum length of this field is not met',
             maxlength:             'The content of this field is too long',
             email:                 'This is not an email address',
@@ -157,6 +158,11 @@
         // Radiogroup
         if (element.matches('fieldset[required]:enabled input[type=radio]') && this.validate(element, 'requiredRadiogroup')) {
             return 'requiredRadiogroup';
+        }
+
+        // minlength
+        if (element.matches('input[type=password]:enabled') && this.validate(element, 'password')) {
+            return 'password';
         }
 
         // minlength
@@ -267,6 +273,7 @@
             for (var i = 0; i < siblings.length; i++) {
                 if (siblings[i].checked) {
                     checked = true;
+                    break; // loop no longer needs to continue
                 }
             }
 
@@ -281,10 +288,28 @@
             for (var i = 0; i < siblings.length; i++) {
                 if (siblings[i].checked) {
                     checked = true;
+                    break; // loop no longer needs to continue
                 }
             }
 
             return checked;
+        },
+        password: function ( el ) {
+            var regExLowerCase = /[a-z]/;
+            var regExUpperCase = /[A-Z]/;
+            var regExNumber    = /\d/;
+            var regExSymbols   = /[-@#§£!"$€%^&*()_+|~=`{}\[\]:";'<>?,.\/]/;
+
+            var hasLowerCase = regExLowerCase.test(el.value);
+            var hasUpperCase = regExUpperCase.test(el.value);
+            var hasNumber    = regExNumber.test(el.value);
+            var hasSymbols   = regExSymbols.test(el.value);
+
+            if (hasLowerCase && hasUpperCase && hasNumber && hasSymbols) {
+                return true;
+            }
+
+            return false;
         },
         minlength: function ( el, arguments ) {
             if ( arguments.length > 1  && arguments[1] <= el.value.length ) {

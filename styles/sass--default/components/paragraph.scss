@@ -1,9 +1,10 @@
 /* Paragraph */
+p,
 .paragraph {
-    &.-auto-width {
-        max-width: none;
-    }
-    &.-alt {
-        max-width: 790px;
+    margin: 0 0 2rem 0;
+
+    &.-summary {
+        font-size: 2rem;
+        margin-bottom: 3rem;
     }
 }

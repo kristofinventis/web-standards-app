@@ -28,79 +28,58 @@
     }
 }
 
-.h-no-margin {
-    margin: 0;
-}
+.h {
+    &.-no-margin {
+        margin: 0;
+    }
 
-.h-mini-margin-bottom {
-    margin-bottom: 5px;
-}
+    &.-mini-margin-bottom {
+        margin-bottom: .5rem;
+    }
 
-.h-small-margin-bottom {
-    margin-bottom: 10px;
-}
+    &.-small-margin-bottom {
+        margin-bottom: 1rem;
+    }
 
-.h-medium-margin-bottom {
-    margin-bottom: 20px;
-}
+    &.-medium-margin-bottom {
+        margin-bottom: 2rem;
+    }
 
-.h-large-margin-bottom {
-    margin-bottom: 30px;
-}
+    &.-large-margin-bottom {
+        margin-bottom: 3rem;
+    }
 
-.h-extra-large-margin-bottom {
-    margin-bottom: 40px;
-}
+    &.-extra-large-margin-bottom {
+        margin-bottom: 4rem;
+    }
 
-.h-no-padding {
-    padding: 0;
-}
+    &.-no-padding {
+        padding: 0;
+    }
 
-.h-small-padding {
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
+    &.-small-padding {
+        padding: 1rem;
+    }
 
-.h-medium-padding {
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
+    &.-medium-padding {
+        padding: 2rem;
+    }
 
-.h-medium-padding-bottom {
-    padding-bottom: 30px;
-}
+    &.-large-padding {
+        padding: 3rem;
+    }
 
-.h-large-padding {
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
+    &.-medium-padding-bottom {
+        padding-bottom: 3rem;
+    }
 
-.h-large-padding-bottom {
-    padding-bottom: 40px;
-}
+    &.-large-padding-bottom {
+        padding-bottom: 3rem;
+    }
 
-.h-bottom-border {
-    border-bottom: 1px solid get-color("orange");
-}
-
-/* HELPER-EQUAL-HEIGHT */
-.h-equal-height,
-.h-flexbox {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-
-    -webkit-flex-flow: row wrap;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    font: 0/0 $default-font-family; // for IE10-9
-}
-
-.h-v-large__equal-height {
-    @include screen-size(large) {
+    /* HELPER-EQUAL-HEIGHT */
+    &.-equal-height,
+    &.-flexbox {
         display: -webkit-box;
         display: -moz-box;
         display: -ms-flexbox;
@@ -113,84 +92,36 @@
         flex-wrap: wrap;
         font: 0/0 $default-font-family; // for IE10-9
     }
-}
 
-.h-v-medium__equal-height {
-    @include screen-size(medium) {
-        display: -webkit-box;
-        display: -moz-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-
-        -webkit-flex-flow: row wrap;
-        -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        font: 0/0 $default-font-family; // for IE10-9
+    &.-flex {
+        flex: 1;
     }
-}
 
-.h-v-small__equal-height {
-    @include screen-size(small) {
-        display: -webkit-box;
-        display: -moz-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-
-        -webkit-flex-flow: row wrap;
-        -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        font: 0/0 $default-font-family; // for IE10-9
+    &.-hide-mini {
+        @include screen-size(mini) {
+            display: none;
+        }
     }
-}
 
-.h-v-mini__equal-height {
-    @include screen-size(mini) {
-        display: -webkit-box;
-        display: -moz-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-
-        -webkit-flex-flow: row wrap;
-        -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        font: 0/0 $default-font-family; // for IE10-9
+    &.-hide-small {
+        @include screen-size(small) {
+            display: none;
+        }
     }
-}
 
-.h-flex {
-    flex: 1;
-}
+    &.-hide-medium {
+        @include screen-size(medium) {
+            display: none;
+        }
+    }
 
-.h-hide-mini {
-    @include screen-size(mini) {
+    &.-hide-large {
+        @include screen-size(large) {
+            display: none;
+        }
+    }
+
+    &.-hide {
         display: none;
     }
-}
-
-.h-hide-small {
-    @include screen-size(small) {
-        display: none;
-    }
-}
-
-.h-hide-medium {
-    @include screen-size(medium) {
-        display: none;
-    }
-}
-
-.h-hide-large {
-    @include screen-size(large) {
-        display: none;
-    }
-}
-
-.h-hide {
-    display: none;
 }

@@ -72,4 +72,11 @@ a,
             border-bottom: 1px solid get-color("black");
         }
     }
+
+    &.-download {
+        .icon {
+            margin-right: 0.7rem;
+            top: -1px;
+        }
+    }
 }

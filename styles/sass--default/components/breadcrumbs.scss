@@ -1,14 +1,12 @@
 /* BREADCRUMBS */
 .breadcrumbs {
     box-sizing: border-box;
-
     width: auto;
     margin: 0;
-
-    padding: 14px 0 20px 0;
+    padding: 1rem 0;
 
     @include screen-size(medium, large) {
-        padding: 10px 0 50px 0;
+        padding: 2rem 0 3rem;
     }
 }
 

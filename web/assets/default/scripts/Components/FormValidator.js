@@ -11,6 +11,14 @@
 
     document.head.appendChild(script);
 
+    var script = document.createElement('script');
+    script.src = './assets/default/scripts/PasswordStrengthCalculator.js';
+    script.onload = function () {
+        init();
+    };
+
+    document.head.appendChild(script);
+
     function init(){
         for (var i = 0; i < component.length; i++) {
             var $el = component[i];
@@ -18,11 +26,21 @@
             var submitButton = $el.querySelector('[type=submit]');
 
             for (var i = 0; i < fields.length; i++) {
-                fields[i].addEventListener('blur', function(){
-                    // Validate this field
-                    // and pass translations for validator message
-                    var validate = new HTML5FormValidator(this, {messages: formvalidator_translations, showSuccess: true});
-                });
+                if (fields[i].type === "password" && fields[i].required === true) {
+                    fields[i].addEventListener('keyup', function(){
+                        // Validate this field
+                        // and pass translations for validator message
+                        var validate = new HTML5FormValidator(this, {messages: formvalidator_translations, showSuccess: true});
+                    });
+                } else if (fields[i].type === "password" && fields[i].required === false) {
+                    fields[i].addEventListener('keyup', function(){
+                        var validate = new PasswordStrengthCalculator(this);
+                    });
+                } else {
+                    fields[i].addEventListener('blur', function(){
+                        var validate = new HTML5FormValidator(this, {messages: formvalidator_translations, showSuccess: true});
+                    });
+                }
             }
 
             // Validate form on submit
