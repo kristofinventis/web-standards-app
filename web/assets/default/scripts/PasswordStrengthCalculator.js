@@ -59,24 +59,24 @@
     var defaults = {
         fieldParentSelector: '.form__entry',
         strengthElementClass: 'password-strength',
-        tier : {
-            "Too Short"   : "Too Short",
-            "Very Weak"   : "Very Weak",
-            "Weak"        : "Weak",
-            "Good"        : "Ok",
-            "Strong"      : "Strong",
-            "Very Strong" : "Very Strong"
+        passwordTier : {
+            tooShort   : "Too Short",
+            veryWeak   : "Very Weak",
+            weak       : "Weak",
+            good       : "Ok, can be stronger",
+            strong     : "Strong",
+            veryStrong : "Very Strong"
         }
     }
 
     function PasswordStrengthCalculator(password, options) {
         this.options = extend( {}, defaults, options );
 
-        if ( options && options.tier ) {
-            this.options.tier = extend( {}, defaults.tier, options.tier );
+        if ( options && options.passwordTier ) {
+            this.options.passwordTier = extend( {}, defaults.passwordTier, options.passwordTier );
         }
 
-        var strength = this.getStrength(password.value, options);
+        this.showStrength(password, this.getStrength(password.value, options));
     }
 
     PasswordStrengthCalculator.prototype.getStrength = function (pwd, options) {
@@ -290,34 +290,58 @@
         }
 
         if (nScore >= 0 && nScore < 20) {
-            return this.options.tier["Very Weak"];
+            return this.options.passwordTier.veryWeak;
         } else if (nScore >= 20 && nScore < 40) {
-            return this.options.tier["Weak"];
+            return this.options.passwordTier.weak;
         } else if (nScore >= 40 && nScore < 60) {
-            return this.options.tier["Good"];
+            return this.options.passwordTier.good;
         } else if (nScore >= 60 && nScore < 80) {
-            return this.options.tier["Strong"];
+            return this.options.passwordTier.strong;
         } else if (nScore >= 80 && nScore <= 100) {
-            return this.options.tier["Very Strong"];
+            return this.options.passwordTier.veryStrong;
         }
 
-        return this.options.tier["Too Short"];
+        return this.options.passwordTier.tooShort;
     }
 
-    PasswordStrengthCalculator.prototype.showStrength = function(element) {
+    PasswordStrengthCalculator.prototype.showStrength = function(element, strength) {
         var parent = findParent(element, this.options.fieldParentSelector),
             strengthElement;
 
         // Find the strengthElement
         strengthElement = parent.querySelector('.' + this.options.strengthElementClass);
 
-        // Check if there is already an error message in the DOM
+        // Check if there is already an strength element in the DOM
         if(!strengthElement) {
             strengthElement = document.createElement("span");
             strengthElement.className = this.options.strengthElementClass;
             parent.appendChild(strengthElement);
         }
+
+        parent.classList.add('-password-strength');
+        this.setParentClass(parent, strength);
+        strengthElement.innerHTML = strength;
     };
+
+    PasswordStrengthCalculator.prototype.setParentClass = function(parent, strength) {
+        parent.classList.remove('-very-weak');
+        parent.classList.remove('-weak');
+        parent.classList.remove('-good');
+        parent.classList.remove('-strong');
+        parent.classList.remove('-very-strong');
+
+        if (strength === this.options.passwordTier.veryWeak) {
+            parent.classList.add('-very-weak');
+        } else if (strength === this.options.passwordTier.weak) {
+            parent.classList.add('-weak');
+        } else if (strength === this.options.passwordTier.good) {
+            parent.classList.add('-good');
+        } else if (strength === this.options.passwordTier.strong) {
+            parent.classList.add('-strong');
+        } else if (strength === this.options.passwordTier.veryStrong) {
+            parent.classList.add('-very-strong');
+        }
+    }
 
     // Pass this object to the window
     window.PasswordStrengthCalculator = PasswordStrengthCalculator;

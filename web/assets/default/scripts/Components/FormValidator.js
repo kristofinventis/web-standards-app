@@ -34,7 +34,7 @@
                     });
                 } else if (fields[i].type === "password" && fields[i].required === false) {
                     fields[i].addEventListener('keyup', function(){
-                        var validate = new PasswordStrengthCalculator(this);
+                        var validate = new PasswordStrengthCalculator(this, {passwordTier: password_strength_translations});
                     });
                 } else {
                     fields[i].addEventListener('blur', function(){

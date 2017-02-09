@@ -10,6 +10,7 @@
     color: get-color("white");
     background: get-color("green");
     font-family: $font-primary;
+    text-decoration: none;
 
     font-size: 15px;
     line-height: 1;
@@ -17,6 +18,9 @@
     font-weight: 600;
 
     vertical-align: middle;
+    &:hover, &:focus {
+        text-decoration: none;
+    }
 }
 
 .button {
@@ -46,24 +50,6 @@
 
         width: 14px;
         height: 14px;
-
-        &.svg-icon-angle-left,
-        &.svg-icon-angle-right {
-            width: 6px;
-            height: 9px;
-        }
-        &.svg-icon-thumbs-up {
-            width: 14px;
-            height: 14px;
-        }
-        &.svg-icon-questionmark {
-            width: 20px;
-            height: 20px;
-            top: -1px;
-            vertical-align: middle;
-            margin-top: -7px;
-            margin-bottom: -7px;
-        }
     }
 
     &:before {
@@ -106,6 +92,17 @@
         &:before {
             background: transparent;
             height: 101%;
+        }
+    }
+
+    &.-show-hide-password {
+        padding: 0.4rem 1rem;
+        float: right;
+        font-size: 1.3rem;
+        font-weight: 400;
+        background: darken(get-color("gray"), 7%);
+        &:hover, &:focus {
+            background: get-color("gray-2");
         }
     }
 
