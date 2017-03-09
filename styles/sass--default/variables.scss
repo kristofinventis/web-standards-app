@@ -14,6 +14,8 @@ $default-block-padding:                 px-2-rem(30px);
 /* Colors */
 $colors: (
     "blue":                               #1a94ff, // checkbox/radio:checked
+    "blue-2":                             #4990E2, // cookie-box
+    "blue-3":                             #65A5F0, // cookie-box-close
 
     "white":                              #ffffff,
 
@@ -22,8 +24,10 @@ $colors: (
 
     "black":                              #1a1a1a,
     "red":                                #8d313d,
+
     "orange-red":                         #ff5800,
     "orange":                             #ff9c00,
+
     "green":                              #0092a7,
     "green-2":                            #00a737
 );
@@ -79,10 +83,10 @@ $screen-sizes: (
 );
 
 /* Typography */
-$default-font-family:                   'Open Sans Pro', Arial, sans-serif;;
+$default-font-family:                   'Lato', Arial, sans-serif;;
 
 $font-primary:                          $default-font-family;
-$font-secondary:                        'Open Sans Condensed', $default-font-family;
+$font-secondary:                        'Lato', $default-font-family;
 $titles-font-family:                    $font-primary;
 
 $paragraph-max-width:                   635px;

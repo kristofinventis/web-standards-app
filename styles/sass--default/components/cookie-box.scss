@@ -1,0 +1,49 @@
+/* COOKIE-BOX */
+.cookie-box {
+    transition: transform .3s ease;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    padding: 2.8rem 6.8rem 2.8rem 2.8rem;
+
+    background: get-color("blue-2");
+
+    &.-hide {
+        transform: translate3d(0, -100%, 0);
+    }
+
+    &.-bottom {
+        top: auto;
+        bottom: 0;
+
+        &.-hide {
+            transform: translate3d(0, 100%, 0);
+        }
+    }
+
+}
+
+.cookie-box__text {
+    vertical-align: middle;
+    color: get-color("white");
+    line-height: 1;
+}
+
+.cookie-box__close {
+    border-radius: 3px;
+
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    right: 2.8rem;
+
+    padding: 1.1rem;
+
+    color: get-color("white");
+    background: get-color("blue-3");
+    font-size: 1.3rem;
+    line-height: 1;
+}

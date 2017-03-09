@@ -3,6 +3,10 @@ p,
 .paragraph {
     margin: 0 0 2rem 0;
 
+    &:last-child {
+        margin-bottom: 0;
+    }
+
     &.-summary {
         font-size: 2rem;
         margin-bottom: 3rem;
