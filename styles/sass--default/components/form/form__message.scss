@@ -16,6 +16,7 @@
 
     background: get-color("red");
     border-radius: 0 0 5px 5px;
+    overflow: hidden;
 
     @extend .icon !optional;
     @extend .-warning !optional;
