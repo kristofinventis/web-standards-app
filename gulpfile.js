@@ -52,7 +52,8 @@ gulp.task('sass', function() {
 
 /* Watch */
 gulp.task('watch', function () {
-    gulp.watch('./styles/sass--'+theme+'/**/*.scss', ['sass']);
+    // don't put ./ here, it breaks watching new/deleted files
+    gulp.watch('styles/sass--'+theme+'/**/*.scss', ['sass']);
 });
 
 /* Browsersync */
