@@ -20,14 +20,20 @@ html {
 }
 
 body {
-    font-size: 1.6rem;
-    line-height: 2.3rem;
-
     position: relative;
     min-height: 100%;
     width: 100%;
     margin: 0 auto;
     overflow-y: hidden;
+
+    @each $screen-size, $map in $screen-sizes {
+        $fz: map-get(map-get($map, typography), font-size);
+        $lh: map-get(map-get($map, typography), line-height);
+        @include screen-size($screen-size) {
+            font-size: $fz;
+            line-height: $lh;
+        }
+    }
 
     @if map-has-key($screen-sizes, medium) {
         min-width: 320px;
