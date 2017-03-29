@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# Check for npm
-if [[ "$(which npm)" == '' ]]; then
-    echo "Npm must be installed."
+# Check for yarn
+if [[ "$(which yarn)" == '' ]]; then
+    echo "yarn must be installed."
     exit 0
 fi
 
@@ -18,8 +18,8 @@ if [[ "$(which gulp)" == '' ]]; then
     exit 0
 fi
 
-# Npm
-npm install
+# yarn
+yarn install
 
 # Composer
 composer install

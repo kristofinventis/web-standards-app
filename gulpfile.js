@@ -12,6 +12,8 @@ var browserSync = require('browser-sync').create();
 var argv = require('yargs').argv;
 var theme = null;
 
+var pathToAssets = './web/assets/';
+
 /* Set Theme */
 gulp.task('set:theme', function() {
     theme = (typeof argv.theme === 'undefined') ? 'default' : argv.theme;
@@ -46,7 +48,7 @@ gulp.task('sass', function() {
     return gulp.src('./styles/sass--'+theme+'/main.scss')
         .pipe(sassGlob())
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
-        .pipe(gulp.dest('./web/assets/'+theme+'/styles'))
+        .pipe(gulp.dest(pathToAssets+theme+'/styles'))
         .pipe(browserSync.stream());
 });
 
@@ -76,7 +78,7 @@ gulp.task('browserSync', ['front'], function() {
 
 gulp.task('vendors', ['set:theme'], function() {
     var cwd = './node_modules/';
-    var dest = './web/assets/'+theme+'/';
+    var dest = pathToAssets+theme+'/';
 
     gulp.src(cwd + 'jsonlylightbox/js/lightbox.min.js')
         .pipe(gulp.dest(dest + 'scripts/vendors/jsonlylightbox/'));
@@ -87,7 +89,7 @@ gulp.task('vendors', ['set:theme'], function() {
 
 /* Copy Assets */
 gulp.task('copy', ['set:theme'], function() {
-    var cwd = './web/assets/'+theme+'/';
+    var cwd = pathToAssets+theme+'/';
     var dest = './../bricks/src/app/public/assets/'+theme+'/';
 
     // Styles
@@ -111,9 +113,9 @@ gulp.task('copy', ['set:theme'], function() {
 /* Generate Icon-font */
 gulp.task('iconfont', ['set:theme'], function(){
     var fontName = 'project-icons',
-        fontPath = './web/assets/'+theme+'/fonts/' + fontName + '/';
+        fontPath = pathToAssets+theme+'/fonts/' + fontName + '/';
 
-    gulp.src(['./web/assets/'+theme+'/images/svg/*.svg'])
+    gulp.src([pathToAssets+theme+'/images/svg/*.svg'])
     .pipe(iconfontCss({
         fontName: fontName,
         path: './styles/sass--'+theme+'/base/_icons-template.scss',
