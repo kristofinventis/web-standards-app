@@ -23,6 +23,7 @@
     "jsonlylightbox": "^0.5.5",
     "modernizr": "^3.3.1",
     "normalize.css": "git://github.com/necolas/normalize.css.git",
+    "run-sequence": "^1.2.2",
     "yargs": "^6.6.0"
   }
 }

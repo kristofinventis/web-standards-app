@@ -7,6 +7,7 @@ var rename = require('gulp-rename');
 var sassGlob = require('gulp-sass-glob'); // globbing for gulp-sass
 var iconfont = require('gulp-iconfont'); // To generate an icon-font
 var iconfontCss = require('gulp-iconfont-css'); // To generate a css file for the icon-font
+var runSequence = require('run-sequence');
 var browserSync = require('browser-sync').create();
 
 var argv = require('yargs').argv;
@@ -133,6 +134,17 @@ gulp.task('iconfont', ['set:theme'], function(){
 
 
 /* Tasks */
-gulp.task('build', ['set:theme', 'vendors', 'grid', 'normalize', 'sass']);
+gulp.task('grid-sequence', ['set:theme', 'vendors', 'grid', 'normalize']);
+gulp.task('sass-sequence', ['set:theme', 'sass']);
+
+gulp.task('build', function () {
+    runSequence(
+        'grid-sequence',
+        'sass-sequence',
+        'copy'
+    );
+});
+
+gulp.task('base', ['set:theme', 'vendors', 'grid', 'normalize', 'sass']);
 gulp.task('front', ['set:theme', 'sass', 'watch']);
 gulp.task('browsersync', ['browserSync', 'watch']);
