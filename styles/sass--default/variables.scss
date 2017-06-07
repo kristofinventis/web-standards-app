@@ -8,8 +8,8 @@ $layout-responsive:                     true;
 
 /* Default sizes */
 $default-rem-size:                      16px; // Browser default
-$default-block-margin:                  px-2-rem(30px);
-$default-block-padding:                 px-2-rem(30px);
+$default-block-margin:                  3.0rem;
+$default-block-padding:                 3.0rem;
 
 /* Colors */
 $colors: (
@@ -42,7 +42,7 @@ $screen-sizes: (
         typography: (
             font-size:                      1.6rem, // If you change this, also change it in the grunt config for rem_to_px
             line-height:                    2.8rem,
-            margin:                         0 0 px-2-rem(30px) 0
+            margin:                         0 0 3.0rem 0
         ),
         grid: (
             screen-min-width:               $breakpoint-medium + 1
@@ -52,7 +52,7 @@ $screen-sizes: (
         typography: (
             font-size:                      1.6rem, // If you change this, also change it in the grunt config for rem_to_px
             line-height:                    2.8rem,
-            margin:                         0 0 px-2-rem(20px) 0
+            margin:                         0 0 2.0rem 0
         ),
         grid: (
             screen-min-width:               $breakpoint-small + 1,
@@ -63,7 +63,7 @@ $screen-sizes: (
         typography: (
             font-size:                      1.6rem, // If you change this, also change it in the grunt config for rem_to_px
             line-height:                    2.8rem,
-            margin:                         0 0 px-2-rem(10px) 0
+            margin:                         0 0 1.0rem 0
         ),
         grid: (
             screen-min-width:               $breakpoint-mini + 1,
@@ -74,7 +74,7 @@ $screen-sizes: (
         typography: (
             font-size:                      1.6rem, // If you change this, also change it in the grunt config for rem_to_px
             line-height:                    2.8rem,
-            margin:                         0 0 px-2-rem(10px) 0
+            margin:                         0 0 1.0rem 0
         ),
         grid: (
             screen-max-width:               $breakpoint-mini

@@ -3,6 +3,7 @@
 /* Requirements */
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+var minify = require('gulp-minify');
 var rename = require('gulp-rename');
 var sassGlob = require('gulp-sass-glob'); // globbing for gulp-sass
 var iconfont = require('gulp-iconfont'); // To generate an icon-font
@@ -132,6 +133,20 @@ gulp.task('iconfont', ['set:theme'], function(){
     .pipe(gulp.dest(fontPath));
 });
 
+/* Minify Javascript */
+gulp.task('minify', ['set:theme'], function() {
+    var cwd = pathToAssets+theme+'/';
+    gulp.src(cwd + 'scripts/**/*.js')
+    .pipe(minify({
+        ext:{
+            src:'.raw.js',
+            min:'.js'
+        },
+        exclude: ['vendors']
+    }))
+    .pipe(gulp.dest(cwd + 'scripts'))
+});
+
 
 /* Tasks */
 gulp.task('grid-sequence', ['set:theme', 'vendors', 'grid', 'normalize']);
@@ -141,6 +156,7 @@ gulp.task('build', function () {
     runSequence(
         'grid-sequence',
         'sass-sequence',
+        'minify',
         'copy'
     );
 });
