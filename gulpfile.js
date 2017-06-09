@@ -142,7 +142,8 @@ gulp.task('minify', ['set:theme'], function() {
             src:'.raw.js',
             min:'.js'
         },
-        exclude: ['vendors']
+        exclude: ['vendors'],
+        ignoreFiles: ['*.min.js', '*.raw.js']
     }))
     .pipe(gulp.dest(cwd + 'scripts'))
 });
