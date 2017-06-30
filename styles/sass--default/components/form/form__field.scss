@@ -22,6 +22,11 @@
     font-weight: 400;
 }
 
+// FF cursor pointer bug fix
+input {
+    cursor: pointer;
+}
+
 .form__field {
     @extend %form__field-reset;
     border-radius: 5px;
