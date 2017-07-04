@@ -77,4 +77,14 @@
     &:focus + label {
         box-shadow: 0 0 5px rgba(get-color("blue"),1);
     }
+
+    &[disabled] {
+        &,
+        & + label {
+            &, &:hover, &:focus, &:active {
+                opacity: 0.3;
+                cursor: default;
+            }
+        }
+    }
 }
