@@ -55,7 +55,7 @@
             }
 
             // Validate form on submit
-            submitButton.addEventListener('click', function(e){
+            submitButton.addEventListener('click', function(fields, $el, e){
                 var formIsValid = true;
 
                 // Loop each field
@@ -71,7 +71,7 @@
                     e.preventDefault();
                     $el.querySelector('.-invalid').querySelector('input, textarea, select').focus();
                 }
-            });
+            }.bind(this, fields, $el));
         }
     }
 }());
