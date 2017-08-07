@@ -141,7 +141,7 @@
         }
 
         // Required
-        if (element.matches('select[required]:enabled') && this.validate(element, 'requiredSelect')) {
+        if (element.matches('select[required]') && this.validate(element, 'requiredSelect')) {
             return 'requiredSelect';
         }
 
@@ -295,6 +295,10 @@
             return checked;
         },
         password: function ( el ) {
+            if (!el.required && el.value.length == 0) {
+                return true;
+            }
+
             var regExLowerCase = /[a-z]/;
             var regExUpperCase = /[A-Z]/;
             var regExNumber    = /\d/;
