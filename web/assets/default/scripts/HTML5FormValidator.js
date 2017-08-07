@@ -141,7 +141,7 @@
         }
 
         // Required
-        if (element.matches('select[required]') && this.validate(element, 'requiredSelect')) {
+        if (element.matches('select[required]:enabled') && this.validate(element, 'requiredSelect')) {
             return 'requiredSelect';
         }
 
