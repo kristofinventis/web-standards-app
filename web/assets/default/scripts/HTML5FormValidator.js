@@ -186,12 +186,12 @@
         }
 
         // min
-        if (element.matches('input[type=min]:enabled') && this.validate(element, 'min')) {
+        if (element.matches('input[min]:enabled') && this.validate(element, 'min')) {
             return 'min';
         }
 
         // max
-        if (element.matches('input[type=max]:enabled') && this.validate(element, 'max')) {
+        if (element.matches('input[max]:enabled') && this.validate(element, 'max')) {
             return 'max';
         }
 
@@ -375,7 +375,7 @@
         errorElement = parent.querySelector('.' + this.options.errorMessageClass);
 
         // set attribute value on placeholder (mostly used for min and max values)
-        if (message.search('%1') != -1) {
+        if (message.indexOf('%1$s') != -1) {
             message = message.replace('%1$s', element.getAttribute(type));
         }
 
