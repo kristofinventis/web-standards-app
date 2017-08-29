@@ -37,13 +37,13 @@
             var submitButton = $el.querySelector('[type=submit]');
 
             for (var j = 0; j < fields.length; j++) {
-                if (fields[i].type === "password" && fields[i].required === true && fields[i].dataset.validation !== "false") {
+                if (fields[j].type === "password" && fields[j].required === true && fields[j].dataset.validation !== "false") {
                     fields[j].addEventListener('keyup', function(){
                         // Validate this field
                         // and pass translations for validator message
                         var validate = new HTML5FormValidator(this, {messages: formvalidator_translations, showSuccess: true});
                     });
-                } else if (fields[i].type === "password" && fields[i].required === false && fields[i].dataset.validation !== "false") {
+                } else if (fields[j].type === "password" && fields[j].required === false && fields[j].dataset.validation !== "false") {
                     fields[j].addEventListener('keyup', function(){
                         var validate = new PasswordStrengthCalculator(this, {passwordTier: password_strength_translations});
                     });
