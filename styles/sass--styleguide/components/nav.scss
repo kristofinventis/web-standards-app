@@ -56,10 +56,14 @@
     li {
         position: relative;
         border-top: 1px solid #5b616b;
-        font-size: 1.7rem;
+        font-size: 1.3rem;
         line-height: 1.5;
         display: list-item;
         margin: 0;
+        padding-right: 2rem;
+        &:hover, &:focus {
+            background-color: #f1f1f1;
+        }
     }
     li:first-child {
         border-top: none;
@@ -72,11 +76,10 @@
     display: block;
     font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
     line-height: 1;
-    padding: 1rem 1rem 1rem 1.8rem;
+    padding: 1rem;
     text-decoration: none;
 
     &:hover, &:focus {
-        background-color: #f1f1f1;
         color: #0071bc;
         text-decoration: none;
     }
@@ -125,30 +128,22 @@
 
 .nav-list__external {
     position: absolute;
-    top: 1rem;
+    top: 50%;
     right: 0;
+    margin-top: -1rem;
 
-    display: none;
+    box-sizing: border-box;
+    display: block;
 
     text-decoration: none;
     color: get-color("blue");
     z-index: 1;
 
-    max-width: 1rem;
+    max-width: 2rem;
 
     img {
         display: block;
         width: 100%;
-    }
-}
-
-.nav-list {
-    li {
-        &:hover, &:focus {
-            & > .nav-list__external {
-                display: block;
-            }
-        }
     }
 }
 
