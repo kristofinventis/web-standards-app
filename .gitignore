@@ -13,6 +13,7 @@ vendor/*
 web/assets/lib/vendor/*
 web/assets/default/sass/base/normalize/normalize.scss
 web/assets/default/sass/base/normalize/normalize.scss.map
+web/assets/default/sass/components/grid/*
 web/assets/default/sass/components/grid.scss
 web/assets/default/sass/components/grid.scss.map
 web/assets/default/sass/components/magnific-popup/magnific-popup.scss
