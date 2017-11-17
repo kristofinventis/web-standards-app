@@ -13,9 +13,9 @@ $screen-sizes: (
         grid: (
             screen-min-width:               $breakpoint-medium + 1,
             total-columns:                  12,
-            column-width:                   70px, // When you set this container-max-width will be calculated for you
-            gutter-width:                   30px,
-            side-padding:                   30px,
+            column-width:                   80px, // When you set this container-max-width will be calculated for you
+            gutter-width:                   32px,
+            side-padding:                   32px,
             subgrids: (
                 4: (1, 2),
                 5: (3, 4)
@@ -27,8 +27,8 @@ $screen-sizes: (
             screen-min-width:               $breakpoint-small + 1,
             screen-max-width:               $breakpoint-medium,
             total-columns:                  12,
-            gutter-width:                   20px,
-            side-padding:                   20px,
+            gutter-width:                   32px,
+            side-padding:                   32px,
             subgrids: (
                 4: (1, 2, 3)
             )
@@ -50,8 +50,8 @@ $screen-sizes: (
         grid: (
             screen-max-width:               $breakpoint-mini,
             total-columns:                  2,
-            gutter-width:                   15px,
-            side-padding:                   15px
+            gutter-width:                   10px,
+            side-padding:                   10px
         )
     )
 );

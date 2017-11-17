@@ -11,13 +11,15 @@ npm-debug.log
 *.scss.map
 vendor/*
 web/assets/lib/vendor/*
-web/assets/default/sass/base/normalize/normalize.scss
-web/assets/default/sass/base/normalize/normalize.scss.map
-web/assets/default/sass/components/grid/*
-web/assets/default/sass/components/grid.scss
-web/assets/default/sass/components/grid.scss.map
-web/assets/default/sass/components/magnific-popup/magnific-popup.scss
-web/assets/default/sass/components/magnific-popup/magnific-popup.scss.map
+styles/sass--default/base/normalize/normalize.scss
+styles/sass--default/base/normalize/normalize.scss.map
+styles/sass--default/components/grid/*
+styles/sass--default/components/grid--default.scss
+styles/sass--default/components/grid--default.scss.map
+styles/sass--default/components/magnific-popup/magnific-popup.scss
+styles/sass--default/components/magnific-popup/magnific-popup.scss.map
+styles/sass--default/vendors/jsonlylightbox/lightbox.scss
+styles/sass--styleguide/vendors/jsonlylightbox/lightbox.scss
 
 ######################
 # OS generated files #
