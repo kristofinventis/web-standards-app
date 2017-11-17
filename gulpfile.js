@@ -139,11 +139,11 @@ gulp.task('minify', ['set:theme'], function() {
     gulp.src(cwd + 'scripts/**/*.js')
     .pipe(minify({
         ext:{
-            src:'.raw.js',
-            min:'.js'
+            src:'.js',
+            min:'.min.js'
         },
         exclude: ['vendors'],
-        ignoreFiles: ['*.min.js', '*.raw.js']
+        ignoreFiles: ['*.min.js']
     }))
     .pipe(gulp.dest(cwd + 'scripts'))
 });
