@@ -92,7 +92,7 @@ gulp.task('vendors', ['set:theme'], function() {
 /* Copy Assets */
 gulp.task('copy', ['set:theme'], function() {
     var cwd = pathToAssets+theme+'/';
-    var dest = './../bricks/src/app/public/assets/'+theme+'/';
+    var dest = './src/app/public/assets/'+theme+'/';
 
     // Styles
     gulp.src(cwd + 'styles/*.css')
