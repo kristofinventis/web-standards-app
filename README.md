@@ -17,6 +17,10 @@ bash install.sh
 ```sh
 npm install
 ```
+or
+```sh
+yarn install
+```
 
 ```sh
 composer install
@@ -34,7 +38,7 @@ gulp build
 ```
 
 ```sh
-gulp build--styleguide
+gulp build --theme styleguide
 ```
 
 ---
