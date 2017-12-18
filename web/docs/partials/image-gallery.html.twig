@@ -1,0 +1,16 @@
+{# Image Gallery #}
+<div class="photoswipe" data-component="PhotoswipeInit">
+    {% for i in 1..10 %}
+        <div class="col -large-2-8-equal -medium-4-equal -small-1-2-equal">
+            <figure class="figure h -no-margin">
+                <a class="-no-border" href="https://placeholder.inventis.be/800x600/eeeeee/000000/?text={{i}}" data-size="800x600">
+                    <img src="https://placeholder.inventis.be/300x227/eeeeee/000000/?text=300x227" alt="">
+                </a>
+            </figure>
+        </div>
+    {% endfor %}
+</div>
+
+{# PHOTOSWIPE ELEMENT #}
+{# http://photoswipe.com/documentation/getting-started.html #}
+{{ load(file='partials/photoswipe-dom.html.twig', showCode=false, wrapInIframe=false) }}

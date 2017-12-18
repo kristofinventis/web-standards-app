@@ -1,13 +1,14 @@
 /* BREADCRUMBS */
 .breadcrumbs {
-    box-sizing: border-box;
-    width: auto;
-    margin: 0;
-    padding: 1rem 0;
+    @extend .container;
+    // box-sizing: border-box;
+    // width: auto;
+    // margin: 0;
+    // padding: 1rem 0;
 
-    @include screen-size(medium, large) {
-        padding: 2rem 0 3rem;
-    }
+    // @include screen-size(medium, large) {
+    //     padding: 2rem 0 3rem;
+    // }
 }
 
 .breadcrumb-container {

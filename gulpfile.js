@@ -82,11 +82,32 @@ gulp.task('vendors', ['set:theme'], function() {
     var cwd = './node_modules/';
     var dest = pathToAssets+theme+'/';
 
-    gulp.src(cwd + 'jsonlylightbox/js/lightbox.min.js')
-        .pipe(gulp.dest(dest + 'scripts/vendors/jsonlylightbox/'));
+    // Photoswipe
+    gulp.src(cwd + 'photoswipe/dist/photoswipe-ui-default.min.js')
+        .pipe(gulp.dest(dest + 'scripts/vendors/photoswipe/'));
 
-    gulp.src(cwd + 'jsonlylightbox/css/lightbox.scss')
-        .pipe(gulp.dest('./styles/sass--'+theme+'/vendors/jsonlylightbox/'));
+    gulp.src(cwd + 'photoswipe/dist/photoswipe.min.js')
+        .pipe(gulp.dest(dest + 'scripts/vendors/photoswipe/'));
+
+    gulp.src(cwd + 'photoswipe/dist/photoswipe.css')
+        .pipe(rename({
+            basename: 'photoswipe',
+            extname: '.scss'
+        }))
+        .pipe(gulp.dest('./styles/sass--'+theme+'/vendors/photoswipe/'));
+
+    gulp.src(cwd + 'photoswipe/dist/default-skin/default-skin.css')
+        .pipe(rename({
+            basename: 'default-skin',
+            extname: '.scss'
+        }))
+        .pipe(gulp.dest('./styles/sass--'+theme+'/vendors/photoswipe/'));
+
+    gulp.src(cwd + 'photoswipe/dist/default-skin/default-skin.png')
+        .pipe(gulp.dest(dest + 'styles/'));
+
+    gulp.src(cwd + 'photoswipe/dist/default-skin/default-skin.svg')
+        .pipe(gulp.dest(dest + 'styles/'));
 });
 
 /* Copy Assets */

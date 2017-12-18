@@ -15,3 +15,13 @@ for (var i = 0; i < allComponents.length; i++) {
     script.src = './assets/default/scripts/Components/' + allComponents[i] + '.js';
     document.head.appendChild(script);
 }
+
+function isScriptLoaded(url) {
+    var scripts = document.getElementsByTagName('script');
+    for (var i = 0; i < scripts.length; i++) {
+        if (scripts[i].src == url) {
+            return true;
+        }
+    }
+    return false;
+}

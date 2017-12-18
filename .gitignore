@@ -45,6 +45,7 @@ atlassian-ide-plugin.xml
 ######################
 ftpsync.settings
 sftp-config.json
+gulpfile.min.js
 
 ######################
 # COMPOSER INSTALLED #

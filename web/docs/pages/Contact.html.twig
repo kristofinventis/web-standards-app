@@ -1,0 +1,69 @@
+{# Masthead #}
+{{ load(file='partials/masthead.html.twig', showCode=true, wrapInIframe=false) }}
+
+{# Breadcrumbs #}
+{{ load(file='partials/breadcrumbs.html.twig', showCode=true, wrapInIframe=false) }}
+
+<section class="container">
+    <div class="row h -large-margin-bottom">
+        <h1 class="title-1">Contact</h1>
+        <div class="col -large-6 -large-push-6 h -extra-large-margin-bottom">
+            <div class="box -padded">
+                <h2 class="title-2">BVBA Bedrijf &amp; Co</h2>
+                <address class="address">
+                    Straatnaam 123<br>
+                    3660 Opglabbeek<br>
+                    <a class="-lined" href="#">Toon route op Google Maps</a>
+                </address>
+                <br>
+                <p>
+                    <strong>Tel:</strong>&nbsp;&nbsp;011/23.45.67<br>
+                    <strong>Fax:</strong>&nbsp;&nbsp;011/89.01.23<br>
+                    <strong>E-mail:</strong>&nbsp;&nbsp;<a href="">info@bedrijf-co.be</a>
+                </p>
+                <br>
+                <h2 class="title-2">Openingsuren</h2>
+                <p>
+                    Ma - vrij:&nbsp;&nbsp;8.00u - 18.00u<br>
+                    Zat - zon:&nbsp;&nbsp;gesloten
+                </p>
+            </div>
+        </div>
+        <div class="col -large-6 -large-omega -large-pull-6">
+            <form action="" method="POST" data-component="FormValidator" class="form -bg -padded">
+                <h2 class="title-2">Contactformulier</h2>
+
+                {# Naam #}
+                <div class="form__entry h -small-margin-bottom">
+                    <label for="frm_name" class="form__label"><strong>Naam</strong></label>
+                    <input type="text" name="frm_name" required id="frm_name" autocomplete="name" class="form__field" />
+                </div>
+
+                {# E-mailadres #}
+                <div class="form__entry h -small-margin-bottom">
+                    <label for="frm_email" class="form__label"><strong>E-mailadres</strong></label>
+                    <input type="email" name="frm_email" required id="frm_email" autocomplete="email" class="form__field" />
+                </div>
+
+                {# Telefoonnummer #}
+                <div class="form__entry h -small-margin-bottom">
+                    <label for="frm_tel" class="form__label"><strong>Telefoonnummer</strong> <div class="form__optional">(optioneel)</div></label>
+                    <input type="tel" name="frm_tel" id="frm_tel" autocomplete="tel" class="form__field" />
+                </div>
+
+                {# Bericht #}
+                <div class="row h -small-margin-bottom">
+                    <div class="form__entry">
+                        <label for="frm_message" class="form__label"><strong>Bericht</strong></label>
+                        <textarea cols="30" rows="5" name="frm_message" id="frm_message" required class="form__field -textarea" data-component="TextareaAutoGrow"></textarea>
+                    </div>
+                </div>
+
+                <button type="submit" class="button" name="frm_submit">Verzenden <i class="icon -arrow-right -button-left"></i></button>
+            </form>
+        </div>
+
+    </div>
+</section><!-- /.container -->
+
+{{ load(file='partials/footer.html.twig', showCode=true, wrapInIframe=false) }}
