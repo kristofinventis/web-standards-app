@@ -132,7 +132,7 @@ gulp.task('copy', ['set:theme'], function() {
     gulp.src(cwd + 'scripts/**/*.js')
         .pipe(minify({
             noSource: true,
-            ext:{
+            ext: {
                 src: '.js',
                 min:'.js'
             }
