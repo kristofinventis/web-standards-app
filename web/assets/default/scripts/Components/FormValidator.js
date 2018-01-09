@@ -33,7 +33,7 @@
     function init(){
         for (var i = 0; i < component.length; i++) {
             var $el = component[i];
-            var fields = $el.querySelectorAll('input, textarea, select');
+            var fields = el.querySelectorAll('input:not([type=hidden]), textarea, select');
             var submitButton = $el.querySelector('[type=submit]');
 
             for (var j = 0; j < fields.length; j++) {
