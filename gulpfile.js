@@ -133,7 +133,6 @@ gulp.task('copy', ['set:theme'], function() {
         .pipe(minify({
             noSource: true,
             ext:{
-                // src:'-debug.js',
                 src: '.js',
                 min:'.js'
             }
