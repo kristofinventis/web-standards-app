@@ -5,6 +5,7 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var minify = require('gulp-minify');
 var rename = require('gulp-rename');
+var minify = require('gulp-minify');
 var sassGlob = require('gulp-sass-glob'); // globbing for gulp-sass
 var iconfont = require('gulp-iconfont'); // To generate an icon-font
 var iconfontCss = require('gulp-iconfont-css'); // To generate a css file for the icon-font
@@ -129,6 +130,13 @@ gulp.task('copy', ['set:theme'], function() {
 
     // Scripts
     gulp.src(cwd + 'scripts/**/*.js')
+        .pipe(minify({
+            noSource: true,
+            ext: {
+                src: '.js',
+                min:'.js'
+            }
+        }))
         .pipe(gulp.dest(dest + 'scripts/'));
 });
 
