@@ -266,7 +266,7 @@
         },
         requiredCheckboxgroup: function (el) {
             var group = el.dataset.group,
-                siblings = document.querySelectorAll('[data-group='+group+']'),
+                siblings = document.querySelectorAll('[data-group="'+group+'"]'),
                 checked = false;
 
             // Loop all in group, if one is checked, set checked to true
@@ -281,7 +281,7 @@
         },
         requiredRadiogroup: function (el) {
             var name = el.name,
-                siblings = document.querySelectorAll('[name='+name+']'),
+                siblings = document.querySelectorAll('[name="'+name+'"]'),
                 checked = false;
 
             // Loop all in group, if one is checked, set checked to true
