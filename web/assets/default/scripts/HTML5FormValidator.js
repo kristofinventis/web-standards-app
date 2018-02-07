@@ -46,17 +46,17 @@
     // or Element.matchesSelector(), but carry support for document.querySelectorAll():
     if (!Element.prototype.matches) {
         Element.prototype.matches =
-        Element.prototype.matchesSelector ||
-        Element.prototype.mozMatchesSelector ||
-        Element.prototype.msMatchesSelector ||
-        Element.prototype.oMatchesSelector ||
-        Element.prototype.webkitMatchesSelector ||
-        function(s) {
-            var matches = (this.document || this.ownerDocument).querySelectorAll(s),
-                i = matches.length;
-            while (--i >= 0 && matches.item(i) !== this) {}
-            return i > -1;
-        };
+            Element.prototype.matchesSelector ||
+            Element.prototype.mozMatchesSelector ||
+            Element.prototype.msMatchesSelector ||
+            Element.prototype.oMatchesSelector ||
+            Element.prototype.webkitMatchesSelector ||
+            function(s) {
+                var matches = (this.document || this.ownerDocument).querySelectorAll(s),
+                    i = matches.length;
+                while (--i >= 0 && matches.item(i) !== this) {}
+                return i > -1;
+            };
     }
 
     // Find nearest parrent with given selector
@@ -371,6 +371,10 @@
             parent = findParent(element, this.options.fieldParentSelector);
         }
 
+        if (parent === null) {
+            return;
+        }
+
         // Find the errorElement
         errorElement = parent.querySelector('.' + this.options.errorMessageClass);
 
@@ -409,6 +413,10 @@
             parent = findParent(element, this.options.fieldParentSelector);
         }
 
+        if (parent === null) {
+            return;
+        }
+
         errorElement = parent.querySelector('.' + this.options.errorMessageClass);
 
         // Return when there's no errorElement
@@ -438,6 +446,10 @@
             parent = findParent(element, this.options.fieldParentSelector);
         }
 
+        if (parent === null) {
+            return;
+        }
+
         // Find the successElement
         successElement = parent.querySelector('.' + this.options.successMessageClass);
 
@@ -461,6 +473,10 @@
             parent = findParent(element, this.options.groupParentSelector);
         } else {
             parent = findParent(element, this.options.fieldParentSelector);
+        }
+
+        if (parent === null) {
+            return;
         }
 
         successElement = parent.querySelector('.' + this.options.successMessageClass);
